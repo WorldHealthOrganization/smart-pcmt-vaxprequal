@@ -12,6 +12,7 @@
 
 Instance: PreQualDB0a80755033118a426f1d2a571df1b6df
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2025-01-16
 * vaccineType.coding.code = #HepatitisBPaediatric
 * vaccineType.coding.display = "Hepatitis B (Paediatric)"
@@ -63,6 +64,7 @@ Usage: #definition
 
 Instance: PreQualDB29a71534ef44b701da06062075100739
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2025-01-20
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -114,6 +116,7 @@ Usage: #definition
 
 Instance: PreQualDBf455a733c51ebd231f8e748ff2d54292
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1998-04-01
 * vaccineType.coding.code = #Haemophilusinfluenzaetyp
 * vaccineType.coding.display = "Haemophilus influenzae type b"
@@ -165,6 +168,7 @@ Usage: #definition
 
 Instance: PreQualDB2b5b9b19671826d92dff00f622588487
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-05-08
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (acellular)"
@@ -216,6 +220,7 @@ Usage: #definition
 
 Instance: PreQualDB0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1999-03-11
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -267,6 +272,7 @@ Usage: #definition
 
 Instance: PreQualDBd748a38574e356813c814007a57c7781
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-02-07
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -318,6 +324,7 @@ Usage: #definition
 
 Instance: PreQualDB0e15fb29d9353a3e14d4b6d4180efb5a
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-03-05
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -369,6 +376,7 @@ Usage: #definition
 
 Instance: PreQualDB68d1e94dee14002a478bb763192fd4c8
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-02-14
 * vaccineType.coding.code = #Varicella
 * vaccineType.coding.display = "Varicella"
@@ -420,6 +428,7 @@ Usage: #definition
 
 Instance: PreQualDBa225473ed705ece5111f5bfcaf99f216
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -471,6 +480,7 @@ Usage: #definition
 
 Instance: PreQualDBe40454e099c809e80e245d28528c4f40
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -522,6 +532,7 @@ Usage: #definition
 
 Instance: PreQualDBee4fa99e6bfabbc2a99fe3b0ec7f6db4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-05-29
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -573,6 +584,7 @@ Usage: #definition
 
 Instance: PreQualDB508c17fc4a3f649c75478d6bc83ab3b4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-12-03
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -624,6 +636,7 @@ Usage: #definition
 
 Instance: PreQualDB92b29c115b94bfd6959395add8189921
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1991-02-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -675,6 +688,7 @@ Usage: #definition
 
 Instance: PreQualDBfa2cfb4dc7d79771ed47d86a3efc9167
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1991-02-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -726,6 +740,7 @@ Usage: #definition
 
 Instance: PreQualDB133dc209d46d1398e03c452ad1a537ed
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1994-09-27
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -777,6 +792,7 @@ Usage: #definition
 
 Instance: PreQualDB12ac64a6373a51fb383f4d55fc5e32b8
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2025-01-16
 * vaccineType.coding.code = #HepatitisBPaediatric
 * vaccineType.coding.display = "Hepatitis B (Paediatric)"
@@ -828,6 +844,7 @@ Usage: #definition
 
 Instance: PreQualDB790d33df8e93799f8894daabb900d356
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2025-01-16
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -879,6 +896,7 @@ Usage: #definition
 
 Instance: PreQualDB8da0ece0c48e47a9df9e0ad312343219
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-10-09
 * vaccineType.coding.code = #Covid19
 * vaccineType.coding.display = "Covid-19"
@@ -930,6 +948,7 @@ Usage: #definition
 
 Instance: PreQualDBfa4849f7532d522134f4102063af1617
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-03-20
 * vaccineType.coding.code = #PolioVaccineOralOPVTriva
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Trivalent"
@@ -981,6 +1000,7 @@ Usage: #definition
 
 Instance: PreQualDB4df3a93ab495d85b3583d0cd1ae3d83e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-03-20
 * vaccineType.coding.code = #PolioVaccineOralOPVTriva
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Trivalent"
@@ -1032,6 +1052,7 @@ Usage: #definition
 
 Instance: PreQualDB16e883911ea0108b8213bc213c9972fe
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-08-25
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1083,6 +1104,7 @@ Usage: #definition
 
 Instance: PreQualDB0e59118bc5938520115bac65a45be04d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-03-20
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1134,6 +1156,7 @@ Usage: #definition
 
 Instance: PreQualDBb62fbc87532804be42afa8d9050ef452
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-11-16
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1185,6 +1208,7 @@ Usage: #definition
 
 Instance: PreQualDB02c099d69cd245e7fcd3280a96f1dccb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-12-07
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1236,6 +1260,7 @@ Usage: #definition
 
 Instance: PreQualDBdecf3a77facc0b8f1443db5f7a806857
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-11-05
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1287,6 +1312,7 @@ Usage: #definition
 
 Instance: PreQualDB10aa94cef126e62542c2c45dc3604c0b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-05-26
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1338,6 +1364,7 @@ Usage: #definition
 
 Instance: PreQualDB26e6c50dfb385f223a12238dc6e202dd
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-03-19
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -1389,6 +1416,7 @@ Usage: #definition
 
 Instance: PreQualDBd86fa01b474096e0551b7c34b93fcdfc
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-07-09
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (acellular)"
@@ -1440,6 +1468,7 @@ Usage: #definition
 
 Instance: PreQualDBb342f0044a178c79f90b581a4a5208ba
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-10-14
 * vaccineType.coding.code = #HumanPapillomavirusBival
 * vaccineType.coding.display = "Human Papillomavirus (Bivalent)"
@@ -1491,6 +1520,7 @@ Usage: #definition
 
 Instance: PreQualDB8cb910c5702efa28db66bc22c8243188
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-12-17
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -1542,6 +1572,7 @@ Usage: #definition
 
 Instance: PreQualDB90bc0971e6434227a7385b7965be0958
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-07-08
 * vaccineType.coding.code = #HumanPapillomavirusBival
 * vaccineType.coding.display = "Human Papillomavirus (Bivalent)"
@@ -1593,6 +1624,7 @@ Usage: #definition
 
 Instance: PreQualDBd74dd5ffaeebfbdedd5ee981b05b45f5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-07-08
 * vaccineType.coding.code = #HumanPapillomavirusBival
 * vaccineType.coding.display = "Human Papillomavirus (Bivalent)"
@@ -1644,6 +1676,7 @@ Usage: #definition
 
 Instance: PreQualDB2afac141c6a2f5d7231a1db67e0613a5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-10-09
 * vaccineType.coding.code = #Covid19
 * vaccineType.coding.display = "Covid-19"
@@ -1693,6 +1726,7 @@ Usage: #definition
 
 Instance: PreQualDB88d9bdf685abb8563d94dae08fc1d860
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-12-19
 * vaccineType.coding.code = #Malaria
 * vaccineType.coding.display = "Malaria"
@@ -1744,6 +1778,7 @@ Usage: #definition
 
 Instance: PreQualDB8ffab92f1c77bcdc5b542565b27784b1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-03-25
 * vaccineType.coding.code = #DengueTetravalentliveatt
 * vaccineType.coding.display = "Dengue Tetravalent (live, attenuated)"
@@ -1795,6 +1830,7 @@ Usage: #definition
 
 Instance: PreQualDBa0aba531248cc7cc61d06551ad5ff9d7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -1846,6 +1882,7 @@ Usage: #definition
 
 Instance: PreQualDBa5dce7e8e00b2b288510772a7a75649c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -1897,6 +1934,7 @@ Usage: #definition
 
 Instance: PreQualDB4ceaeaed5cbda00d6675bc8593b37b9f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -1948,6 +1986,7 @@ Usage: #definition
 
 Instance: PreQualDB6fe64111c79a32586a23ac01403442ba
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -1999,6 +2038,7 @@ Usage: #definition
 
 Instance: PreQualDB6049297c180d7c6e46f6a9a817dcabb3
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -2050,6 +2090,7 @@ Usage: #definition
 
 Instance: PreQualDB5fd73b2ccd79a39acb5eb336e53f8315
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -2101,6 +2142,7 @@ Usage: #definition
 
 Instance: PreQualDB5b6b854e1885d59887a4eea0f4bd7a0c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -2152,6 +2194,7 @@ Usage: #definition
 
 Instance: PreQualDB39c0ef6a00b0846fb19fe4ca8fb376f7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -2203,6 +2246,7 @@ Usage: #definition
 
 Instance: PreQualDBc63556bc39df77ae14833feb5ac10a35
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -2254,6 +2298,7 @@ Usage: #definition
 
 Instance: PreQualDB927cff21ed0a901aa884339b766ee662
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -2305,6 +2350,7 @@ Usage: #definition
 
 Instance: PreQualDB7b8002a4a273e0a9f749c44ac968cf44
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -2356,6 +2402,7 @@ Usage: #definition
 
 Instance: PreQualDB2029c7c29c39910766a76fc788115bbc
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-06-23
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b"
@@ -2407,6 +2454,7 @@ Usage: #definition
 
 Instance: PreQualDB60c498d6555dec24de8a8ecc48ab1a02
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-05-26
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2458,6 +2506,7 @@ Usage: #definition
 
 Instance: PreQualDB828f395532066d11d360768aa0793f54
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-05-26
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2509,6 +2558,7 @@ Usage: #definition
 
 Instance: PreQualDBfdb459366fa4a85d1a7555bcad51264b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-05-26
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2560,6 +2610,7 @@ Usage: #definition
 
 Instance: PreQualDBa438e46e3587ece79794373e69bafc4d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-09-22
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2611,6 +2662,7 @@ Usage: #definition
 
 Instance: PreQualDB08be2bd220651dc1c79b4d7f252461ef
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-09-22
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2662,6 +2714,7 @@ Usage: #definition
 
 Instance: PreQualDB344e3ef97d8fe6c7d58c108f82a18dfb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-09-22
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2713,6 +2766,7 @@ Usage: #definition
 
 Instance: PreQualDB456bd99d59edd5a285d7ca2451541021
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-04-06
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -2764,6 +2818,7 @@ Usage: #definition
 
 Instance: PreQualDBf1c03e02b729d1b9da196f4dbfe675f1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-10-25
 * vaccineType.coding.code = #cholerainactivatedoral
 * vaccineType.coding.display = "cholera: inactivated oral"
@@ -2815,6 +2870,7 @@ Usage: #definition
 
 Instance: PreQualDBb45f38ad231b3faff40a3b3aa2d61cca
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-10-02
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2866,6 +2922,7 @@ Usage: #definition
 
 Instance: PreQualDB4e2900c73c70158b90a240513998895d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-10-02
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -2917,6 +2974,7 @@ Usage: #definition
 
 Instance: PreQualDB624c420054fd62b8831ca6db7627ac9a
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -2968,6 +3026,7 @@ Usage: #definition
 
 Instance: PreQualDB6ac3603e086e99d1f9727d94433b276f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -3019,6 +3078,7 @@ Usage: #definition
 
 Instance: PreQualDB53bb991260516f314ee605085dd1ba2c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -3070,6 +3130,7 @@ Usage: #definition
 
 Instance: PreQualDBa2f4a9e07cfeebbb99d5ae2e4cc0257f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-11-12
 * vaccineType.coding.code = #EbolaZairerVSVGZEBOVGPli
 * vaccineType.coding.display = "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)"
@@ -3121,6 +3182,7 @@ Usage: #definition
 
 Instance: PreQualDBf949888fce8cdf016cfc06644a16afbb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-02-10
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -3172,6 +3234,7 @@ Usage: #definition
 
 Instance: PreQualDB9d194caa1c66fb809622f25ec6f79f5c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-02-10
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -3223,6 +3286,7 @@ Usage: #definition
 
 Instance: PreQualDB0854d534a200bbeffa8be0f57dad584a
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-06-01
 * vaccineType.coding.code = #PolioVaccineInactivatedS
 * vaccineType.coding.display = "Polio Vaccine - Inactivated Sabin (sIPV)"
@@ -3274,6 +3338,7 @@ Usage: #definition
 
 Instance: PreQualDB031f63df3184acdf0cb82f90f316b6c3
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-12-21
 * vaccineType.coding.code = #PolioVaccineInactivatedS
 * vaccineType.coding.display = "Polio Vaccine - Inactivated Sabin (sIPV)"
@@ -3325,6 +3390,7 @@ Usage: #definition
 
 Instance: PreQualDB7431cfff77d30de2a89868b3bd4a2f9d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-01-21
 * vaccineType.coding.code = #HepatitisBPaediatric
 * vaccineType.coding.display = "Hepatitis B (Paediatric)"
@@ -3376,6 +3442,7 @@ Usage: #definition
 
 Instance: PreQualDB2c48b25fdefb970fc85dbb63e04fe744
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1996-11-22
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -3427,6 +3494,7 @@ Usage: #definition
 
 Instance: PreQualDB953ab5cac67cbb23eeab9e794501209d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1996-11-22
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -3478,6 +3546,7 @@ Usage: #definition
 
 Instance: PreQualDB9e735ce376b3d71987e9c2054ba0590a
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-12-23
 * vaccineType.coding.code = #cholerainactivatedoral
 * vaccineType.coding.display = "cholera: inactivated oral"
@@ -3529,6 +3598,7 @@ Usage: #definition
 
 Instance: PreQualDB242d7b0c599da706838dbbdaa4d78d9b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-08-11
 * vaccineType.coding.code = #cholerainactivatedoral
 * vaccineType.coding.display = "cholera: inactivated oral"
@@ -3580,6 +3650,7 @@ Usage: #definition
 
 Instance: PreQualDBd628c6599248f979f6fdf6145e8606b0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-04-12
 * vaccineType.coding.code = #cholerainactivatedoral
 * vaccineType.coding.display = "cholera: inactivated oral"
@@ -3631,6 +3702,7 @@ Usage: #definition
 
 Instance: PreQualDB888045063db8e551a4e395130d66cd64
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2025-01-09
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -3682,6 +3754,7 @@ Usage: #definition
 
 Instance: PreQualDB8b43bd5416101efc433940c20e424971
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-11-04
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -3733,6 +3806,7 @@ Usage: #definition
 
 Instance: PreQualDB37f198a748f37e28fa533b43fb8b4ca4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-11-04
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -3784,6 +3858,7 @@ Usage: #definition
 
 Instance: PreQualDBe6bf7aa0fe6620e314ba0c0c24a45d07
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-07-09
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -3835,6 +3910,7 @@ Usage: #definition
 
 Instance: PreQualDBc76596a60cfa755021c2efe65100805b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-12-16
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -3886,6 +3962,7 @@ Usage: #definition
 
 Instance: PreQualDB6d6849ce69076acc0842734b9a0d375c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-02-09
 * vaccineType.coding.code = #HumanPapillomavirusNinev
 * vaccineType.coding.display = "Human Papillomavirus (Ninevalent)"
@@ -3937,6 +4014,7 @@ Usage: #definition
 
 Instance: PreQualDB551b21b1ec1a67bbb0009f875faf7823
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-05-20
 * vaccineType.coding.code = #HumanPapillomavirusQuadr
 * vaccineType.coding.display = "Human Papillomavirus (Quadrivalent)"
@@ -3988,6 +4066,7 @@ Usage: #definition
 
 Instance: PreQualDBf45d14eded02944191a947ce6ede1a69
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-04-12
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -4039,6 +4118,7 @@ Usage: #definition
 
 Instance: PreQualDBe9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-11-07
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -4090,6 +4170,7 @@ Usage: #definition
 
 Instance: PreQualDBb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-12-21
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -4141,6 +4222,7 @@ Usage: #definition
 
 Instance: PreQualDB183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-04-03
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -4192,6 +4274,7 @@ Usage: #definition
 
 Instance: PreQualDB6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-05-11
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -4243,6 +4326,7 @@ Usage: #definition
 
 Instance: PreQualDB8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2008-11-17
 * vaccineType.coding.code = #Haemophilusinfluenzaetyp
 * vaccineType.coding.display = "Haemophilus influenzae type b"
@@ -4294,6 +4378,7 @@ Usage: #definition
 
 Instance: PreQualDBa1708bd501df3103f85e2df44bcf0003
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-07-19
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
@@ -4345,6 +4430,7 @@ Usage: #definition
 
 Instance: PreQualDBbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-07-19
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
@@ -4396,6 +4482,7 @@ Usage: #definition
 
 Instance: PreQualDBb1b534f4defa78597b059a190a77b357
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
@@ -4447,6 +4534,7 @@ Usage: #definition
 
 Instance: PreQualDBc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
@@ -4498,6 +4586,7 @@ Usage: #definition
 
 Instance: PreQualDB7402fe6f607aee04fc3800e7258809a9
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-12-11
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4549,6 +4638,7 @@ Usage: #definition
 
 Instance: PreQualDBa2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-12-11
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4600,6 +4690,7 @@ Usage: #definition
 
 Instance: PreQualDBc63592587d84458436293a1b52964f2d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4651,6 +4742,7 @@ Usage: #definition
 
 Instance: PreQualDB5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4702,6 +4794,7 @@ Usage: #definition
 
 Instance: PreQualDB2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4753,6 +4846,7 @@ Usage: #definition
 
 Instance: PreQualDBb2a3129f600781cc753b011290b09acb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4804,6 +4898,7 @@ Usage: #definition
 
 Instance: PreQualDBf4177b409d09d83e48630717437c5aea
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-03-21
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
@@ -4855,6 +4950,7 @@ Usage: #definition
 
 Instance: PreQualDB0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-03-21
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
@@ -4906,6 +5002,7 @@ Usage: #definition
 
 Instance: PreQualDBd54558e2851d29311ee7f90975827dc7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-12-19
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
@@ -4957,6 +5054,7 @@ Usage: #definition
 
 Instance: PreQualDB30b66eeb49e7056ae34bdeae70658f8b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-05-25
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -5008,6 +5106,7 @@ Usage: #definition
 
 Instance: PreQualDB25fc0fcf4e56d016e349a170104a5840
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-09-18
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (live, attenuated)"
@@ -5059,6 +5158,7 @@ Usage: #definition
 
 Instance: PreQualDB01c42855480e72f00caf639ab9157baf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1997-07-22
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -5110,6 +5210,7 @@ Usage: #definition
 
 Instance: PreQualDB532ef986c8042bbb15fee24056fdc4ed
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2005-12-09
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -5161,6 +5262,7 @@ Usage: #definition
 
 Instance: PreQualDB1b03f110ef15d36c9664465098d3adec
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-09-13
 * vaccineType.coding.code = #SmallpoxandMpoxvaccineLi
 * vaccineType.coding.display = "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
@@ -5212,6 +5314,7 @@ Usage: #definition
 
 Instance: PreQualDB13ecad42baa7d2234f337b12f32b52de
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-01-28
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -5263,6 +5366,7 @@ Usage: #definition
 
 Instance: PreQualDB967a1c59b6590047a341c18013831c4b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-01-28
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -5314,6 +5418,7 @@ Usage: #definition
 
 Instance: PreQualDB4326726a809bbcd312e4f29a90082bb6
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-02-25
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -5365,6 +5470,7 @@ Usage: #definition
 
 Instance: PreQualDB5268d009fa44e51462fcdcbcbc80ebf3
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-04-26
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -5416,6 +5522,7 @@ Usage: #definition
 
 Instance: PreQualDB3ec4a63eb2160bf9a65d9fd69f5de160
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-06-09
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -5467,6 +5574,7 @@ Usage: #definition
 
 Instance: PreQualDB096666bb5a86521c6c6046227092334d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-10-20
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -5518,6 +5626,7 @@ Usage: #definition
 
 Instance: PreQualDB30fd25d892863f955ec6f9b57c328dbb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-02-19
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -5569,6 +5678,7 @@ Usage: #definition
 
 Instance: PreQualDB087ff26057e89c006517428347dfbc3c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-12-23
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -5620,6 +5730,7 @@ Usage: #definition
 
 Instance: PreQualDB88482ae2796337d6f7832238bdf003fb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-10-08
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (live, attenuated)"
@@ -5671,6 +5782,7 @@ Usage: #definition
 
 Instance: PreQualDBc6a1b72f22ca5f875ca681973d42742c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-10-08
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (live, attenuated)"
@@ -5722,6 +5834,7 @@ Usage: #definition
 
 Instance: PreQualDB030f186c51ac8780d767bcba8f2762b2
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-08-03
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
@@ -5773,6 +5886,7 @@ Usage: #definition
 
 Instance: PreQualDB436f9ace27daebdccddb8279b66a3e98
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-10-02
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
@@ -5824,6 +5938,7 @@ Usage: #definition
 
 Instance: PreQualDB7d5507cd0733a44eaa4072b888176783
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-07-12
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (Inactivated) 6µg"
@@ -5875,6 +5990,7 @@ Usage: #definition
 
 Instance: PreQualDB94b97202e37b591c7b7da316ff2bca00
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-10-02
 * vaccineType.coding.code = #JapaneseEncephalitisVacc
 * vaccineType.coding.display = "Japanese Encephalitis Vaccine (Inactivated) 6µg"
@@ -5926,6 +6042,7 @@ Usage: #definition
 
 Instance: PreQualDBa64cf480e98d911934cc1e33dd1d99dd
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-09-24
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -5977,6 +6094,7 @@ Usage: #definition
 
 Instance: PreQualDBd3425606d671107b4265df9a9b33c318
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-09-24
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6028,6 +6146,7 @@ Usage: #definition
 
 Instance: PreQualDB77c8d21c6e4f7faaa12d93564b5c97bc
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-09-24
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6079,6 +6198,7 @@ Usage: #definition
 
 Instance: PreQualDBb59a78efc3a033a13b483b20d386fca5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2000-07-18
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6130,6 +6250,7 @@ Usage: #definition
 
 Instance: PreQualDB635f19b7add7fab78d60262e086e4543
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2000-07-18
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6181,6 +6302,7 @@ Usage: #definition
 
 Instance: PreQualDB65d4761f7dd7345dd02cd11109a1cf8c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2000-07-18
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6232,6 +6354,7 @@ Usage: #definition
 
 Instance: PreQualDB9fa0f8f3b99bdc45a172ae498f3f0105
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2000-07-18
 * vaccineType.coding.code = #MeaslesandRubella
 * vaccineType.coding.display = "Measles and Rubella"
@@ -6283,6 +6406,7 @@ Usage: #definition
 
 Instance: PreQualDBf1e33f21c2c353e67218f267dd73ea38
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-09-04
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6334,6 +6458,7 @@ Usage: #definition
 
 Instance: PreQualDBf4749d5c7dc03738b6fad169dd71fa00
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1997-04-09
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6385,6 +6510,7 @@ Usage: #definition
 
 Instance: PreQualDBaa790a232317076de88d43837608f860
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6436,6 +6562,7 @@ Usage: #definition
 
 Instance: PreQualDB0269fa56eaf4988d90c519518ec6282e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6487,6 +6614,7 @@ Usage: #definition
 
 Instance: PreQualDB8f5df4935259a7c2d8a2dc97918336fc
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6538,6 +6666,7 @@ Usage: #definition
 
 Instance: PreQualDB22043a8ed978f482a283310ca4b73aa0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #Measles
 * vaccineType.coding.display = "Measles"
@@ -6589,6 +6718,7 @@ Usage: #definition
 
 Instance: PreQualDBbe9b0af328a5e3832c8004f7ec7d7657
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -6640,6 +6770,7 @@ Usage: #definition
 
 Instance: PreQualDB3e4662a10c91ed08c81f3163d43da4eb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -6691,6 +6822,7 @@ Usage: #definition
 
 Instance: PreQualDBa1b8577c56035c4ad388e6a93986a21e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -6742,6 +6874,7 @@ Usage: #definition
 
 Instance: PreQualDB83ee5151e18552493e5441543f6cc8cb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -6793,6 +6926,7 @@ Usage: #definition
 
 Instance: PreQualDB4caa75a5785775ab99aa60248da4fc29
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-03-21
 * vaccineType.coding.code = #MeningococcalACYW135conj
 * vaccineType.coding.display = "Meningococcal ACYW-135 (conjugate vaccine)"
@@ -6844,6 +6978,7 @@ Usage: #definition
 
 Instance: PreQualDB62f4ead3da74f2f31a51006339af12fe
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-07-06
 * vaccineType.coding.code = #MenigococcalACYWXPolysac
 * vaccineType.coding.display = "Menigococcal ACYWX (Polysaccharide conjugate)"
@@ -6895,6 +7030,7 @@ Usage: #definition
 
 Instance: PreQualDB6e9e4e4a66528692b80623cf9b12d209
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-07-06
 * vaccineType.coding.code = #MenigococcalACYWXPolysac
 * vaccineType.coding.display = "Menigococcal ACYWX (Polysaccharide conjugate)"
@@ -6946,6 +7082,7 @@ Usage: #definition
 
 Instance: PreQualDB59a4a8dd61e6115a46849c83d7b6fd2c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-12-30
 * vaccineType.coding.code = #MeningococcalAConjugate5
 * vaccineType.coding.display = "Meningococcal A Conjugate 5 µg"
@@ -6997,6 +7134,7 @@ Usage: #definition
 
 Instance: PreQualDB41addf46a75c0e97534853e5745f15d0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-06-23
 * vaccineType.coding.code = #MeningococcalAConjugate1
 * vaccineType.coding.display = "Meningococcal A Conjugate 10 µg"
@@ -7048,6 +7186,7 @@ Usage: #definition
 
 Instance: PreQualDB85e37fdf8b368c828f1e3bf048f6ca6d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-01-28
 * vaccineType.coding.code = #MeningococcalACYW135Teta
 * vaccineType.coding.display = "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)"
@@ -7099,6 +7238,7 @@ Usage: #definition
 
 Instance: PreQualDB95cae3b1768b8647e3f971137397d84f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-07-31
 * vaccineType.coding.code = #MeningococcalACYW135conj
 * vaccineType.coding.display = "Meningococcal ACYW-135 (conjugate vaccine)"
@@ -7150,6 +7290,7 @@ Usage: #definition
 
 Instance: PreQualDBcea74be2c728329aad7b9b33ae16a0b1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-11-03
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
@@ -7201,6 +7342,7 @@ Usage: #definition
 
 Instance: PreQualDBef716e2b9567223ce6c95b090480ecfe
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-06-21
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
@@ -7252,6 +7394,7 @@ Usage: #definition
 
 Instance: PreQualDBae7e506ca48a3aa605b188cd11eaceab
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-11-03
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
@@ -7303,6 +7446,7 @@ Usage: #definition
 
 Instance: PreQualDB483f7a671c76d38fef929bed60c3934f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-07-15
 * vaccineType.coding.code = #Malaria
 * vaccineType.coding.display = "Malaria"
@@ -7354,6 +7498,7 @@ Usage: #definition
 
 Instance: PreQualDBe447fe0b4d8469dedecdf17870fdae80
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-04-27
 * vaccineType.coding.code = #EbolavaccineMVABNFilorec
 * vaccineType.coding.display = "Ebola vaccine (MVA-BN-Filo [recombinant])"
@@ -7405,6 +7550,7 @@ Usage: #definition
 
 Instance: PreQualDBd2c75a15ed309658b3968519ddb31690
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-03-26
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -7456,6 +7602,7 @@ Usage: #definition
 
 Instance: PreQualDB771d1a5c0acaee3e2dc9d56af1aba49d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-03-26
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -7507,6 +7654,7 @@ Usage: #definition
 
 Instance: PreQualDBe929626497bdbb71adbe925f0c09c79f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-03-26
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -7558,6 +7706,7 @@ Usage: #definition
 
 Instance: PreQualDB48693eb423ca747a21dc8951d0c84948
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-11-26
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -7609,6 +7758,7 @@ Usage: #definition
 
 Instance: PreQualDB7168c312db80310f2cd6012ffa5e2f8f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-11-26
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -7660,6 +7810,7 @@ Usage: #definition
 
 Instance: PreQualDBeb55e6f37bc19bec445ee030c5bce405
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2015-09-30
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -7711,6 +7862,7 @@ Usage: #definition
 
 Instance: PreQualDBb59403bf43f59483bc3d5811fbbe99ae
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-08-31
 * vaccineType.coding.code = #MeningococcalACYW135conj
 * vaccineType.coding.display = "Meningococcal ACYW-135 (conjugate vaccine)"
@@ -7762,6 +7914,7 @@ Usage: #definition
 
 Instance: PreQualDB844b4cd71587aa7b05205985fadc54bf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-07-06
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -7813,6 +7966,7 @@ Usage: #definition
 
 Instance: PreQualDB2d90fb090e2c500ab939d14b59fe7b4c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-09-17
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -7864,6 +8018,7 @@ Usage: #definition
 
 Instance: PreQualDB765d85d2d2e92fc0aa155a4189f60843
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-09-17
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -7915,6 +8070,7 @@ Usage: #definition
 
 Instance: PreQualDB93f61c0e63644a7adbd43720ad096a6b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-03-09
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -7966,6 +8122,7 @@ Usage: #definition
 
 Instance: PreQualDBf9fde2170e347e77162f463b9c3a2753
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-07-12
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -8017,6 +8174,7 @@ Usage: #definition
 
 Instance: PreQualDB5d2f3b492c9af0f21b268c22a11400c0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-07-12
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -8068,6 +8226,7 @@ Usage: #definition
 
 Instance: PreQualDB28645bb5f0babbccee86ce69b98ec9d6
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-12-21
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -8119,6 +8278,7 @@ Usage: #definition
 
 Instance: PreQualDB493bac374b484cee83f218d75bca265e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-05-18
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8170,6 +8330,7 @@ Usage: #definition
 
 Instance: PreQualDB588074b4bc22a6afb41276d6e3a1bc57
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-11-27
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8221,6 +8382,7 @@ Usage: #definition
 
 Instance: PreQualDB32779e6bf47670e22e3b351cfc5530c4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-11-27
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8272,6 +8434,7 @@ Usage: #definition
 
 Instance: PreQualDBe3b135252953c7f29f4a82b3cdfded35
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2012-05-18
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8323,6 +8486,7 @@ Usage: #definition
 
 Instance: PreQualDB120c366956f5490de6fe5fa85ba7e9ae
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-09-01
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8374,6 +8538,7 @@ Usage: #definition
 
 Instance: PreQualDB520f511adb804a1ca5d7fa29d15799b3
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-09-01
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8425,6 +8590,7 @@ Usage: #definition
 
 Instance: PreQualDBa0ac41f8d8a64a093a5e07f7c9bbc8e4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-07-31
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -8476,6 +8642,7 @@ Usage: #definition
 
 Instance: PreQualDB76f7fbefcf37814d2dbf2af5d784ad74
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-07-31
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)"
@@ -8527,6 +8694,7 @@ Usage: #definition
 
 Instance: PreQualDBf6d840e9cf722a80b38d0be001f47caf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-01-14
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
@@ -8578,6 +8746,7 @@ Usage: #definition
 
 Instance: PreQualDBe0bcdc085107751b3df34ad04620ac21
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-08-31
 * vaccineType.coding.code = #PolioVaccineOralOPVTriva
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Trivalent"
@@ -8629,6 +8798,7 @@ Usage: #definition
 
 Instance: PreQualDB98147a8d5841bb5826a0742c93febdb7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-12-18
 * vaccineType.coding.code = #InfluenzaPandemicH5N1
 * vaccineType.coding.display = "Influenza, Pandemic (H5N1)"
@@ -8680,6 +8850,7 @@ Usage: #definition
 
 Instance: PreQualDB088d100de56d00ac49ab0a216ffd4424
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-01-22
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -8731,6 +8902,7 @@ Usage: #definition
 
 Instance: PreQualDB526f1bed643beeed056c10f07a683f71
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-12-01
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -8782,6 +8954,7 @@ Usage: #definition
 
 Instance: PreQualDB4aadc8e795e664423aad5161f0118f34
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-12-19
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8833,6 +9006,7 @@ Usage: #definition
 
 Instance: PreQualDB54d8790e5e5db152340b4fd96e6f2f11
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-12-19
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
@@ -8884,6 +9058,7 @@ Usage: #definition
 
 Instance: PreQualDB096d9e8c31e30cc1148311ee66359a50
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-04-21
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -8935,6 +9110,7 @@ Usage: #definition
 
 Instance: PreQualDB81604632fc612703d280e60af24938ea
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-12-18
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -8986,6 +9162,7 @@ Usage: #definition
 
 Instance: PreQualDB300c6fe07dc895ee2b3022528850d26e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-12-18
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -9037,6 +9214,7 @@ Usage: #definition
 
 Instance: PreQualDB82c42719edaea37e1696ebde6674128c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-01-19
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -9088,6 +9266,7 @@ Usage: #definition
 
 Instance: PreQualDB7d442364610244382098e1c4a3ba54c3
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-10-29
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
@@ -9139,6 +9318,7 @@ Usage: #definition
 
 Instance: PreQualDB4580ab03228ed6c70bb6c117b408f7e5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-10-29
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
@@ -9190,6 +9370,7 @@ Usage: #definition
 
 Instance: PreQualDB7a252b223173567f21721ee15a36f057
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-10-05
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
@@ -9241,6 +9422,7 @@ Usage: #definition
 
 Instance: PreQualDBf22fcdfa611173d0afbce56d49867530
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-10-05
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
@@ -9292,6 +9474,7 @@ Usage: #definition
 
 Instance: PreQualDB1b2bdb769d38e0b45eb60707ff9a36cb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-05-11
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
@@ -9343,6 +9526,7 @@ Usage: #definition
 
 Instance: PreQualDBb4755cab194f57a5fecc8d890856bbdf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-05-11
 * vaccineType.coding.code = #PolioVaccineOralOPVMonov
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
@@ -9394,6 +9578,7 @@ Usage: #definition
 
 Instance: PreQualDB14c88c2e9b35698b4726903940c58037
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-10-29
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -9445,6 +9630,7 @@ Usage: #definition
 
 Instance: PreQualDB2d10261076734e48cd7b289de6ea802e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-10-29
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -9496,6 +9682,7 @@ Usage: #definition
 
 Instance: PreQualDBc726fd7210023aa5738617a79cae2b40
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-12-06
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -9547,6 +9734,7 @@ Usage: #definition
 
 Instance: PreQualDB65b137f0201901bc43fc8759e4f35f35
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-07-29
 * vaccineType.coding.code = #PolioVaccineNovelOralnOP
 * vaccineType.coding.display = "Polio Vaccine - Novel Oral (nOPV) Type 2"
@@ -9598,6 +9786,7 @@ Usage: #definition
 
 Instance: PreQualDB278e9af5dc50904dd144a7ceb4d42dd7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-12-27
 * vaccineType.coding.code = #PolioVaccineNovelOralnOP
 * vaccineType.coding.display = "Polio Vaccine - Novel Oral (nOPV) Type 2"
@@ -9649,6 +9838,7 @@ Usage: #definition
 
 Instance: PreQualDBab7589153ddbc7968e1749119c5b1678
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-07-29
 * vaccineType.coding.code = #PolioVaccineNovelOralnOP
 * vaccineType.coding.display = "Polio Vaccine - Novel Oral (nOPV) Type 2"
@@ -9700,6 +9890,7 @@ Usage: #definition
 
 Instance: PreQualDB1d63ab46cee67d02439c47ed91439667
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-10-28
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -9751,6 +9942,7 @@ Usage: #definition
 
 Instance: PreQualDB13e82343f8e192fe6e3fbfbf2a47ffd7
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-10-28
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -9802,6 +9994,7 @@ Usage: #definition
 
 Instance: PreQualDBf8085a2bd9a1c84fba1adee2ec6f6fb1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-10-28
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -9853,6 +10046,7 @@ Usage: #definition
 
 Instance: PreQualDBfea93261bf2f096ea48aed825522dc2d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-07-11
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -9904,6 +10098,7 @@ Usage: #definition
 
 Instance: PreQualDBdcbfa0a541c65032a917c39fa762c2f9
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-12-21
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -9955,6 +10150,7 @@ Usage: #definition
 
 Instance: PreQualDB06bf2d06adcc6d9e2bea8ac21846bb09
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-10-22
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -10006,6 +10202,7 @@ Usage: #definition
 
 Instance: PreQualDBa5416e91021f0c00915e4688ff508717
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2013-02-04
 * vaccineType.coding.code = #PolioVaccineOralOPVBival
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
@@ -10057,6 +10254,7 @@ Usage: #definition
 
 Instance: PreQualDB2050ea67709cfcde28a01f0546276e96
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-06-06
 * vaccineType.coding.code = #PolioVaccineInactivatedS
 * vaccineType.coding.display = "Polio Vaccine - Inactivated Sabin (sIPV)"
@@ -10108,6 +10306,7 @@ Usage: #definition
 
 Instance: PreQualDB25383b1f589d42af3719c7074f982c9b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-02-15
 * vaccineType.coding.code = #PolioVaccineInactivatedS
 * vaccineType.coding.display = "Polio Vaccine - Inactivated Sabin (sIPV)"
@@ -10159,6 +10358,7 @@ Usage: #definition
 
 Instance: PreQualDBd554f4c3848920ca8bcd00d44afd18a4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-08-29
 * vaccineType.coding.code = #PolioVaccineInactivatedS
 * vaccineType.coding.display = "Polio Vaccine - Inactivated Sabin (sIPV)"
@@ -10210,6 +10410,7 @@ Usage: #definition
 
 Instance: PreQualDB3cde3a30cacdc23b9ec3bdf4ba9d23ff
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2014-11-28
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -10261,6 +10462,7 @@ Usage: #definition
 
 Instance: PreQualDB4562bbd80c6e57dbe29b122817623854
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-02-29
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -10312,6 +10514,7 @@ Usage: #definition
 
 Instance: PreQualDBbd7faeaf3f0e633420fba396895d6cc9
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-02-02
 * vaccineType.coding.code = #PolioVaccineOralOPVTriva
 * vaccineType.coding.display = "Polio Vaccine - Oral (OPV) Trivalent"
@@ -10363,6 +10566,7 @@ Usage: #definition
 
 Instance: PreQualDBd76340c94c13863d00dcf437778fc804
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-08-20
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -10414,6 +10618,7 @@ Usage: #definition
 
 Instance: PreQualDB083cce20a86e6f530b905d4d6e72136c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2016-07-14
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -10465,6 +10670,7 @@ Usage: #definition
 
 Instance: PreQualDBa83fd7c161c4c48ad786e3ff49073adf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-03-09
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -10516,6 +10722,7 @@ Usage: #definition
 
 Instance: PreQualDB5391a66b3bec700dd62d02c2687a9f2f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-12-21
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -10567,6 +10774,7 @@ Usage: #definition
 
 Instance: PreQualDBa742565a0d07d6c92f087a1c055ab278
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-05-09
 * vaccineType.coding.code = #DengueTetravalentliveatt
 * vaccineType.coding.display = "Dengue Tetravalent (live, attenuated)"
@@ -10618,6 +10826,7 @@ Usage: #definition
 
 Instance: PreQualDB99ca7b265fb87731abd4ff27d13b44cd
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-04-26
 * vaccineType.coding.code = #Haemophilusinfluenzaetyp
 * vaccineType.coding.display = "Haemophilus influenzae type b"
@@ -10669,6 +10878,7 @@ Usage: #definition
 
 Instance: PreQualDB34cd73607a9432893b41df94a5a9d0d2
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-12-19
 * vaccineType.coding.code = #Malaria
 * vaccineType.coding.display = "Malaria"
@@ -10720,6 +10930,7 @@ Usage: #definition
 
 Instance: PreQualDBf2b192bfc92c1c7871308ada29a061c4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-12-20
 * vaccineType.coding.code = #Rabies
 * vaccineType.coding.display = "Rabies"
@@ -10771,6 +10982,7 @@ Usage: #definition
 
 Instance: PreQualDBf53615897edbe997d964e625d344ccdc
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-01-06
 * vaccineType.coding.code = #MeaslesMumpsandRubella
 * vaccineType.coding.display = "Measles, Mumps and Rubella"
@@ -10822,6 +11034,7 @@ Usage: #definition
 
 Instance: PreQualDB0b0dd154bb4274f5fd8784b59e2fe275
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-03-12
 * vaccineType.coding.code = #Rotavirus
 * vaccineType.coding.display = "Rotavirus"
@@ -10873,6 +11086,7 @@ Usage: #definition
 
 Instance: PreQualDB53fcb319f717ccabdb38629caa624b20
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-02-14
 * vaccineType.coding.code = #Rotavirus
 * vaccineType.coding.display = "Rotavirus"
@@ -10924,6 +11138,7 @@ Usage: #definition
 
 Instance: PreQualDBbc017d15d7f431bd0424354df11c18c8
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-03-12
 * vaccineType.coding.code = #Rotavirus
 * vaccineType.coding.display = "Rotavirus"
@@ -10975,6 +11190,7 @@ Usage: #definition
 
 Instance: PreQualDBaba1269c8eed435e58d27f99062aab7f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-09-21
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11026,6 +11242,7 @@ Usage: #definition
 
 Instance: PreQualDB846073e8efc59e6bde4f3aa8c7008f8e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-09-21
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11077,6 +11294,7 @@ Usage: #definition
 
 Instance: PreQualDB5d0aee9435820780b60fc3f11ce1cfb0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2023-09-13
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11128,6 +11346,7 @@ Usage: #definition
 
 Instance: PreQualDB84971742b6ec638f100087e1907dd8ad
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-10-08
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11179,6 +11398,7 @@ Usage: #definition
 
 Instance: PreQualDBa28f27ab86847575f0c86632fa40e736
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-02-18
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11230,6 +11450,7 @@ Usage: #definition
 
 Instance: PreQualDBbab8551131e5a5ecce02dcb55bce1647
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-01-28
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11281,6 +11502,7 @@ Usage: #definition
 
 Instance: PreQualDBc988bcb87cb2a881e4e0193a1794c184
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-01-28
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11332,6 +11554,7 @@ Usage: #definition
 
 Instance: PreQualDBf4c0952b7ac2caea70a5dd2b4e44a705
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2008-10-07
 * vaccineType.coding.code = #Rotavirus
 * vaccineType.coding.display = "Rotavirus"
@@ -11383,6 +11606,7 @@ Usage: #definition
 
 Instance: PreQualDBa4d4cf1eeafbb570eaec6b91bd8c1642
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-01-05
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11434,6 +11658,7 @@ Usage: #definition
 
 Instance: PreQualDB247d96f0d9d687ba45daac8fd4aef6e1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-01-05
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11485,6 +11710,7 @@ Usage: #definition
 
 Instance: PreQualDB6cf88a56e306e621e5f6c06e754d492d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-06-18
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11536,6 +11762,7 @@ Usage: #definition
 
 Instance: PreQualDB44f5911f2722c9c2ab4caa5e4a2ee009
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-06-18
 * vaccineType.coding.code = #Rotavirusliveattenuated
 * vaccineType.coding.display = "Rotavirus (live, attenuated)"
@@ -11587,6 +11814,7 @@ Usage: #definition
 
 Instance: PreQualDBb58ecc88973c368d2929674f7588dcaf
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-09-01
 * vaccineType.coding.code = #Rubella
 * vaccineType.coding.display = "Rubella"
@@ -11638,6 +11866,7 @@ Usage: #definition
 
 Instance: PreQualDB92d62b88e7a6bda1cdffd774c099112d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-09-01
 * vaccineType.coding.code = #Rubella
 * vaccineType.coding.display = "Rubella"
@@ -11689,6 +11918,7 @@ Usage: #definition
 
 Instance: PreQualDB5256bec4bd8bae0e45743e9d569db466
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-09-01
 * vaccineType.coding.code = #Rubella
 * vaccineType.coding.display = "Rubella"
@@ -11740,6 +11970,7 @@ Usage: #definition
 
 Instance: PreQualDB0bb48b4861045ee347f5539609d92bbd
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-09-01
 * vaccineType.coding.code = #Rubella
 * vaccineType.coding.display = "Rubella"
@@ -11791,6 +12022,7 @@ Usage: #definition
 
 Instance: PreQualDB1de83fee04f2d8630ea4ff089ae47443
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-05-25
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -11842,6 +12074,7 @@ Usage: #definition
 
 Instance: PreQualDBbcc643f5ed406d46ed23bf1e0ff46cd1
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-09-29
 * vaccineType.coding.code = #cholerainactivatedoral
 * vaccineType.coding.display = "cholera: inactivated oral"
@@ -11893,6 +12126,7 @@ Usage: #definition
 
 Instance: PreQualDB81ee9ba77c4419bbfe44a27cfd10027e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-10-01
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -11944,6 +12178,7 @@ Usage: #definition
 
 Instance: PreQualDB8b13b5fcf5e9268b345775be7c3f077c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-04-22
 * vaccineType.coding.code = #PolioVaccineInactivatedI
 * vaccineType.coding.display = "Polio Vaccine - Inactivated (IPV)"
@@ -11995,6 +12230,7 @@ Usage: #definition
 
 Instance: PreQualDB01a3b83cf13e87948437db11cf5c34eb
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-10-14
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -12046,6 +12282,7 @@ Usage: #definition
 
 Instance: PreQualDB857b54237833aa49172d24b749788cd8
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-12-27
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -12097,6 +12334,7 @@ Usage: #definition
 
 Instance: PreQualDB2329c9c335034cc9d169c85cb142f137
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-12-27
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -12148,6 +12386,7 @@ Usage: #definition
 
 Instance: PreQualDBa7caaed8ed28906a817fdfe7f26bb696
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-05-15
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -12199,6 +12438,7 @@ Usage: #definition
 
 Instance: PreQualDBbc5b1b4b2ba40fb3b9743077a086766e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-04-08
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -12250,6 +12490,7 @@ Usage: #definition
 
 Instance: PreQualDB14f33effe6b84f89d3c5d07663cce92b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-02-21
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"
@@ -12301,6 +12542,7 @@ Usage: #definition
 
 Instance: PreQualDB8133c14443b0a3b1b10b846723961fee
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-12-09
 * vaccineType.coding.code = #Varicella
 * vaccineType.coding.display = "Varicella"
@@ -12352,6 +12594,7 @@ Usage: #definition
 
 Instance: PreQualDBf82b015dfb3b1feeacd4c44d95b3b3ec
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -12403,6 +12646,7 @@ Usage: #definition
 
 Instance: PreQualDB223330a7c15da86b21cc363f591de002
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -12454,6 +12698,7 @@ Usage: #definition
 
 Instance: PreQualDBffea8448252ee58b7a92add05f0c3431
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -12505,6 +12750,7 @@ Usage: #definition
 
 Instance: PreQualDBd8a09f80301dc05e124f99ffe7711fc0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -12556,6 +12802,7 @@ Usage: #definition
 
 Instance: PreQualDBfcf21ee9ff8e209c022200a4d776dda0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2009-10-30
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -12607,6 +12854,7 @@ Usage: #definition
 
 Instance: PreQualDB0defc68f369dcb9815e2bc4a6ee5533f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2010-03-19
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -12658,6 +12906,7 @@ Usage: #definition
 
 Instance: PreQualDB1bc532b4004e4c37e8503a66c775e9cd
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-10-16
 * vaccineType.coding.code = #Pneumococcalconjugate
 * vaccineType.coding.display = "Pneumococcal (conjugate)"
@@ -12709,6 +12958,7 @@ Usage: #definition
 
 Instance: PreQualDB015e0d747befdc032a505ac960851497
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -12760,6 +13010,7 @@ Usage: #definition
 
 Instance: PreQualDB36463c650975ef84b1519bc55647a533
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DiphtheriaTetanusreduced
 * vaccineType.coding.display = "Diphtheria-Tetanus (reduced antigen content)"
@@ -12811,6 +13062,7 @@ Usage: #definition
 
 Instance: PreQualDB3d3b58060f5dc09709e826ea5b7f635d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -12862,6 +13114,7 @@ Usage: #definition
 
 Instance: PreQualDB0cb7838cdb9015a56943ac3256e7c9e0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -12913,6 +13166,7 @@ Usage: #definition
 
 Instance: PreQualDB918ff9b5bd4b52ff9f2adf81368501a5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -12964,6 +13218,7 @@ Usage: #definition
 
 Instance: PreQualDB74a886b0b82debce2c05ff10507db46e
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -13015,6 +13270,7 @@ Usage: #definition
 
 Instance: PreQualDB1071c914359919dd58d72663a018511b
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -13066,6 +13322,7 @@ Usage: #definition
 
 Instance: PreQualDBda7044cc9c5d3a1c5e4cb5c88ee081f0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1999-03-11
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -13117,6 +13374,7 @@ Usage: #definition
 
 Instance: PreQualDBf8b5e42854cc1ae2255649171e9a8e5c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 1999-03-11
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -13168,6 +13426,7 @@ Usage: #definition
 
 Instance: PreQualDBd0dc36feabc50a33cc8f2f89d2342919
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2003-10-29
 * vaccineType.coding.code = #TetanusToxoid
 * vaccineType.coding.display = "Tetanus Toxoid"
@@ -13219,6 +13478,7 @@ Usage: #definition
 
 Instance: PreQualDBc8a79556c41225d558dae1807a41b38f
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"
@@ -13270,6 +13530,7 @@ Usage: #definition
 
 Instance: PreQualDB1bd8cf70f560d4ac1a937963c2fd44ba
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"
@@ -13321,6 +13582,7 @@ Usage: #definition
 
 Instance: PreQualDB2ae65ee169c9a71896965301d90f4ee2
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-12-04
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"
@@ -13372,6 +13634,7 @@ Usage: #definition
 
 Instance: PreQualDB888fc7936a47fcc7c2f59c465bb8e7ed
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-12-04
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"
@@ -13423,6 +13686,7 @@ Usage: #definition
 
 Instance: PreQualDB0997806769699913a3f450d32a1932b4
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2022-11-03
 * vaccineType.coding.code = #Varicella
 * vaccineType.coding.display = "Varicella"
@@ -13474,6 +13738,7 @@ Usage: #definition
 
 Instance: PreQualDB640db8992fe6d85bb1aed3872583dd5c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2018-02-09
 * vaccineType.coding.code = #Varicella
 * vaccineType.coding.display = "Varicella"
@@ -13525,6 +13790,7 @@ Usage: #definition
 
 Instance: PreQualDB60da9ef23c1068c0b6922abd7e25ff17
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2011-06-30
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -13576,6 +13842,7 @@ Usage: #definition
 
 Instance: PreQualDBa39febbd4fc1b31f1ea3e43bc91baea0
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2020-10-15
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -13627,6 +13894,7 @@ Usage: #definition
 
 Instance: PreQualDB3a0b2112f0d5e10d24b6063b5e91a025
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2019-02-06
 * vaccineType.coding.code = #Rabies
 * vaccineType.coding.display = "Rabies"
@@ -13678,6 +13946,7 @@ Usage: #definition
 
 Instance: PreQualDBe3f874e7b89ed3e777f03ede68bb6fe5
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2005-06-22
 * vaccineType.coding.code = #Rabies
 * vaccineType.coding.display = "Rabies"
@@ -13729,6 +13998,7 @@ Usage: #definition
 
 Instance: PreQualDB2ce0838fa87a21625f2bb12e269b26a2
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-08-02
 * vaccineType.coding.code = #HumanPapillomavirusBival
 * vaccineType.coding.display = "Human Papillomavirus (Bivalent)"
@@ -13780,6 +14050,7 @@ Usage: #definition
 
 Instance: PreQualDBab01f006f8b24113f4a28cb50bfe6d9d
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-10-17
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -13831,6 +14102,7 @@ Usage: #definition
 
 Instance: PreQualDB5f0639d8e4d52afef089aa7148c5060c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2007-12-10
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -13882,6 +14154,7 @@ Usage: #definition
 
 Instance: PreQualDBe0534dbc71a6cc09f56dce25216c538c
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2001-10-17
 * vaccineType.coding.code = #YellowFever
 * vaccineType.coding.display = "Yellow Fever"
@@ -13933,6 +14206,7 @@ Usage: #definition
 
 Instance: PreQualDB72c1ff5266fc6bf3683b0076c250cbff
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2021-04-27
 * vaccineType.coding.code = #EbolavaccineAd26ZEBOVGPr
 * vaccineType.coding.display = "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])"
@@ -13984,6 +14258,7 @@ Usage: #definition
 
 Instance: PreQualDBaa2deeb320b1ef154bbde64ba6ce78fe
 InstanceOf: PreQualDBwithIds
+Usage: #definition
 * dateOfPrequal = 2024-10-21
 * vaccineType.coding.code = #TyphoidConjugate
 * vaccineType.coding.display = "Typhoid (Conjugate)"

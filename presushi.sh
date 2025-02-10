@@ -214,6 +214,7 @@ NR > 1{
   print ""
   print "Instance: PreQualDB"MD5
   print "InstanceOf: PreQualDBwithIds"
+  print "Usage: #definition"
   print "* dateOfPrequal = "VDATE
   print "* vaccineType.coding.code = #"VAXTYPE
   print "* vaccineType.coding.display = \""VAX"\"" 
