@@ -29,7 +29,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBPaediatricProduct0a80755033118a426f1d2a571df1b6df
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -42,7 +42,7 @@ Usage: #example
 
 Instance: PreQual0a80755033118a426f1d2a571df1b6df
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -80,7 +80,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct29a71534ef44b701da06062075100739
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -93,7 +93,7 @@ Usage: #example
 
 Instance: PreQual29a71534ef44b701da06062075100739
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -131,7 +131,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HaemophilusinfluenzaetypProductf455a733c51ebd231f8e748ff2d54292
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -144,7 +144,7 @@ Usage: #example
 
 Instance: PreQualf455a733c51ebd231f8e748ff2d54292
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -182,7 +182,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct2b5b9b19671826d92dff00f622588487
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -195,7 +195,7 @@ Usage: #example
 
 Instance: PreQual2b5b9b19671826d92dff00f622588487
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -233,7 +233,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProduct0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -246,7 +246,7 @@ Usage: #example
 
 Instance: PreQual0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -284,7 +284,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProductd748a38574e356813c814007a57c7781
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -297,7 +297,7 @@ Usage: #example
 
 Instance: PreQuald748a38574e356813c814007a57c7781
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -335,7 +335,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct0e15fb29d9353a3e14d4b6d4180efb5a
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -348,7 +348,7 @@ Usage: #example
 
 Instance: PreQual0e15fb29d9353a3e14d4b6d4180efb5a
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -386,7 +386,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: VaricellaProduct68d1e94dee14002a478bb763192fd4c8
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -399,7 +399,7 @@ Usage: #example
 
 Instance: PreQual68d1e94dee14002a478bb763192fd4c8
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -437,7 +437,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProducta225473ed705ece5111f5bfcaf99f216
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -450,7 +450,7 @@ Usage: #example
 
 Instance: PreQuala225473ed705ece5111f5bfcaf99f216
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -488,7 +488,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProducte40454e099c809e80e245d28528c4f40
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -501,7 +501,7 @@ Usage: #example
 
 Instance: PreQuale40454e099c809e80e245d28528c4f40
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -539,7 +539,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProductee4fa99e6bfabbc2a99fe3b0ec7f6db4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -552,7 +552,7 @@ Usage: #example
 
 Instance: PreQualee4fa99e6bfabbc2a99fe3b0ec7f6db4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -590,7 +590,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProduct508c17fc4a3f649c75478d6bc83ab3b4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -603,7 +603,7 @@ Usage: #example
 
 Instance: PreQual508c17fc4a3f649c75478d6bc83ab3b4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -641,7 +641,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProduct92b29c115b94bfd6959395add8189921
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -654,7 +654,7 @@ Usage: #example
 
 Instance: PreQual92b29c115b94bfd6959395add8189921
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -692,7 +692,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProductfa2cfb4dc7d79771ed47d86a3efc9167
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -705,7 +705,7 @@ Usage: #example
 
 Instance: PreQualfa2cfb4dc7d79771ed47d86a3efc9167
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -743,7 +743,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: BCGProduct133dc209d46d1398e03c452ad1a537ed
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -756,7 +756,7 @@ Usage: #example
 
 Instance: PreQual133dc209d46d1398e03c452ad1a537ed
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -794,7 +794,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBPaediatricProduct12ac64a6373a51fb383f4d55fc5e32b8
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -807,7 +807,7 @@ Usage: #example
 
 Instance: PreQual12ac64a6373a51fb383f4d55fc5e32b8
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -845,7 +845,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct790d33df8e93799f8894daabb900d356
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -858,7 +858,7 @@ Usage: #example
 
 Instance: PreQual790d33df8e93799f8894daabb900d356
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -896,7 +896,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: Covid19Product8da0ece0c48e47a9df9e0ad312343219
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -909,7 +909,7 @@ Usage: #example
 
 Instance: PreQual8da0ece0c48e47a9df9e0ad312343219
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -947,7 +947,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVTrivaProductfa4849f7532d522134f4102063af1617
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -960,7 +960,7 @@ Usage: #example
 
 Instance: PreQualfa4849f7532d522134f4102063af1617
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -998,7 +998,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVTrivaProduct4df3a93ab495d85b3583d0cd1ae3d83e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1011,7 +1011,7 @@ Usage: #example
 
 Instance: PreQual4df3a93ab495d85b3583d0cd1ae3d83e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1049,7 +1049,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct16e883911ea0108b8213bc213c9972fe
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1062,7 +1062,7 @@ Usage: #example
 
 Instance: PreQual16e883911ea0108b8213bc213c9972fe
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1100,7 +1100,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct0e59118bc5938520115bac65a45be04d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1113,7 +1113,7 @@ Usage: #example
 
 Instance: PreQual0e59118bc5938520115bac65a45be04d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1151,7 +1151,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProductb62fbc87532804be42afa8d9050ef452
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1164,7 +1164,7 @@ Usage: #example
 
 Instance: PreQualb62fbc87532804be42afa8d9050ef452
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1202,7 +1202,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct02c099d69cd245e7fcd3280a96f1dccb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1215,7 +1215,7 @@ Usage: #example
 
 Instance: PreQual02c099d69cd245e7fcd3280a96f1dccb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1253,7 +1253,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProductdecf3a77facc0b8f1443db5f7a806857
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1266,7 +1266,7 @@ Usage: #example
 
 Instance: PreQualdecf3a77facc0b8f1443db5f7a806857
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1304,7 +1304,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct10aa94cef126e62542c2c45dc3604c0b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1317,7 +1317,7 @@ Usage: #example
 
 Instance: PreQual10aa94cef126e62542c2c45dc3604c0b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1355,7 +1355,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct26e6c50dfb385f223a12238dc6e202dd
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1368,7 +1368,7 @@ Usage: #example
 
 Instance: PreQual26e6c50dfb385f223a12238dc6e202dd
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1406,7 +1406,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductd86fa01b474096e0551b7c34b93fcdfc
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1419,7 +1419,7 @@ Usage: #example
 
 Instance: PreQuald86fa01b474096e0551b7c34b93fcdfc
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1457,7 +1457,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusBivalProductb342f0044a178c79f90b581a4a5208ba
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1470,7 +1470,7 @@ Usage: #example
 
 Instance: PreQualb342f0044a178c79f90b581a4a5208ba
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1508,7 +1508,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product8cb910c5702efa28db66bc22c8243188
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1521,7 +1521,7 @@ Usage: #example
 
 Instance: PreQual8cb910c5702efa28db66bc22c8243188
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1559,7 +1559,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusBivalProduct90bc0971e6434227a7385b7965be0958
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1572,7 +1572,7 @@ Usage: #example
 
 Instance: PreQual90bc0971e6434227a7385b7965be0958
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1610,7 +1610,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusBivalProductd74dd5ffaeebfbdedd5ee981b05b45f5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1623,7 +1623,7 @@ Usage: #example
 
 Instance: PreQuald74dd5ffaeebfbdedd5ee981b05b45f5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1660,7 +1660,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: Covid19Product2afac141c6a2f5d7231a1db67e0613a5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1672,7 +1672,7 @@ Usage: #example
 
 Instance: PreQual2afac141c6a2f5d7231a1db67e0613a5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1710,7 +1710,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MalariaProduct88d9bdf685abb8563d94dae08fc1d860
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1723,7 +1723,7 @@ Usage: #example
 
 Instance: PreQual88d9bdf685abb8563d94dae08fc1d860
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1761,7 +1761,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DengueTetravalentliveattProduct8ffab92f1c77bcdc5b542565b27784b1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1774,7 +1774,7 @@ Usage: #example
 
 Instance: PreQual8ffab92f1c77bcdc5b542565b27784b1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1812,7 +1812,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProducta0aba531248cc7cc61d06551ad5ff9d7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1825,7 +1825,7 @@ Usage: #example
 
 Instance: PreQuala0aba531248cc7cc61d06551ad5ff9d7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1863,7 +1863,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProducta5dce7e8e00b2b288510772a7a75649c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1876,7 +1876,7 @@ Usage: #example
 
 Instance: PreQuala5dce7e8e00b2b288510772a7a75649c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1914,7 +1914,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProduct4ceaeaed5cbda00d6675bc8593b37b9f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1927,7 +1927,7 @@ Usage: #example
 
 Instance: PreQual4ceaeaed5cbda00d6675bc8593b37b9f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -1965,7 +1965,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProduct6fe64111c79a32586a23ac01403442ba
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -1978,7 +1978,7 @@ Usage: #example
 
 Instance: PreQual6fe64111c79a32586a23ac01403442ba
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2016,7 +2016,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusProduct6049297c180d7c6e46f6a9a817dcabb3
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2029,7 +2029,7 @@ Usage: #example
 
 Instance: PreQual6049297c180d7c6e46f6a9a817dcabb3
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2067,7 +2067,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct5fd73b2ccd79a39acb5eb336e53f8315
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2080,7 +2080,7 @@ Usage: #example
 
 Instance: PreQual5fd73b2ccd79a39acb5eb336e53f8315
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2118,7 +2118,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct5b6b854e1885d59887a4eea0f4bd7a0c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2131,7 +2131,7 @@ Usage: #example
 
 Instance: PreQual5b6b854e1885d59887a4eea0f4bd7a0c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2169,7 +2169,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct39c0ef6a00b0846fb19fe4ca8fb376f7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2182,7 +2182,7 @@ Usage: #example
 
 Instance: PreQual39c0ef6a00b0846fb19fe4ca8fb376f7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2220,7 +2220,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductc63556bc39df77ae14833feb5ac10a35
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2233,7 +2233,7 @@ Usage: #example
 
 Instance: PreQualc63556bc39df77ae14833feb5ac10a35
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2271,7 +2271,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct927cff21ed0a901aa884339b766ee662
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2284,7 +2284,7 @@ Usage: #example
 
 Instance: PreQual927cff21ed0a901aa884339b766ee662
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2322,7 +2322,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct7b8002a4a273e0a9f749c44ac968cf44
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2335,7 +2335,7 @@ Usage: #example
 
 Instance: PreQual7b8002a4a273e0a9f749c44ac968cf44
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2373,7 +2373,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct2029c7c29c39910766a76fc788115bbc
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2386,7 +2386,7 @@ Usage: #example
 
 Instance: PreQual2029c7c29c39910766a76fc788115bbc
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2424,7 +2424,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct60c498d6555dec24de8a8ecc48ab1a02
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2437,7 +2437,7 @@ Usage: #example
 
 Instance: PreQual60c498d6555dec24de8a8ecc48ab1a02
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2475,7 +2475,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct828f395532066d11d360768aa0793f54
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2488,7 +2488,7 @@ Usage: #example
 
 Instance: PreQual828f395532066d11d360768aa0793f54
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2526,7 +2526,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductfdb459366fa4a85d1a7555bcad51264b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2539,7 +2539,7 @@ Usage: #example
 
 Instance: PreQualfdb459366fa4a85d1a7555bcad51264b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2577,7 +2577,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProducta438e46e3587ece79794373e69bafc4d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2590,7 +2590,7 @@ Usage: #example
 
 Instance: PreQuala438e46e3587ece79794373e69bafc4d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2628,7 +2628,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct08be2bd220651dc1c79b4d7f252461ef
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2641,7 +2641,7 @@ Usage: #example
 
 Instance: PreQual08be2bd220651dc1c79b4d7f252461ef
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2679,7 +2679,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct344e3ef97d8fe6c7d58c108f82a18dfb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2692,7 +2692,7 @@ Usage: #example
 
 Instance: PreQual344e3ef97d8fe6c7d58c108f82a18dfb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2730,7 +2730,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct456bd99d59edd5a285d7ca2451541021
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2743,7 +2743,7 @@ Usage: #example
 
 Instance: PreQual456bd99d59edd5a285d7ca2451541021
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2781,7 +2781,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: cholerainactivatedoralProductf1c03e02b729d1b9da196f4dbfe675f1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2794,7 +2794,7 @@ Usage: #example
 
 Instance: PreQualf1c03e02b729d1b9da196f4dbfe675f1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2832,7 +2832,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductb45f38ad231b3faff40a3b3aa2d61cca
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2845,7 +2845,7 @@ Usage: #example
 
 Instance: PreQualb45f38ad231b3faff40a3b3aa2d61cca
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2883,7 +2883,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct4e2900c73c70158b90a240513998895d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2896,7 +2896,7 @@ Usage: #example
 
 Instance: PreQual4e2900c73c70158b90a240513998895d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2934,7 +2934,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct624c420054fd62b8831ca6db7627ac9a
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2947,7 +2947,7 @@ Usage: #example
 
 Instance: PreQual624c420054fd62b8831ca6db7627ac9a
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -2985,7 +2985,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct6ac3603e086e99d1f9727d94433b276f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -2998,7 +2998,7 @@ Usage: #example
 
 Instance: PreQual6ac3603e086e99d1f9727d94433b276f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3036,7 +3036,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct53bb991260516f314ee605085dd1ba2c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3049,7 +3049,7 @@ Usage: #example
 
 Instance: PreQual53bb991260516f314ee605085dd1ba2c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3087,7 +3087,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: EbolaZairerVSVGZEBOVGPliProducta2f4a9e07cfeebbb99d5ae2e4cc0257f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3100,7 +3100,7 @@ Usage: #example
 
 Instance: PreQuala2f4a9e07cfeebbb99d5ae2e4cc0257f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3138,7 +3138,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductf949888fce8cdf016cfc06644a16afbb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3151,7 +3151,7 @@ Usage: #example
 
 Instance: PreQualf949888fce8cdf016cfc06644a16afbb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3189,7 +3189,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct9d194caa1c66fb809622f25ec6f79f5c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3202,7 +3202,7 @@ Usage: #example
 
 Instance: PreQual9d194caa1c66fb809622f25ec6f79f5c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3240,7 +3240,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedSProduct0854d534a200bbeffa8be0f57dad584a
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3253,7 +3253,7 @@ Usage: #example
 
 Instance: PreQual0854d534a200bbeffa8be0f57dad584a
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3291,7 +3291,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedSProduct031f63df3184acdf0cb82f90f316b6c3
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3304,7 +3304,7 @@ Usage: #example
 
 Instance: PreQual031f63df3184acdf0cb82f90f316b6c3
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3342,7 +3342,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBPaediatricProduct7431cfff77d30de2a89868b3bd4a2f9d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3355,7 +3355,7 @@ Usage: #example
 
 Instance: PreQual7431cfff77d30de2a89868b3bd4a2f9d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3393,7 +3393,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct2c48b25fdefb970fc85dbb63e04fe744
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3406,7 +3406,7 @@ Usage: #example
 
 Instance: PreQual2c48b25fdefb970fc85dbb63e04fe744
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3444,7 +3444,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct953ab5cac67cbb23eeab9e794501209d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3457,7 +3457,7 @@ Usage: #example
 
 Instance: PreQual953ab5cac67cbb23eeab9e794501209d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3495,7 +3495,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: cholerainactivatedoralProduct9e735ce376b3d71987e9c2054ba0590a
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3508,7 +3508,7 @@ Usage: #example
 
 Instance: PreQual9e735ce376b3d71987e9c2054ba0590a
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3546,7 +3546,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: cholerainactivatedoralProduct242d7b0c599da706838dbbdaa4d78d9b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3559,7 +3559,7 @@ Usage: #example
 
 Instance: PreQual242d7b0c599da706838dbbdaa4d78d9b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3597,7 +3597,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: cholerainactivatedoralProductd628c6599248f979f6fdf6145e8606b0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3610,7 +3610,7 @@ Usage: #example
 
 Instance: PreQuald628c6599248f979f6fdf6145e8606b0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3648,7 +3648,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct888045063db8e551a4e395130d66cd64
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3661,7 +3661,7 @@ Usage: #example
 
 Instance: PreQual888045063db8e551a4e395130d66cd64
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3699,7 +3699,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct8b43bd5416101efc433940c20e424971
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3712,7 +3712,7 @@ Usage: #example
 
 Instance: PreQual8b43bd5416101efc433940c20e424971
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3750,7 +3750,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct37f198a748f37e28fa533b43fb8b4ca4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3763,7 +3763,7 @@ Usage: #example
 
 Instance: PreQual37f198a748f37e28fa533b43fb8b4ca4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3801,7 +3801,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProducte6bf7aa0fe6620e314ba0c0c24a45d07
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3814,7 +3814,7 @@ Usage: #example
 
 Instance: PreQuale6bf7aa0fe6620e314ba0c0c24a45d07
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3852,7 +3852,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Productc76596a60cfa755021c2efe65100805b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3865,7 +3865,7 @@ Usage: #example
 
 Instance: PreQualc76596a60cfa755021c2efe65100805b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3903,7 +3903,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusNinevProduct6d6849ce69076acc0842734b9a0d375c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3916,7 +3916,7 @@ Usage: #example
 
 Instance: PreQual6d6849ce69076acc0842734b9a0d375c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3954,7 +3954,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusQuadrProduct551b21b1ec1a67bbb0009f875faf7823
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -3967,7 +3967,7 @@ Usage: #example
 
 Instance: PreQual551b21b1ec1a67bbb0009f875faf7823
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4005,7 +4005,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProductf45d14eded02944191a947ce6ede1a69
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4018,7 +4018,7 @@ Usage: #example
 
 Instance: PreQualf45d14eded02944191a947ce6ede1a69
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4056,7 +4056,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProducte9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4069,7 +4069,7 @@ Usage: #example
 
 Instance: PreQuale9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4107,7 +4107,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProductb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4120,7 +4120,7 @@ Usage: #example
 
 Instance: PreQualb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4158,7 +4158,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4171,7 +4171,7 @@ Usage: #example
 
 Instance: PreQual183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4209,7 +4209,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4222,7 +4222,7 @@ Usage: #example
 
 Instance: PreQual6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4260,7 +4260,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HaemophilusinfluenzaetypProduct8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4273,7 +4273,7 @@ Usage: #example
 
 Instance: PreQual8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4311,7 +4311,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisAHumanDiploidCeProducta1708bd501df3103f85e2df44bcf0003
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4324,7 +4324,7 @@ Usage: #example
 
 Instance: PreQuala1708bd501df3103f85e2df44bcf0003
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4362,7 +4362,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisAHumanDiploidCeProductbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4375,7 +4375,7 @@ Usage: #example
 
 Instance: PreQualbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4413,7 +4413,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisAHumanDiploidCeProductb1b534f4defa78597b059a190a77b357
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4426,7 +4426,7 @@ Usage: #example
 
 Instance: PreQualb1b534f4defa78597b059a190a77b357
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4464,7 +4464,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisAHumanDiploidCeProductc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4477,7 +4477,7 @@ Usage: #example
 
 Instance: PreQualc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4515,7 +4515,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct7402fe6f607aee04fc3800e7258809a9
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4528,7 +4528,7 @@ Usage: #example
 
 Instance: PreQual7402fe6f607aee04fc3800e7258809a9
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4566,7 +4566,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProducta2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4579,7 +4579,7 @@ Usage: #example
 
 Instance: PreQuala2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4617,7 +4617,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProductc63592587d84458436293a1b52964f2d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4630,7 +4630,7 @@ Usage: #example
 
 Instance: PreQualc63592587d84458436293a1b52964f2d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4668,7 +4668,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4681,7 +4681,7 @@ Usage: #example
 
 Instance: PreQual5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4719,7 +4719,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProduct2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4732,7 +4732,7 @@ Usage: #example
 
 Instance: PreQual2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4770,7 +4770,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HepatitisBProductb2a3129f600781cc753b011290b09acb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4783,7 +4783,7 @@ Usage: #example
 
 Instance: PreQualb2a3129f600781cc753b011290b09acb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4821,7 +4821,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductf4177b409d09d83e48630717437c5aea
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4834,7 +4834,7 @@ Usage: #example
 
 Instance: PreQualf4177b409d09d83e48630717437c5aea
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4872,7 +4872,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4885,7 +4885,7 @@ Usage: #example
 
 Instance: PreQual0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4923,7 +4923,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProductd54558e2851d29311ee7f90975827dc7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4936,7 +4936,7 @@ Usage: #example
 
 Instance: PreQuald54558e2851d29311ee7f90975827dc7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4974,7 +4974,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct30b66eeb49e7056ae34bdeae70658f8b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -4987,7 +4987,7 @@ Usage: #example
 
 Instance: PreQual30b66eeb49e7056ae34bdeae70658f8b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5025,7 +5025,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct25fc0fcf4e56d016e349a170104a5840
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5038,7 +5038,7 @@ Usage: #example
 
 Instance: PreQual25fc0fcf4e56d016e349a170104a5840
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5076,7 +5076,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct01c42855480e72f00caf639ab9157baf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5089,7 +5089,7 @@ Usage: #example
 
 Instance: PreQual01c42855480e72f00caf639ab9157baf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5127,7 +5127,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct532ef986c8042bbb15fee24056fdc4ed
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5140,7 +5140,7 @@ Usage: #example
 
 Instance: PreQual532ef986c8042bbb15fee24056fdc4ed
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5178,7 +5178,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5191,7 +5191,7 @@ Usage: #example
 
 Instance: PreQual1b03f110ef15d36c9664465098d3adec
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5229,7 +5229,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product13ecad42baa7d2234f337b12f32b52de
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5242,7 +5242,7 @@ Usage: #example
 
 Instance: PreQual13ecad42baa7d2234f337b12f32b52de
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5280,7 +5280,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product967a1c59b6590047a341c18013831c4b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5293,7 +5293,7 @@ Usage: #example
 
 Instance: PreQual967a1c59b6590047a341c18013831c4b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5331,7 +5331,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product4326726a809bbcd312e4f29a90082bb6
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5344,7 +5344,7 @@ Usage: #example
 
 Instance: PreQual4326726a809bbcd312e4f29a90082bb6
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5382,7 +5382,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5395,7 +5395,7 @@ Usage: #example
 
 Instance: PreQual5268d009fa44e51462fcdcbcbc80ebf3
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5433,7 +5433,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct3ec4a63eb2160bf9a65d9fd69f5de160
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5446,7 +5446,7 @@ Usage: #example
 
 Instance: PreQual3ec4a63eb2160bf9a65d9fd69f5de160
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5484,7 +5484,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct096666bb5a86521c6c6046227092334d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5497,7 +5497,7 @@ Usage: #example
 
 Instance: PreQual096666bb5a86521c6c6046227092334d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5535,7 +5535,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct30fd25d892863f955ec6f9b57c328dbb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5548,7 +5548,7 @@ Usage: #example
 
 Instance: PreQual30fd25d892863f955ec6f9b57c328dbb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5586,7 +5586,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct087ff26057e89c006517428347dfbc3c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5599,7 +5599,7 @@ Usage: #example
 
 Instance: PreQual087ff26057e89c006517428347dfbc3c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5637,7 +5637,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct88482ae2796337d6f7832238bdf003fb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5650,7 +5650,7 @@ Usage: #example
 
 Instance: PreQual88482ae2796337d6f7832238bdf003fb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5688,7 +5688,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProductc6a1b72f22ca5f875ca681973d42742c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5701,7 +5701,7 @@ Usage: #example
 
 Instance: PreQualc6a1b72f22ca5f875ca681973d42742c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5739,7 +5739,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct030f186c51ac8780d767bcba8f2762b2
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5752,7 +5752,7 @@ Usage: #example
 
 Instance: PreQual030f186c51ac8780d767bcba8f2762b2
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5790,7 +5790,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct436f9ace27daebdccddb8279b66a3e98
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5803,7 +5803,7 @@ Usage: #example
 
 Instance: PreQual436f9ace27daebdccddb8279b66a3e98
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5841,7 +5841,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct7d5507cd0733a44eaa4072b888176783
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5854,7 +5854,7 @@ Usage: #example
 
 Instance: PreQual7d5507cd0733a44eaa4072b888176783
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5892,7 +5892,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: JapaneseEncephalitisVaccProduct94b97202e37b591c7b7da316ff2bca00
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5905,7 +5905,7 @@ Usage: #example
 
 Instance: PreQual94b97202e37b591c7b7da316ff2bca00
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5943,7 +5943,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProducta64cf480e98d911934cc1e33dd1d99dd
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -5956,7 +5956,7 @@ Usage: #example
 
 Instance: PreQuala64cf480e98d911934cc1e33dd1d99dd
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5994,7 +5994,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProductd3425606d671107b4265df9a9b33c318
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6007,7 +6007,7 @@ Usage: #example
 
 Instance: PreQuald3425606d671107b4265df9a9b33c318
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6045,7 +6045,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProduct77c8d21c6e4f7faaa12d93564b5c97bc
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6058,7 +6058,7 @@ Usage: #example
 
 Instance: PreQual77c8d21c6e4f7faaa12d93564b5c97bc
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6096,7 +6096,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProductb59a78efc3a033a13b483b20d386fca5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6109,7 +6109,7 @@ Usage: #example
 
 Instance: PreQualb59a78efc3a033a13b483b20d386fca5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6147,7 +6147,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProduct635f19b7add7fab78d60262e086e4543
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6160,7 +6160,7 @@ Usage: #example
 
 Instance: PreQual635f19b7add7fab78d60262e086e4543
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6198,7 +6198,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProduct65d4761f7dd7345dd02cd11109a1cf8c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6211,7 +6211,7 @@ Usage: #example
 
 Instance: PreQual65d4761f7dd7345dd02cd11109a1cf8c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6249,7 +6249,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesandRubellaProduct9fa0f8f3b99bdc45a172ae498f3f0105
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6262,7 +6262,7 @@ Usage: #example
 
 Instance: PreQual9fa0f8f3b99bdc45a172ae498f3f0105
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6300,7 +6300,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProductf1e33f21c2c353e67218f267dd73ea38
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6313,7 +6313,7 @@ Usage: #example
 
 Instance: PreQualf1e33f21c2c353e67218f267dd73ea38
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6351,7 +6351,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProductf4749d5c7dc03738b6fad169dd71fa00
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6364,7 +6364,7 @@ Usage: #example
 
 Instance: PreQualf4749d5c7dc03738b6fad169dd71fa00
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6402,7 +6402,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProductaa790a232317076de88d43837608f860
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6415,7 +6415,7 @@ Usage: #example
 
 Instance: PreQualaa790a232317076de88d43837608f860
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6453,7 +6453,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProduct0269fa56eaf4988d90c519518ec6282e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6466,7 +6466,7 @@ Usage: #example
 
 Instance: PreQual0269fa56eaf4988d90c519518ec6282e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6504,7 +6504,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProduct8f5df4935259a7c2d8a2dc97918336fc
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6517,7 +6517,7 @@ Usage: #example
 
 Instance: PreQual8f5df4935259a7c2d8a2dc97918336fc
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6555,7 +6555,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesProduct22043a8ed978f482a283310ca4b73aa0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6568,7 +6568,7 @@ Usage: #example
 
 Instance: PreQual22043a8ed978f482a283310ca4b73aa0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6606,7 +6606,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProductbe9b0af328a5e3832c8004f7ec7d7657
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6619,7 +6619,7 @@ Usage: #example
 
 Instance: PreQualbe9b0af328a5e3832c8004f7ec7d7657
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6657,7 +6657,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProduct3e4662a10c91ed08c81f3163d43da4eb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6670,7 +6670,7 @@ Usage: #example
 
 Instance: PreQual3e4662a10c91ed08c81f3163d43da4eb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6708,7 +6708,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProducta1b8577c56035c4ad388e6a93986a21e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6721,7 +6721,7 @@ Usage: #example
 
 Instance: PreQuala1b8577c56035c4ad388e6a93986a21e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6759,7 +6759,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProduct83ee5151e18552493e5441543f6cc8cb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6772,7 +6772,7 @@ Usage: #example
 
 Instance: PreQual83ee5151e18552493e5441543f6cc8cb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6810,7 +6810,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalACYW135conjProduct4caa75a5785775ab99aa60248da4fc29
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6823,7 +6823,7 @@ Usage: #example
 
 Instance: PreQual4caa75a5785775ab99aa60248da4fc29
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6861,7 +6861,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MenigococcalACYWXPolysacProduct62f4ead3da74f2f31a51006339af12fe
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6874,7 +6874,7 @@ Usage: #example
 
 Instance: PreQual62f4ead3da74f2f31a51006339af12fe
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6912,7 +6912,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MenigococcalACYWXPolysacProduct6e9e4e4a66528692b80623cf9b12d209
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6925,7 +6925,7 @@ Usage: #example
 
 Instance: PreQual6e9e4e4a66528692b80623cf9b12d209
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -6963,7 +6963,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalAConjugate5Product59a4a8dd61e6115a46849c83d7b6fd2c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -6976,7 +6976,7 @@ Usage: #example
 
 Instance: PreQual59a4a8dd61e6115a46849c83d7b6fd2c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7014,7 +7014,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalAConjugate1Product41addf46a75c0e97534853e5745f15d0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7027,7 +7027,7 @@ Usage: #example
 
 Instance: PreQual41addf46a75c0e97534853e5745f15d0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7065,7 +7065,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalACYW135TetaProduct85e37fdf8b368c828f1e3bf048f6ca6d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7078,7 +7078,7 @@ Usage: #example
 
 Instance: PreQual85e37fdf8b368c828f1e3bf048f6ca6d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7116,7 +7116,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalACYW135conjProduct95cae3b1768b8647e3f971137397d84f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7129,7 +7129,7 @@ Usage: #example
 
 Instance: PreQual95cae3b1768b8647e3f971137397d84f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7167,7 +7167,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductcea74be2c728329aad7b9b33ae16a0b1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7180,7 +7180,7 @@ Usage: #example
 
 Instance: PreQualcea74be2c728329aad7b9b33ae16a0b1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7218,7 +7218,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductef716e2b9567223ce6c95b090480ecfe
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7231,7 +7231,7 @@ Usage: #example
 
 Instance: PreQualef716e2b9567223ce6c95b090480ecfe
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7269,7 +7269,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductae7e506ca48a3aa605b188cd11eaceab
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7282,7 +7282,7 @@ Usage: #example
 
 Instance: PreQualae7e506ca48a3aa605b188cd11eaceab
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7320,7 +7320,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MalariaProduct483f7a671c76d38fef929bed60c3934f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7333,7 +7333,7 @@ Usage: #example
 
 Instance: PreQual483f7a671c76d38fef929bed60c3934f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7371,7 +7371,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: EbolavaccineMVABNFilorecProducte447fe0b4d8469dedecdf17870fdae80
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7384,7 +7384,7 @@ Usage: #example
 
 Instance: PreQuale447fe0b4d8469dedecdf17870fdae80
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7422,7 +7422,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProductd2c75a15ed309658b3968519ddb31690
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7435,7 +7435,7 @@ Usage: #example
 
 Instance: PreQuald2c75a15ed309658b3968519ddb31690
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7473,7 +7473,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProduct771d1a5c0acaee3e2dc9d56af1aba49d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7486,7 +7486,7 @@ Usage: #example
 
 Instance: PreQual771d1a5c0acaee3e2dc9d56af1aba49d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7524,7 +7524,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProducte929626497bdbb71adbe925f0c09c79f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7537,7 +7537,7 @@ Usage: #example
 
 Instance: PreQuale929626497bdbb71adbe925f0c09c79f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7575,7 +7575,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product48693eb423ca747a21dc8951d0c84948
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7588,7 +7588,7 @@ Usage: #example
 
 Instance: PreQual48693eb423ca747a21dc8951d0c84948
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7626,7 +7626,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product7168c312db80310f2cd6012ffa5e2f8f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7639,7 +7639,7 @@ Usage: #example
 
 Instance: PreQual7168c312db80310f2cd6012ffa5e2f8f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7677,7 +7677,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProducteb55e6f37bc19bec445ee030c5bce405
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7690,7 +7690,7 @@ Usage: #example
 
 Instance: PreQualeb55e6f37bc19bec445ee030c5bce405
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7728,7 +7728,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeningococcalACYW135conjProductb59403bf43f59483bc3d5811fbbe99ae
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7741,7 +7741,7 @@ Usage: #example
 
 Instance: PreQualb59403bf43f59483bc3d5811fbbe99ae
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7779,7 +7779,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct844b4cd71587aa7b05205985fadc54bf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7792,7 +7792,7 @@ Usage: #example
 
 Instance: PreQual844b4cd71587aa7b05205985fadc54bf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7830,7 +7830,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct2d90fb090e2c500ab939d14b59fe7b4c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7843,7 +7843,7 @@ Usage: #example
 
 Instance: PreQual2d90fb090e2c500ab939d14b59fe7b4c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7881,7 +7881,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct765d85d2d2e92fc0aa155a4189f60843
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7894,7 +7894,7 @@ Usage: #example
 
 Instance: PreQual765d85d2d2e92fc0aa155a4189f60843
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7932,7 +7932,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct93f61c0e63644a7adbd43720ad096a6b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7945,7 +7945,7 @@ Usage: #example
 
 Instance: PreQual93f61c0e63644a7adbd43720ad096a6b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -7983,7 +7983,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProductf9fde2170e347e77162f463b9c3a2753
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -7996,7 +7996,7 @@ Usage: #example
 
 Instance: PreQualf9fde2170e347e77162f463b9c3a2753
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8034,7 +8034,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct5d2f3b492c9af0f21b268c22a11400c0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8047,7 +8047,7 @@ Usage: #example
 
 Instance: PreQual5d2f3b492c9af0f21b268c22a11400c0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8085,7 +8085,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct28645bb5f0babbccee86ce69b98ec9d6
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8098,7 +8098,7 @@ Usage: #example
 
 Instance: PreQual28645bb5f0babbccee86ce69b98ec9d6
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8136,7 +8136,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct493bac374b484cee83f218d75bca265e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8149,7 +8149,7 @@ Usage: #example
 
 Instance: PreQual493bac374b484cee83f218d75bca265e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8187,7 +8187,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct588074b4bc22a6afb41276d6e3a1bc57
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8200,7 +8200,7 @@ Usage: #example
 
 Instance: PreQual588074b4bc22a6afb41276d6e3a1bc57
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8238,7 +8238,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct32779e6bf47670e22e3b351cfc5530c4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8251,7 +8251,7 @@ Usage: #example
 
 Instance: PreQual32779e6bf47670e22e3b351cfc5530c4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8289,7 +8289,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProducte3b135252953c7f29f4a82b3cdfded35
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8302,7 +8302,7 @@ Usage: #example
 
 Instance: PreQuale3b135252953c7f29f4a82b3cdfded35
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8340,7 +8340,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct120c366956f5490de6fe5fa85ba7e9ae
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8353,7 +8353,7 @@ Usage: #example
 
 Instance: PreQual120c366956f5490de6fe5fa85ba7e9ae
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8391,7 +8391,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct520f511adb804a1ca5d7fa29d15799b3
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8404,7 +8404,7 @@ Usage: #example
 
 Instance: PreQual520f511adb804a1ca5d7fa29d15799b3
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8442,7 +8442,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProducta0ac41f8d8a64a093a5e07f7c9bbc8e4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8455,7 +8455,7 @@ Usage: #example
 
 Instance: PreQuala0ac41f8d8a64a093a5e07f7c9bbc8e4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8493,7 +8493,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct76f7fbefcf37814d2dbf2af5d784ad74
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8506,7 +8506,7 @@ Usage: #example
 
 Instance: PreQual76f7fbefcf37814d2dbf2af5d784ad74
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8544,7 +8544,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductf6d840e9cf722a80b38d0be001f47caf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8557,7 +8557,7 @@ Usage: #example
 
 Instance: PreQualf6d840e9cf722a80b38d0be001f47caf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8595,7 +8595,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVTrivaProducte0bcdc085107751b3df34ad04620ac21
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8608,7 +8608,7 @@ Usage: #example
 
 Instance: PreQuale0bcdc085107751b3df34ad04620ac21
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8646,7 +8646,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH5N1Product98147a8d5841bb5826a0742c93febdb7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8659,7 +8659,7 @@ Usage: #example
 
 Instance: PreQual98147a8d5841bb5826a0742c93febdb7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8697,7 +8697,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product088d100de56d00ac49ab0a216ffd4424
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8710,7 +8710,7 @@ Usage: #example
 
 Instance: PreQual088d100de56d00ac49ab0a216ffd4424
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8748,7 +8748,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaPandemicH1N1Product526f1bed643beeed056c10f07a683f71
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8761,7 +8761,7 @@ Usage: #example
 
 Instance: PreQual526f1bed643beeed056c10f07a683f71
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8799,7 +8799,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct4aadc8e795e664423aad5161f0118f34
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8812,7 +8812,7 @@ Usage: #example
 
 Instance: PreQual4aadc8e795e664423aad5161f0118f34
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8850,7 +8850,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusPertussProduct54d8790e5e5db152340b4fd96e6f2f11
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8863,7 +8863,7 @@ Usage: #example
 
 Instance: PreQual54d8790e5e5db152340b4fd96e6f2f11
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8901,7 +8901,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct096d9e8c31e30cc1148311ee66359a50
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8914,7 +8914,7 @@ Usage: #example
 
 Instance: PreQual096d9e8c31e30cc1148311ee66359a50
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -8952,7 +8952,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct81604632fc612703d280e60af24938ea
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -8965,7 +8965,7 @@ Usage: #example
 
 Instance: PreQual81604632fc612703d280e60af24938ea
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9003,7 +9003,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct300c6fe07dc895ee2b3022528850d26e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9016,7 +9016,7 @@ Usage: #example
 
 Instance: PreQual300c6fe07dc895ee2b3022528850d26e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9054,7 +9054,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct82c42719edaea37e1696ebde6674128c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9067,7 +9067,7 @@ Usage: #example
 
 Instance: PreQual82c42719edaea37e1696ebde6674128c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9105,7 +9105,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProduct7d442364610244382098e1c4a3ba54c3
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9118,7 +9118,7 @@ Usage: #example
 
 Instance: PreQual7d442364610244382098e1c4a3ba54c3
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9156,7 +9156,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProduct4580ab03228ed6c70bb6c117b408f7e5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9169,7 +9169,7 @@ Usage: #example
 
 Instance: PreQual4580ab03228ed6c70bb6c117b408f7e5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9207,7 +9207,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProduct7a252b223173567f21721ee15a36f057
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9220,7 +9220,7 @@ Usage: #example
 
 Instance: PreQual7a252b223173567f21721ee15a36f057
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9258,7 +9258,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductf22fcdfa611173d0afbce56d49867530
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9271,7 +9271,7 @@ Usage: #example
 
 Instance: PreQualf22fcdfa611173d0afbce56d49867530
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9309,7 +9309,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProduct1b2bdb769d38e0b45eb60707ff9a36cb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9322,7 +9322,7 @@ Usage: #example
 
 Instance: PreQual1b2bdb769d38e0b45eb60707ff9a36cb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9360,7 +9360,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVMonovProductb4755cab194f57a5fecc8d890856bbdf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9373,7 +9373,7 @@ Usage: #example
 
 Instance: PreQualb4755cab194f57a5fecc8d890856bbdf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9411,7 +9411,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct14c88c2e9b35698b4726903940c58037
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9424,7 +9424,7 @@ Usage: #example
 
 Instance: PreQual14c88c2e9b35698b4726903940c58037
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9462,7 +9462,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct2d10261076734e48cd7b289de6ea802e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9475,7 +9475,7 @@ Usage: #example
 
 Instance: PreQual2d10261076734e48cd7b289de6ea802e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9513,7 +9513,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProductc726fd7210023aa5738617a79cae2b40
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9526,7 +9526,7 @@ Usage: #example
 
 Instance: PreQualc726fd7210023aa5738617a79cae2b40
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9564,7 +9564,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineNovelOralnOPProduct65b137f0201901bc43fc8759e4f35f35
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9577,7 +9577,7 @@ Usage: #example
 
 Instance: PreQual65b137f0201901bc43fc8759e4f35f35
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9615,7 +9615,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineNovelOralnOPProduct278e9af5dc50904dd144a7ceb4d42dd7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9628,7 +9628,7 @@ Usage: #example
 
 Instance: PreQual278e9af5dc50904dd144a7ceb4d42dd7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9666,7 +9666,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineNovelOralnOPProductab7589153ddbc7968e1749119c5b1678
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9679,7 +9679,7 @@ Usage: #example
 
 Instance: PreQualab7589153ddbc7968e1749119c5b1678
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9717,7 +9717,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct1d63ab46cee67d02439c47ed91439667
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9730,7 +9730,7 @@ Usage: #example
 
 Instance: PreQual1d63ab46cee67d02439c47ed91439667
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9768,7 +9768,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct13e82343f8e192fe6e3fbfbf2a47ffd7
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9781,7 +9781,7 @@ Usage: #example
 
 Instance: PreQual13e82343f8e192fe6e3fbfbf2a47ffd7
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9819,7 +9819,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProductf8085a2bd9a1c84fba1adee2ec6f6fb1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9832,7 +9832,7 @@ Usage: #example
 
 Instance: PreQualf8085a2bd9a1c84fba1adee2ec6f6fb1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9870,7 +9870,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProductfea93261bf2f096ea48aed825522dc2d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9883,7 +9883,7 @@ Usage: #example
 
 Instance: PreQualfea93261bf2f096ea48aed825522dc2d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9921,7 +9921,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProductdcbfa0a541c65032a917c39fa762c2f9
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9934,7 +9934,7 @@ Usage: #example
 
 Instance: PreQualdcbfa0a541c65032a917c39fa762c2f9
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -9972,7 +9972,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProduct06bf2d06adcc6d9e2bea8ac21846bb09
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -9985,7 +9985,7 @@ Usage: #example
 
 Instance: PreQual06bf2d06adcc6d9e2bea8ac21846bb09
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10023,7 +10023,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVBivalProducta5416e91021f0c00915e4688ff508717
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10036,7 +10036,7 @@ Usage: #example
 
 Instance: PreQuala5416e91021f0c00915e4688ff508717
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10074,7 +10074,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedSProduct2050ea67709cfcde28a01f0546276e96
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10087,7 +10087,7 @@ Usage: #example
 
 Instance: PreQual2050ea67709cfcde28a01f0546276e96
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10125,7 +10125,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedSProduct25383b1f589d42af3719c7074f982c9b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10138,7 +10138,7 @@ Usage: #example
 
 Instance: PreQual25383b1f589d42af3719c7074f982c9b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10176,7 +10176,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedSProductd554f4c3848920ca8bcd00d44afd18a4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10189,7 +10189,7 @@ Usage: #example
 
 Instance: PreQuald554f4c3848920ca8bcd00d44afd18a4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10227,7 +10227,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct3cde3a30cacdc23b9ec3bdf4ba9d23ff
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10240,7 +10240,7 @@ Usage: #example
 
 Instance: PreQual3cde3a30cacdc23b9ec3bdf4ba9d23ff
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10278,7 +10278,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct4562bbd80c6e57dbe29b122817623854
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10291,7 +10291,7 @@ Usage: #example
 
 Instance: PreQual4562bbd80c6e57dbe29b122817623854
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10329,7 +10329,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineOralOPVTrivaProductbd7faeaf3f0e633420fba396895d6cc9
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10342,7 +10342,7 @@ Usage: #example
 
 Instance: PreQualbd7faeaf3f0e633420fba396895d6cc9
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10380,7 +10380,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProductd76340c94c13863d00dcf437778fc804
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10393,7 +10393,7 @@ Usage: #example
 
 Instance: PreQuald76340c94c13863d00dcf437778fc804
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10431,7 +10431,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct083cce20a86e6f530b905d4d6e72136c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10444,7 +10444,7 @@ Usage: #example
 
 Instance: PreQual083cce20a86e6f530b905d4d6e72136c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10482,7 +10482,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProducta83fd7c161c4c48ad786e3ff49073adf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10495,7 +10495,7 @@ Usage: #example
 
 Instance: PreQuala83fd7c161c4c48ad786e3ff49073adf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10533,7 +10533,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProduct5391a66b3bec700dd62d02c2687a9f2f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10546,7 +10546,7 @@ Usage: #example
 
 Instance: PreQual5391a66b3bec700dd62d02c2687a9f2f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10584,7 +10584,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DengueTetravalentliveattProducta742565a0d07d6c92f087a1c055ab278
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10597,7 +10597,7 @@ Usage: #example
 
 Instance: PreQuala742565a0d07d6c92f087a1c055ab278
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10635,7 +10635,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HaemophilusinfluenzaetypProduct99ca7b265fb87731abd4ff27d13b44cd
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10648,7 +10648,7 @@ Usage: #example
 
 Instance: PreQual99ca7b265fb87731abd4ff27d13b44cd
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10686,7 +10686,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MalariaProduct34cd73607a9432893b41df94a5a9d0d2
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10699,7 +10699,7 @@ Usage: #example
 
 Instance: PreQual34cd73607a9432893b41df94a5a9d0d2
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10737,7 +10737,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RabiesProductf2b192bfc92c1c7871308ada29a061c4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10750,7 +10750,7 @@ Usage: #example
 
 Instance: PreQualf2b192bfc92c1c7871308ada29a061c4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10788,7 +10788,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: MeaslesMumpsandRubellaProductf53615897edbe997d964e625d344ccdc
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10801,7 +10801,7 @@ Usage: #example
 
 Instance: PreQualf53615897edbe997d964e625d344ccdc
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10839,7 +10839,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusProduct0b0dd154bb4274f5fd8784b59e2fe275
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10852,7 +10852,7 @@ Usage: #example
 
 Instance: PreQual0b0dd154bb4274f5fd8784b59e2fe275
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10890,7 +10890,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusProduct53fcb319f717ccabdb38629caa624b20
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10903,7 +10903,7 @@ Usage: #example
 
 Instance: PreQual53fcb319f717ccabdb38629caa624b20
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10941,7 +10941,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusProductbc017d15d7f431bd0424354df11c18c8
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -10954,7 +10954,7 @@ Usage: #example
 
 Instance: PreQualbc017d15d7f431bd0424354df11c18c8
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -10992,7 +10992,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProductaba1269c8eed435e58d27f99062aab7f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11005,7 +11005,7 @@ Usage: #example
 
 Instance: PreQualaba1269c8eed435e58d27f99062aab7f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11043,7 +11043,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct846073e8efc59e6bde4f3aa8c7008f8e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11056,7 +11056,7 @@ Usage: #example
 
 Instance: PreQual846073e8efc59e6bde4f3aa8c7008f8e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11094,7 +11094,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct5d0aee9435820780b60fc3f11ce1cfb0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11107,7 +11107,7 @@ Usage: #example
 
 Instance: PreQual5d0aee9435820780b60fc3f11ce1cfb0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11145,7 +11145,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct84971742b6ec638f100087e1907dd8ad
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11158,7 +11158,7 @@ Usage: #example
 
 Instance: PreQual84971742b6ec638f100087e1907dd8ad
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11196,7 +11196,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProducta28f27ab86847575f0c86632fa40e736
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11209,7 +11209,7 @@ Usage: #example
 
 Instance: PreQuala28f27ab86847575f0c86632fa40e736
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11247,7 +11247,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProductbab8551131e5a5ecce02dcb55bce1647
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11260,7 +11260,7 @@ Usage: #example
 
 Instance: PreQualbab8551131e5a5ecce02dcb55bce1647
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11298,7 +11298,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProductc988bcb87cb2a881e4e0193a1794c184
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11311,7 +11311,7 @@ Usage: #example
 
 Instance: PreQualc988bcb87cb2a881e4e0193a1794c184
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11349,7 +11349,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusProductf4c0952b7ac2caea70a5dd2b4e44a705
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11362,7 +11362,7 @@ Usage: #example
 
 Instance: PreQualf4c0952b7ac2caea70a5dd2b4e44a705
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11400,7 +11400,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProducta4d4cf1eeafbb570eaec6b91bd8c1642
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11413,7 +11413,7 @@ Usage: #example
 
 Instance: PreQuala4d4cf1eeafbb570eaec6b91bd8c1642
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11451,7 +11451,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct247d96f0d9d687ba45daac8fd4aef6e1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11464,7 +11464,7 @@ Usage: #example
 
 Instance: PreQual247d96f0d9d687ba45daac8fd4aef6e1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11502,7 +11502,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct6cf88a56e306e621e5f6c06e754d492d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11515,7 +11515,7 @@ Usage: #example
 
 Instance: PreQual6cf88a56e306e621e5f6c06e754d492d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11553,7 +11553,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RotavirusliveattenuatedProduct44f5911f2722c9c2ab4caa5e4a2ee009
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11566,7 +11566,7 @@ Usage: #example
 
 Instance: PreQual44f5911f2722c9c2ab4caa5e4a2ee009
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11604,7 +11604,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RubellaProductb58ecc88973c368d2929674f7588dcaf
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11617,7 +11617,7 @@ Usage: #example
 
 Instance: PreQualb58ecc88973c368d2929674f7588dcaf
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11655,7 +11655,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RubellaProduct92d62b88e7a6bda1cdffd774c099112d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11668,7 +11668,7 @@ Usage: #example
 
 Instance: PreQual92d62b88e7a6bda1cdffd774c099112d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11706,7 +11706,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RubellaProduct5256bec4bd8bae0e45743e9d569db466
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11719,7 +11719,7 @@ Usage: #example
 
 Instance: PreQual5256bec4bd8bae0e45743e9d569db466
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11757,7 +11757,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RubellaProduct0bb48b4861045ee347f5539609d92bbd
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11770,7 +11770,7 @@ Usage: #example
 
 Instance: PreQual0bb48b4861045ee347f5539609d92bbd
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11808,7 +11808,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct1de83fee04f2d8630ea4ff089ae47443
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11821,7 +11821,7 @@ Usage: #example
 
 Instance: PreQual1de83fee04f2d8630ea4ff089ae47443
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11859,7 +11859,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: cholerainactivatedoralProductbcc643f5ed406d46ed23bf1e0ff46cd1
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11872,7 +11872,7 @@ Usage: #example
 
 Instance: PreQualbcc643f5ed406d46ed23bf1e0ff46cd1
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11910,7 +11910,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct81ee9ba77c4419bbfe44a27cfd10027e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11923,7 +11923,7 @@ Usage: #example
 
 Instance: PreQual81ee9ba77c4419bbfe44a27cfd10027e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -11961,7 +11961,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PolioVaccineInactivatedIProduct8b13b5fcf5e9268b345775be7c3f077c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -11974,7 +11974,7 @@ Usage: #example
 
 Instance: PreQual8b13b5fcf5e9268b345775be7c3f077c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12012,7 +12012,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProduct01a3b83cf13e87948437db11cf5c34eb
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12025,7 +12025,7 @@ Usage: #example
 
 Instance: PreQual01a3b83cf13e87948437db11cf5c34eb
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12063,7 +12063,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct857b54237833aa49172d24b749788cd8
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12076,7 +12076,7 @@ Usage: #example
 
 Instance: PreQual857b54237833aa49172d24b749788cd8
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12114,7 +12114,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProduct2329c9c335034cc9d169c85cb142f137
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12127,7 +12127,7 @@ Usage: #example
 
 Instance: PreQual2329c9c335034cc9d169c85cb142f137
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12165,7 +12165,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProducta7caaed8ed28906a817fdfe7f26bb696
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12178,7 +12178,7 @@ Usage: #example
 
 Instance: PreQuala7caaed8ed28906a817fdfe7f26bb696
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12216,7 +12216,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProductbc5b1b4b2ba40fb3b9743077a086766e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12229,7 +12229,7 @@ Usage: #example
 
 Instance: PreQualbc5b1b4b2ba40fb3b9743077a086766e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12267,7 +12267,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProduct14f33effe6b84f89d3c5d07663cce92b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12280,7 +12280,7 @@ Usage: #example
 
 Instance: PreQual14f33effe6b84f89d3c5d07663cce92b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12318,7 +12318,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: VaricellaProduct8133c14443b0a3b1b10b846723961fee
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12331,7 +12331,7 @@ Usage: #example
 
 Instance: PreQual8133c14443b0a3b1b10b846723961fee
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12369,7 +12369,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProductf82b015dfb3b1feeacd4c44d95b3b3ec
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12382,7 +12382,7 @@ Usage: #example
 
 Instance: PreQualf82b015dfb3b1feeacd4c44d95b3b3ec
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12420,7 +12420,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProduct223330a7c15da86b21cc363f591de002
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12433,7 +12433,7 @@ Usage: #example
 
 Instance: PreQual223330a7c15da86b21cc363f591de002
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12471,7 +12471,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProductffea8448252ee58b7a92add05f0c3431
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12484,7 +12484,7 @@ Usage: #example
 
 Instance: PreQualffea8448252ee58b7a92add05f0c3431
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12522,7 +12522,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProductd8a09f80301dc05e124f99ffe7711fc0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12535,7 +12535,7 @@ Usage: #example
 
 Instance: PreQuald8a09f80301dc05e124f99ffe7711fc0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12573,7 +12573,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProductfcf21ee9ff8e209c022200a4d776dda0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12586,7 +12586,7 @@ Usage: #example
 
 Instance: PreQualfcf21ee9ff8e209c022200a4d776dda0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12624,7 +12624,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct0defc68f369dcb9815e2bc4a6ee5533f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12637,7 +12637,7 @@ Usage: #example
 
 Instance: PreQual0defc68f369dcb9815e2bc4a6ee5533f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12675,7 +12675,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: PneumococcalconjugateProduct1bc532b4004e4c37e8503a66c775e9cd
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12688,7 +12688,7 @@ Usage: #example
 
 Instance: PreQual1bc532b4004e4c37e8503a66c775e9cd
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12726,7 +12726,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct015e0d747befdc032a505ac960851497
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12739,7 +12739,7 @@ Usage: #example
 
 Instance: PreQual015e0d747befdc032a505ac960851497
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12777,7 +12777,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: DiphtheriaTetanusreducedProduct36463c650975ef84b1519bc55647a533
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12790,7 +12790,7 @@ Usage: #example
 
 Instance: PreQual36463c650975ef84b1519bc55647a533
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12828,7 +12828,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct3d3b58060f5dc09709e826ea5b7f635d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12841,7 +12841,7 @@ Usage: #example
 
 Instance: PreQual3d3b58060f5dc09709e826ea5b7f635d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12879,7 +12879,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct0cb7838cdb9015a56943ac3256e7c9e0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12892,7 +12892,7 @@ Usage: #example
 
 Instance: PreQual0cb7838cdb9015a56943ac3256e7c9e0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12930,7 +12930,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct918ff9b5bd4b52ff9f2adf81368501a5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12943,7 +12943,7 @@ Usage: #example
 
 Instance: PreQual918ff9b5bd4b52ff9f2adf81368501a5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -12981,7 +12981,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct74a886b0b82debce2c05ff10507db46e
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -12994,7 +12994,7 @@ Usage: #example
 
 Instance: PreQual74a886b0b82debce2c05ff10507db46e
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13032,7 +13032,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProduct1071c914359919dd58d72663a018511b
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13045,7 +13045,7 @@ Usage: #example
 
 Instance: PreQual1071c914359919dd58d72663a018511b
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13083,7 +13083,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProductda7044cc9c5d3a1c5e4cb5c88ee081f0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13096,7 +13096,7 @@ Usage: #example
 
 Instance: PreQualda7044cc9c5d3a1c5e4cb5c88ee081f0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13134,7 +13134,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProductf8b5e42854cc1ae2255649171e9a8e5c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13147,7 +13147,7 @@ Usage: #example
 
 Instance: PreQualf8b5e42854cc1ae2255649171e9a8e5c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13185,7 +13185,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TetanusToxoidProductd0dc36feabc50a33cc8f2f89d2342919
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13198,7 +13198,7 @@ Usage: #example
 
 Instance: PreQuald0dc36feabc50a33cc8f2f89d2342919
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13236,7 +13236,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProductc8a79556c41225d558dae1807a41b38f
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13249,7 +13249,7 @@ Usage: #example
 
 Instance: PreQualc8a79556c41225d558dae1807a41b38f
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13287,7 +13287,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProduct1bd8cf70f560d4ac1a937963c2fd44ba
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13300,7 +13300,7 @@ Usage: #example
 
 Instance: PreQual1bd8cf70f560d4ac1a937963c2fd44ba
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13338,7 +13338,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProduct2ae65ee169c9a71896965301d90f4ee2
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13351,7 +13351,7 @@ Usage: #example
 
 Instance: PreQual2ae65ee169c9a71896965301d90f4ee2
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13389,7 +13389,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProduct888fc7936a47fcc7c2f59c465bb8e7ed
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13402,7 +13402,7 @@ Usage: #example
 
 Instance: PreQual888fc7936a47fcc7c2f59c465bb8e7ed
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13440,7 +13440,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: VaricellaProduct0997806769699913a3f450d32a1932b4
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13453,7 +13453,7 @@ Usage: #example
 
 Instance: PreQual0997806769699913a3f450d32a1932b4
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13491,7 +13491,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: VaricellaProduct640db8992fe6d85bb1aed3872583dd5c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13504,7 +13504,7 @@ Usage: #example
 
 Instance: PreQual640db8992fe6d85bb1aed3872583dd5c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13542,7 +13542,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalTrivaleProduct60da9ef23c1068c0b6922abd7e25ff17
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13555,7 +13555,7 @@ Usage: #example
 
 Instance: PreQual60da9ef23c1068c0b6922abd7e25ff17
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13593,7 +13593,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: InfluenzaseasonalQuadrivProducta39febbd4fc1b31f1ea3e43bc91baea0
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13606,7 +13606,7 @@ Usage: #example
 
 Instance: PreQuala39febbd4fc1b31f1ea3e43bc91baea0
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13644,7 +13644,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RabiesProduct3a0b2112f0d5e10d24b6063b5e91a025
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13657,7 +13657,7 @@ Usage: #example
 
 Instance: PreQual3a0b2112f0d5e10d24b6063b5e91a025
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13695,7 +13695,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: RabiesProducte3f874e7b89ed3e777f03ede68bb6fe5
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13708,7 +13708,7 @@ Usage: #example
 
 Instance: PreQuale3f874e7b89ed3e777f03ede68bb6fe5
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13746,7 +13746,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: HumanPapillomavirusBivalProduct2ce0838fa87a21625f2bb12e269b26a2
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13759,7 +13759,7 @@ Usage: #example
 
 Instance: PreQual2ce0838fa87a21625f2bb12e269b26a2
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13797,7 +13797,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProductab01f006f8b24113f4a28cb50bfe6d9d
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13810,7 +13810,7 @@ Usage: #example
 
 Instance: PreQualab01f006f8b24113f4a28cb50bfe6d9d
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13848,7 +13848,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProduct5f0639d8e4d52afef089aa7148c5060c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13861,7 +13861,7 @@ Usage: #example
 
 Instance: PreQual5f0639d8e4d52afef089aa7148c5060c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13899,7 +13899,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: YellowFeverProducte0534dbc71a6cc09f56dce25216c538c
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13912,7 +13912,7 @@ Usage: #example
 
 Instance: PreQuale0534dbc71a6cc09f56dce25216c538c
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -13950,7 +13950,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: EbolavaccineAd26ZEBOVGPrProduct72c1ff5266fc6bf3683b0076c250cbff
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -13963,7 +13963,7 @@ Usage: #example
 
 Instance: PreQual72c1ff5266fc6bf3683b0076c250cbff
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -14001,7 +14001,7 @@ InstanceOf: PreQualDBwithIds
 
 Instance: TyphoidConjugateProductaa2deeb320b1ef154bbde64ba6ce78fe
 InstanceOf: $Product
-Usage: #example
+Usage: #definition
 * status = #active
 * name
   * nameType = #official
@@ -14014,7 +14014,7 @@ Usage: #example
 
 Instance: PreQualaa2deeb320b1ef154bbde64ba6ce78fe
 InstanceOf: $ProductAuthorization
-Usage: #example
+Usage: #definition
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
