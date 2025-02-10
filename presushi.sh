@@ -111,7 +111,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
   print ""
   print "Instance: Manufacturer"MD5
   print "InstanceOf: IHE.mCSD.Organization"
-  print "Usage: #example"
+  print "// Usage: #example"
   print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#other"
@@ -135,7 +135,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>1  {
   print ""
   print "Instance: Holder"MD5
   print "InstanceOf: IHE.mCSD.Organization"
-  print "Usage: #example"
+  print "// Usage: #example"
   print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#govt"
