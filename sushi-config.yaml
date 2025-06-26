@@ -1,7 +1,7 @@
 id: smart.who.int.pcmt-vaxprequal
 canonical: http://smart.who.int/pcmt-vaxprequal
-name: SMARTPCMTDatasetVAXPreQual
-title: SMART Product Catalog
+name: PCMTVAXPreQual
+title: SMART Product Dataset for Prequalified Vaccines
 description: Data exchange specifications for Product Catalog supporting the SMART Guidelines
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -257,9 +257,9 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  smart.who.int.base: current
-  smart.who.int.pcmt: current
+  smart.who.int.base: 0.1.0
+  smart.who.int.pcmt: 0.1.0
   ihe.iti.mcsd: 
    id: IHE_ITI_mCSD
    uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd 
-   version: 3.8.0
+   version: 4.0.0
