@@ -1,0 +1,501 @@
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old)
+Detected Java version: 23-ea from /usr/local/openjdk-23 on amd64 (64bit). 4096MB available
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
+---------------
+Publication Run: publish /workspace/source to /workspace/webroot
+Relative directory for IG is '/pcmt-vaxprequal'
+===== Web Publication Run Details ===============================
+ Source IG: smart.who.int.pcmt-vaxprequal#0.1.0 : http://smart.who.int/pcmt-vaxprequal (R5) from /workspace/source
+All checks passed. Do the publication build from /workspace/source and publish to /workspace/temp/web-root/run-20250701/pcmt-vaxprequal
+Prepare Build space in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0
+Build IG at /workspace/source: final copy suitable for publication (in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0)
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old)    
+Detected Java version: 23-ea from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4096MB available    
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0 -resetTx -publish http://smart.who.int/pcmt-vaxprequal/v0.1.0 -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Tuesday, July 1, 2025, 8:29:35 AM Coordinated Universal Time (2025-07-01T08:29:35Z)   
+                                                                                                    
+Build FHIR IG from /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0                     (00:00.028 / 00:00.029, 76Mb)
+Build Formal Publication package, intended for http://smart.who.int/pcmt-vaxprequal/v0.1.0           (00:00.003 / 00:00.032, 76Mb)
+API keys loaded from /home/publisher/.fhir/fhir-settings.json                                        (00:00.001 / 00:00.033, 76Mb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.003 / 00:00.037, 76Mb)
+Found dependency on smart.who.int.base#0.1.0 in Sushi config. Pre-installing                         (00:00.003 / 00:00.041, 77Mb)
+[39mInstalling smart.who.int.base#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling smart.who.int.base#0.1.0
+[0;39m[39m done.
+[0;39mFound dependency on smart.who.int.pcmt#0.1.0 in Sushi config. Pre-installing                         (00:01.101 / 00:01.142, 26Mb)
+[39mInstalling smart.who.int.pcmt#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling smart.who.int.pcmt#0.1.0
+[0;39m[39m done.
+[0;39mRun Sushi on /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0                           (00:00.667 / 00:01.810, 28Mb)
+Sushi: info  Running SUSHI v3.16.2 (implements FHIR Shorthand specification v3.0.0)                  (00:00.461 / 00:02.271, 31Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:02.273, 31Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:02.274, 31Mb)
+Sushi: info    --out /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0                   (00:00.000 / 00:02.275, 31Mb)
+Sushi: info    /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0                         (00:00.001 / 00:02.276, 31Mb)
+Sushi: info  Using configuration file: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/sushi-config.yaml (00:00.697 / 00:02.973, 31Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.107 / 00:03.081, 31Mb)
+Sushi: info  Preprocessed 10 documents with 8 aliases.                                               (00:00.744 / 00:03.825, 31Mb)
+Sushi: info  Imported 8 definitions and 899 instances.                                               (00:00.115 / 00:03.940, 31Mb)
+Sushi: warn  Detected FSH entity definitions with duplicate names. While FSH allows for duplicate names across entity types, they can lead to ambiguous results when referring to these entities by name elsewhere (e.g., in references). Consider using unique names in FSH declarations and assigning duplicated names using caret assignment rules instead. Detected duplicate names: PreQualVaccineType, PreQualProductIds, PreQualPresentation. (00:00.007 / 00:03.947, 31Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r5#latest to concrete version 0.5.0                          (00:00.518 / 00:04.466, 31Mb)
+Sushi: info  Attempting to download hl7.fhir.uv.tools.r5#0.5.0 from https://packages.fhir.org/hl7.fhir.uv.tools.r5/0.5.0 (00:00.001 / 00:04.467, 31Mb)
+Sushi: info  Downloaded hl7.fhir.uv.tools.r5#0.5.0                                                   (00:00.394 / 00:04.862, 31Mb)
+Sushi: info  Cached hl7.fhir.uv.tools.r5#0.5.0 to /home/publisher/.fhir/packages/hl7.fhir.uv.tools.r5#0.5.0 (00:00.002 / 00:04.864, 31Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r5#0.5.0 with 96 resources                                     (00:00.051 / 00:04.916, 31Mb)
+Sushi: info  Resolved hl7.terminology.r5#latest to concrete version 6.4.0                            (00:00.106 / 00:05.023, 31Mb)
+Sushi: info  Attempting to download hl7.terminology.r5#6.4.0 from https://packages.fhir.org/hl7.terminology.r5/6.4.0 (00:00.000 / 00:05.023, 31Mb)
+Sushi: info  Downloaded hl7.terminology.r5#6.4.0                                                     (00:01.286 / 00:06.310, 32Mb)
+Sushi: info  Cached hl7.terminology.r5#6.4.0 to /home/publisher/.fhir/packages/hl7.terminology.r5#6.4.0 (00:00.001 / 00:06.311, 32Mb)
+Sushi: info  Loaded hl7.terminology.r5#6.4.0 with 4381 resources                                     (00:01.008 / 00:07.319, 32Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r5#latest to concrete version 5.2.0                     (00:00.105 / 00:07.425, 32Mb)
+Sushi: info  Attempting to download hl7.fhir.uv.extensions.r5#5.2.0 from https://packages.fhir.org/hl7.fhir.uv.extensions.r5/5.2.0 (00:00.000 / 00:07.426, 32Mb)
+Sushi: info  Downloaded hl7.fhir.uv.extensions.r5#5.2.0                                              (00:00.393 / 00:07.820, 32Mb)
+Sushi: info  Cached hl7.fhir.uv.extensions.r5#5.2.0 to /home/publisher/.fhir/packages/hl7.fhir.uv.extensions.r5#5.2.0 (00:00.000 / 00:07.821, 32Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r5#5.2.0 with 759 resources                               (00:00.174 / 00:07.996, 32Mb)
+Sushi: info  Loaded smart.who.int.base#0.1.0 with 17 resources                                       (00:00.012 / 00:08.008, 32Mb)
+Sushi: info  Loaded smart.who.int.pcmt#0.1.0 with 15 resources                                       (00:00.004 / 00:08.013, 32Mb)
+Sushi: info  Attempting to download ihe.iti.mcsd#4.0.0 from https://packages.fhir.org/ihe.iti.mcsd/4.0.0 (00:00.000 / 00:08.014, 32Mb)
+Sushi: info  Downloaded ihe.iti.mcsd#4.0.0                                                           (00:00.167 / 00:08.181, 32Mb)
+Sushi: info  Cached ihe.iti.mcsd#4.0.0 to /home/publisher/.fhir/packages/ihe.iti.mcsd#4.0.0          (00:00.001 / 00:08.182, 32Mb)
+Sushi: info  Loaded ihe.iti.mcsd#4.0.0 with 48 resources                                             (00:00.023 / 00:08.206, 32Mb)
+Sushi: info  Attempting to download hl7.fhir.r5.core#5.0.0 from https://packages.fhir.org/hl7.fhir.r5.core/5.0.0 (00:00.000 / 00:08.207, 32Mb)
+Sushi: info  Downloaded hl7.fhir.r5.core#5.0.0                                                       (00:01.248 / 00:09.455, 32Mb)
+Sushi: info  Cached hl7.fhir.r5.core#5.0.0 to /home/publisher/.fhir/packages/hl7.fhir.r5.core#5.0.0  (00:00.001 / 00:09.456, 32Mb)
+Sushi: info  Loaded hl7.fhir.r5.core#5.0.0 with 2968 resources                                       (00:00.765 / 00:10.222, 32Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.007 / 00:10.229, 32Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.016 / 00:10.246, 32Mb)
+Sushi: info  Converted 2 FHIR StructureDefinitions.                                                  (00:00.140 / 00:10.387, 32Mb)
+Sushi: info  Converted 3 FHIR CodeSystems.                                                           (00:00.049 / 00:10.437, 32Mb)
+Sushi: info  Converted 3 FHIR ValueSets.                                                             (00:00.029 / 00:10.466, 32Mb)
+Sushi: info  Converted 899 FHIR instances.                                                           (00:27.888 / 00:38.355, 32Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:38.357, 32Mb)
+Sushi: info  Exported 907 FHIR resources as JSON.                                                    (00:00.094 / 00:38.451, 32Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.018 / 00:38.469, 32Mb)
+Sushi: info  Generated ImplementationGuide-smart.who.int.pcmt-vaxprequal.json                        (00:00.051 / 00:38.521, 32Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:38.523, 32Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.001 / 00:38.524, 32Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:38.525, 32Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:38.526, 32Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:38.527, 32Mb)
+Sushi: | |       0       |      0       |      2       |       0       | |                           (00:00.001 / 00:38.528, 32Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:38.530, 32Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:38.531, 32Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:38.532, 32Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:38.533, 32Mb)
+Sushi: | |         3          |         3         |        899         | |                           (00:00.000 / 00:38.534, 32Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:38.535, 32Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:38.536, 32Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:38.536, 32Mb)
+Sushi: | You might need some Vitamin Sea        0 Errors       1 Warning |                           (00:00.000 / 00:38.537, 32Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:38.538, 32Mb)
+Load Template from who.template.root#current                                                         (00:00.575 / 00:39.114, 51Mb)
+[39mInstalling who.template.root#current to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling who.template.root#current
+[0;39m[39m done.
+[0;39m Load Template from fhir.base.template#current                                                       (00:00.855 / 00:39.970, 79Mb)
+[39mInstalling fhir.base.template#current to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling fhir.base.template#current
+[0;39m[39m done.
+[0;39mRoot directory: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0                        (00:04.047 / 00:44.017, 97Mb)
+Terminology Cache is at /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input-cache/txcache. Clearing now (00:01.967 / 00:45.985, 161Mb)
+Core Package hl7.fhir.r5.core#5.0.0
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Running Terminology Log: /tmp/ohfu-fhir-ig-17566241974890677339.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:04.165 / 00:50.150, 507Mb)
+[39mInstalling hl7.fhir.pubpack#0.2.3 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.pubpack#0.2.3
+[0;39m[39m done.
+[0;39m[39mLoad Package hl7.fhir.pubpack#0.2.3
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0
+[0;39m[39m done.
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r5#6.4.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r5#5.2.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'smart.who.int.base' is from version 4.0.1 (will try to run anyway) (00:04.584 / 00:54.735, 405Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'smart.who.int.base#0.1.0'       (00:00.001 / 00:54.736, 405Mb)
+[39mInstalling hl7.terminology#5.5.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology#5.5.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology#5.5.0'          (00:01.699 / 00:56.436, 563Mb)
+[39mInstalling hl7.fhir.uv.extensions.r4#1.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#1.0.0
+[0;39m[39m done.
+[0;39mVersion mismatch. This IG is for FHIR version 5.0.0, while the package 'hl7.terminology#5.5.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:00.972 / 00:57.408, 616Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.extensions.r4#1.0.0' (00:00.011 / 00:57.420, 629Mb)
+[39mLoad Package hl7.fhir.uv.extensions.r4#1.0.0
+[0;39m[39mLoad Package hl7.terminology#5.5.0
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.1.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.extensions.r4#5.1.0' (00:03.188 / 01:00.609, 907Mb)
+[39mLoad Package hl7.fhir.uv.extensions.r4#5.1.0
+[0;39m[39mInstalling hl7.fhir.uv.cql#1.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.cql#1.0.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.cql#1.0.0'          (00:01.608 / 01:02.217, 861Mb)
+[39mLoad Package hl7.fhir.uv.cql#1.0.0
+[0;39m[39mInstalling hl7.fhir.uv.crmi#1.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.crmi#1.0.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.crmi#1.0.0'         (00:01.167 / 01:03.385, 880Mb)
+[39mLoad Package hl7.fhir.uv.crmi#1.0.0
+[0;39m[39mInstalling hl7.fhir.uv.sdc#3.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.sdc#3.0.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'          (00:01.073 / 01:04.458, 910Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:00.000 / 01:04.459, 910Mb)
+[39mLoad Package hl7.fhir.uv.sdc#3.0.0
+[0;39m[39mLoad Package smart.who.int.base#0.1.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'smart.who.int.pcmt' is from version 4.0.1 (will try to run anyway) (00:00.015 / 01:04.474, 915Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'smart.who.int.pcmt#0.1.0'       (00:00.000 / 01:04.475, 915Mb)
+[39mInstalling hl7.terminology.r4#6.4.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#6.4.0
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#6.4.0'       (00:01.707 / 01:06.183, 585Mb)
+[39mLoad Package hl7.terminology.r4#6.4.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.mcsd#4.0.0'             (00:00.884 / 01:07.067, 569Mb)
+[39mInstalling hl7.terminology.r4#6.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#6.3.0
+[0;39m[39m done.
+[0;39mVersion mismatch. This IG is for FHIR version 5.0.0, while the package 'ihe.iti.mcsd#4.0.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:01.416 / 01:08.483, 716Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#6.3.0'       (00:00.019 / 01:08.502, 744Mb)
+[39mLoad Package hl7.terminology.r4#6.3.0
+[0;39m[39mInstalling ihe.iti.balp#1.1.3 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling ihe.iti.balp#1.1.3
+[0;39m[39m done.
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.balp#1.1.3'             (00:01.755 / 01:10.258, 772Mb)
+[39mInstalling hl7.terminology.r4#5.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#5.3.0
+[0;39m[39m done.
+[0;39mVersion mismatch. This IG is for FHIR version 5.0.0, while the package 'ihe.iti.balp#1.1.3' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:01.769 / 01:12.027, 884Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#5.3.0'       (00:00.019 / 01:12.047, 911Mb)
+[39mLoad Package hl7.terminology.r4#5.3.0
+[0;39m[39mLoad Package ihe.iti.balp#1.1.3
+[0;39m[39mLoad Package ihe.iti.mcsd#4.0.0
+[0;39m[39mLoad Package smart.who.int.pcmt#0.1.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'ihe.iti.mcsd' is from version 4.0.1 (will try to run anyway) (00:01.923 / 01:13.970, 958Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.mcsd#4.0.0'             (00:00.001 / 01:13.971, 958Mb)
+[39mLoad Package ihe.iti.mcsd#4.0.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r5#0.5.0
+[0;39mInitialization complete                                                                              (00:04.703 / 01:18.675, 1Gb)
+Load IG                                                                                              (00:00.001 / 01:18.676, 1Gb)
+Load Content                                                                                         (00:00.001 / 01:18.678, 1Gb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.232 / 01:18.911, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductAuthorizationLM.map as XML: Content is not allowed in prolog. at line 0 col 0 (00:05.451 / 01:24.362, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductAuthorizationLM.map as JSON: Error parsing JSON source: Unexpected content at start of JSON: String at Line 1 (path=[map]) (00:00.004 / 01:24.366, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductAuthorizationLM.map as Turtle: Unknown prefix map (00:00.006 / 01:24.373, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductLM.map as XML: Content is not allowed in prolog. at line 0 col 0 (00:00.015 / 01:24.389, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductLM.map as JSON: Error parsing JSON source: Unexpected content at start of JSON: String at Line 1 (path=[map]) (00:00.003 / 01:24.392, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/maps/PreQualDBtoProductLM.map as Turtle: Unknown prefix map (00:00.003 / 01:24.396, 1Gb)
+Process Loaded Resources                                                                             (00:00.782 / 01:25.178, 749Mb)
+Generating Snapshots                                                                                 (00:00.126 / 01:25.305, 822Mb)
+Process Additional Loaded Resources                                                                  (00:06.394 / 01:31.699, 1Gb)
+Generating Snapshots                                                                                 (00:00.013 / 01:31.713, 1Gb)
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/fsh-generated/includes] as /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/fsh-generated/includes
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/pagecontent] as /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/input/pagecontent
+Fetch http://smart.who.int/pcmt-vaxprequal/package-list.json for version check                       (00:00.041 / 01:31.755, 1Gb)
+Processing Conformance Resources                                                                     (00:00.423 / 01:32.178, 791Mb)
+Checking Language                                                                                    (00:00.000 / 01:32.178, 791Mb)
+Load Dependency Info                                                                                 (00:00.013 / 01:32.191, 794Mb)
+Load Info                                                                                            (00:00.002 / 01:32.194, 794Mb)
+Load Paths                                                                                           (00:00.001 / 01:32.196, 795Mb)
+Check R4 / R4B                                                                                       (00:00.002 / 01:32.198, 796Mb)
+Assign Comparison Ids                                                                                (00:00.071 / 01:32.270, 815Mb)
+Propagating status                                                                                   (00:00.001 / 01:32.271, 815Mb)
+Generating Narratives                                                                                (00:00.000 / 01:32.272, 815Mb)
+Validating Conformance Resources                                                                     (00:00.682 / 01:32.955, 1Gb)
+Check profiles & code systems                                                                        (00:23.643 / 01:56.599, 1Gb)
+Check realm rules                                                                                    (00:00.002 / 01:56.601, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:56.603, 1Gb)
+Validating Resources                                                                                 (00:00.017 / 01:56.621, 1Gb)
+Processing Provenance Records                                                                        (00:01.371 / 01:57.992, 940Mb)
+Checking for Bundles to sign                                                                         (00:00.002 / 01:57.994, 940Mb)
+Generating Outputs in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/output           (00:00.001 / 01:57.996, 940Mb)
+Generate Native Outputs                                                                              (00:00.254 / 01:58.251, 1Gb)
+Run Template                                                                                         (00:16.462 / 02:14.713, 1Gb)
+Generate HTML Outputs                                                                                (00:01.732 / 02:16.446, 1Gb)
+Generate Spreadsheets                                                                                (00:18.402 / 02:34.849, 1Gb)
+Generate Summaries                                                                                   (00:00.843 / 02:35.692, 1Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 02:35.693, 1Gb)
+Table of contents has a section with more than 222 entries.  Collapsing will not work reliably
+DB Cumulative Time invested: 00:00:02.427
+Sending Usage Stats to Server                                                                        (00:08.509 / 02:44.203, 2Gb)
+## Memory (MB): Use = 2126, Free = 272, Total = 2398, Max = 4096                                     (00:00.006 / 02:44.209, 2Gb)
+Reclaiming memory...                                                                                 (00:00.001 / 02:44.210, 2Gb)
+## Memory (MB): Use = 1444, Free = 973, Total = 2418, Max = 4096                                     (00:00.813 / 02:45.024, 1Gb)
+Run jekyll: jekyll build --destination "/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/output" (in folder /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/temp/pages) (00:00.002 / 02:45.026, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 02:45.027, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 02:45.028, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 02:45.029, 1Gb)
+Jekyll: Source: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/temp/pages             (00:00.366 / 02:45.396, 1Gb)
+Jekyll: Generating...                                                                                (00:00.000 / 02:45.397, 1Gb)
+Jekyll: done in 11.1 seconds.                                                                        (00:11.098 / 02:56.495, 1Gb)
+[39m
+[0;39m[39mInstalling smart.who.int.pcmt-vaxprequal#0.1.0
+[0;39m[39m done.
+[0;39mChecking Output HTML                                                                                 (00:00.471 / 02:56.967, 1Gb)
+found 7969 files                                                                                     (00:00.062 / 02:57.029, 1Gb)
+........................................
+........................................
+  ... 7969 html files, 0 pages invalid xhtml (0%)                                                    (00:23.329 / 03:20.358, 1Gb)
+  ... 258517 links, 6 broken links (0%)                                                              (00:00.001 / 03:20.359, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 03:20.360, 1Gb)
+Build final .zip                                                                                     (00:00.006 / 03:20.367, 1Gb)
+Final .zip built                                                                                     (00:02.682 / 03:23.049, 1Gb)
+[39mInstalling hl7.fhir.r4.core#4.0.1 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r4.core#4.0.1
+[0;39m[39m done.
+[0;39m[39mInstalling hl7.fhir.r4.examples#4.0.1 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r4.examples#4.0.1
+[0;39m[39m done.
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39m done.
+[0;39mBuilt. Times: loading: 00:13.500, generate: 02:14.560, narrative generation: 00:00.681, realm-rules: 00:00.001, previous-version: 00:00.000, jekyll: 00:11.512, validation: 00:24.987 (#910), template: 00:01.740 (#3) (00:23.689 / 03:46.738, 2Gb)
+Generating QA                                                                                        (00:00.001 / 03:46.740, 2Gb)
+Validation output in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0/output/qa.html
+Errors: 68, Warnings: 928, Info: 2, Broken Links: 6 (00:00.813 / 03:47.553, 2Gb)
+Finished @ 7/1/25, 8:33 AM. Max Memory Used = 2Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log  (00:00.060 / 03:47.613, 2Gb)
+Prepare Build space in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone
+Build IG at /workspace/source: final copy suitable for publication (in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone) (milestone build)
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old)    
+Detected Java version: 23-ea from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4096MB available    
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone -publish http://smart.who.int/pcmt-vaxprequal/v0.1.0 -milestone -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Tuesday, July 1, 2025, 8:33:29 AM Coordinated Universal Time (2025-07-01T08:33:29Z)   
+                                                                                                    
+Build FHIR IG from /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone           (00:00.003 / 00:00.003, 2Gb)
+Build Formal Publication package, intended for http://smart.who.int/pcmt-vaxprequal/v0.1.0           (00:00.000 / 00:00.003, 2Gb)
+API keys loaded from /home/publisher/.fhir/fhir-settings.json                                        (00:00.000 / 00:00.004, 2Gb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.000 / 00:00.005, 2Gb)
+Run Sushi on /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone                 (00:00.001 / 00:00.006, 2Gb)
+Sushi: info  Running SUSHI v3.16.2 (implements FHIR Shorthand specification v3.0.0)                  (00:00.765 / 00:00.772, 2Gb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.772, 2Gb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.773, 2Gb)
+Sushi: info    --out /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone         (00:00.000 / 00:00.774, 2Gb)
+Sushi: info    /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone               (00:00.000 / 00:00.775, 2Gb)
+Sushi: info  Using configuration file: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/sushi-config.yaml (00:00.435 / 00:01.210, 2Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.105 / 00:01.316, 2Gb)
+Sushi: info  Preprocessed 10 documents with 8 aliases.                                               (00:00.740 / 00:02.057, 2Gb)
+Sushi: info  Imported 8 definitions and 899 instances.                                               (00:00.116 / 00:02.173, 2Gb)
+Sushi: warn  Detected FSH entity definitions with duplicate names. While FSH allows for duplicate names across entity types, they can lead to ambiguous results when referring to these entities by name elsewhere (e.g., in references). Consider using unique names in FSH declarations and assigning duplicated names using caret assignment rules instead. Detected duplicate names: PreQualVaccineType, PreQualProductIds, PreQualPresentation. (00:00.008 / 00:02.181, 2Gb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r5#latest to concrete version 0.5.0                          (00:00.535 / 00:02.716, 2Gb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r5#0.5.0 with 96 resources                                     (00:00.064 / 00:02.781, 2Gb)
+Sushi: info  Resolved hl7.terminology.r5#latest to concrete version 6.4.0                            (00:00.108 / 00:02.889, 2Gb)
+Sushi: info  Loaded hl7.terminology.r5#6.4.0 with 4381 resources                                     (00:00.998 / 00:03.888, 2Gb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r5#latest to concrete version 5.2.0                     (00:00.103 / 00:03.991, 2Gb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r5#5.2.0 with 759 resources                               (00:00.234 / 00:04.226, 2Gb)
+Sushi: info  Loaded smart.who.int.base#0.1.0 with 17 resources                                       (00:00.020 / 00:04.246, 2Gb)
+Sushi: info  Loaded smart.who.int.pcmt#0.1.0 with 15 resources                                       (00:00.004 / 00:04.251, 2Gb)
+Sushi: info  Loaded ihe.iti.mcsd#4.0.0 with 48 resources                                             (00:00.023 / 00:04.275, 2Gb)
+Sushi: info  Loaded hl7.fhir.r5.core#5.0.0 with 2968 resources                                       (00:00.780 / 00:05.055, 2Gb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.007 / 00:05.062, 2Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.017 / 00:05.080, 2Gb)
+Sushi: info  Converted 2 FHIR StructureDefinitions.                                                  (00:00.138 / 00:05.218, 2Gb)
+Sushi: info  Converted 3 FHIR CodeSystems.                                                           (00:00.054 / 00:05.272, 2Gb)
+Sushi: info  Converted 3 FHIR ValueSets.                                                             (00:00.030 / 00:05.303, 2Gb)
+Sushi: info  Converted 899 FHIR instances.                                                           (00:28.168 / 00:33.471, 2Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:33.472, 2Gb)
+Sushi: info  Exported 907 FHIR resources as JSON.                                                    (00:00.090 / 00:33.562, 2Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.019 / 00:33.582, 2Gb)
+Sushi: info  Generated ImplementationGuide-smart.who.int.pcmt-vaxprequal.json                        (00:00.058 / 00:33.640, 2Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:33.641, 2Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:33.642, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:33.643, 2Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:33.644, 2Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:33.645, 2Gb)
+Sushi: | |       0       |      0       |      2       |       0       | |                           (00:00.000 / 00:33.646, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:33.647, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:33.648, 2Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.001 / 00:33.649, 2Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:33.650, 2Gb)
+Sushi: | |         3          |         3         |        899         | |                           (00:00.000 / 00:33.651, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:33.652, 2Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:33.653, 2Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:33.653, 2Gb)
+Sushi: | Sailors, take warning!                 0 Errors       1 Warning |                           (00:00.000 / 00:33.654, 2Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:33.655, 2Gb)
+Load Template from who.template.root#current                                                         (00:00.034 / 00:33.689, 2Gb)
+ Load Template from fhir.base.template#current                                                       (00:00.381 / 00:34.071, 2Gb)
+Root directory: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone              (00:01.824 / 00:35.896, 1Gb)
+Terminology Cache is at /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input-cache/txcache. 7 files in cache (00:01.797 / 00:37.694, 1Gb)
+Core Package hl7.fhir.r5.core#5.0.0
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Running Terminology Log: /tmp/ohfu-fhir-ig-17764711625252317697.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:02.795 / 00:40.489, 1Gb)
+[39mLoad Package hl7.fhir.pubpack#0.2.3
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r5#6.4.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r5#5.2.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'smart.who.int.base' is from version 4.0.1 (will try to run anyway) (00:02.159 / 00:42.648, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'smart.who.int.base#0.1.0'       (00:00.000 / 00:42.649, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology#5.5.0'          (00:00.111 / 00:42.761, 1Gb)
+Version mismatch. This IG is for FHIR version 5.0.0, while the package 'hl7.terminology#5.5.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:00.047 / 00:42.809, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.extensions.r4#1.0.0' (00:00.009 / 00:42.819, 1Gb)
+[39mLoad Package hl7.fhir.uv.extensions.r4#1.0.0
+[0;39m[39mLoad Package hl7.terminology#5.5.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.extensions.r4#5.1.0' (00:01.177 / 00:43.996, 1Gb)
+[39mLoad Package hl7.fhir.uv.extensions.r4#5.1.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.cql#1.0.0'          (00:00.806 / 00:44.803, 936Mb)
+[39mLoad Package hl7.fhir.uv.cql#1.0.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.crmi#1.0.0'         (00:00.012 / 00:44.815, 938Mb)
+[39mLoad Package hl7.fhir.uv.crmi#1.0.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'          (00:00.015 / 00:44.831, 944Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:00.000 / 00:44.831, 944Mb)
+[39mLoad Package hl7.fhir.uv.sdc#3.0.0
+[0;39m[39mLoad Package smart.who.int.base#0.1.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'smart.who.int.pcmt' is from version 4.0.1 (will try to run anyway) (00:00.009 / 00:44.841, 948Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'smart.who.int.pcmt#0.1.0'       (00:00.000 / 00:44.841, 948Mb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#6.4.0'       (00:00.106 / 00:44.948, 1015Mb)
+[39mLoad Package hl7.terminology.r4#6.4.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.mcsd#4.0.0'             (00:00.726 / 00:45.675, 1Gb)
+Version mismatch. This IG is for FHIR version 5.0.0, while the package 'ihe.iti.mcsd#4.0.0' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:00.077 / 00:45.753, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#6.3.0'       (00:00.018 / 00:45.772, 1Gb)
+[39mLoad Package hl7.terminology.r4#6.3.0
+[0;39mIgnore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.balp#1.1.3'             (00:01.281 / 00:47.053, 1Gb)
+Version mismatch. This IG is for FHIR version 5.0.0, while the package 'ihe.iti.balp#1.1.3' is for FHIR version 4.0.1 (will ignore that and try to run anyway) (00:00.075 / 00:47.129, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'hl7.terminology.r4#5.3.0'       (00:00.019 / 00:47.148, 1Gb)
+[39mLoad Package hl7.terminology.r4#5.3.0
+[0;39m[39mLoad Package ihe.iti.balp#1.1.3
+[0;39m[39mLoad Package ihe.iti.mcsd#4.0.0
+[0;39m[39mLoad Package smart.who.int.pcmt#0.1.0
+[0;39mVersion mismatch. This IG is version 5.0.0, while the IG 'ihe.iti.mcsd' is from version 4.0.1 (will try to run anyway) (00:01.904 / 00:49.052, 1Gb)
+Ignore Dependency on Core FHIR hl7.fhir.r4.core#4.0.1, from package 'ihe.iti.mcsd#4.0.0'             (00:00.000 / 00:49.053, 1Gb)
+[39mLoad Package ihe.iti.mcsd#4.0.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r5#0.5.0
+[0;39mInitialization complete                                                                              (00:02.269 / 00:51.323, 1Gb)
+Load IG                                                                                              (00:00.000 / 00:51.323, 1Gb)
+Load Content                                                                                         (00:00.001 / 00:51.324, 1Gb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.064 / 00:51.389, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductAuthorizationLM.map as XML: Content is not allowed in prolog. at line 0 col 0 (00:08.084 / 00:59.474, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductAuthorizationLM.map as JSON: Error parsing JSON source: Unexpected content at start of JSON: String at Line 1 (path=[map]) (00:00.004 / 00:59.478, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductAuthorizationLM.map as Turtle: Unknown prefix map (00:00.004 / 00:59.483, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductLM.map as XML: Content is not allowed in prolog. at line 0 col 0 (00:00.017 / 00:59.500, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductLM.map as JSON: Error parsing JSON source: Unexpected content at start of JSON: String at Line 1 (path=[map]) (00:00.004 / 00:59.505, 1Gb)
+Error loading /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/maps/PreQualDBtoProductLM.map as Turtle: Unknown prefix map (00:00.004 / 00:59.509, 1Gb)
+Process Loaded Resources                                                                             (00:00.957 / 01:00.466, 1Gb)
+Generating Snapshots                                                                                 (00:00.102 / 01:00.569, 1Gb)
+Sending usage stats failed: Connection timed out
+Process Additional Loaded Resources                                                                  (00:06.777 / 01:07.347, 1Gb)
+Generating Snapshots                                                                                 (00:00.007 / 01:07.354, 1Gb)
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/fsh-generated/includes] as /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/pagecontent] as /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/input/pagecontent
+Fetch http://smart.who.int/pcmt-vaxprequal/package-list.json for version check                       (00:00.018 / 01:07.372, 1Gb)
+Processing Conformance Resources                                                                     (00:00.151 / 01:07.523, 1Gb)
+Checking Language                                                                                    (00:00.000 / 01:07.524, 1Gb)
+Load Dependency Info                                                                                 (00:00.009 / 01:07.533, 1Gb)
+Load Info                                                                                            (00:00.002 / 01:07.536, 1Gb)
+Load Paths                                                                                           (00:00.001 / 01:07.537, 1Gb)
+Check R4 / R4B                                                                                       (00:00.001 / 01:07.538, 1Gb)
+Assign Comparison Ids                                                                                (00:00.025 / 01:07.564, 1Gb)
+Propagating status                                                                                   (00:00.000 / 01:07.564, 1Gb)
+Generating Narratives                                                                                (00:00.000 / 01:07.565, 1Gb)
+Validating Conformance Resources                                                                     (00:00.338 / 01:07.904, 1Gb)
+Check profiles & code systems                                                                        (00:22.249 / 01:30.154, 1Gb)
+Check realm rules                                                                                    (00:00.001 / 01:30.155, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:30.157, 1Gb)
+Validating Resources                                                                                 (00:00.009 / 01:30.166, 1Gb)
+Processing Provenance Records                                                                        (00:00.654 / 01:30.820, 1Gb)
+Checking for Bundles to sign                                                                         (00:00.001 / 01:30.822, 1Gb)
+Generating Outputs in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/output (00:00.001 / 01:30.823, 1Gb)
+Generate Native Outputs                                                                              (00:00.161 / 01:30.985, 1Gb)
+Run Template                                                                                         (00:16.817 / 01:47.803, 1Gb)
+Generate HTML Outputs                                                                                (00:01.521 / 01:49.324, 1Gb)
+Generate Spreadsheets                                                                                (00:16.376 / 02:05.700, 1Gb)
+Generate Summaries                                                                                   (00:00.193 / 02:05.894, 1Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 02:05.895, 1Gb)
+Table of contents has a section with more than 222 entries.  Collapsing will not work reliably
+DB Cumulative Time invested: 00:00:02.146
+Sending Usage Stats to Server                                                                        (00:07.772 / 02:13.668, 1Gb)
+## Memory (MB): Use = 1816, Free = 873, Total = 2690, Max = 4096                                     (00:00.001 / 02:13.670, 1Gb)
+Reclaiming memory...                                                                                 (00:00.001 / 02:13.671, 1Gb)
+## Memory (MB): Use = 1447, Free = 1242, Total = 2690, Max = 4096                                    (00:00.892 / 02:14.564, 1Gb)
+Run jekyll: jekyll build --destination "/workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/output" (in folder /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/temp/pages) (00:00.001 / 02:14.565, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 02:14.567, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.001 / 02:14.568, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 02:14.569, 1Gb)
+Jekyll: Source: /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/temp/pages   (00:00.367 / 02:14.937, 1Gb)
+Jekyll: Generating...                                                                                (00:00.000 / 02:14.938, 1Gb)
+Jekyll: done in 11.179 seconds.                                                                      (00:11.178 / 02:26.116, 1Gb)
+[39m
+[0;39m[39mInstalling smart.who.int.pcmt-vaxprequal#0.1.0
+[0;39mChecking Output HTML                                                                                 (00:00.450 / 02:26.567, 1Gb)
+found 7969 files                                                                                     (00:00.045 / 02:26.612, 1Gb)
+........................................
+........................................
+  ... 7969 html files, 0 pages invalid xhtml (0%)                                                    (00:21.448 / 02:48.061, 1Gb)
+  ... 258517 links, 6 broken links (0%)                                                              (00:00.001 / 02:48.062, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 02:48.063, 1Gb)
+Build final .zip                                                                                     (00:00.007 / 02:48.070, 1Gb)
+Final .zip built                                                                                     (00:02.664 / 02:50.735, 1Gb)
+Built. Times: loading: 00:16.199, generate: 01:47.501, narrative generation: 00:00.337, realm-rules: 00:00.001, previous-version: 00:00.000, jekyll: 00:11.592, validation: 00:22.886 (#910), template: 00:01.524 (#3) (00:04.290 / 02:55.025, 1Gb)
+Generating QA                                                                                        (00:00.001 / 02:55.027, 1Gb)
+Validation output in /workspace/temp/ig-builds/smart.who.int.pcmt-vaxprequal#0.1.0-milestone/output/qa.html
+Errors: 68, Warnings: 928, Info: 2, Broken Links: 6 (00:00.289 / 02:55.316, 1Gb)
+Finished @ 7/1/25, 8:36 AM. Max Memory Used = 2Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log  (00:00.062 / 02:55.379, 1Gb)
+Keep a copy of the build directory at /workspace/temp/web-root/run-20250701/ig-build-zips/smart.who.int.pcmt-vaxprequal#0.1.0.zip
+
+ok. All checks passed. Publish v0.1.0 to /workspace/temp/web-root/run-20250701/pcmt-vaxprequal/v0.1.0
+Copy the IG to /workspace/temp/web-root/run-20250701/pcmt-vaxprequal/v0.1.0
+Update /workspace/temp/web-root/run-20250701/pcmt-vaxprequal/package-list.json
+Publish Box Statement: This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.1.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a>
+  .. 4594 files checked, 4594 updated
+  .. 1823 clones checked, 3646 updated
+  .. 910 redirections (910 created/updated)
+This is a milestone release - publish v0.1.0 to /workspace/temp/web-root/run-20250701/pcmt-vaxprequal
+Publish Box Statement: This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.1.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a>
+  .. 4594 files checked, 4594 updated
+  .. 1823 clones checked, 3646 updated
+  .. 910 redirections (910 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG /workspace/temp/web-root/run-20250701/pcmt-vaxprequal
+[Fatal Error] :1:1: Content is not allowed in prolog.
+Unable to process RSS feed /workspace/temp/web-root/run-20250701/publication-feed.xml as XML - processing as text instead (Content is not allowed in prolog.)
+smart.who.int.pcmt-vaxprequal (http://smart.who.int/pcmt-vaxprequal): SMART Product Dataset for Prequalified Vaccines @ http://worldhealthorganization.github.io/smart-pcmt-vaxprequal
+  candidate: Releases Draft 0.1.0/5.0.0 @ http://smart.who.int/pcmt-vaxprequal/v0.1.0
+Build is complete. Copy from /workspace/temp/web-root/run-20250701
+Update history page at /workspace/temp/web-root/run-20250701/pcmt-vaxprequal from /workspace/history-template and /workspace/webroot/templates
