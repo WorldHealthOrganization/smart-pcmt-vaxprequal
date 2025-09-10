@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.system.json",
+  "title": "WHO PreQualificaiton Presentation  System URIs",
+  "description": "System URI mappings for WHO PreQualificaiton Presentation  ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:systems": {
+      "type": "object",
+      "description": "Mapping of ValueSet codes to their corresponding system URIs",
+      "patternProperties": {
+        "^[a-zA-Z0-9._-]+$": {
+          "type": "string",
+          "format": "uri",
+          "description": "System URI for the corresponding code"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:systems"
+  ],
+  "additionalProperties": true,
+  "fhir:systems": {
+    "Ampoule": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "AmpouleorVial": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Applicator": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "PlasticTube": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Sprayer": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Twovialsetactiveactive": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Twovialsetactiveexcipient": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Uniject": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "Vial": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "VialAmpoule": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+    "VialBufferSachet": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2025-09-10T11:39:58+00:00"
+}

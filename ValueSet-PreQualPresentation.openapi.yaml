@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: WHO PreQualificaiton Presentation  Schema API
+  description: JSON Schema for WHO PreQualificaiton Presentation  ValueSet codes.
+    Generated from FHIR expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-PreQualPresentation.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-PreQualPresentation
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-PreQualPresentation.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-PreQualPresentation
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-PreQualPresentation.schema.json
+components:
+  schemas:
+    ValueSet-PreQualPresentation:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.schema.json
+      title: WHO PreQualificaiton Presentation  Schema
+      description: JSON Schema for WHO PreQualificaiton Presentation  ValueSet codes.
+        Generated from FHIR expansions.
+      type: string
+      enum:
+      - Ampoule
+      - AmpouleorVial
+      - Applicator
+      - PlasticTube
+      - Sprayer
+      - Twovialsetactiveactive
+      - Twovialsetactiveexcipient
+      - Uniject
+      - Vial
+      - VialAmpoule
+      - VialBufferSachet
+      narrative: This schema validates codes for the WHO PreQualificaiton Presentation  ValueSet.
+        Display values are available at ValueSet-PreQualPresentation.displays.json.
+        System URI mappings are available at ValueSet-PreQualPresentation.system.json.
+      fhir:displays: ValueSet-PreQualPresentation.displays.json
+      fhir:system: ValueSet-PreQualPresentation.system.json
+      fhir:valueSet: http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation
+      fhir:version: 0.2.0
+      fhir:expansionTimestamp: '2025-09-10T11:39:58+00:00'
