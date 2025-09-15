@@ -13,7 +13,7 @@
 Instance: PreQualDB0a80755033118a426f1d2a571df1b6df
 InstanceOf: PreQualDBwithIds
 Usage: #definition
-* status = #active
+* ^status = #active
 * dateOfPrequal = 2025-01-16
 * vaccineType.coding.code = #HepatitisBPaediatric
 * vaccineType.coding.display = "Hepatitis B (Paediatric)"
