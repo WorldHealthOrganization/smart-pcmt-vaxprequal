@@ -15,6 +15,7 @@ Columns of the CSV are as follows
   7:Responsible NRA
 
 """
+* ^status = #active
 * dateOfPrequal 1..1 dateTime "Date of Prequalification (DD/MM/YY)"
 * vaccineType 1..1 CodeableConcept "Vaccine Type"
 * commercialName 1..1 string "Commercial Name"
@@ -33,6 +34,7 @@ Description:    """Logical model for WHO PreQual DB as CSV file available at:
 Columns of the CSV are as follows
 with additional data fields for appropriately referencing associated data objects
 """
+* ^status = #active
 * index 1..1 Identifier "An index or identifier of the prequalificaiton for the product."
 * index obeys is-a-prequal-product-id
 * manufacturerReference 1..1 Reference(IHE.mCSD.Organization)  "Manufacturer referecne"

@@ -2,8 +2,7 @@ Alias: $preQualPresentation = http://smart.who.int/pcmt-vaxprequal/CodeSystem/Pr
 ValueSet: PreQualPresentation
 Title : "WHO PreQualificaiton Presentation "
 Description: "WHO PreQualificaiton Presentation"
-
-
+* ^status = #active
 * include codes from system $preQualPresentation
 
 

@@ -2,6 +2,7 @@ Alias: $presentation = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPr
 CodeSystem: PreQualPresentation
 Title : "WHO PreQualificaiton Vaccine Presentations"
 Description: "WHO PreQualificaiton Vaccine Presentations"
+* ^status = #active
 
 
 * #Ampoule "Ampoule"

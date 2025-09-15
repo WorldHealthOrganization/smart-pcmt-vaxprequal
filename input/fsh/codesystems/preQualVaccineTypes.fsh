@@ -2,6 +2,7 @@ Alias: $vaccinetype = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVac
 CodeSystem: PreQualVaccineType
 Title : "WHO PreQualificaiton Vaccine VaccineTypes"
 Description: "WHO PreQualificaiton Vaccine VaccineTypes"
+* ^status = #active
 
 
 * #BCG "BCG"
