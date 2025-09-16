@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1d6df6b8-6301-4b6e-93fa-d1b8bab3f5d7-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1d6df6b8-6301-4b6e-93fa-d1b8bab3f5d7-11",
+  "name" : "UnionPreQualPresentationAndPreQualPresentation",
+  "title" : "Union of WHO PreQualificaiton Presentation  And WHO PreQualificaiton Presentation ",
+  "status" : "draft",
+  "date" : "2025-09-16T11:26:59+00:00"
+}

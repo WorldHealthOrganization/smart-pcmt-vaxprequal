@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@vocab": "http://smart.who.int/pcmt-vaxprequal/vocab#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "fhir": "http://hl7.org/fhir/",
+    "id": "@id",
+    "type": "@type",
+    "name": "rdfs:label",
+    "comment": "rdfs:comment",
+    "version": "schema:version",
+    "date": "schema:dateCreated",
+    "publisher": "schema:publisher"
+  },
+  "@graph": [
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "type": "schema:Enumeration",
+      "name": "WHO PreQualificaiton Presentation  Enumeration",
+      "comment": "Allowed values for the WHO PreQualificaiton Presentation  enumeration.",
+      "version": "0.2.0",
+      "date": "2025-09-15T10:59:19+00:00",
+      "publisher": "World Health Organization",
+      "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Ampoule",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Ampoule",
+      "fhir:code": "Ampoule",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#AmpouleorVial",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Ampoule or Vial",
+      "fhir:code": "AmpouleorVial",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Applicator",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Applicator",
+      "fhir:code": "Applicator",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#PlasticTube",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Plastic Tube",
+      "fhir:code": "PlasticTube",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Sprayer",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Sprayer",
+      "fhir:code": "Sprayer",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Twovialsetactiveactive",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Two vial set (active + active)",
+      "fhir:code": "Twovialsetactiveactive",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Twovialsetactiveexcipient",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Two vial set (active + excipient)",
+      "fhir:code": "Twovialsetactiveexcipient",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Uniject",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Uniject",
+      "fhir:code": "Uniject",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Vial",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Vial",
+      "fhir:code": "Vial",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#VialAmpoule",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Vial + Ampoule",
+      "fhir:code": "VialAmpoule",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#VialBufferSachet",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration",
+      "name": "Vial + Buffer Sachet",
+      "fhir:code": "VialBufferSachet",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/vocab#prequalpresentation",
+      "type": "rdf:Property",
+      "name": "prequalpresentation",
+      "comment": "Property for selecting a value from the WHO PreQualificaiton Presentation  enumeration.",
+      "schema:rangeIncludes": {
+        "id": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualPresentationEnumeration"
+      }
+    }
+  ]
+}

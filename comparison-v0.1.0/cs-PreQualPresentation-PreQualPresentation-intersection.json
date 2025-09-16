@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1d6df6b8-6301-4b6e-93fa-d1b8bab3f5d7-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1d6df6b8-6301-4b6e-93fa-d1b8bab3f5d7-3",
+  "name" : "IntersectionPreQualPresentationAndPreQualPresentation",
+  "title" : "Intersection of WHO PreQualificaiton Vaccine Presentations And WHO PreQualificaiton Vaccine Presentations",
+  "status" : "draft",
+  "date" : "2025-09-16T11:26:56+00:00",
+  "concept" : [{
+    "code" : "Ampoule",
+    "display" : "Ampoule"
+  },
+  {
+    "code" : "AmpouleorVial",
+    "display" : "Ampoule or Vial"
+  },
+  {
+    "code" : "Applicator",
+    "display" : "Applicator"
+  },
+  {
+    "code" : "PlasticTube",
+    "display" : "Plastic Tube"
+  },
+  {
+    "code" : "Sprayer",
+    "display" : "Sprayer"
+  },
+  {
+    "code" : "Twovialsetactiveactive",
+    "display" : "Two vial set (active + active)"
+  },
+  {
+    "code" : "Twovialsetactiveexcipient",
+    "display" : "Two vial set (active + excipient)"
+  },
+  {
+    "code" : "Uniject",
+    "display" : "Uniject"
+  },
+  {
+    "code" : "Vial",
+    "display" : "Vial"
+  },
+  {
+    "code" : "VialAmpoule",
+    "display" : "Vial + Ampoule"
+  },
+  {
+    "code" : "VialBufferSachet",
+    "display" : "Vial + Buffer Sachet"
+  }]
+}
