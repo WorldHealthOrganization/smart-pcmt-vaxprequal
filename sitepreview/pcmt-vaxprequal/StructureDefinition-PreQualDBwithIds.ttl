@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "PreQualDBwithIds"] ; # 
   fhir:title [ fhir:v "WHO Vaccine PreQual DB with IDs"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-16T18:09:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-16T18:28:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "PCMTVAXPreQual"] ; # 
   fhir:title [ fhir:v "SMART Product Dataset for Prequalified Vaccines"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-16T18:09:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-16T18:28:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
