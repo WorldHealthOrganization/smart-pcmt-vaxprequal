@@ -4,9 +4,9 @@
     <description>Packages published by the World Health Organization SMART Guidelines</description>
     <link>https://smart.who.int/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Tue, 16 Sep 2025 06:24:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Sep 2025 06:48:18 +0000</lastBuildDate>
     <atom:link href="https://smart.who.int/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Sep 2025 06:24:26 +0000</pubDate>
+    <pubDate>Tue, 16 Sep 2025 06:48:18 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
@@ -17,7 +17,7 @@
       <dc:creator>WHO</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Tue, 16 Sep 2025 06:24:26 +0000</pubDate>
+      <pubDate>Tue, 16 Sep 2025 06:48:18 +0000</pubDate>
       <fhir:details>Publication run at 16/09/2025 by runner using Version 2.0.17 (Git# 98facbadd305). Built 2025-09-09T06:53:45.198Z (7 days old) source id Unknown (todo)</fhir:details>
     </item>
     <item>
