@@ -13,6 +13,7 @@
 Instance: PreQualDB0a80755033118a426f1d2a571df1b6df
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for BEVAC® (Hepatitis B (Paediatric)), Biological E. Limited, 2025-01-16."
 * dateOfPrequal = 2025-01-16
 * vaccineType.coding.code = #HepatitisBPaediatric
 * vaccineType.coding.display = "Hepatitis B (Paediatric)"
@@ -31,6 +32,7 @@ Usage: #definition
 Instance: HepatitisBPaediatricProduct0a80755033118a426f1d2a571df1b6df
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for BEVAC® (Hepatitis B (Paediatric)), Biological E. Limited."
 * status = #active
 * name
   * nameType = #official
@@ -44,6 +46,7 @@ Usage: #definition
 Instance: PreQual0a80755033118a426f1d2a571df1b6df
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for BEVAC® (Hepatitis B (Paediatric)), Central Drugs Standard Control Organization, 2025-01-16."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -65,6 +68,7 @@ Usage: #definition
 Instance: PreQualDB29a71534ef44b701da06062075100739
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for BEVAC® (Hepatitis B), Biological E. Limited, 2025-01-20."
 * dateOfPrequal = 2025-01-20
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -83,6 +87,7 @@ Usage: #definition
 Instance: HepatitisBProduct29a71534ef44b701da06062075100739
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for BEVAC® (Hepatitis B), Biological E. Limited."
 * status = #active
 * name
   * nameType = #official
@@ -96,6 +101,7 @@ Usage: #definition
 Instance: PreQual29a71534ef44b701da06062075100739
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for BEVAC® (Hepatitis B), Central Drugs Standard Control Organization, 2025-01-20."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -117,6 +123,7 @@ Usage: #definition
 Instance: PreQualDBf455a733c51ebd231f8e748ff2d54292
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Act-HIB (Haemophilus influenzae type b), Sanofi Pasteur, 1998-04-01."
 * dateOfPrequal = 1998-04-01
 * vaccineType.coding.code = #Haemophilusinfluenzaetyp
 * vaccineType.coding.display = "Haemophilus influenzae type b"
@@ -135,6 +142,7 @@ Usage: #definition
 Instance: HaemophilusinfluenzaetypProductf455a733c51ebd231f8e748ff2d54292
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Act-HIB (Haemophilus influenzae type b), Sanofi Pasteur."
 * status = #active
 * name
   * nameType = #official
@@ -148,6 +156,7 @@ Usage: #definition
 Instance: PreQualf455a733c51ebd231f8e748ff2d54292
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Act-HIB (Haemophilus influenzae type b), Agence nationale de sécurité du médicament et des produits de santé, 1998-04-01."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -169,6 +178,7 @@ Usage: #definition
 Instance: PreQualDB2b5b9b19671826d92dff00f622588487
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Adacel (Diphtheria-Tetanus-Pertussis (acellular)), Sanofi Pasteur Limited, 2017-05-08."
 * dateOfPrequal = 2017-05-08
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (acellular)"
@@ -187,6 +197,7 @@ Usage: #definition
 Instance: DiphtheriaTetanusPertussProduct2b5b9b19671826d92dff00f622588487
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Adacel (Diphtheria-Tetanus-Pertussis (acellular)), Sanofi Pasteur Limited."
 * status = #active
 * name
   * nameType = #official
@@ -200,6 +211,7 @@ Usage: #definition
 Instance: PreQual2b5b9b19671826d92dff00f622588487
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Adacel (Diphtheria-Tetanus-Pertussis (acellular)), Health Canada - Santé Canada, 2017-05-08."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -221,6 +233,7 @@ Usage: #definition
 Instance: PreQualDB0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Adsorbed DT Vaccine (Diphtheria-Tetanus), PT Bio Farma (Persero), 11/03/1999."
 * dateOfPrequal = 1999-03-11
 * vaccineType.coding.code = #DiphtheriaTetanus
 * vaccineType.coding.display = "Diphtheria-Tetanus"
@@ -239,6 +252,7 @@ Usage: #definition
 Instance: DiphtheriaTetanusProduct0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Adsorbed DT Vaccine (Diphtheria-Tetanus), PT Bio Farma (Persero)."
 * status = #active
 * name
   * nameType = #official
@@ -252,6 +266,7 @@ Usage: #definition
 Instance: PreQual0b291aa3e71f93edc6e5020d6702012c
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Adsorbed DT Vaccine (Diphtheria-Tetanus), National Agency of Drug and Food Control Indonesia, 11/03/1999."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3911,6 +3926,7 @@ Usage: #definition
 Instance: PreQualDBc76596a60cfa755021c2efe65100805b
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Focetria (Influenza, Pandemic H1N1), Seqirus Vaccines Limited, 16/12/2009."
 * dateOfPrequal = 2009-12-16
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -3929,6 +3945,7 @@ Usage: #definition
 Instance: InfluenzaPandemicH1N1Productc76596a60cfa755021c2efe65100805b
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Focetria (Influenza, Pandemic H1N1) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -3942,6 +3959,7 @@ Usage: #definition
 Instance: PreQualc76596a60cfa755021c2efe65100805b
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Focetria (Influenza, Pandemic H1N1) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -3963,6 +3981,7 @@ Usage: #definition
 Instance: PreQualDB6d6849ce69076acc0842734b9a0d375c
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Gardasil 9 (Human Papillomavirus Ninevalent), Merck Sharp & Dohme LLC, 09/02/2018."
 * dateOfPrequal = 2018-02-09
 * vaccineType.coding.code = #HumanPapillomavirusNinev
 * vaccineType.coding.display = "Human Papillomavirus (Ninevalent)"
@@ -3981,6 +4000,7 @@ Usage: #definition
 Instance: HumanPapillomavirusNinevProduct6d6849ce69076acc0842734b9a0d375c
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Gardasil 9 (Human Papillomavirus Ninevalent) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4067,6 +4087,7 @@ Usage: #definition
 Instance: PreQualDBf45d14eded02944191a947ce6ede1a69
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for GC FLU inj (Influenza, seasonal Trivalent), GC Biopharma Corp., 12/04/2011."
 * dateOfPrequal = 2011-04-12
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -4085,6 +4106,7 @@ Usage: #definition
 Instance: InfluenzaseasonalTrivaleProductf45d14eded02944191a947ce6ede1a69
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for GC FLU inj (Influenza, seasonal Trivalent) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4098,6 +4120,7 @@ Usage: #definition
 Instance: PreQualf45d14eded02944191a947ce6ede1a69
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for GC FLU inj (Influenza, seasonal Trivalent) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4119,6 +4142,7 @@ Usage: #definition
 Instance: PreQualDBe9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for GC FLU Multi inj. (Influenza, seasonal Trivalent), GC Biopharma Corp., 07/11/2012."
 * dateOfPrequal = 2012-11-07
 * vaccineType.coding.code = #InfluenzaseasonalTrivale
 * vaccineType.coding.display = "Influenza, seasonal (Trivalent)"
@@ -4137,6 +4161,7 @@ Usage: #definition
 Instance: InfluenzaseasonalTrivaleProducte9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for GC FLU Multi inj. (Influenza, seasonal Trivalent) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4150,6 +4175,7 @@ Usage: #definition
 Instance: PreQuale9f09e6a7002d6c130969c9ee5076b1d
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for GC FLU Multi inj. (Influenza, seasonal Trivalent) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4171,6 +4197,7 @@ Usage: #definition
 Instance: PreQualDBb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for GC FLU Quadrivalent inj. (Influenza, seasonal Quadrivalent), GC Biopharma Corp., 21/12/2016."
 * dateOfPrequal = 2016-12-21
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -4189,6 +4216,7 @@ Usage: #definition
 Instance: InfluenzaseasonalQuadrivProductb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for GC FLU Quadrivalent inj. (Influenza, seasonal Quadrivalent) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4202,6 +4230,7 @@ Usage: #definition
 Instance: PreQualb9a1bcee5471105a80864fdc3ca80945
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for GC FLU Quadrivalent inj. (Influenza, seasonal Quadrivalent) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4223,6 +4252,7 @@ Usage: #definition
 Instance: PreQualDB183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for GC FLU Quadrivalent Multi inj. (Influenza, seasonal Quadrivalent), GC Biopharma Corp., 03/04/2017."
 * dateOfPrequal = 2017-04-03
 * vaccineType.coding.code = #InfluenzaseasonalQuadriv
 * vaccineType.coding.display = "Influenza, seasonal (Quadrivalent)"
@@ -4241,6 +4271,7 @@ Usage: #definition
 Instance: InfluenzaseasonalQuadrivProduct183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for GC FLU Quadrivalent Multi inj. (Influenza, seasonal Quadrivalent) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4254,6 +4285,7 @@ Usage: #definition
 Instance: PreQual183176ddf9c8c8d8a60d3fa2d8ce467f
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for GC FLU Quadrivalent Multi inj. (Influenza, seasonal Quadrivalent) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4275,6 +4307,7 @@ Usage: #definition
 Instance: PreQualDB6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Green Flu-S (Influenza, Pandemic H1N1), GC Biopharma Corp., 11/05/2010."
 * dateOfPrequal = 2010-05-11
 * vaccineType.coding.code = #InfluenzaPandemicH1N1
 * vaccineType.coding.display = "Influenza, Pandemic (H1N1)"
@@ -4293,6 +4326,7 @@ Usage: #definition
 Instance: InfluenzaPandemicH1N1Product6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Green Flu-S (Influenza, Pandemic H1N1) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4306,6 +4340,7 @@ Usage: #definition
 Instance: PreQual6a7cb8b1df3d2ff48b3e61cf5924c482
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Green Flu-S (Influenza, Pandemic H1N1) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4327,6 +4362,7 @@ Usage: #definition
 Instance: PreQualDB8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Haemophilus influenzae type b Conjugate Vaccine (Haemophilus influenzae type b), Serum Institute of India Pvt. Ltd., 17/11/2008."
 * dateOfPrequal = 2008-11-17
 * vaccineType.coding.code = #Haemophilusinfluenzaetyp
 * vaccineType.coding.display = "Haemophilus influenzae type b"
@@ -4345,6 +4381,7 @@ Usage: #definition
 Instance: HaemophilusinfluenzaetypProduct8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Haemophilus influenzae type b Conjugate Vaccine (Haemophilus influenzae type b) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4358,6 +4395,7 @@ Usage: #definition
 Instance: PreQual8c2914a22ad193c8db2d3ef514ff2d77
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Haemophilus influenzae type b Conjugate Vaccine (Haemophilus influenzae type b) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4379,6 +4417,7 @@ Usage: #definition
 Instance: PreQualDBa1708bd501df3103f85e2df44bcf0003
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Havrix 1440 Adult (Hepatitis A Human Diploid Cell, Inactivated Adult), GlaxoSmithKline Biologicals SA, 19/07/2013."
 * dateOfPrequal = 2013-07-19
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
@@ -4397,6 +4436,7 @@ Usage: #definition
 Instance: HepatitisAHumanDiploidCeProducta1708bd501df3103f85e2df44bcf0003
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Havrix 1440 Adult (Hepatitis A Human Diploid Cell, Inactivated Adult) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4410,6 +4450,7 @@ Usage: #definition
 Instance: PreQuala1708bd501df3103f85e2df44bcf0003
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Havrix 1440 Adult (Hepatitis A Human Diploid Cell, Inactivated Adult) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4431,6 +4472,7 @@ Usage: #definition
 Instance: PreQualDBbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Havrix 720 Junior (Hepatitis A Human Diploid Cell, Inactivated Paediatric), GlaxoSmithKline Biologicals SA, 19/07/2013."
 * dateOfPrequal = 2013-07-19
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
@@ -4449,6 +4491,7 @@ Usage: #definition
 Instance: HepatitisAHumanDiploidCeProductbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Havrix 720 Junior (Hepatitis A Human Diploid Cell, Inactivated Paediatric) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4462,6 +4505,7 @@ Usage: #definition
 Instance: PreQualbfeb5b5e99ae6a86b27432faa78da48c
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Havrix 720 Junior (Hepatitis A Human Diploid Cell, Inactivated Paediatric) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4483,6 +4527,7 @@ Usage: #definition
 Instance: PreQualDBb1b534f4defa78597b059a190a77b357
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Paediatric), Sinovac Biotech Co. Ltd, 22/12/2017."
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
@@ -4501,6 +4546,7 @@ Usage: #definition
 Instance: HepatitisAHumanDiploidCeProductb1b534f4defa78597b059a190a77b357
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Paediatric) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4514,6 +4560,7 @@ Usage: #definition
 Instance: PreQualb1b534f4defa78597b059a190a77b357
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Paediatric) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4535,6 +4582,7 @@ Usage: #definition
 Instance: PreQualDBc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Adult), Sinovac Biotech Co. Ltd, 22/12/2017."
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #HepatitisAHumanDiploidCe
 * vaccineType.coding.display = "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
@@ -4553,6 +4601,7 @@ Usage: #definition
 Instance: HepatitisAHumanDiploidCeProductc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Adult) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4566,6 +4615,7 @@ Usage: #definition
 Instance: PreQualc760d423dd3f53b4b1d83226d36a8f40
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for HEALIVE (Hepatitis A Human Diploid Cell, Inactivated Adult) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4587,6 +4637,7 @@ Usage: #definition
 Instance: PreQualDB7402fe6f607aee04fc3800e7258809a9
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Heberbiovac HB (Hepatitis B), Centro de Ingenieria Genetica y Biotecnologia, 11/12/2001."
 * dateOfPrequal = 2001-12-11
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4605,6 +4656,7 @@ Usage: #definition
 Instance: HepatitisBProduct7402fe6f607aee04fc3800e7258809a9
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Heberbiovac HB (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4618,6 +4670,7 @@ Usage: #definition
 Instance: PreQual7402fe6f607aee04fc3800e7258809a9
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Heberbiovac HB (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4639,6 +4692,7 @@ Usage: #definition
 Instance: PreQualDBa2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Heberbiovac HB (Hepatitis B), Centro de Ingenieria Genetica y Biotecnologia, 11/12/2001."
 * dateOfPrequal = 2001-12-11
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4657,6 +4711,7 @@ Usage: #definition
 Instance: HepatitisBProducta2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Heberbiovac HB (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4670,6 +4725,7 @@ Usage: #definition
 Instance: PreQuala2e0420d94f1d5dcf054685ca8d84336
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Heberbiovac HB (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4691,6 +4747,7 @@ Usage: #definition
 Instance: PreQualDBc63592587d84458436293a1b52964f2d
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B), Serum Institute of India Pvt. Ltd., 12/11/2004."
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4709,6 +4766,7 @@ Usage: #definition
 Instance: HepatitisBProductc63592587d84458436293a1b52964f2d
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4722,6 +4780,7 @@ Usage: #definition
 Instance: PreQualc63592587d84458436293a1b52964f2d
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4743,6 +4802,7 @@ Usage: #definition
 Instance: PreQualDB5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B), Serum Institute of India Pvt. Ltd., 12/11/2004."
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4761,6 +4821,7 @@ Usage: #definition
 Instance: HepatitisBProduct5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4774,6 +4835,7 @@ Usage: #definition
 Instance: PreQual5d90a5f85cfbcea91790d1d66c17c8ed
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Hepatitis B Vaccine (rDNA) (Adult) (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4795,6 +4857,7 @@ Usage: #definition
 Instance: PreQualDB2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Hepatitis B Vaccine (rDNA) (Paediatric) (Hepatitis B), Serum Institute of India Pvt. Ltd., 12/11/2004."
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4813,6 +4876,7 @@ Usage: #definition
 Instance: HepatitisBProduct2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Hepatitis B Vaccine (rDNA) (Paediatric) (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4826,6 +4890,7 @@ Usage: #definition
 Instance: PreQual2c7bb1d3d1f6b656f2b91e6399ac8935
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Hepatitis B Vaccine (rDNA) (Paediatric) (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4847,6 +4912,7 @@ Usage: #definition
 Instance: PreQualDBb2a3129f600781cc753b011290b09acb
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Hepatitis B Vaccine (rDNA) (Paedriatic) (Hepatitis B), Serum Institute of India Pvt. Ltd., 12/11/2004."
 * dateOfPrequal = 2004-11-12
 * vaccineType.coding.code = #HepatitisB
 * vaccineType.coding.display = "Hepatitis B"
@@ -4865,6 +4931,7 @@ Usage: #definition
 Instance: HepatitisBProductb2a3129f600781cc753b011290b09acb
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for Hepatitis B Vaccine (rDNA) (Paedriatic) (Hepatitis B) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4878,6 +4945,7 @@ Usage: #definition
 Instance: PreQualb2a3129f600781cc753b011290b09acb
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for Hepatitis B Vaccine (rDNA) (Paedriatic) (Hepatitis B) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4899,6 +4967,7 @@ Usage: #definition
 Instance: PreQualDBf4177b409d09d83e48630717437c5aea
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated), Serum Institute of India Pvt. Ltd., 21/03/2024."
 * dateOfPrequal = 2024-03-21
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
@@ -4917,6 +4986,7 @@ Usage: #definition
 Instance: DiphtheriaTetanusPertussProductf4177b409d09d83e48630717437c5aea
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4930,6 +5000,7 @@ Usage: #definition
 Instance: PreQualf4177b409d09d83e48630717437c5aea
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -4951,6 +5022,7 @@ Usage: #definition
 Instance: PreQualDB0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated), Serum Institute of India Pvt. Ltd., 21/03/2024."
 * dateOfPrequal = 2024-03-21
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
@@ -4969,6 +5041,7 @@ Usage: #definition
 Instance: DiphtheriaTetanusPertussProduct0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: $Product
 Usage: #definition
+Description: "Product instance for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated) vaccine."
 * status = #active
 * name
   * nameType = #official
@@ -4982,6 +5055,7 @@ Usage: #definition
 Instance: PreQual0e63b58e2976f385b77a9b5a356b68b5
 InstanceOf: $ProductAuthorization
 Usage: #definition
+Description: "Authorization for HEXASIIL (Diphtheria-Tetanus-Pertussis whole cell-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated) vaccine."
 * status = #active
 * type = #prequal
 * jurisdiction.coding.display = "WHO"
@@ -5003,6 +5077,7 @@ Usage: #definition
 Instance: PreQualDBd54558e2851d29311ee7f90975827dc7
 InstanceOf: PreQualDBwithIds
 Usage: #definition
+Description: "Prequalification record for Hexaxim (Diphtheria-Tetanus-Pertussis acellular-Hepatitis B-Haemophilus influenzae type b-Polio Inactivated), Sanofi Pasteur, 19/12/2014."
 * dateOfPrequal = 2014-12-19
 * vaccineType.coding.code = #DiphtheriaTetanusPertuss
 * vaccineType.coding.display = "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
