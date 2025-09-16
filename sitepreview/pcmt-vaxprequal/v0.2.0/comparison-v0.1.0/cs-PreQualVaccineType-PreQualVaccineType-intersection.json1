@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "89dcb021-1ed4-4699-919b-317e2e68cb90-9",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/89dcb021-1ed4-4699-919b-317e2e68cb90-9",
+  "id" : "7aff64c1-2a3a-42cc-b957-44d9eee2e43f-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7aff64c1-2a3a-42cc-b957-44d9eee2e43f-9",
   "name" : "IntersectionPreQualVaccineTypeAndPreQualVaccineType",
   "title" : "Intersection of WHO PreQualificaiton Vaccine VaccineTypes And WHO PreQualificaiton Vaccine VaccineTypes",
   "status" : "draft",
-  "date" : "2025-09-16T18:50:07+00:00",
+  "date" : "2025-09-16T19:29:50+00:00",
   "concept" : [{
     "code" : "BCG",
     "display" : "BCG"
