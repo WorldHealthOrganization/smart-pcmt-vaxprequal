@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "0ce48bb4-a3fa-412b-b47a-798cf2336237-8",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/0ce48bb4-a3fa-412b-b47a-798cf2336237-8",
+  "id" : "45020ec6-e5c2-4bba-8ce0-a3ea3d73fbdf-8",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/45020ec6-e5c2-4bba-8ce0-a3ea3d73fbdf-8",
   "name" : "UnionPreQualVaccineTypeAndPreQualVaccineType",
   "title" : "Union of WHO PreQualificaiton Vaccine VaccineTypes And WHO PreQualificaiton Vaccine VaccineTypes",
   "status" : "draft",
-  "date" : "2025-09-16T20:23:08+00:00",
+  "date" : "2025-09-16T20:43:33+00:00",
   "concept" : [{
     "code" : "BCG",
     "display" : "BCG"
