@@ -31,5 +31,5 @@ jobs:
   trigger:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
-    uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+    uses: costateixeira/smart-html/.github/workflows/release.yml@main
   
