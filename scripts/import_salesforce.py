@@ -5,7 +5,6 @@ Downloads paginated results from the PreQual API and generates:
   - FSH logical model instances (FinishedVaccineProducts)
   - FHIR Product and ProductAuthorization instances
   - CodeSystem and ValueSet FSH files
-  - ConceptMap from old CSV MD5-based IDs to authoritative vaccine product IDs
 
 Environment variables:
   PREQUAL_API_ENDPOINT  - API endpoint URL
@@ -13,11 +12,10 @@ Environment variables:
   PREQUAL_API_PASSWORD  - API password
 
 Usage:
-  python scripts/import_salesforce.py [--output-dir DIR] [--csv-file FILE]
+  python scripts/import_salesforce.py [--output-dir DIR]
 """
 
 import argparse
-import csv
 import hashlib
 import json
 import logging
@@ -44,7 +42,7 @@ def sanitize_alpha(text):
 
 
 def md5hash(text):
-    """Compute MD5 hash of text (matching presushi.sh behavior)."""
+    """Compute MD5 hash of text."""
     return hashlib.md5(text.encode("utf-8")).hexdigest()
 
 
@@ -275,44 +273,6 @@ def extract_product_fields(product):
     }
 
 
-def build_csv_md5_key(fields):
-    """Build the MD5 hash key that presushi.sh uses for CSV-based IDs.
-
-    The CSV export uses these columns:
-      1: Date of Prequalification (DD/MM/YYYY)
-      2: Vaccine Type (abbreviated name)
-      3: Commercial Name
-      4: Presentation
-      5: No. of doses
-      6: Manufacturer
-      7: Responsible NRA
-
-    presushi.sh concatenates all columns (with quotes removed) and computes MD5.
-
-    Args:
-        fields: Normalized product fields dict.
-
-    Returns:
-        MD5 hash string matching presushi.sh output, or None if matching not possible.
-    """
-    date_str = fields.get("date_of_prequal", "")
-    if date_str and re.match(r"\d{4}-\d{1,2}-\d{1,2}", date_str):
-        parts = date_str.split("-")
-        date_csv = f"{parts[2]}/{parts[1]}/{parts[0]}"
-    else:
-        date_csv = date_str
-
-    vax = fields.get("vaccine_abbreviated_name", "") or ""
-    commercial = fields.get("vaccine_commercial_name", "") or ""
-    presentation = fields.get("presentation", "") or ""
-    num_doses = fields.get("num_doses", "") or ""
-    manufacturer = fields.get("applicant_name", "") or ""
-    nra = fields.get("nra_name", "") or ""
-
-    md5_src = f"{date_csv} {vax} {commercial} {presentation} {num_doses} {manufacturer} {nra}"
-    return md5hash(md5_src)
-
-
 def generate_presentations_codesystem(products, output_dir):
     """Generate presentations CodeSystem and ValueSet FSH files.
 
@@ -434,7 +394,7 @@ def generate_manufacturers(products, output_dir):
             instance_id = sf_id if sf_id else md5hash(name)
             f.write(f"\nInstance: Manufacturer{sanitize_code(instance_id)}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
             f.write(f'Description: "Vaccine Manufacturer Organization: {fsh_escape(name)}"\n')
             f.write("* active = true\n")
@@ -470,7 +430,7 @@ def generate_holders(products, output_dir):
             instance_id = sf_id if sf_id else md5hash(name)
             f.write(f"\nInstance: Holder{sanitize_code(instance_id)}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual NRA/Holder: {fsh_escape(name)}"\n')
             f.write(f'Description: "National Regulatory Authority: {fsh_escape(name)}"\n')
             f.write("* active = true\n")
@@ -510,7 +470,7 @@ def generate_manufacturer_lm_instances(products, output_dir):
             title_suffix = f" ({country})" if country else ""
             f.write(f"\nInstance: PreQualManufacturer{instance_id}\n")
             f.write("InstanceOf: PreQualManufacturer\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
             f.write(f'Description: "WHO PreQual Manufacturer: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
             if sf_id:
@@ -573,7 +533,7 @@ def generate_nra_lm_instances(products, output_dir):
             title_suffix = f" ({nra_country})" if nra_country else ""
             f.write(f"\nInstance: PreQualNRA{instance_id}\n")
             f.write("InstanceOf: PreQualNRA\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual NRA: {fsh_escape(name)}"\n')
             f.write(f'Description: "WHO PreQual NRA: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
             if sf_id:
@@ -621,7 +581,7 @@ def generate_vaccine_lm_instances(products, output_dir):
             vax_desc = " ".join(part for part in vax_desc_parts if part).strip()
             f.write(f"\nInstance: PreQualVaccine{instance_id}\n")
             f.write("InstanceOf: PreQualVaccine\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Vaccine: {fsh_escape(vax_title)}"\n')
             f.write(f'Description: "WHO PreQual Vaccine: {fsh_escape(vax_desc)}"\n')
             f.write(f'* vaccineId.system = "https://extranet.who.int/prequal/api"\n')
@@ -826,7 +786,7 @@ def generate_bulk_supplier_lm_instances(products, output_dir):
             bs_title = bs_name or bs_id
             f.write(f"\nInstance: PreQualBulkSupplier{instance_id}\n")
             f.write("InstanceOf: PreQualBulkSupplier\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
             f.write(f'Description: "WHO PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
             f.write(f'* bulkSupplierId.system = "https://extranet.who.int/prequal/api"\n')
@@ -882,7 +842,7 @@ def generate_packaging_lm_instances(products, output_dir):
             pkg_title = pkg_desc_text or pkg_type or "Packaging"
             f.write(f"\nInstance: PreQualPackaging{instance_id}\n")
             f.write("InstanceOf: PreQualProductPackaging\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Packaging: {fsh_escape(pkg_title)}"\n')
             f.write(f'Description: "WHO PreQual Product Packaging: {fsh_escape(pkg_title)}"\n')
             f.write(f'* packagingId.system = "https://extranet.who.int/prequal/api"\n')
@@ -955,7 +915,7 @@ def generate_document_lm_instances(products, output_dir):
             doc_type_label = f" ({doc_type_val})" if doc_type_val else ""
             f.write(f"\nInstance: PreQualDocument{instance_id}\n")
             f.write("InstanceOf: PreQualDocumentDetail\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Document: {fsh_escape(doc_title)}"\n')
             f.write(f'Description: "WHO PreQual Document: {fsh_escape(doc_title)}{fsh_escape(doc_type_label)}"\n')
             f.write(f'* documentId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1017,7 +977,7 @@ def generate_site_lm_instances(products, output_dir):
             site_suffix = f" ({site_country})" if site_country else ""
             f.write(f"\nInstance: PreQualSite{instance_id}\n")
             f.write("InstanceOf: PreQualSiteDetail\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Site: {fsh_escape(site_title)}"\n')
             f.write(f'Description: "WHO PreQual Manufacturing Site: {fsh_escape(site_title)}{fsh_escape(site_suffix)}"\n')
             f.write(f'* siteOrganizationId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1091,7 +1051,7 @@ def generate_ingredient_lm_instances(products, output_dir):
             ing_desc = " ".join(ing_desc_parts)
             f.write(f"\nInstance: PreQualIngredient{instance_id}\n")
             f.write("InstanceOf: PreQualProductIngredient\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Ingredient: {fsh_escape(ing_title)}"\n')
             f.write(f'Description: "WHO PreQual Product Ingredient: {fsh_escape(ing_desc)}"\n')
             if ing_id:
@@ -1193,9 +1153,9 @@ def generate_products_and_authorizations(products, output_dir):
 
             product_title = f"{commercial_name} - {vax}" if commercial_name and vax else commercial_name or sf_name
             product_desc = f"{commercial_name} ({vax}) by {manufacturer}" if commercial_name else sf_name
-            f.write(f"Instance: PreQualDB{safe_sf_id}\n")
+            f.write(f"Instance: FinishedProduct{safe_sf_id}\n")
             f.write("InstanceOf: FinishedVaccineProducts\n")
-            f.write("Usage: #definition\n")
+            f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Product: {fsh_escape(product_title)}"\n')
             f.write(f'Description: "{fsh_escape(product_desc)}"\n')
             if product_type:
@@ -1349,134 +1309,6 @@ def generate_products_and_authorizations(products, output_dir):
     logger.info("Generated %d product instances", generated_count)
 
 
-def load_csv_products(csv_path):
-    """Load products from CSV file for concept map generation.
-
-    Args:
-        csv_path: Path to prequalified_vaccines.csv.
-
-    Returns:
-        List of dicts with CSV column values.
-    """
-    csv_products = []
-    with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.reader(f)
-        header = next(reader)
-        for row in reader:
-            if len(row) < 7:
-                continue
-            csv_products.append({
-                "date": row[0].strip(),
-                "vaccine_type": row[1].strip(),
-                "commercial_name": row[2].strip(),
-                "presentation": row[3].strip(),
-                "num_doses": row[4].strip(),
-                "manufacturer": row[5].strip(),
-                "responsible_nra": row[6].strip(),
-            })
-    return csv_products
-
-
-def compute_csv_md5(csv_row):
-    """Compute MD5 hash matching presushi.sh for a CSV row.
-
-    presushi.sh concatenates the fields with spaces after stripping quotes,
-    then pipes through md5sum.  The AWK code is:
-        MD5SRC=gensub(/"/, "", "g", $1) VAX COMMERCIALNAME PRESENTATION $5 MANUFACTURER HOLDER
-
-    This concatenates with space separator in AWK (fields separated by OFS which is comma,
-    but the AWK string concatenation with space is used).
-
-    Args:
-        csv_row: Dict with CSV column values.
-
-    Returns:
-        MD5 hash string.
-    """
-    md5_src = " ".join([
-        csv_row["date"],
-        csv_row["vaccine_type"],
-        csv_row["commercial_name"],
-        csv_row["presentation"],
-        csv_row["num_doses"],
-        csv_row["manufacturer"],
-        csv_row["responsible_nra"],
-    ])
-    return md5hash(md5_src)
-
-
-def generate_concept_map(api_products, csv_path, output_dir):
-    """Generate ConceptMap from old CSV MD5-based IDs to authoritative vaccine product IDs.
-
-    This attempts to match API products to CSV rows by comparing key fields
-    (vaccine type, commercial name, manufacturer, presentation, doses).
-
-    Args:
-        api_products: List of normalized product field dicts from API.
-        csv_path: Path to the CSV file.
-        output_dir: Base output directory (e.g. input/fsh).
-    """
-    if not os.path.exists(csv_path):
-        logger.warning("CSV file not found at %s, skipping concept map generation", csv_path)
-        return
-
-    csv_rows = load_csv_products(csv_path)
-
-    # Build lookup from CSV rows by a matching key
-    csv_by_key = {}
-    for row in csv_rows:
-        md5_id = compute_csv_md5(row)
-        key = (
-            row["commercial_name"].lower().strip(),
-            row["manufacturer"].lower().strip(),
-            row["num_doses"].strip(),
-        )
-        csv_by_key.setdefault(key, []).append((md5_id, row))
-
-    mappings = []
-    for p in api_products:
-        commercial = (p.get("vaccine_commercial_name", "") or "").lower().strip()
-        manufacturer = (p.get("applicant_name", "") or "").lower().strip()
-        doses = (p.get("num_doses", "") or "").strip()
-
-        key = (commercial, manufacturer, doses)
-        if key in csv_by_key:
-            for csv_md5, csv_row in csv_by_key[key]:
-                sf_id = p.get("sf_product_id", "")
-                sf_name = p.get("sf_product_name", "")
-                if sf_id:
-                    mappings.append((csv_md5, sf_id, sf_name, csv_row))
-
-    cm_path = os.path.join(output_dir, "concept_maps", "prequal_csv_to_api.fsh")
-    os.makedirs(os.path.dirname(cm_path), exist_ok=True)
-
-    with open(cm_path, "w", encoding="utf-8") as f:
-        f.write('Instance: PreQualCSVtoAPIConceptMap\n')
-        f.write("InstanceOf: ConceptMap\n")
-        f.write("Usage: #definition\n")
-        f.write('* name = "PreQualCSVtoAPIConceptMap"\n')
-        f.write('* title = "PreQual CSV to Vaccine Product ID Concept Map"\n')
-        f.write('* description = "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs"\n')
-        f.write("* status = #draft\n")
-        f.write("* experimental = true\n")
-        f.write('* sourceScopeUri = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
-        f.write('* targetScopeUri = "https://extranet.who.int/prequal/api"\n')
-        f.write("* group\n")
-        f.write('  * source = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
-        f.write('  * target = "https://extranet.who.int/prequal/api"\n')
-        for csv_md5, sf_id, sf_name, csv_row in mappings:
-            display = f'{csv_row["commercial_name"]} - {csv_row["manufacturer"]}'
-            f.write(f'  * element\n')
-            f.write(f'    * code = #{csv_md5}\n')
-            f.write(f'    * display = "{fsh_escape(display)}"\n')
-            f.write(f'    * target\n')
-            f.write(f'      * code = #{sanitize_code(sf_id)}\n')
-            f.write(f'      * display = "{fsh_escape(sf_name)}"\n')
-            f.write(f'      * relationship = #equivalent\n')
-
-    logger.info("Generated concept map with %d mappings", len(mappings))
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="Import WHO Vaccine PreQual data from the backend API"
@@ -1485,11 +1317,6 @@ def main():
         "--output-dir",
         default="input/fsh",
         help="Output directory for generated FSH files (default: input/fsh)",
-    )
-    parser.add_argument(
-        "--csv-file",
-        default="data/prequalified_vaccines.csv",
-        help="Path to CSV export for concept map generation (default: data/prequalified_vaccines.csv)",
     )
     parser.add_argument(
         "--json-file",
@@ -1545,9 +1372,6 @@ def main():
     generate_site_lm_instances(products, args.output_dir)
     generate_ingredient_lm_instances(products, args.output_dir)
     generate_products_and_authorizations(products, args.output_dir)
-
-    # Generate concept map from old CSV IDs to authoritative vaccine product IDs
-    generate_concept_map(products, args.csv_file, args.output_dir)
 
     logger.info("All FSH files generated successfully in %s", args.output_dir)
 
