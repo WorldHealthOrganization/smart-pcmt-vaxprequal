@@ -11,9 +11,9 @@
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000005atRtUAI
+Instance: FinishedProducta3K3X000005atRtUAI
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: CYVAC - Malaria"
 Description: "CYVAC (Malaria) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -69,9 +69,9 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000005atSwUAI
+Instance: FinishedProducta3K3X000005atSwUAI
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: CYVAC - Malaria"
 Description: "CYVAC (Malaria) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -126,9 +126,9 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 //  Responsible NRA: (Federal Agency for Medicines and Health Products  (FAMPH))
 //
 
-Instance: PreQualDBa3K3X000006MihsUAC
+Instance: FinishedProducta3K3X000006MihsUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Rotarix - LARV"
 Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 * productType = #FinishedVaccineProduct
@@ -191,9 +191,9 @@ Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MihtUAC
+Instance: FinishedProducta3K3X000006MihtUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Polioviral vaccine - tOPV"
 Description: "Polioviral vaccine (tOPV) by Haffkine Bio Pharmaceutical Corporation Ltd"
 * productType = #FinishedVaccineProduct
@@ -253,9 +253,9 @@ Description: "Polioviral vaccine (tOPV) by Haffkine Bio Pharmaceutical Corporati
 //  Responsible NRA: (Ministère de la Santé publique (DPM))
 //
 
-Instance: PreQualDBa3K3X000006MihuUAC
+Instance: FinishedProducta3K3X000006MihuUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
@@ -311,9 +311,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 //  Responsible NRA: (Ministère de la Santé publique (DPM))
 //
 
-Instance: PreQualDBa3K3X000006MihvUAC
+Instance: FinishedProducta3K3X000006MihvUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
@@ -372,9 +372,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 //  Responsible NRA: (Ministère de la Santé publique (DPM))
 //
 
-Instance: PreQualDBa3K3X000006MihwUAC
+Instance: FinishedProducta3K3X000006MihwUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
@@ -433,9 +433,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 //  Responsible NRA: (Pharmaceutical and Medical Devices Agency (PMDA))
 //
 
-Instance: PreQualDBa3K3X000006MihxUAC
+Instance: FinishedProducta3K3X000006MihxUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: BCG Freeze Dried Glutamate vaccine - BCG"
 Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (JBL)"
 * productType = #FinishedVaccineProduct
@@ -499,9 +499,9 @@ Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (
 //  Responsible NRA: (Ministry of Food and Drug Safety (MFDS))
 //
 
-Instance: PreQualDBa3K3X000006MihyUAC
+Instance: FinishedProducta3K3X000006MihyUAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Euvax B - HepB"
 Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * productType = #FinishedVaccineProduct
@@ -563,9 +563,9 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 //  Responsible NRA: (Federal Agency for Medicines and Health Products  (FAMPH))
 //
 
-Instance: PreQualDBa3K3X000006Mii0UAC
+Instance: FinishedProducta3K3X000006Mii0UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Priorix - MMR"
 Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 * productType = #FinishedVaccineProduct
@@ -631,9 +631,9 @@ Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006Mii1UAC
+Instance: FinishedProducta3K3X000006Mii1UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Tetatox - TT"
 Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -695,9 +695,9 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006Mii2UAC
+Instance: FinishedProducta3K3X000006Mii2UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Tetatox - TT"
 Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -759,9 +759,9 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006Mii3UAC
+Instance: FinishedProducta3K3X000006Mii3UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Diftet - DT"
 Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -824,9 +824,9 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 //  Responsible NRA: (National Medical Products Administration  (NMPA))
 //
 
-Instance: PreQualDBa3K3X000006Mii5UAC
+Instance: FinishedProducta3K3X000006Mii5UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: HEALIVE - HepA"
 Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 * productType = #FinishedVaccineProduct
@@ -886,9 +886,9 @@ Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 //  Responsible NRA: (National Medical Products Administration  (NMPA))
 //
 
-Instance: PreQualDBa3K3X000006Mii6UAC
+Instance: FinishedProducta3K3X000006Mii6UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 - bOPV"
 Description: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 (bOPV) by Beijing Institute of Biological Products Co., Ltd."
 * productType = #FinishedVaccineProduct
@@ -949,9 +949,9 @@ Description: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) ty
 //  Responsible NRA: (Ministry of Food and Drug Safety (MFDS))
 //
 
-Instance: PreQualDBa3K3X000006Mii7UAC
+Instance: FinishedProducta3K3X000006Mii7UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Euvax B - HepB"
 Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * productType = #FinishedVaccineProduct
@@ -1015,9 +1015,9 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006Mii8UAC
+Instance: FinishedProducta3K3X000006Mii8UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Diftet - DT"
 Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -1081,9 +1081,9 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006Mii9UAC
+Instance: FinishedProducta3K3X000006Mii9UAC
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Tetadif - dT"
 Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -1146,9 +1146,9 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006MiiAUAS
+Instance: FinishedProducta3K3X000006MiiAUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Tetadif - dT"
 Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -1211,9 +1211,9 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 //  Responsible NRA: (Agence nationale de sécurité du médicament et des produits de santé (ANSM))
 //
 
-Instance: PreQualDBa3K3X000006MiiBUAS
+Instance: FinishedProducta3K3X000006MiiBUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Dengvaxia - TDV"
 Description: "Dengvaxia (TDV) by Sanofi Pasteur SA"
 * productType = #FinishedVaccineProduct
@@ -1275,9 +1275,9 @@ Description: "Dengvaxia (TDV) by Sanofi Pasteur SA"
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006MiiCUAS
+Instance: FinishedProducta3K3X000006MiiCUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: BCG Vaccine - BCG"
 Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -1342,9 +1342,9 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 //  Responsible NRA: (Bulgarian Drug Agency (BDA))
 //
 
-Instance: PreQualDBa3K3X000006MiiDUAS
+Instance: FinishedProducta3K3X000006MiiDUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: BCG Vaccine - BCG"
 Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
@@ -1409,9 +1409,9 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiEUAS
+Instance: FinishedProducta3K3X000006MiiEUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles and Rubella Vaccine Live Attenuated - MR"
 Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1475,9 +1475,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiFUAS
+Instance: FinishedProducta3K3X000006MiiFUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Tetanus  Toxoid Vaccine Adsorbed - TT"
 Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1540,9 +1540,9 @@ Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiGUAS
+Instance: FinishedProducta3K3X000006MiiGUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles and Rubella Vaccine Live Attenuated - MR"
 Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1607,9 +1607,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiHUAS
+Instance: FinishedProducta3K3X000006MiiHUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1674,9 +1674,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiIUAS
+Instance: FinishedProducta3K3X000006MiiIUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1742,9 +1742,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiJUAS
+Instance: FinishedProducta3K3X000006MiiJUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1810,9 +1810,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiKUAS
+Instance: FinishedProducta3K3X000006MiiKUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -1878,9 +1878,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 //  Responsible NRA: (National Medical Products Administration  (NMPA))
 //
 
-Instance: PreQualDBa3K3X000006MiiLUAS
+Instance: FinishedProducta3K3X000006MiiLUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Japanese Encephalitis Vaccine Live (SA14-14-2) - JE"
 Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Institute of Biological Products Co. Ltd"
 * productType = #FinishedVaccineProduct
@@ -1941,9 +1941,9 @@ Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Ins
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiMUAS
+Instance: FinishedProducta3K3X000006MiiMUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Measles Vaccine Live Attenuated - M"
 Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -2006,9 +2006,9 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiNUAS
+Instance: FinishedProducta3K3X000006MiiNUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
 Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
@@ -2071,9 +2071,9 @@ Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Inst
 //  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
 //
 
-Instance: PreQualDBa3K3X000006MiiOUAS
+Instance: FinishedProducta3K3X000006MiiOUAS
 InstanceOf: FinishedVaccineProducts
-Usage: #definition
+Usage: #example
 Title: "PreQual Product: Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
 Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
