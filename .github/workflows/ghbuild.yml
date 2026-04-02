@@ -25,3 +25,4 @@ jobs:
       pages: write
     uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@jct-debug
     secrets: inherit
+
