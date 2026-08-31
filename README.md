@@ -8,7 +8,7 @@
 <!--/badges-->
 
 # WHO SMART GUIDELINES
-
+ 
 This is an empty framework, to be used to create SMART Implementation Guides.
 
 Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
