@@ -6,12 +6,21 @@ import os
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 # Add scripts directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from import_salesforce import (
+    DEFAULT_TIMESTAMP,
+    PreQualAPIError,
+    build_api_url,
+    check_response_status,
+    download_all_pages,
+    download_offset_pages,
+    download_timestamp_pages,
     extract_product_fields,
+    parse_response,
     fsh_escape,
     generate_bulk_supplier_lm_instances,
     generate_document_lm_instances,
@@ -723,6 +732,253 @@ class TestAdditiveCodeSystems(unittest.TestCase):
         content = open(cs_path).read()
         self.assertIn('#OldRemovedProduct "Old Product (OldRemovedProduct)"', content)
         self.assertIn("a3K3X000005atRtUAI", content)
+
+
+def make_page(products, offset=0, limit=20, total=None):
+    """Build an API-shaped response envelope around some product stubs."""
+    return {
+        "FinishedVaccineProducts": products,
+        "AdditionalInfo": {
+            "OffSet": offset,
+            "Limit": limit,
+            "TotalRecords": total if total is not None else len(products),
+        },
+        "Status": {"StatusCode": "SUCCESS"},
+    }
+
+
+def make_products(start, count, stamp="2024-01-01T00:00:00.000Z"):
+    """Build `count` minimal product records numbered from `start`."""
+    return [
+        {
+            "ProductDetails": {
+                "Identification": {"Id": f"id-{i}", "Name": f"FVP-P-{i}"},
+                "Status": "Prequalified",
+                "LastPublishingDate": stamp,
+            }
+        }
+        for i in range(start, start + count)
+    ]
+
+
+class TestBuildApiUrl(unittest.TestCase):
+    ENDPOINT = (
+        "https://soa.example.int/soa-infra/resources/EPQS/"
+        "QueryFinishedVaccineProducts!1.0/RestService_FVP"
+        "?Query=FinishedVaccineProduct&TimeStamp=2021-01-01T00:00:00.000Z&OffSet=0&Limit=20"
+    )
+
+    def test_uses_pascal_case_parameters(self):
+        url = build_api_url(self.ENDPOINT, offset=40, limit=20)
+        self.assertIn("OffSet=40", url)
+        self.assertIn("Limit=20", url)
+        self.assertNotIn("offset=", url)
+        self.assertNotIn("limit=", url)
+
+    def test_replaces_rather_than_duplicates_existing_pagination(self):
+        url = build_api_url(self.ENDPOINT, offset=60, limit=25)
+        self.assertEqual(url.count("OffSet="), 1)
+        self.assertEqual(url.count("Limit="), 1)
+        self.assertIn("OffSet=60", url)
+        self.assertIn("Limit=25", url)
+
+    def test_drops_lowercase_pagination_already_in_endpoint(self):
+        url = build_api_url(self.ENDPOINT + "&offset=0&limit=100", offset=20, limit=20)
+        self.assertNotIn("offset=0", url)
+        self.assertNotIn("limit=100", url)
+        self.assertIn("OffSet=20", url)
+
+    def test_preserves_query_and_service_version(self):
+        url = build_api_url(self.ENDPOINT, offset=0, limit=20)
+        self.assertIn("Query=FinishedVaccineProduct", url)
+        self.assertIn("QueryFinishedVaccineProducts!1.0", url)
+
+    def test_timestamp_argument_overrides_endpoint_value(self):
+        url = build_api_url(
+            self.ENDPOINT, offset=0, limit=20, timestamp="2025-06-01T00:00:00.000Z"
+        )
+        self.assertIn("TimeStamp=2025-06-01T00:00:00.000Z", url)
+        self.assertNotIn("2021-01-01", url)
+
+    def test_timestamp_colons_are_not_percent_encoded(self):
+        url = build_api_url(self.ENDPOINT, offset=0, limit=20)
+        self.assertIn("TimeStamp=2021-01-01T00:00:00.000Z", url)
+
+    def test_timestamp_always_sent_even_when_endpoint_omits_it(self):
+        # The service binds TimeStamp into its SOQL, so omitting it faults
+        # the call with "Bind Parameter's value is empty".
+        bare = "https://soa.example.int/x/RestService_FVP?Query=FinishedVaccineProduct"
+        url = build_api_url(bare, offset=0, limit=20)
+        self.assertIn(f"TimeStamp={DEFAULT_TIMESTAMP}", url)
+
+    def test_blank_timestamp_in_endpoint_is_replaced(self):
+        url = build_api_url(
+            "https://soa.example.int/x/RestService_FVP?Query=FVP&TimeStamp=",
+            offset=0,
+            limit=20,
+        )
+        self.assertIn(f"TimeStamp={DEFAULT_TIMESTAMP}", url)
+        self.assertNotIn("TimeStamp=&", url)
+
+
+class TestParseResponse(unittest.TestCase):
+    # The fault the UAT service returned for a request with no TimeStamp.
+    XML_FAULT = """<ns0:FVP_OUT xmlns:ns0="http://www.fvp.org">
+   <ns0:Status>
+      <ns0:StatusCode>FAULTED</ns0:StatusCode>
+      <ns0:StatusMessage>Exception occurred when binding was invoked.
+Exception occurred during invocation of JCA binding: "JCA Binding execute of
+Reference operation 'query' failed due to: Error sending bytes:
+oracle.cloud.connector.api.CloudInvocationException: Bind Parameter's value is empty.
+".</ns0:StatusMessage>
+   </ns0:Status>
+</ns0:FVP_OUT>"""
+
+    def test_parses_json(self):
+        data = parse_response('{"FinishedVaccineProducts": [], "Status": {"StatusCode": "SUCCESS"}}')
+        self.assertEqual(data["Status"]["StatusCode"], "SUCCESS")
+
+    def test_extracts_status_from_namespaced_xml_fault(self):
+        data = parse_response(self.XML_FAULT)
+        self.assertEqual(data["Status"]["StatusCode"], "FAULTED")
+        self.assertIn("Bind Parameter's value is empty", data["Status"]["StatusMessage"])
+
+    def test_xml_fault_surfaces_as_error_with_its_message(self):
+        with self.assertRaises(PreQualAPIError) as ctx:
+            check_response_status(parse_response(self.XML_FAULT))
+        self.assertIn("Bind Parameter's value is empty", str(ctx.exception))
+
+    def test_rejects_body_that_is_neither_json_nor_xml(self):
+        with self.assertRaises(PreQualAPIError) as ctx:
+            parse_response("<html><body>502 Bad Gateway</body></html>")
+        self.assertIn("Unrecognised XML", str(ctx.exception))
+
+    def test_rejects_unparseable_body(self):
+        with self.assertRaises(PreQualAPIError) as ctx:
+            parse_response("not json, not xml, just noise <<<")
+        self.assertIn("neither JSON nor XML", str(ctx.exception))
+
+
+class TestOffsetPagination(unittest.TestCase):
+    def setUp(self):
+        self.calls = []
+
+    def fake_fetch(self, pages):
+        """Return a fetch_api_page stand-in that serves `pages` in order."""
+
+        def _fetch(endpoint, username, password, offset, limit, timestamp, timeout):
+            self.calls.append({"offset": offset, "limit": limit, "timestamp": timestamp})
+            return pages[len(self.calls) - 1]
+
+        return _fetch
+
+    def test_advances_by_records_returned_not_requested_limit(self):
+        # The service caps each response at 14 rows even though 20 are asked
+        # for, so the offset has to advance by 14.
+        pages = [
+            make_page(make_products(0, 14), total=30),
+            make_page(make_products(14, 14), total=30),
+            make_page(make_products(28, 2), total=30),
+        ]
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch(pages)):
+            products, total = download_offset_pages("http://e", "u", "p", page_size=20)
+        self.assertEqual(len(products), 30)
+        self.assertEqual(total, 30)
+        self.assertEqual([c["offset"] for c in self.calls], [0, 14, 28])
+
+    def test_raises_when_service_ignores_offset(self):
+        # This is the 35-record bug: the same page comes back every time.
+        page = make_page(make_products(0, 35), total=271)
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch([page] * 5)):
+            with self.assertRaises(PreQualAPIError) as ctx:
+                download_offset_pages("http://e", "u", "p", page_size=20)
+        message = str(ctx.exception)
+        self.assertIn("ignoring OffSet", message)
+        self.assertIn("35 of 271", message)
+
+    def test_stops_on_empty_page_when_total_unknown(self):
+        pages = [
+            {"FinishedVaccineProducts": make_products(0, 20)},
+            {"FinishedVaccineProducts": []},
+        ]
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch(pages)):
+            products, total = download_offset_pages("http://e", "u", "p", page_size=20)
+        self.assertEqual(len(products), 20)
+        self.assertIsNone(total)
+
+    def test_raises_on_api_error_status(self):
+        pages = [{"Status": {"StatusCode": "FAILURE", "StatusMessage": "SOQL error"}}]
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch(pages)):
+            with self.assertRaises(PreQualAPIError) as ctx:
+                download_offset_pages("http://e", "u", "p")
+        self.assertIn("SOQL error", str(ctx.exception))
+
+
+class TestTimestampPagination(unittest.TestCase):
+    def setUp(self):
+        self.calls = []
+
+    def fake_fetch(self, pages):
+        def _fetch(endpoint, username, password, offset, limit, timestamp, timeout):
+            self.calls.append({"offset": offset, "limit": limit, "timestamp": timestamp})
+            return pages[len(self.calls) - 1]
+
+        return _fetch
+
+    def test_walks_timestamp_window_forward(self):
+        pages = [
+            make_page(make_products(0, 2, "2024-01-01T00:00:00.000Z"), total=4),
+            make_page(make_products(2, 2, "2024-02-01T00:00:00.000Z"), total=4),
+        ]
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch(pages)):
+            products, total = download_timestamp_pages("http://e", "u", "p", page_size=2)
+        self.assertEqual(len(products), 4)
+        self.assertEqual(total, 4)
+        self.assertEqual(self.calls[1]["timestamp"], "2024-01-01T00:00:00.000Z")
+
+    def test_raises_when_window_cannot_advance(self):
+        # Every record shares one timestamp and the page is already full.
+        page = make_page(make_products(0, 2, "2024-01-01T00:00:00.000Z"), total=99)
+        with mock.patch("import_salesforce.fetch_api_page", self.fake_fetch([page] * 4)):
+            with self.assertRaises(PreQualAPIError) as ctx:
+                download_timestamp_pages(
+                    "http://e", "u", "p", page_size=2, timestamp="2024-01-01T00:00:00.000Z"
+                )
+        self.assertIn("Stuck at TimeStamp", str(ctx.exception))
+
+
+class TestDownloadAllPages(unittest.TestCase):
+    def test_raises_on_short_read(self):
+        page = make_page(make_products(0, 10), total=271)
+        with mock.patch(
+            "import_salesforce.download_offset_pages", return_value=(page["FinishedVaccineProducts"], 271)
+        ):
+            with self.assertRaises(PreQualAPIError) as ctx:
+                download_all_pages("http://e", "u", "p")
+        self.assertIn("incomplete", str(ctx.exception))
+
+    def test_allow_partial_downgrades_short_read_to_warning(self):
+        products = make_products(0, 10)
+        with mock.patch(
+            "import_salesforce.download_offset_pages", return_value=(products, 271)
+        ):
+            result = download_all_pages("http://e", "u", "p", allow_partial=True)
+        self.assertEqual(len(result), 10)
+
+    def test_rejects_unknown_strategy(self):
+        with self.assertRaises(PreQualAPIError):
+            download_all_pages("http://e", "u", "p", strategy="bogus")
+
+    def test_passes_default_timestamp_when_none_given(self):
+        captured = {}
+
+        def fake(endpoint, username, password, page_size, timestamp, timeout):
+            captured["timestamp"] = timestamp
+            return make_products(0, 1), 1
+
+        with mock.patch("import_salesforce.download_offset_pages", fake):
+            download_all_pages("http://e", "u", "p")
+        self.assertEqual(captured["timestamp"], DEFAULT_TIMESTAMP)
 
 
 if __name__ == "__main__":
