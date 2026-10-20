@@ -37,6 +37,7 @@ from import_salesforce import (
     generate_site_lm_instances,
     generate_vaccine_lm_instances,
     generate_vaccine_types_codesystem,
+    group_organizations,
     load_json_file,
     md5hash,
     merge_products,
@@ -608,6 +609,127 @@ class TestDepublishedProducts(unittest.TestCase):
         content = open(path).read()
         self.assertNotIn("#Prequalified", content)
         self.assertNotIn("* status =", content)
+
+
+class TestGroupOrganizations(unittest.TestCase):
+    """Instances are named from the id, so grouping must key on the id.
+
+    Keying on the name emits two instances with the same name whenever one
+    organization id appears under two spellings, which SUSHI rejects.
+    """
+
+    def products(self, *pairs):
+        return [{"nra_name": n, "nra_id": i} for n, i in pairs]
+
+    def test_one_id_with_two_spellings_yields_one_instance(self):
+        groups = group_organizations(
+            self.products(
+                ("Central Drugs Standard Control Organization (CDSCO)", "nra1"),
+                ("Central Drugs Standard Control Organisation (CDSCO)", "nra1"),
+            ),
+            "nra_name",
+            "nra_id",
+        )
+        self.assertEqual(len(groups), 1)
+        self.assertIn("nra1", groups)
+
+    def test_most_frequent_spelling_wins(self):
+        groups = group_organizations(
+            self.products(("Organization", "nra1"), ("Organisation", "nra1"), ("Organization", "nra1")),
+            "nra_name",
+            "nra_id",
+        )
+        self.assertEqual(groups["nra1"][0], "Organization")
+
+    def test_choice_is_independent_of_input_order(self):
+        forward = group_organizations(
+            self.products(("Alpha", "nra1"), ("Beta", "nra1")), "nra_name", "nra_id"
+        )
+        reverse = group_organizations(
+            self.products(("Beta", "nra1"), ("Alpha", "nra1")), "nra_name", "nra_id"
+        )
+        # A tie must not flip with the order the API returned products in,
+        # or the generated FSH churns between otherwise identical syncs.
+        self.assertEqual(forward["nra1"][0], reverse["nra1"][0])
+
+    def test_distinct_ids_stay_distinct(self):
+        groups = group_organizations(
+            self.products(("A", "nra1"), ("B", "nra2")), "nra_name", "nra_id"
+        )
+        self.assertEqual(len(groups), 2)
+
+    def test_same_name_under_two_ids_yields_two_instances(self):
+        # The id is the identity; a shared name does not merge them.
+        groups = group_organizations(
+            self.products(("Shared", "nra1"), ("Shared", "nra2")), "nra_name", "nra_id"
+        )
+        self.assertEqual(sorted(groups), ["nra1", "nra2"])
+
+    def test_organizations_without_an_id_are_keyed_by_name_hash(self):
+        groups = group_organizations(
+            self.products(("NoId Org", "")), "nra_name", "nra_id"
+        )
+        self.assertEqual(list(groups), [md5hash("NoId Org")])
+
+    def test_require_id_skips_organizations_without_one(self):
+        groups = group_organizations(
+            self.products(("Has", "nra1"), ("HasNot", "")),
+            "nra_name",
+            "nra_id",
+            require_id=True,
+        )
+        self.assertEqual(list(groups), ["nra1"])
+
+    def test_nameless_organizations_are_skipped(self):
+        groups = group_organizations(self.products(("", "nra1")), "nra_name", "nra_id")
+        self.assertEqual(len(groups), 0)
+
+    def test_representative_product_matches_the_chosen_name(self):
+        rows = [
+            {"nra_name": "Chosen", "nra_id": "nra1", "nra_country": "India"},
+            {"nra_name": "Other", "nra_id": "nra1", "nra_country": "Kenya"},
+            {"nra_name": "Chosen", "nra_id": "nra1", "nra_country": "India"},
+        ]
+        name, _, product = group_organizations(rows, "nra_name", "nra_id")["nra1"]
+        # Detail must come from a product carrying the chosen name, not from
+        # whichever record happened to be seen first.
+        self.assertEqual(name, "Chosen")
+        self.assertEqual(product["nra_country"], "India")
+
+
+class TestNoDuplicateInstanceNames(unittest.TestCase):
+    """End-to-end guard for the SUSHI "already exists" failure."""
+
+    def build(self):
+        tmpdir = tempfile.mkdtemp()
+        os.makedirs(os.path.join(tmpdir, "examples"), exist_ok=True)
+        base = extract_product_fields(SAMPLE_PRODUCT)
+        variant = dict(base)
+        variant["nra_name"] = "Central Drugs Standard Control Organisation (CDSCO)"
+        other = dict(base)
+        other["applicant_name"] = "Serum Institute of India Pvt. Ltd."
+        products = [base, variant, other]
+        generate_holders(products, tmpdir)
+        generate_nra_lm_instances(products, tmpdir)
+        generate_manufacturers(products, tmpdir)
+        generate_manufacturer_lm_instances(products, tmpdir)
+        return tmpdir
+
+    def test_no_generated_file_declares_a_name_twice(self):
+        import re
+
+        tmpdir = self.build()
+        for filename in (
+            "prequal_database_holders.fsh",
+            "prequal_database_nra_lm.fsh",
+            "prequal_database_manufacturers.fsh",
+            "prequal_database_manufacturer_lm.fsh",
+        ):
+            content = open(os.path.join(tmpdir, "examples", filename)).read()
+            names = re.findall(r"^Instance: (\S+)", content, re.M)
+            self.assertEqual(
+                sorted(names), sorted(set(names)), f"duplicate Instance in {filename}"
+            )
 
 
 class TestMergeProducts(unittest.TestCase):
