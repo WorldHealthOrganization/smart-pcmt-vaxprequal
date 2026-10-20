@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from import_salesforce import (
     DEFAULT_TIMESTAMP,
     PreQualAPIError,
+    backfill_names_from_ids,
     build_api_url,
     check_response_status,
     download_all_pages,
@@ -540,33 +541,112 @@ class TestLoadJsonFile(unittest.TestCase):
             os.unlink(tmp_path)
 
 
-class TestSkipWithdrawnProducts(unittest.TestCase):
-    def test_skip_products_with_missing_essential_data(self):
-        """Products with empty commercial name, applicant, and NRA should be skipped."""
-        tmpdir = tempfile.mkdtemp()
-        # Create a withdrawn product with all essential fields empty
-        withdrawn = extract_product_fields({
+class TestDepublishedProducts(unittest.TestCase):
+    """A de-published product keeps its identity and status in the IG.
+
+    The source database clears a product's detail when it leaves
+    prequalified status, so these records carry only productId, productName,
+    status and a publishing date.  They are the authoritative record of a
+    past prequalification and are published, not dropped.
+    """
+
+    def build(self):
+        depublished = extract_product_fields({
             "ProductDetails": {
                 "Identification": {"Id": "a3K3X000006MihzUAC", "Name": "FVP-P-27"},
                 "Status": "Withdrawn: Was Prequalified",
-                "VaccineDetails": {"VaccineName": {}},
-                "ApplicantOrganization": {"Identification": {}},
-                "NRADetails": {"Identification": {}},
+                "LastPublishingDate": "2023-10-30T17:12:26.000Z",
             }
         })
         normal = extract_product_fields(SAMPLE_PRODUCT)
-        products = [withdrawn, normal]
+        tmpdir = tempfile.mkdtemp()
+        generate_products_and_authorizations([depublished, normal], tmpdir)
+        path = os.path.join(tmpdir, "examples", "prequal_database_products.fsh")
+        return open(path).read()
 
-        generate_products_and_authorizations(products, tmpdir)
-
-        examples_path = os.path.join(
-            tmpdir, "examples", "prequal_database_products.fsh"
-        )
-        content = open(examples_path).read()
-        # The withdrawn product should be skipped
-        self.assertNotIn("a3K3X000006MihzUAC", content)
-        # The normal product should still be present
+    def test_depublished_product_is_emitted(self):
+        content = self.build()
+        self.assertIn("Instance: FinishedProducta3K3X000006MihzUAC", content)
         self.assertIn("a3K3X000005atRtUAI", content)
+
+    def test_depublished_product_carries_the_mandatory_fields(self):
+        content = self.build()
+        stub = content.split("Instance: FinishedProducta3K3X000006MihzUAC")[1]
+        stub = stub.split("// Source Record Row")[0]
+        self.assertIn('* productId.value = "a3K3X000006MihzUAC"', stub)
+        self.assertIn('* productName = "FVP-P-27"', stub)
+        self.assertIn("* status = #WithdrawnWasPrequalified", stub)
+
+    def test_depublished_product_omits_absent_fields_and_references(self):
+        content = self.build()
+        stub = content.split("Instance: FinishedProducta3K3X000006MihzUAC")[1]
+        stub = stub.split("// Source Record Row")[0]
+        # Writing these would either assert data WHO did not supply or point
+        # at Organization instances that are never generated.
+        for element in (
+            "* applicantName",
+            "* nraName",
+            "* vaccineCommercialName",
+            "* manufacturerReference",
+            "* responsibleNRAReference",
+            "* presentation.coding",
+            "* productType",
+            "* dateOfPrequal",
+        ):
+            self.assertNotIn(element, stub)
+        self.assertNotIn("None", stub)
+
+    def test_status_is_never_invented(self):
+        # A record with no status must not be labelled Prequalified.
+        product = extract_product_fields({
+            "ProductDetails": {"Identification": {"Id": "noStatus", "Name": "FVP-P-0"}}
+        })
+        tmpdir = tempfile.mkdtemp()
+        generate_products_and_authorizations([product], tmpdir)
+        path = os.path.join(tmpdir, "examples", "prequal_database_products.fsh")
+        content = open(path).read()
+        self.assertNotIn("#Prequalified", content)
+        self.assertNotIn("* status =", content)
+
+
+class TestBackfillNames(unittest.TestCase):
+    """Empty denormalized names are recovered from another product's copy."""
+
+    def test_nra_name_recovered_from_shared_id(self):
+        complete = extract_product_fields(SAMPLE_PRODUCT)
+        gap = extract_product_fields(SAMPLE_PRODUCT)
+        gap["sf_product_id"] = "other"
+        gap["sf_product_name"] = "FVP-P-98"
+        gap["nra_name"] = ""
+        filled = backfill_names_from_ids([complete, gap])
+        self.assertEqual(filled["NRA"], 1)
+        self.assertEqual(gap["nra_name"], complete["nra_name"])
+
+    def test_applicant_name_recovered_from_shared_id(self):
+        complete = extract_product_fields(SAMPLE_PRODUCT)
+        gap = extract_product_fields(SAMPLE_PRODUCT)
+        gap["sf_product_name"] = "FVP-P-455"
+        gap["applicant_name"] = ""
+        filled = backfill_names_from_ids([complete, gap])
+        self.assertEqual(filled["applicant"], 1)
+        self.assertEqual(gap["applicant_name"], complete["applicant_name"])
+
+    def test_no_id_means_no_backfill(self):
+        # FVP-P-98's real shape: neither NRA name nor NRA id.
+        gap = extract_product_fields(SAMPLE_PRODUCT)
+        gap["nra_name"] = ""
+        gap["nra_id"] = ""
+        filled = backfill_names_from_ids([gap])
+        self.assertEqual(filled["NRA"], 0)
+        self.assertEqual(gap["nra_name"], "")
+
+    def test_names_are_never_invented_for_unknown_ids(self):
+        gap = extract_product_fields(SAMPLE_PRODUCT)
+        gap["nra_name"] = ""
+        gap["nra_id"] = "an-id-nothing-else-has"
+        filled = backfill_names_from_ids([gap])
+        self.assertEqual(filled["NRA"], 0)
+        self.assertEqual(gap["nra_name"], "")
 
 
 class TestNullSubObjectIds(unittest.TestCase):
@@ -819,6 +899,65 @@ class TestBuildApiUrl(unittest.TestCase):
         )
         self.assertIn(f"TimeStamp={DEFAULT_TIMESTAMP}", url)
         self.assertNotIn("TimeStamp=&", url)
+
+
+class TestExplicitNulls(unittest.TestCase):
+    """The API sends "Name": null rather than omitting the key."""
+
+    def test_null_scalars_become_empty_strings(self):
+        product = {
+            "ProductDetails": {
+                "Identification": {"Id": "a3K", "Name": "FVP-P-1"},
+                "NRADetails": {"Identification": {"Id": None, "Name": None}},
+                "PublishingRemarks": None,
+                "PresentationOther": None,
+                "Status": "Prequalified",
+            }
+        }
+        fields = extract_product_fields(product)
+        # None would crash md5hash() and write "None" into the FSH.
+        self.assertEqual(fields["nra_name"], "")
+        self.assertEqual(fields["nra_id"], "")
+        self.assertEqual(fields["publishing_remarks"], "")
+        self.assertIsNotNone(fields["presentation_other"])
+        for key, value in fields.items():
+            self.assertIsNotNone(value, f"{key} is None")
+
+    def test_null_nra_name_does_not_crash_generation(self):
+        # Reproduces the AttributeError from md5hash(None) seen on the full
+        # 271-record dataset.
+        product = {
+            "ProductDetails": {
+                "Identification": {"Id": "a3Knull", "Name": "FVP-P-999"},
+                "ApplicantOrganization": {"Identification": {"Id": "app1", "Name": "Acme"}},
+                "NRADetails": {"Identification": {"Id": None, "Name": None}},
+                "VaccineDetails": {"VaccineName": {"CommercialName": "Vaxx"}},
+                "Status": "Prequalified",
+            }
+        }
+        tmpdir = tempfile.mkdtemp()
+        for sub in ("codesystems", "valuesets", "examples"):
+            os.makedirs(os.path.join(tmpdir, sub), exist_ok=True)
+        fields = [extract_product_fields(product)]
+        generate_products_and_authorizations(fields, tmpdir)
+        content = open(os.path.join(tmpdir, "examples", "prequal_database_products.fsh")).read()
+        # No instance is emitted, so nothing can dangle.
+        self.assertNotIn("Reference(Holder)", content)
+        self.assertNotIn("None", content)
+
+    def test_product_without_nra_name_is_skipped_not_dangling(self):
+        # nraName and responsibleNRAReference are both 1..1, and no Holder
+        # instance exists for a nameless NRA.
+        tmpdir = tempfile.mkdtemp()
+        for sub in ("codesystems", "valuesets", "examples"):
+            os.makedirs(os.path.join(tmpdir, sub), exist_ok=True)
+        product = dict(SAMPLE_PRODUCT)
+        fields = extract_product_fields(product)
+        fields["nra_name"] = ""
+        fields["nra_id"] = ""
+        generate_products_and_authorizations([fields], tmpdir)
+        content = open(os.path.join(tmpdir, "examples", "prequal_database_products.fsh")).read()
+        self.assertNotIn("responsibleNRAReference", content)
 
 
 class TestParseResponse(unittest.TestCase):

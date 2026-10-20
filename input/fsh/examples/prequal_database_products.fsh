@@ -551,6 +551,30 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MihyUACIng2)
 
 
+// Source Record Row //: 10
+//  Vaccine Product ID: (a3K3X000006MihzUAC)
+//  Product Name: (FVP-P-27)
+//  Date of Prequalification: ()
+//  Vaccine Type: ()
+//  Commercial Name: ()
+//  Presentation: ()
+//  No. of doses: ()
+//  Manufacturer: ()
+//  Responsible NRA: ()
+//
+
+Instance: FinishedProducta3K3X000006MihzUAC
+InstanceOf: FinishedVaccineProducts
+Usage: #example
+Title: "PreQual Product: FVP-P-27"
+Description: "FVP-P-27"
+* status = #WithdrawnWasPrequalified
+* productId.system = "https://extranet.who.int/prequal/api"
+* productId.value = "a3K3X000006MihzUAC"
+* productName = "FVP-P-27"
+* lastPublishingDate = 2023-10-30
+
+
 // Source Record Row //: 11
 //  Vaccine Product ID: (a3K3X000006Mii0UAC)
 //  Product Name: (FVP-P-61)
@@ -810,6 +834,30 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng2)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng3)
+
+
+// Source Record Row //: 15
+//  Vaccine Product ID: (a3K3X000006Mii4UAC)
+//  Product Name: (FVP-P-292)
+//  Date of Prequalification: ()
+//  Vaccine Type: ()
+//  Commercial Name: ()
+//  Presentation: ()
+//  No. of doses: ()
+//  Manufacturer: ()
+//  Responsible NRA: ()
+//
+
+Instance: FinishedProducta3K3X000006Mii4UAC
+InstanceOf: FinishedVaccineProducts
+Usage: #example
+Title: "PreQual Product: FVP-P-292"
+Description: "FVP-P-292"
+* status = #WithdrawnWasPrequalified
+* productId.system = "https://extranet.who.int/prequal/api"
+* productId.value = "a3K3X000006Mii4UAC"
+* productName = "FVP-P-292"
+* lastPublishingDate = 2025-07-08
 
 
 // Source Record Row //: 16
