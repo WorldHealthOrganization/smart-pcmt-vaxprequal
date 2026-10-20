@@ -24,7 +24,6 @@ Usage:
 """
 
 import argparse
-import collections
 import hashlib
 import json
 import logging
@@ -816,69 +815,6 @@ def extract_product_fields(product):
     return fields
 
 
-def group_organizations(products, name_key, id_key, require_id=False):
-    """Group organizations by the identity their FSH instance is named from.
-
-    An Organization instance is named after the Salesforce id where there is
-    one, falling back to a hash of the name.  Grouping by name instead emits
-    two instances with the same name whenever one id appears under two
-    spellings -- "Organization" and "Organisation", say -- which SUSHI
-    rejects as a duplicate and which only shows up once the extract is large
-    enough to contain both.
-
-    Where an id does carry several spellings the most frequent wins, ties
-    broken alphabetically, so the chosen name does not depend on the order
-    the API happened to return the products in.
-
-    Args:
-        products: List of normalized product field dicts.
-        name_key: Field holding the organization name.
-        id_key: Field holding the organization id.
-        require_id: Skip organizations that have no id.
-
-    Returns:
-        OrderedDict of instance id -> (name, organization id, the first
-        product carrying the chosen name), ordered by name so that the
-        generated FSH keeps the ordering it had before grouping moved from
-        the name to the id.
-    """
-    groups = {}
-    for product in products:
-        name = product.get(name_key, "")
-        org_id = product.get(id_key, "")
-        if not name or (require_id and not org_id):
-            continue
-        instance_id = sanitize_code(org_id) if org_id else md5hash(name)
-        group = groups.setdefault(
-            instance_id, {"org_id": org_id, "names": {}, "first": {}}
-        )
-        group["names"][name] = group["names"].get(name, 0) + 1
-        group["first"].setdefault(name, product)
-
-    chosen = {}
-    for instance_id, group in groups.items():
-        # Most frequent spelling, ties broken alphabetically so the choice
-        # does not depend on the order the API returned products in.
-        chosen[instance_id] = min(
-            group["names"].items(), key=lambda kv: (-kv[1], kv[0])
-        )[0]
-
-    resolved = collections.OrderedDict()
-    for instance_id in sorted(groups, key=lambda i: (chosen[i], i)):
-        group = groups[instance_id]
-        name = chosen[instance_id]
-        if len(group["names"]) > 1:
-            logger.warning(
-                "Organization id %s appears under %d names (%s); using %r",
-                group["org_id"] or instance_id,
-                len(group["names"]),
-                "; ".join(sorted(group["names"])),
-                name,
-            )
-        resolved[instance_id] = (name, group["org_id"], group["first"][name])
-    return resolved
-
-
 def backfill_names_from_ids(products):
     """Fill in organization names that are empty but recoverable from their ID.
 
@@ -1035,6 +971,40 @@ def generate_vaccine_types_codesystem(products, output_dir):
     logger.info("Generated vaccine types CodeSystem with %d codes", len(merged))
 
 
+def organizations_by_id(products, name_field, id_field, require_id=False):
+    """Collect one product per organization, keyed the way products reference it.
+
+    generate_products_and_authorizations references an organization by its
+    Salesforce ID (or the md5 of its name when it has none), so instances must
+    be keyed the same way.  Keying on the name instead emits duplicate
+    instances when an organization is renamed and drops one when two IDs
+    share a name.  When an ID appears under several names, the most recently
+    published product supplies the details.
+
+    Args:
+        products: List of normalized product field dicts.
+        name_field: Field holding the organization name.
+        id_field: Field holding the organization Salesforce ID.
+        require_id: Skip organizations that have no Salesforce ID.
+
+    Returns:
+        List of (instance_id, product) tuples sorted by organization name.
+    """
+    seen = {}
+    for p in products:
+        name = p.get(name_field, "")
+        sf_id = p.get(id_field, "")
+        if not name or (require_id and not sf_id):
+            continue
+        instance_id = sanitize_code(sf_id) if sf_id else md5hash(name)
+        current = seen.get(instance_id)
+        if current is None or (p.get("last_publishing_date") or "") >= (
+            current.get("last_publishing_date") or ""
+        ):
+            seen[instance_id] = p
+    return sorted(seen.items(), key=lambda item: (item[1][name_field], item[0]))
+
+
 def generate_manufacturers(products, output_dir):
     """Generate manufacturer Organization instances FSH file.
 
@@ -1042,14 +1012,16 @@ def generate_manufacturers(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = group_organizations(products, "applicant_name", "applicant_id")
+    seen = organizations_by_id(products, "applicant_name", "applicant_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturers.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for instance_id, (name, sf_id, _) in seen.items():
+        for instance_id, p in seen:
+            name = p["applicant_name"]
+            sf_id = p.get("applicant_id", "")
             f.write(f"\nInstance: Manufacturer{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
@@ -1072,14 +1044,16 @@ def generate_holders(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = group_organizations(products, "nra_name", "nra_id")
+    seen = organizations_by_id(products, "nra_name", "nra_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_holders.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for instance_id, (name, sf_id, _) in seen.items():
+        for instance_id, p in seen:
+            name = p["nra_name"]
+            sf_id = p.get("nra_id", "")
             f.write(f"\nInstance: Holder{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
@@ -1102,15 +1076,15 @@ def generate_manufacturer_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = group_organizations(
-        products, "applicant_name", "applicant_id", require_id=True
-    )
+    seen = organizations_by_id(products, "applicant_name", "applicant_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturer_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for instance_id, (name, sf_id, p) in seen.items():
+        for instance_id, p in seen:
+            name = p["applicant_name"]
+            sf_id = p.get("applicant_id", "")
             mfr_org_ref = f"Manufacturer{instance_id}"
 
             country = p.get("applicant_country", "") or ""
@@ -1160,13 +1134,15 @@ def generate_nra_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = group_organizations(products, "nra_name", "nra_id", require_id=True)
+    seen = organizations_by_id(products, "nra_name", "nra_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_nra_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for instance_id, (name, sf_id, p) in seen.items():
+        for instance_id, p in seen:
+            name = p["nra_name"]
+            sf_id = p.get("nra_id", "")
             holder_org_ref = f"Holder{instance_id}"
 
             nra_country = p.get("nra_country", "") or ""
@@ -1444,15 +1420,11 @@ def generate_packaging_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    # Instances are named from the packaging id, so the same id twice would
-    # declare the same Instance twice and fail the build.
     all_pkgs = []
-    seen_ids = set()
     for p in products:
         for pkg in p.get("packaging", []) or []:
             pkg_id = pkg.get("Id", "")
-            if pkg_id and pkg_id not in seen_ids:
-                seen_ids.add(pkg_id)
+            if pkg_id:
                 all_pkgs.append(pkg)
 
     if not all_pkgs:
@@ -1532,16 +1504,12 @@ def generate_document_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    # Instances are named from the document id, so the same id twice would
-    # declare the same Instance twice and fail the build.
     all_docs = []
-    seen_ids = set()
     for p in products:
         for doc in p.get("documents", []) or []:
             doc_ident = doc.get("Identification", {})
             doc_id = doc_ident.get("Id", "")
-            if doc_id and doc_id not in seen_ids:
-                seen_ids.add(doc_id)
+            if doc_id:
                 all_docs.append(doc)
 
     if not all_docs:
@@ -1892,10 +1860,11 @@ def generate_products_and_authorizations(products, output_dir):
             if holder:
                 f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
 
-            # LM instance references (only when sub-object has a non-null ID)
-            if manufacturer_sf_id:
+            # LM instance references (only when sub-object has a non-null ID;
+            # the LM generators also skip unnamed organizations)
+            if manufacturer and manufacturer_sf_id:
                 f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
-            if holder_sf_id:
+            if holder and holder_sf_id:
                 f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
             if vax_type_id:
                 vax_lm_ref_id = sanitize_code(vax_type_id)

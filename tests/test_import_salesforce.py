@@ -37,7 +37,7 @@ from import_salesforce import (
     generate_site_lm_instances,
     generate_vaccine_lm_instances,
     generate_vaccine_types_codesystem,
-    group_organizations,
+    organizations_by_id,
     load_json_file,
     md5hash,
     merge_products,
@@ -611,104 +611,115 @@ class TestDepublishedProducts(unittest.TestCase):
         self.assertNotIn("* status =", content)
 
 
-class TestGroupOrganizations(unittest.TestCase):
+class TestOrganizationsById(unittest.TestCase):
     """Instances are named from the id, so grouping must key on the id.
 
-    Keying on the name emits two instances with the same name whenever one
-    organization id appears under two spellings, which SUSHI rejects.
+    Keying on the name emitted two instances with the same name whenever one
+    organization id appeared under two spellings, which SUSHI rejects as a
+    duplicate.  The 35-record sample contained no such case; a production
+    extract does.
     """
 
-    def products(self, *pairs):
-        return [{"nra_name": n, "nra_id": i} for n, i in pairs]
+    def rows(self, *triples):
+        return [
+            {"nra_name": name, "nra_id": org_id, "last_publishing_date": stamp}
+            for name, org_id, stamp in triples
+        ]
 
     def test_one_id_with_two_spellings_yields_one_instance(self):
-        groups = group_organizations(
-            self.products(
-                ("Central Drugs Standard Control Organization (CDSCO)", "nra1"),
-                ("Central Drugs Standard Control Organisation (CDSCO)", "nra1"),
+        groups = organizations_by_id(
+            self.rows(
+                ("Central Drugs Standard Control Organization (CDSCO)", "nra1", "2024-01-01"),
+                ("Central Drugs Standard Control Organisation (CDSCO)", "nra1", "2023-01-01"),
             ),
             "nra_name",
             "nra_id",
         )
         self.assertEqual(len(groups), 1)
-        self.assertIn("nra1", groups)
+        self.assertEqual(groups[0][0], "nra1")
 
-    def test_most_frequent_spelling_wins(self):
-        groups = group_organizations(
-            self.products(("Organization", "nra1"), ("Organisation", "nra1"), ("Organization", "nra1")),
+    def test_most_recently_published_name_wins(self):
+        groups = organizations_by_id(
+            self.rows(("Old Name", "nra1", "2020-01-01"), ("New Name", "nra1", "2026-01-01")),
             "nra_name",
             "nra_id",
         )
-        self.assertEqual(groups["nra1"][0], "Organization")
+        # A renamed organization should surface under its current name.
+        self.assertEqual(groups[0][1]["nra_name"], "New Name")
 
-    def test_choice_is_independent_of_input_order(self):
-        forward = group_organizations(
-            self.products(("Alpha", "nra1"), ("Beta", "nra1")), "nra_name", "nra_id"
-        )
-        reverse = group_organizations(
-            self.products(("Beta", "nra1"), ("Alpha", "nra1")), "nra_name", "nra_id"
-        )
-        # A tie must not flip with the order the API returned products in,
-        # or the generated FSH churns between otherwise identical syncs.
-        self.assertEqual(forward["nra1"][0], reverse["nra1"][0])
+    def test_detail_comes_from_the_same_record_as_the_name(self):
+        rows = [
+            {"nra_name": "Old", "nra_id": "nra1", "nra_country": "Kenya", "last_publishing_date": "2020-01-01"},
+            {"nra_name": "New", "nra_id": "nra1", "nra_country": "India", "last_publishing_date": "2026-01-01"},
+        ]
+        _, product = organizations_by_id(rows, "nra_name", "nra_id")[0]
+        self.assertEqual(product["nra_name"], "New")
+        self.assertEqual(product["nra_country"], "India")
 
     def test_distinct_ids_stay_distinct(self):
-        groups = group_organizations(
-            self.products(("A", "nra1"), ("B", "nra2")), "nra_name", "nra_id"
+        groups = organizations_by_id(
+            self.rows(("A", "nra1", "2024-01-01"), ("B", "nra2", "2024-01-01")),
+            "nra_name",
+            "nra_id",
         )
-        self.assertEqual(len(groups), 2)
+        self.assertEqual([g[0] for g in groups], ["nra1", "nra2"])
 
     def test_same_name_under_two_ids_yields_two_instances(self):
-        # The id is the identity; a shared name does not merge them.
-        groups = group_organizations(
-            self.products(("Shared", "nra1"), ("Shared", "nra2")), "nra_name", "nra_id"
+        # The id is the identity; a shared name must not merge them, which
+        # keying on the name used to do.
+        groups = organizations_by_id(
+            self.rows(("Shared", "nra1", "2024-01-01"), ("Shared", "nra2", "2024-01-01")),
+            "nra_name",
+            "nra_id",
         )
-        self.assertEqual(sorted(groups), ["nra1", "nra2"])
+        self.assertEqual(sorted(g[0] for g in groups), ["nra1", "nra2"])
 
     def test_organizations_without_an_id_are_keyed_by_name_hash(self):
-        groups = group_organizations(
-            self.products(("NoId Org", "")), "nra_name", "nra_id"
+        groups = organizations_by_id(
+            self.rows(("NoId Org", "", "2024-01-01")), "nra_name", "nra_id"
         )
-        self.assertEqual(list(groups), [md5hash("NoId Org")])
+        self.assertEqual(groups[0][0], md5hash("NoId Org"))
 
     def test_require_id_skips_organizations_without_one(self):
-        groups = group_organizations(
-            self.products(("Has", "nra1"), ("HasNot", "")),
+        groups = organizations_by_id(
+            self.rows(("Has", "nra1", "2024-01-01"), ("HasNot", "", "2024-01-01")),
             "nra_name",
             "nra_id",
             require_id=True,
         )
-        self.assertEqual(list(groups), ["nra1"])
+        self.assertEqual([g[0] for g in groups], ["nra1"])
 
     def test_nameless_organizations_are_skipped(self):
-        groups = group_organizations(self.products(("", "nra1")), "nra_name", "nra_id")
-        self.assertEqual(len(groups), 0)
+        groups = organizations_by_id(
+            self.rows(("", "nra1", "2024-01-01")), "nra_name", "nra_id"
+        )
+        self.assertEqual(groups, [])
 
-    def test_representative_product_matches_the_chosen_name(self):
-        rows = [
-            {"nra_name": "Chosen", "nra_id": "nra1", "nra_country": "India"},
-            {"nra_name": "Other", "nra_id": "nra1", "nra_country": "Kenya"},
-            {"nra_name": "Chosen", "nra_id": "nra1", "nra_country": "India"},
-        ]
-        name, _, product = group_organizations(rows, "nra_name", "nra_id")["nra1"]
-        # Detail must come from a product carrying the chosen name, not from
-        # whichever record happened to be seen first.
-        self.assertEqual(name, "Chosen")
-        self.assertEqual(product["nra_country"], "India")
+    def test_missing_publishing_dates_do_not_raise(self):
+        groups = organizations_by_id(
+            [
+                {"nra_name": "A", "nra_id": "nra1"},
+                {"nra_name": "B", "nra_id": "nra1", "last_publishing_date": ""},
+            ],
+            "nra_name",
+            "nra_id",
+        )
+        self.assertEqual(len(groups), 1)
 
 
 class TestNoDuplicateInstanceNames(unittest.TestCase):
-    """End-to-end guard for the SUSHI "already exists" failure."""
+    """End-to-end guard for the SUSHI "already exists" build failure."""
 
     def build(self):
         tmpdir = tempfile.mkdtemp()
         os.makedirs(os.path.join(tmpdir, "examples"), exist_ok=True)
         base = extract_product_fields(SAMPLE_PRODUCT)
-        variant = dict(base)
-        variant["nra_name"] = "Central Drugs Standard Control Organisation (CDSCO)"
+        renamed = dict(base)
+        renamed["nra_name"] = "Central Drugs Standard Control Organisation (CDSCO)"
+        renamed["last_publishing_date"] = "2020-01-01T00:00:00.000Z"
         other = dict(base)
         other["applicant_name"] = "Serum Institute of India Pvt. Ltd."
-        products = [base, variant, other]
+        products = [base, renamed, other]
         generate_holders(products, tmpdir)
         generate_nra_lm_instances(products, tmpdir)
         generate_manufacturers(products, tmpdir)
@@ -730,6 +741,58 @@ class TestNoDuplicateInstanceNames(unittest.TestCase):
             self.assertEqual(
                 sorted(names), sorted(set(names)), f"duplicate Instance in {filename}"
             )
+
+
+class TestNoDanglingLMReferences(unittest.TestCase):
+    """An LM reference must not name an instance that is never generated.
+
+    The LM generators skip organizations with no name, so a product with an
+    organization id but no name would otherwise emit a reference to an
+    instance that does not exist and fail the build.
+    """
+
+    def generate(self, overrides):
+        tmpdir = tempfile.mkdtemp()
+        for sub in ("codesystems", "valuesets", "examples"):
+            os.makedirs(os.path.join(tmpdir, sub), exist_ok=True)
+        product = dict(extract_product_fields(SAMPLE_PRODUCT))
+        product.update(overrides)
+        generate_manufacturer_lm_instances([product], tmpdir)
+        generate_nra_lm_instances([product], tmpdir)
+        generate_products_and_authorizations([product], tmpdir)
+        base = os.path.join(tmpdir, "examples")
+        return (
+            open(os.path.join(base, "prequal_database_products.fsh")).read(),
+            open(os.path.join(base, "prequal_database_manufacturer_lm.fsh")).read(),
+            open(os.path.join(base, "prequal_database_nra_lm.fsh")).read(),
+        )
+
+    def test_manufacturer_lm_not_referenced_when_name_is_missing(self):
+        products, mfr_lm, _ = self.generate({"applicant_name": ""})
+        self.assertNotIn("* manufacturerLM", products)
+        self.assertNotIn("Instance: PreQualManufacturer", mfr_lm)
+
+    def test_nra_lm_not_referenced_when_name_is_missing(self):
+        products, _, nra_lm = self.generate({"nra_name": ""})
+        self.assertNotIn("* nraLM", products)
+        self.assertNotIn("Instance: PreQualNRA", nra_lm)
+
+    def test_references_are_present_when_both_id_and_name_exist(self):
+        products, mfr_lm, nra_lm = self.generate({})
+        self.assertIn("* manufacturerLM", products)
+        self.assertIn("* nraLM", products)
+        self.assertIn("Instance: PreQualManufacturer", mfr_lm)
+        self.assertIn("Instance: PreQualNRA", nra_lm)
+
+    def test_every_lm_reference_resolves_to_a_generated_instance(self):
+        import re
+
+        products, mfr_lm, nra_lm = self.generate({"applicant_name": "", "nra_name": ""})
+        declared = set(re.findall(r"^Instance: (\S+)", mfr_lm + nra_lm, re.M))
+        referenced = set(
+            re.findall(r"= Reference\((PreQual(?:Manufacturer|NRA)\S*)\)", products)
+        )
+        self.assertEqual(referenced - declared, set())
 
 
 class TestMergeProducts(unittest.TestCase):
