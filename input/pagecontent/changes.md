@@ -5,46 +5,45 @@ implementation guide.
 
 ## 2026-10-20
 
-### All prequalification records are now included
+### Complete prequalification records
 
-Earlier builds of this guide described **35** finished vaccine products. They
-now describe the full set published by the WHO PreQual database — **271**
-records as of this extract.
+Earlier builds of this guide described only a small subset of the products
+published by the WHO PreQual database. They now describe the full set.
 
 The shortfall was not an editorial decision. The importer paged through the
 source API using a parameter name the service does not recognise, so every
-request returned the first page of results. Repeated pages collapsed to the
-same 35 products once duplicates were removed. The service also limits how
-many records a single response can carry, independently of the page size
-requested, so pagination now advances by the number of records actually
-returned and the import fails rather than publishing a short extract.
+request returned the first page of results, and the repeated pages collapsed
+to a single page's worth of products once duplicates were removed. The
+service also limits how many records one response can carry, independently
+of the page size requested. Pagination now advances by the number of records
+actually returned, and the import fails rather than publishing an incomplete
+extract.
 
-### Records with no published detail are now represented
+### Records with no published detail
 
 The source database **de-publishes** a product's detail when that product
 leaves prequalified status: the record is retained with its identifier, its
-final status and the date it was last published, and the remaining fields are
-cleared. 22 of the 271 records are in this state.
+final status and the date it was last published, and the remaining fields
+are cleared.
 
 These records are the authoritative account of a past prequalification, so
 they are now published. They appear as `FinishedVaccineProducts` instances
-carrying `productId`, `productName`, `status` and `lastPublishingDate` only,
-for example:
+carrying `productId`, `productName`, `status` and `lastPublishingDate` only:
 
 ```
-Instance: FinishedProducta3K3X000006Mii4UAC
+Instance: FinishedProduct<identifier>
 InstanceOf: FinishedVaccineProducts
 * status = #WithdrawnWasPrequalified
-* productId.value = "a3K3X000006Mii4UAC"
-* productName = "FVP-P-292"
-* lastPublishingDate = 2025-07-08
+* productId.value = "<identifier>"
+* productName = "<record name>"
+* lastPublishingDate = <date>
 ```
 
-A product that is withdrawn after being published in this guide keeps its
-instance identifier, so consumers tracking a product observe a change of
-status rather than a record disappearing. The detail published before the
-withdrawal is not retained, because this guide reflects what the source
-database publishes.
+A product that is withdrawn after appearing in this guide keeps its instance
+identifier, so consumers tracking a product observe a change of status rather
+than a record disappearing. Detail published before the withdrawal is not
+retained, because this guide reflects what the source database currently
+publishes.
 
 ### Cardinality of FinishedVaccineProducts relaxed
 
@@ -64,20 +63,20 @@ changed from `1..1` to `0..1`:
 | `responsibleNRAReference` | present only where an NRA name is available |
 
 `applicantName` and `nraName` were previously documented as always present.
-A full extract disproved that, and the two organization references are
-present only alongside the corresponding name, because the referenced
-`Organization` instances are keyed on it.
+A full extract disproved that. The two organization references are present
+only alongside the corresponding name, because the referenced `Organization`
+instances are keyed on it.
 
 **Implementers should treat every element except `productId`, `productName`
 and `status` as optional**, and should not assume a `FinishedVaccineProducts`
 instance carries a product or regulator name.
 
-### Additional status codes
+### Product status
 
-`PreQualDatabaseMetadata` previously carried two product statuses. The full
-extract contains nine, and the additional codes have been added:
-`Acceptable`, `CancelledAssessment`, `DecisionPhase`, `RejectedScreening`,
-`UnderAssessment`, `UnderScreening` and `WithdrawnWasAccepted`.
+Status values now cover the whole prequalification lifecycle rather than only
+prequalified and withdrawn. Codes for cancelled, rejected and in-assessment
+states have been added to `PreQualDatabaseMetadata` as the source data
+presents them.
 
 Records that have not completed prequalification are included, because this
 guide reflects the source database as published. Consumers that require only
@@ -94,17 +93,15 @@ or constructed.
 
 ### Known data quality items
 
-Reported to the WHO PreQual team and unresolved at the date of this extract:
+Raised with the WHO PreQual team and unresolved at the date of this extract:
 
-- `FVP-P-98` is prequalified with no responsible NRA identifier and no NRA name
-- `FVP-P-216` and `FVP-P-330` are prequalified with no date of prequalification acceptance
-- `FVP-P-app8` has a record name that does not follow the `FVP-P-<number>`
-  convention, and no presentation or commercial name, while marked prequalified
-- Six applications that have not completed prequalification, including one
-  rejected at screening, are flagged as published snapshots in the source
-  database
+- a small number of prequalified products have no responsible NRA recorded
+- a small number of prequalified products have no date of prequalification
+  acceptance
+- some applications that have not completed prequalification are flagged as
+  published snapshots in the source database
 - `ProductIngredients` records carry no identifier, because the source query
   does not select one, so ingredient instances cannot be identified stably
   across extracts
-- No NRA address field is selected by the source query, so
+- no NRA address field is selected by the source query, so
   `PreQualNRA.addressLine1` is never populated
