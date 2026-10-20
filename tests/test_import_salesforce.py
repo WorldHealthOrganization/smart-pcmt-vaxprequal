@@ -39,6 +39,7 @@ from import_salesforce import (
     generate_vaccine_types_codesystem,
     load_json_file,
     md5hash,
+    merge_products,
     read_existing_codes,
     sanitize_alpha,
     sanitize_code,
@@ -607,6 +608,61 @@ class TestDepublishedProducts(unittest.TestCase):
         content = open(path).read()
         self.assertNotIn("#Prequalified", content)
         self.assertNotIn("* status =", content)
+
+
+class TestMergeProducts(unittest.TestCase):
+    """An incremental fetch must be merged, not generated from directly.
+
+    Every generator rewrites its output file in full, so generating from a
+    delta would delete every product the delta does not mention.
+    """
+
+    def raw(self, pid, name, status="Prequalified", stamp="2024-01-01T00:00:00.000Z"):
+        return {
+            "ProductDetails": {
+                "Identification": {"Id": pid, "Name": name},
+                "Status": status,
+                "LastPublishingDate": stamp,
+            }
+        }
+
+    def test_fetched_copy_replaces_the_stored_one(self):
+        stored = [self.raw("id1", "FVP-P-1"), self.raw("id2", "FVP-P-2")]
+        # The withdrawal arrives as a cleared-down record.
+        delta = [self.raw("id2", "FVP-P-2", "Withdrawn: Was Prequalified", "2026-10-20T09:00:00.000Z")]
+        merged, added, updated = merge_products(stored, delta)
+        self.assertEqual(len(merged), 2)
+        self.assertEqual((added, updated), (0, 1))
+        self.assertEqual(
+            merged[1]["ProductDetails"]["Status"], "Withdrawn: Was Prequalified"
+        )
+
+    def test_products_absent_from_the_delta_survive(self):
+        stored = [self.raw(f"id{i}", f"FVP-P-{i}") for i in range(35)]
+        merged, added, updated = merge_products(stored, [self.raw("id7", "FVP-P-7")])
+        self.assertEqual(len(merged), 35)
+        self.assertEqual((added, updated), (0, 1))
+
+    def test_new_products_are_appended(self):
+        stored = [self.raw("id1", "FVP-P-1")]
+        merged, added, updated = merge_products(stored, [self.raw("id9", "FVP-P-9")])
+        self.assertEqual([p["ProductDetails"]["Identification"]["Id"] for p in merged], ["id1", "id9"])
+        self.assertEqual((added, updated), (1, 0))
+
+    def test_existing_order_is_preserved_for_small_diffs(self):
+        stored = [self.raw(f"id{i}", f"FVP-P-{i}") for i in range(5)]
+        delta = [self.raw("id3", "FVP-P-3", "Withdrawn: Was Prequalified")]
+        merged, _, _ = merge_products(stored, delta)
+        self.assertEqual(
+            [p["ProductDetails"]["Identification"]["Id"] for p in merged],
+            ["id0", "id1", "id2", "id3", "id4"],
+        )
+
+    def test_merging_empty_delta_is_a_no_op(self):
+        stored = [self.raw("id1", "FVP-P-1")]
+        merged, added, updated = merge_products(stored, [])
+        self.assertEqual(merged, stored)
+        self.assertEqual((added, updated), (0, 0))
 
 
 class TestBackfillNames(unittest.TestCase):

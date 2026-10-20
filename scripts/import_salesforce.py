@@ -629,6 +629,64 @@ def download_all_pages(
     return products
 
 
+def merge_products(existing, fetched):
+    """Merge fetched records into an existing snapshot, keyed on product id.
+
+    An incremental fetch returns only the products whose publishing date
+    moved, but every generator rewrites its whole output file from the list
+    it is given.  Generating straight from a delta therefore deletes every
+    product the delta does not mention.  Merging first restores the full
+    picture, with the fetched copy of a product replacing the stored one --
+    which is what makes a withdrawal apply correctly, since the fetched
+    copy is the cleared-down record.
+
+    Existing order is preserved and new products are appended, so the
+    generated FSH diff stays small and reviewable.
+
+    Note this cannot detect a product removed from the source database
+    altogether; only a full load can. Run one periodically.
+
+    Args:
+        existing: Products from the stored snapshot.
+        fetched: Products from this run's fetch.
+
+    Returns:
+        Tuple of (merged list, number added, number updated).
+    """
+    fetched_by_key = {}
+    for product in fetched:
+        fetched_by_key[product_key(product)] = product
+
+    merged = []
+    updated = 0
+    seen = set()
+    for product in existing:
+        key = product_key(product)
+        seen.add(key)
+        if key in fetched_by_key:
+            merged.append(fetched_by_key[key])
+            updated += 1
+        else:
+            merged.append(product)
+
+    added = 0
+    for product in fetched:
+        key = product_key(product)
+        if key not in seen:
+            merged.append(product)
+            added += 1
+
+    logger.info(
+        "Merged %d fetched records into %d stored: %d updated, %d added, %d total",
+        len(fetched),
+        len(existing),
+        updated,
+        added,
+        len(merged),
+    )
+    return merged, added, updated
+
+
 def load_json_file(path):
     """Load products from a local JSON file.
 
@@ -1932,6 +1990,16 @@ def main():
         help="Warn instead of failing when fewer records arrive than TotalRecords",
     )
     parser.add_argument(
+        "--merge-with",
+        default=None,
+        help=(
+            "Merge the fetched records into this existing snapshot (by "
+            "product id) before generating. Required with --timestamp, "
+            "because the generators rewrite each output file in full and an "
+            "unmerged delta would delete every product it does not mention"
+        ),
+    )
+    parser.add_argument(
         "--no-backfill",
         action="store_true",
         help=(
@@ -1949,6 +2017,19 @@ def main():
         ),
     )
     args = parser.parse_args()
+
+    # An incremental fetch returns only what changed, and every generator
+    # rewrites its output file in full, so generating from an unmerged delta
+    # would delete every product the delta does not mention.
+    if args.timestamp and not args.merge_with:
+        logger.error(
+            "--timestamp performs an incremental fetch, which returns only "
+            "changed products. Generating from that alone would delete every "
+            "other product from the IG. Pass --merge-with data/prequal.json "
+            "to merge the delta into the stored snapshot first, or omit "
+            "--timestamp for a full load."
+        )
+        sys.exit(1)
 
     # Load data from API or local file
     if args.json_file:
@@ -1978,6 +2059,17 @@ def main():
         except PreQualAPIError as exc:
             logger.error("%s", exc)
             sys.exit(1)
+
+    if args.merge_with:
+        if os.path.exists(args.merge_with):
+            stored = load_json_file(args.merge_with)
+            raw_products, _, _ = merge_products(stored, raw_products)
+        else:
+            logger.warning(
+                "%s does not exist yet, so there is nothing to merge into; "
+                "treating this run as a full load",
+                args.merge_with,
+            )
 
     if args.status:
         wanted = set(args.status)

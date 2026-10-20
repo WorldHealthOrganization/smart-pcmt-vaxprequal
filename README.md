@@ -81,11 +81,25 @@ python3 scripts/import_salesforce.py --save-raw data/prequal.json
 ```
 
 Incremental load of everything published since a given date — `TimeStamp`
-filters on the Salesforce last-publishing-update field:
+filters on the Salesforce last-publishing-update field. It **must** be
+merged into the stored snapshot:
 
 ```bash
-python3 scripts/import_salesforce.py --timestamp 2025-01-01T00:00:00.000Z
+python3 scripts/import_salesforce.py \
+    --timestamp 2025-01-01T00:00:00.000Z \
+    --merge-with data/prequal.json \
+    --save-raw data/prequal.json
 ```
+
+An incremental fetch returns only the products whose publishing date moved,
+and every generator rewrites its output file in full. Generating straight
+from a delta would therefore delete every product the delta does not
+mention — a one-product delta produces a one-product IG. `--merge-with`
+replays the delta over the stored snapshot first, so the result is identical
+to a full load; the script refuses to run `--timestamp` without it.
+
+Merging cannot detect a product removed from the source database
+altogether, so run a full load periodically.
 
 To keep only currently prequalified products, pass `--status` (repeatable).
 Omitted, every status is kept, including `Withdrawn: Was Prequalified`:
