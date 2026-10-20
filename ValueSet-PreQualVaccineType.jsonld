@@ -1,0 +1,195 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-10-20T13:57:40.814255Z",
+  "@graph": [
+    {
+      "id": "#BCG",
+      "name": "BCG"
+    },
+    {
+      "id": "#C19",
+      "name": "C-19"
+    },
+    {
+      "id": "#DT",
+      "name": "DT"
+    },
+    {
+      "id": "#DTaP",
+      "name": "DTaP"
+    },
+    {
+      "id": "#DTaPHepBIPVHib",
+      "name": "DTaP-HepB-IPV-Hib"
+    },
+    {
+      "id": "#DTwP",
+      "name": "DTwP"
+    },
+    {
+      "id": "#DTwPHepBHib",
+      "name": "DTwP-HepB+Hib"
+    },
+    {
+      "id": "#DTwPHib",
+      "name": "DTwP+Hib"
+    },
+    {
+      "id": "#EBOV",
+      "name": "EBOV"
+    },
+    {
+      "id": "#HPV",
+      "name": "HPV"
+    },
+    {
+      "id": "#HepA",
+      "name": "HepA"
+    },
+    {
+      "id": "#HepB",
+      "name": "HepB"
+    },
+    {
+      "id": "#Hib",
+      "name": "Hib"
+    },
+    {
+      "id": "#IIV3",
+      "name": "IIV3"
+    },
+    {
+      "id": "#IIV4",
+      "name": "IIV4"
+    },
+    {
+      "id": "#IIVPandemic",
+      "name": "IIVPandemic"
+    },
+    {
+      "id": "#IPV",
+      "name": "IPV"
+    },
+    {
+      "id": "#JE",
+      "name": "JE"
+    },
+    {
+      "id": "#LARV",
+      "name": "LARV"
+    },
+    {
+      "id": "#M",
+      "name": "M"
+    },
+    {
+      "id": "#MMR",
+      "name": "MMR"
+    },
+    {
+      "id": "#MR",
+      "name": "MR"
+    },
+    {
+      "id": "#Malaria",
+      "name": "Malaria"
+    },
+    {
+      "id": "#MenA",
+      "name": "MenA"
+    },
+    {
+      "id": "#MenACYW135",
+      "name": "MenACYW-135"
+    },
+    {
+      "id": "#MenACYWX",
+      "name": "MenACYWX"
+    },
+    {
+      "id": "#OCV",
+      "name": "OCV"
+    },
+    {
+      "id": "#PCV",
+      "name": "PCV"
+    },
+    {
+      "id": "#R",
+      "name": "R"
+    },
+    {
+      "id": "#Rabies",
+      "name": "Rabies"
+    },
+    {
+      "id": "#TDV",
+      "name": "TDV"
+    },
+    {
+      "id": "#TT",
+      "name": "TT"
+    },
+    {
+      "id": "#Typhoid",
+      "name": "Typhoid"
+    },
+    {
+      "id": "#VAR",
+      "name": "VAR"
+    },
+    {
+      "id": "#YF",
+      "name": "YF"
+    },
+    {
+      "id": "#bOPV",
+      "name": "bOPV"
+    },
+    {
+      "id": "#dT",
+      "name": "dT"
+    },
+    {
+      "id": "#mOPV1",
+      "name": "mOPV1"
+    },
+    {
+      "id": "#mOPV2",
+      "name": "mOPV2"
+    },
+    {
+      "id": "#mOPV3",
+      "name": "mOPV3"
+    },
+    {
+      "id": "#nOPV2",
+      "name": "nOPV2"
+    },
+    {
+      "id": "#sIPV",
+      "name": "sIPV"
+    },
+    {
+      "id": "#tOPV",
+      "name": "tOPV"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

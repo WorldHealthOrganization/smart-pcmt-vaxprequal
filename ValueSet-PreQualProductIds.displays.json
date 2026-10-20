@@ -1,0 +1,858 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.displays.json",
+  "title": "WHO PreQualificaiton Vaccine Product Ids Display Values",
+  "description": "Display values for WHO PreQualificaiton Vaccine Product Ids ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "a3K3X000005atRtUAI": {
+      "en": "FVP-P-447 (a3K3X000005atRtUAI)"
+    },
+    "a3K3X000005atSwUAI": {
+      "en": "FVP-P-446 (a3K3X000005atSwUAI)"
+    },
+    "a3K3X000006MihsUAC": {
+      "en": "FVP-P-62 (a3K3X000006MihsUAC)"
+    },
+    "a3K3X000006MihtUAC": {
+      "en": "FVP-P-63 (a3K3X000006MihtUAC)"
+    },
+    "a3K3X000006MihuUAC": {
+      "en": "FVP-P-64 (a3K3X000006MihuUAC)"
+    },
+    "a3K3X000006MihvUAC": {
+      "en": "FVP-P-65 (a3K3X000006MihvUAC)"
+    },
+    "a3K3X000006MihwUAC": {
+      "en": "FVP-P-66 (a3K3X000006MihwUAC)"
+    },
+    "a3K3X000006MihxUAC": {
+      "en": "FVP-P-67 (a3K3X000006MihxUAC)"
+    },
+    "a3K3X000006MihyUAC": {
+      "en": "FVP-P-68 (a3K3X000006MihyUAC)"
+    },
+    "a3K3X000006MihzUAC": {
+      "en": "FVP-P-27 (a3K3X000006MihzUAC)"
+    },
+    "a3K3X000006Mii0UAC": {
+      "en": "FVP-P-61 (a3K3X000006Mii0UAC)"
+    },
+    "a3K3X000006Mii1UAC": {
+      "en": "FVP-P-75 (a3K3X000006Mii1UAC)"
+    },
+    "a3K3X000006Mii2UAC": {
+      "en": "FVP-P-76 (a3K3X000006Mii2UAC)"
+    },
+    "a3K3X000006Mii3UAC": {
+      "en": "FVP-P-77 (a3K3X000006Mii3UAC)"
+    },
+    "a3K3X000006Mii4UAC": {
+      "en": "FVP-P-292 (a3K3X000006Mii4UAC)"
+    },
+    "a3K3X000006Mii5UAC": {
+      "en": "FVP-P-311 (a3K3X000006Mii5UAC)"
+    },
+    "a3K3X000006Mii6UAC": {
+      "en": "FVP-P-319 (a3K3X000006Mii6UAC)"
+    },
+    "a3K3X000006Mii7UAC": {
+      "en": "FVP-P-71 (a3K3X000006Mii7UAC)"
+    },
+    "a3K3X000006Mii8UAC": {
+      "en": "FVP-P-78 (a3K3X000006Mii8UAC)"
+    },
+    "a3K3X000006Mii9UAC": {
+      "en": "FVP-P-79 (a3K3X000006Mii9UAC)"
+    },
+    "a3K3X000006MiiAUAS": {
+      "en": "FVP-P-80 (a3K3X000006MiiAUAS)"
+    },
+    "a3K3X000006MiiBUAS": {
+      "en": "FVP-P-329 (a3K3X000006MiiBUAS)"
+    },
+    "a3K3X000006MiiCUAS": {
+      "en": "FVP-P-73 (a3K3X000006MiiCUAS)"
+    },
+    "a3K3X000006MiiDUAS": {
+      "en": "FVP-P-74 (a3K3X000006MiiDUAS)"
+    },
+    "a3K3X000006MiiEUAS": {
+      "en": "FVP-P-137 (a3K3X000006MiiEUAS)"
+    },
+    "a3K3X000006MiiFUAS": {
+      "en": "FVP-P-136 (a3K3X000006MiiFUAS)"
+    },
+    "a3K3X000006MiiGUAS": {
+      "en": "FVP-P-138 (a3K3X000006MiiGUAS)"
+    },
+    "a3K3X000006MiiHUAS": {
+      "en": "FVP-P-141 (a3K3X000006MiiHUAS)"
+    },
+    "a3K3X000006MiiIUAS": {
+      "en": "FVP-P-142 (a3K3X000006MiiIUAS)"
+    },
+    "a3K3X000006MiiJUAS": {
+      "en": "FVP-P-144 (a3K3X000006MiiJUAS)"
+    },
+    "a3K3X000006MiiKUAS": {
+      "en": "FVP-P-143 (a3K3X000006MiiKUAS)"
+    },
+    "a3K3X000006MiiLUAS": {
+      "en": "FVP-P-272 (a3K3X000006MiiLUAS)"
+    },
+    "a3K3X000006MiiMUAS": {
+      "en": "FVP-P-145 (a3K3X000006MiiMUAS)"
+    },
+    "a3K3X000006MiiNUAS": {
+      "en": "FVP-P-124 (a3K3X000006MiiNUAS)"
+    },
+    "a3K3X000006MiiOUAS": {
+      "en": "FVP-P-125 (a3K3X000006MiiOUAS)"
+    },
+    "a3K3X000006MiiPUAS": {
+      "en": "FVP-P-126 (a3K3X000006MiiPUAS)"
+    },
+    "a3K3X000006MiiQUAS": {
+      "en": "FVP-P-127 (a3K3X000006MiiQUAS)"
+    },
+    "a3K3X000006MiiRUAS": {
+      "en": "FVP-P-104 (a3K3X000006MiiRUAS)"
+    },
+    "a3K3X000006MiiSUAS": {
+      "en": "FVP-P-105 (a3K3X000006MiiSUAS)"
+    },
+    "a3K3X000006MiiTUAS": {
+      "en": "FVP-P-128 (a3K3X000006MiiTUAS)"
+    },
+    "a3K3X000006MiiUUAS": {
+      "en": "FVP-P-129 (a3K3X000006MiiUUAS)"
+    },
+    "a3K3X000006MiiVUAS": {
+      "en": "FVP-P-130 (a3K3X000006MiiVUAS)"
+    },
+    "a3K3X000006MiiWUAS": {
+      "en": "FVP-P-131 (a3K3X000006MiiWUAS)"
+    },
+    "a3K3X000006MiiXUAS": {
+      "en": "FVP-P-132 (a3K3X000006MiiXUAS)"
+    },
+    "a3K3X000006MiiYUAS": {
+      "en": "FVP-P-133 (a3K3X000006MiiYUAS)"
+    },
+    "a3K3X000006MiiZUAS": {
+      "en": "FVP-P-134 (a3K3X000006MiiZUAS)"
+    },
+    "a3K3X000006MiiaUAC": {
+      "en": "FVP-P-205 (a3K3X000006MiiaUAC)"
+    },
+    "a3K3X000006MiibUAC": {
+      "en": "FVP-P-231 (a3K3X000006MiibUAC)"
+    },
+    "a3K3X000006MiicUAC": {
+      "en": "FVP-P-271 (a3K3X000006MiicUAC)"
+    },
+    "a3K3X000006MiidUAC": {
+      "en": "FVP-P-139 (a3K3X000006MiidUAC)"
+    },
+    "a3K3X000006MiigUAC": {
+      "en": "FVP-P-109 (a3K3X000006MiigUAC)"
+    },
+    "a3K3X000006MiihUAC": {
+      "en": "FVP-P-111 (a3K3X000006MiihUAC)"
+    },
+    "a3K3X000006MiiiUAC": {
+      "en": "FVP-P-112 (a3K3X000006MiiiUAC)"
+    },
+    "a3K3X000006MiijUAC": {
+      "en": "FVP-P-135 (a3K3X000006MiijUAC)"
+    },
+    "a3K3X000006MiikUAC": {
+      "en": "FVP-P-122 (a3K3X000006MiikUAC)"
+    },
+    "a3K3X000006MiilUAC": {
+      "en": "FVP-P-123 (a3K3X000006MiilUAC)"
+    },
+    "a3K3X000006MiimUAC": {
+      "en": "FVP-P-140 (a3K3X000006MiimUAC)"
+    },
+    "a3K3X000006MiinUAC": {
+      "en": "FVP-P-98 (a3K3X000006MiinUAC)"
+    },
+    "a3K3X000006MiioUAC": {
+      "en": "FVP-P-118 (a3K3X000006MiioUAC)"
+    },
+    "a3K3X000006MiipUAC": {
+      "en": "FVP-P-119 (a3K3X000006MiipUAC)"
+    },
+    "a3K3X000006MiiqUAC": {
+      "en": "FVP-P-120 (a3K3X000006MiiqUAC)"
+    },
+    "a3K3X000006MiirUAC": {
+      "en": "FVP-P-121 (a3K3X000006MiirUAC)"
+    },
+    "a3K3X000006MiisUAC": {
+      "en": "FVP-P-117 (a3K3X000006MiisUAC)"
+    },
+    "a3K3X000006MiitUAC": {
+      "en": "FVP-P-337 (a3K3X000006MiitUAC)"
+    },
+    "a3K3X000006MiiuUAC": {
+      "en": "FVP-P-336 (a3K3X000006MiiuUAC)"
+    },
+    "a3K3X000006MiivUAC": {
+      "en": "FVP-P-338 (a3K3X000006MiivUAC)"
+    },
+    "a3K3X000006MiiwUAC": {
+      "en": "FVP-P-390 (a3K3X000006MiiwUAC)"
+    },
+    "a3K3X000006MiixUAC": {
+      "en": "FVP-P-391 (a3K3X000006MiixUAC)"
+    },
+    "a3K3X000006MiiyUAC": {
+      "en": "FVP-P-342 (a3K3X000006MiiyUAC)"
+    },
+    "a3K3X000006MiizUAC": {
+      "en": "FVP-P-343 (a3K3X000006MiizUAC)"
+    },
+    "a3K3X000006Mij0UAC": {
+      "en": "FVP-P-356 (a3K3X000006Mij0UAC)"
+    },
+    "a3K3X000006Mij1UAC": {
+      "en": "FVP-P-358 (a3K3X000006Mij1UAC)"
+    },
+    "a3K3X000006Mij2UAC": {
+      "en": "FVP-P-359 (a3K3X000006Mij2UAC)"
+    },
+    "a3K3X000006Mij3UAC": {
+      "en": "FVP-P-347 (a3K3X000006Mij3UAC)"
+    },
+    "a3K3X000006Mij4UAC": {
+      "en": "FVP-P-350 (a3K3X000006Mij4UAC)"
+    },
+    "a3K3X000006Mij5UAC": {
+      "en": "FVP-P-279 (a3K3X000006Mij5UAC)"
+    },
+    "a3K3X000006Mij6UAC": {
+      "en": "FVP-P-280 (a3K3X000006Mij6UAC)"
+    },
+    "a3K3X000006Mij7UAC": {
+      "en": "FVP-P-116 (a3K3X000006Mij7UAC)"
+    },
+    "a3K3X000006Mij8UAC": {
+      "en": "FVP-P-376 (a3K3X000006Mij8UAC)"
+    },
+    "a3K3X000006Mij9UAC": {
+      "en": "FVP-P-378 (a3K3X000006Mij9UAC)"
+    },
+    "a3K3X000006MijAUAS": {
+      "en": "FVP-P-379 (a3K3X000006MijAUAS)"
+    },
+    "a3K3X000006MijBUAS": {
+      "en": "FVP-P-281 (a3K3X000006MijBUAS)"
+    },
+    "a3K3X000006MijCUAS": {
+      "en": "FVP-P-283 (a3K3X000006MijCUAS)"
+    },
+    "a3K3X000006MijDUAS": {
+      "en": "FVP-P-284 (a3K3X000006MijDUAS)"
+    },
+    "a3K3X000006MijEUAS": {
+      "en": "FVP-P-285 (a3K3X000006MijEUAS)"
+    },
+    "a3K3X000006MijFUAS": {
+      "en": "FVP-P-304 (a3K3X000006MijFUAS)"
+    },
+    "a3K3X000006MijGUAS": {
+      "en": "FVP-P-305 (a3K3X000006MijGUAS)"
+    },
+    "a3K3X000006MijHUAS": {
+      "en": "FVP-P-383 (a3K3X000006MijHUAS)"
+    },
+    "a3K3X000006MijIUAS": {
+      "en": "FVP-P-384 (a3K3X000006MijIUAS)"
+    },
+    "a3K3X000006MijJUAS": {
+      "en": "FVP-P-385 (a3K3X000006MijJUAS)"
+    },
+    "a3K3X000006MijKUAS": {
+      "en": "FVP-P-394 (a3K3X000006MijKUAS)"
+    },
+    "a3K3X000006MijLUAS": {
+      "en": "FVP-P-396 (a3K3X000006MijLUAS)"
+    },
+    "a3K3X000006MijMUAS": {
+      "en": "FVP-P-397 (a3K3X000006MijMUAS)"
+    },
+    "a3K3X000006MijNUAS": {
+      "en": "FVP-P-399 (a3K3X000006MijNUAS)"
+    },
+    "a3K3X000006MijOUAS": {
+      "en": "FVP-P-400 (a3K3X000006MijOUAS)"
+    },
+    "a3K3X000006MijPUAS": {
+      "en": "FVP-P-401 (a3K3X000006MijPUAS)"
+    },
+    "a3K3X000006MijQUAS": {
+      "en": "FVP-P-286 (a3K3X000006MijQUAS)"
+    },
+    "a3K3X000006MijRUAS": {
+      "en": "FVP-P-287 (a3K3X000006MijRUAS)"
+    },
+    "a3K3X000006MijSUAS": {
+      "en": "FVP-P-288 (a3K3X000006MijSUAS)"
+    },
+    "a3K3X000006MijTUAS": {
+      "en": "FVP-P-289 (a3K3X000006MijTUAS)"
+    },
+    "a3K3X000006MijUUAS": {
+      "en": "FVP-P-290 (a3K3X000006MijUUAS)"
+    },
+    "a3K3X000006MijVUAS": {
+      "en": "FVP-P-291 (a3K3X000006MijVUAS)"
+    },
+    "a3K3X000006MijWUAS": {
+      "en": "FVP-P-293 (a3K3X000006MijWUAS)"
+    },
+    "a3K3X000006MijZUAS": {
+      "en": "FVP-P-297 (a3K3X000006MijZUAS)"
+    },
+    "a3K3X000006MijaUAC": {
+      "en": "FVP-P-355 (a3K3X000006MijaUAC)"
+    },
+    "a3K3X000006MijbUAC": {
+      "en": "FVP-P-298 (a3K3X000006MijbUAC)"
+    },
+    "a3K3X000006MijcUAC": {
+      "en": "FVP-P-299 (a3K3X000006MijcUAC)"
+    },
+    "a3K3X000006MijdUAC": {
+      "en": "FVP-P-306 (a3K3X000006MijdUAC)"
+    },
+    "a3K3X000006MijeUAC": {
+      "en": "FVP-P-308 (a3K3X000006MijeUAC)"
+    },
+    "a3K3X000006MijfUAC": {
+      "en": "FVP-P-309 (a3K3X000006MijfUAC)"
+    },
+    "a3K3X000006MijgUAC": {
+      "en": "FVP-P-312 (a3K3X000006MijgUAC)"
+    },
+    "a3K3X000006MijhUAC": {
+      "en": "FVP-P-313 (a3K3X000006MijhUAC)"
+    },
+    "a3K3X000006MijiUAC": {
+      "en": "FVP-P-314 (a3K3X000006MijiUAC)"
+    },
+    "a3K3X000006MijjUAC": {
+      "en": "FVP-P-321 (a3K3X000006MijjUAC)"
+    },
+    "a3K3X000006MijkUAC": {
+      "en": "FVP-P-322 (a3K3X000006MijkUAC)"
+    },
+    "a3K3X000006MijlUAC": {
+      "en": "FVP-P-323 (a3K3X000006MijlUAC)"
+    },
+    "a3K3X000006MijmUAC": {
+      "en": "FVP-P-324 (a3K3X000006MijmUAC)"
+    },
+    "a3K3X000006MijnUAC": {
+      "en": "FVP-P-325 (a3K3X000006MijnUAC)"
+    },
+    "a3K3X000006MijoUAC": {
+      "en": "FVP-P-330 (a3K3X000006MijoUAC)"
+    },
+    "a3K3X000006MijpUAC": {
+      "en": "FVP-P-332 (a3K3X000006MijpUAC)"
+    },
+    "a3K3X000006MijqUAC": {
+      "en": "FVP-P-316 (a3K3X000006MijqUAC)"
+    },
+    "a3K3X000006MijrUAC": {
+      "en": "FVP-P-318 (a3K3X000006MijrUAC)"
+    },
+    "a3K3X000006MijsUAC": {
+      "en": "FVP-P-275 (a3K3X000006MijsUAC)"
+    },
+    "a3K3X000006MijtUAC": {
+      "en": "FVP-P-277 (a3K3X000006MijtUAC)"
+    },
+    "a3K3X000006MijuUAC": {
+      "en": "FVP-P-278 (a3K3X000006MijuUAC)"
+    },
+    "a3K3X000006MijvUAC": {
+      "en": "FVP-P-339 (a3K3X000006MijvUAC)"
+    },
+    "a3K3X000006MijwUAC": {
+      "en": "FVP-P-340 (a3K3X000006MijwUAC)"
+    },
+    "a3K3X000006MijxUAC": {
+      "en": "FVP-P-341 (a3K3X000006MijxUAC)"
+    },
+    "a3K3X000006MijyUAC": {
+      "en": "FVP-P-360 (a3K3X000006MijyUAC)"
+    },
+    "a3K3X000006MijzUAC": {
+      "en": "FVP-P-362 (a3K3X000006MijzUAC)"
+    },
+    "a3K3X000006Mik0UAC": {
+      "en": "FVP-P-364 (a3K3X000006Mik0UAC)"
+    },
+    "a3K3X000006Mik1UAC": {
+      "en": "FVP-P-365 (a3K3X000006Mik1UAC)"
+    },
+    "a3K3X000006Mik2UAC": {
+      "en": "FVP-P-367 (a3K3X000006Mik2UAC)"
+    },
+    "a3K3X000006Mik3UAC": {
+      "en": "FVP-P-372 (a3K3X000006Mik3UAC)"
+    },
+    "a3K3X000006Mik4UAC": {
+      "en": "FVP-P-374 (a3K3X000006Mik4UAC)"
+    },
+    "a3K3X000006Mik5UAC": {
+      "en": "FVP-P-375 (a3K3X000006Mik5UAC)"
+    },
+    "a3K3X000006Mik6UAC": {
+      "en": "FVP-P-408 (a3K3X000006Mik6UAC)"
+    },
+    "a3K3X000006Mik7UAC": {
+      "en": "FVP-P-409 (a3K3X000006Mik7UAC)"
+    },
+    "a3K3X000006Mik8UAC": {
+      "en": "FVP-P-410 (a3K3X000006Mik8UAC)"
+    },
+    "a3K3X000006Mik9UAC": {
+      "en": "FVP-P-412 (a3K3X000006Mik9UAC)"
+    },
+    "a3K3X000006MikAUAS": {
+      "en": "FVP-P-415 (a3K3X000006MikAUAS)"
+    },
+    "a3K3X000006MikBUAS": {
+      "en": "FVP-P-419 (a3K3X000006MikBUAS)"
+    },
+    "a3K3X000006MikCUAS": {
+      "en": "FVP-P-424 (a3K3X000006MikCUAS)"
+    },
+    "a3K3X000006MikDUAS": {
+      "en": "FVP-P-14 (a3K3X000006MikDUAS)"
+    },
+    "a3K3X000006MikEUAS": {
+      "en": "FVP-P-432 (a3K3X000006MikEUAS)"
+    },
+    "a3K3X000006MikFUAS": {
+      "en": "FVP-P-331 (a3K3X000006MikFUAS)"
+    },
+    "a3K3X000006MikGUAS": {
+      "en": "FVP-P-333 (a3K3X000006MikGUAS)"
+    },
+    "a3K3X000006MikHUAS": {
+      "en": "FVP-P-335 (a3K3X000006MikHUAS)"
+    },
+    "a3K3X000006MikIUAS": {
+      "en": "FVP-P-app8 (a3K3X000006MikIUAS)"
+    },
+    "a3K3X000006MikJUAS": {
+      "en": "FVP-P-23 (a3K3X000006MikJUAS)"
+    },
+    "a3K3X000006MikKUAS": {
+      "en": "FVP-P-24 (a3K3X000006MikKUAS)"
+    },
+    "a3K3X000006MikLUAS": {
+      "en": "FVP-P-417 (a3K3X000006MikLUAS)"
+    },
+    "a3K3X000006MikMUAS": {
+      "en": "FVP-P-422 (a3K3X000006MikMUAS)"
+    },
+    "a3K3X000006MikNUAS": {
+      "en": "FVP-P-15 (a3K3X000006MikNUAS)"
+    },
+    "a3K3X000006MikOUAS": {
+      "en": "FVP-P-16 (a3K3X000006MikOUAS)"
+    },
+    "a3K3X000006MikPUAS": {
+      "en": "FVP-P-17 (a3K3X000006MikPUAS)"
+    },
+    "a3K3X000006MikSUAS": {
+      "en": "FVP-P-7 (a3K3X000006MikSUAS)"
+    },
+    "a3K3X000006MikTUAS": {
+      "en": "FVP-P-8 (a3K3X000006MikTUAS)"
+    },
+    "a3K3X000006MikUUAS": {
+      "en": "FVP-P-21 (a3K3X000006MikUUAS)"
+    },
+    "a3K3X000006MikVUAS": {
+      "en": "FVP-P-19 (a3K3X000006MikVUAS)"
+    },
+    "a3K3X000006MikWUAS": {
+      "en": "FVP-P-20 (a3K3X000006MikWUAS)"
+    },
+    "a3K3X000006MikXUAS": {
+      "en": "FVP-P-295 (a3K3X000006MikXUAS)"
+    },
+    "a3K3X000006MikYUAS": {
+      "en": "FVP-P-296 (a3K3X000006MikYUAS)"
+    },
+    "a3K3X000006MikZUAS": {
+      "en": "FVP-P-301 (a3K3X000006MikZUAS)"
+    },
+    "a3K3X000006MikaUAC": {
+      "en": "FVP-P-307 (a3K3X000006MikaUAC)"
+    },
+    "a3K3X000006MikbUAC": {
+      "en": "FVP-P-315 (a3K3X000006MikbUAC)"
+    },
+    "a3K3X000006MikcUAC": {
+      "en": "FVP-P-317 (a3K3X000006MikcUAC)"
+    },
+    "a3K3X000006MikdUAC": {
+      "en": "FVP-P-179 (a3K3X000006MikdUAC)"
+    },
+    "a3K3X000006MikeUAC": {
+      "en": "FVP-P-180 (a3K3X000006MikeUAC)"
+    },
+    "a3K3X000006MikfUAC": {
+      "en": "FVP-P-200 (a3K3X000006MikfUAC)"
+    },
+    "a3K3X000006MikgUAC": {
+      "en": "FVP-P-203 (a3K3X000006MikgUAC)"
+    },
+    "a3K3X000006MikhUAC": {
+      "en": "FVP-P-204 (a3K3X000006MikhUAC)"
+    },
+    "a3K3X000006MikiUAC": {
+      "en": "FVP-P-152 (a3K3X000006MikiUAC)"
+    },
+    "a3K3X000006MikjUAC": {
+      "en": "FVP-P-146 (a3K3X000006MikjUAC)"
+    },
+    "a3K3X000006MikkUAC": {
+      "en": "FVP-P-147 (a3K3X000006MikkUAC)"
+    },
+    "a3K3X000006MiklUAC": {
+      "en": "FVP-P-148 (a3K3X000006MiklUAC)"
+    },
+    "a3K3X000006MikmUAC": {
+      "en": "FVP-P-181 (a3K3X000006MikmUAC)"
+    },
+    "a3K3X000006MiknUAC": {
+      "en": "FVP-P-149 (a3K3X000006MiknUAC)"
+    },
+    "a3K3X000006MikoUAC": {
+      "en": "FVP-P-150 (a3K3X000006MikoUAC)"
+    },
+    "a3K3X000006MikpUAC": {
+      "en": "FVP-P-151 (a3K3X000006MikpUAC)"
+    },
+    "a3K3X000006MikqUAC": {
+      "en": "FVP-P-182 (a3K3X000006MikqUAC)"
+    },
+    "a3K3X000006MikrUAC": {
+      "en": "FVP-P-183 (a3K3X000006MikrUAC)"
+    },
+    "a3K3X000006MiksUAC": {
+      "en": "FVP-P-184 (a3K3X000006MiksUAC)"
+    },
+    "a3K3X000006MiktUAC": {
+      "en": "FVP-P-185 (a3K3X000006MiktUAC)"
+    },
+    "a3K3X000006MikuUAC": {
+      "en": "FVP-P-190 (a3K3X000006MikuUAC)"
+    },
+    "a3K3X000006MikvUAC": {
+      "en": "FVP-P-191 (a3K3X000006MikvUAC)"
+    },
+    "a3K3X000006MikwUAC": {
+      "en": "FVP-P-197 (a3K3X000006MikwUAC)"
+    },
+    "a3K3X000006MikxUAC": {
+      "en": "FVP-P-198 (a3K3X000006MikxUAC)"
+    },
+    "a3K3X000006MikyUAC": {
+      "en": "FVP-P-162 (a3K3X000006MikyUAC)"
+    },
+    "a3K3X000006MikzUAC": {
+      "en": "FVP-P-163 (a3K3X000006MikzUAC)"
+    },
+    "a3K3X000006Mil0UAC": {
+      "en": "FVP-P-166 (a3K3X000006Mil0UAC)"
+    },
+    "a3K3X000006Mil1UAC": {
+      "en": "FVP-P-167 (a3K3X000006Mil1UAC)"
+    },
+    "a3K3X000006Mil2UAC": {
+      "en": "FVP-P-173 (a3K3X000006Mil2UAC)"
+    },
+    "a3K3X000006Mil3UAC": {
+      "en": "FVP-P-178 (a3K3X000006Mil3UAC)"
+    },
+    "a3K3X000006Mil4UAC": {
+      "en": "FVP-P-194 (a3K3X000006Mil4UAC)"
+    },
+    "a3K3X000006Mil5UAC": {
+      "en": "FVP-P-195 (a3K3X000006Mil5UAC)"
+    },
+    "a3K3X000006Mil6UAC": {
+      "en": "FVP-P-196 (a3K3X000006Mil6UAC)"
+    },
+    "a3K3X000006Mil7UAC": {
+      "en": "FVP-P-257 (a3K3X000006Mil7UAC)"
+    },
+    "a3K3X000006Mil8UAC": {
+      "en": "FVP-P-258 (a3K3X000006Mil8UAC)"
+    },
+    "a3K3X000006Mil9UAC": {
+      "en": "FVP-P-259 (a3K3X000006Mil9UAC)"
+    },
+    "a3K3X000006MilAUAS": {
+      "en": "FVP-P-260 (a3K3X000006MilAUAS)"
+    },
+    "a3K3X000006MilBUAS": {
+      "en": "FVP-P-263 (a3K3X000006MilBUAS)"
+    },
+    "a3K3X000006MilCUAS": {
+      "en": "FVP-P-264 (a3K3X000006MilCUAS)"
+    },
+    "a3K3X000006MilDUAS": {
+      "en": "FVP-P-265 (a3K3X000006MilDUAS)"
+    },
+    "a3K3X000006MilEUAS": {
+      "en": "FVP-P-266 (a3K3X000006MilEUAS)"
+    },
+    "a3K3X000006MilFUAS": {
+      "en": "FVP-P-274 (a3K3X000006MilFUAS)"
+    },
+    "a3K3X000006MilGUAS": {
+      "en": "FVP-P-369 (a3K3X000006MilGUAS)"
+    },
+    "a3K3X000006MilHUAS": {
+      "en": "FVP-P-371 (a3K3X000006MilHUAS)"
+    },
+    "a3K3X000006MilLUAS": {
+      "en": "FVP-P-387 (a3K3X000006MilLUAS)"
+    },
+    "a3K3X000006MilMUAS": {
+      "en": "FVP-P-389 (a3K3X000006MilMUAS)"
+    },
+    "a3K3X000006MilNUAS": {
+      "en": "FVP-P-208 (a3K3X000006MilNUAS)"
+    },
+    "a3K3X000006MilOUAS": {
+      "en": "FVP-P-214 (a3K3X000006MilOUAS)"
+    },
+    "a3K3X000006MilPUAS": {
+      "en": "FVP-P-215 (a3K3X000006MilPUAS)"
+    },
+    "a3K3X000006MilQUAS": {
+      "en": "FVP-P-230 (a3K3X000006MilQUAS)"
+    },
+    "a3K3X000006MilRUAS": {
+      "en": "FVP-P-233 (a3K3X000006MilRUAS)"
+    },
+    "a3K3X000006MilSUAS": {
+      "en": "FVP-P-256 (a3K3X000006MilSUAS)"
+    },
+    "a3K3X000006MilTUAS": {
+      "en": "FVP-P-267 (a3K3X000006MilTUAS)"
+    },
+    "a3K3X000006MilUUAS": {
+      "en": "FVP-P-269 (a3K3X000006MilUUAS)"
+    },
+    "a3K3X000006MilVUAS": {
+      "en": "FVP-P-270 (a3K3X000006MilVUAS)"
+    },
+    "a3K3X000006MilWUAS": {
+      "en": "FVP-P-276 (a3K3X000006MilWUAS)"
+    },
+    "a3K3X000006MilXUAS": {
+      "en": "FVP-P-249 (a3K3X000006MilXUAS)"
+    },
+    "a3K3X000006MilYUAS": {
+      "en": "FVP-P-87 (a3K3X000006MilYUAS)"
+    },
+    "a3K3X000006MilZUAS": {
+      "en": "FVP-P-92 (a3K3X000006MilZUAS)"
+    },
+    "a3K3X000006MilaUAC": {
+      "en": "FVP-P-38 (a3K3X000006MilaUAC)"
+    },
+    "a3K3X000006MilbUAC": {
+      "en": "FVP-P-39 (a3K3X000006MilbUAC)"
+    },
+    "a3K3X000006MilcUAC": {
+      "en": "FVP-P-40 (a3K3X000006MilcUAC)"
+    },
+    "a3K3X000006MildUAC": {
+      "en": "FVP-P-436 (a3K3X000006MildUAC)"
+    },
+    "a3K3X000006MileUAC": {
+      "en": "FVP-P-186 (a3K3X000006MileUAC)"
+    },
+    "a3K3X000006MilfUAC": {
+      "en": "FVP-P-189 (a3K3X000006MilfUAC)"
+    },
+    "a3K3X000006MilgUAC": {
+      "en": "FVP-P-164 (a3K3X000006MilgUAC)"
+    },
+    "a3K3X000006MilhUAC": {
+      "en": "FVP-P-175 (a3K3X000006MilhUAC)"
+    },
+    "a3K3X000006MiliUAC": {
+      "en": "FVP-P-176 (a3K3X000006MiliUAC)"
+    },
+    "a3K3X000006MiljUAC": {
+      "en": "FVP-P-177 (a3K3X000006MiljUAC)"
+    },
+    "a3K3X000006MilkUAC": {
+      "en": "FVP-P-234 (a3K3X000006MilkUAC)"
+    },
+    "a3K3X000006MillUAC": {
+      "en": "FVP-P-235 (a3K3X000006MillUAC)"
+    },
+    "a3K3X000006MilmUAC": {
+      "en": "FVP-P-237 (a3K3X000006MilmUAC)"
+    },
+    "a3K3X000006MilnUAC": {
+      "en": "FVP-P-238 (a3K3X000006MilnUAC)"
+    },
+    "a3K3X000006MiloUAC": {
+      "en": "FVP-P-252 (a3K3X000006MiloUAC)"
+    },
+    "a3K3X000006MilpUAC": {
+      "en": "FVP-P-253 (a3K3X000006MilpUAC)"
+    },
+    "a3K3X000006MilqUAC": {
+      "en": "FVP-P-223 (a3K3X000006MilqUAC)"
+    },
+    "a3K3X000006MilrUAC": {
+      "en": "FVP-P-224 (a3K3X000006MilrUAC)"
+    },
+    "a3K3X000006MilsUAC": {
+      "en": "FVP-P-225 (a3K3X000006MilsUAC)"
+    },
+    "a3K3X000006MiltUAC": {
+      "en": "FVP-P-227 (a3K3X000006MiltUAC)"
+    },
+    "a3K3X000006MiluUAC": {
+      "en": "FVP-P-228 (a3K3X000006MiluUAC)"
+    },
+    "a3K3X000006MilvUAC": {
+      "en": "FVP-P-244 (a3K3X000006MilvUAC)"
+    },
+    "a3K3X000006MilwUAC": {
+      "en": "FVP-P-245 (a3K3X000006MilwUAC)"
+    },
+    "a3K3X000006MilxUAC": {
+      "en": "FVP-P-246 (a3K3X000006MilxUAC)"
+    },
+    "a3K3X000006MilyUAC": {
+      "en": "FVP-P-247 (a3K3X000006MilyUAC)"
+    },
+    "a3K3X000006MilzUAC": {
+      "en": "FVP-P-248 (a3K3X000006MilzUAC)"
+    },
+    "a3K3X000006Mim0UAC": {
+      "en": "FVP-P-251 (a3K3X000006Mim0UAC)"
+    },
+    "a3K3X000006Mim1UAC": {
+      "en": "FVP-P-209 (a3K3X000006Mim1UAC)"
+    },
+    "a3K3X000006Mim2UAC": {
+      "en": "FVP-P-210 (a3K3X000006Mim2UAC)"
+    },
+    "a3K3X000006Mim3UAC": {
+      "en": "FVP-P-213 (a3K3X000006Mim3UAC)"
+    },
+    "a3K3X000006Mim4UAC": {
+      "en": "FVP-P-216 (a3K3X000006Mim4UAC)"
+    },
+    "a3K3X000006Mim5UAC": {
+      "en": "FVP-P-363 (a3K3X000006Mim5UAC)"
+    },
+    "a3K3X000006Mim6UAC": {
+      "en": "FVP-P-344 (a3K3X000006Mim6UAC)"
+    },
+    "a3KNN0000001VJV2A2": {
+      "en": "FVP-P-456 (a3KNN0000001VJV2A2)"
+    },
+    "a3KNN0000001VJW2A2": {
+      "en": "FVP-P-455 (a3KNN0000001VJW2A2)"
+    },
+    "a3KNN0000001VJX2A2": {
+      "en": "FVP-P-453 (a3KNN0000001VJX2A2)"
+    },
+    "a3KNN0000001VJY2A2": {
+      "en": "FVP-P-452 (a3KNN0000001VJY2A2)"
+    },
+    "a3KNN0000001VJZ2A2": {
+      "en": "FVP-P-451 (a3KNN0000001VJZ2A2)"
+    },
+    "a3KNN0000001VJa2AM": {
+      "en": "FVP-P-463 (a3KNN0000001VJa2AM)"
+    },
+    "a3KNN0000001VJb2AM": {
+      "en": "FVP-P-460 (a3KNN0000001VJb2AM)"
+    },
+    "a3KNN0000001VJc2AM": {
+      "en": "FVP-P-464 (a3KNN0000001VJc2AM)"
+    },
+    "a3KNN0000001VJd2AM": {
+      "en": "FVP-P-445 (a3KNN0000001VJd2AM)"
+    },
+    "a3KNN0000001VJe2AM": {
+      "en": "FVP-P-406 (a3KNN0000001VJe2AM)"
+    },
+    "a3KNN0000001VJf2AM": {
+      "en": "FVP-P-423 (a3KNN0000001VJf2AM)"
+    },
+    "a3KNN0000001VL72AM": {
+      "en": "FVP-P-404 (a3KNN0000001VL72AM)"
+    },
+    "a3KNN0000001VL82AM": {
+      "en": "FVP-P-427 (a3KNN0000001VL82AM)"
+    },
+    "a3KNN0000001VL92AM": {
+      "en": "FVP-P-403 (a3KNN0000001VL92AM)"
+    },
+    "a3KNN0000001VLA2A2": {
+      "en": "FVP-P-426 (a3KNN0000001VLA2A2)"
+    },
+    "a3KVj000000Wv1ZMAS": {
+      "en": "FVP-P-491 (a3KVj000000Wv1ZMAS)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-10-20T13:55:19+00:00"
+}

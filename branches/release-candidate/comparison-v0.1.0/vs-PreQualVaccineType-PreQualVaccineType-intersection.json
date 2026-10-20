@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "4e17678d-056e-4c13-862d-c493b4fe2266-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/4e17678d-056e-4c13-862d-c493b4fe2266-18",
+  "name" : "IntersectionPreQualVaccineTypeAndPreQualVaccineType",
+  "title" : "Intersection of WHO PreQualificaiton VaccineType  And WHO PreQualificaiton VaccineType ",
+  "status" : "draft",
+  "date" : "2025-09-16T11:25:09+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaiOUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box of 6 cartons of 200 ampoules (1200 ampoules/1200 doses] [dimension 24.5x29.5x31.0 cm]",
+  "volume": "24.5 x 29.5 x 31.0 cm",
+  "totalDoses": "1200",
+  "totalContainers": "1200"
+}

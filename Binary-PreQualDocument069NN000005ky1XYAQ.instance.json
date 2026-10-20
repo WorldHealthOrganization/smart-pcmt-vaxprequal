@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ky1XYAQ"
+  },
+  "documentName": "pq_306_IPV_2dose_SIIPL_vial_image-2021",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061ju7YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

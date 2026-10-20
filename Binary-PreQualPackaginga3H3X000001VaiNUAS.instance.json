@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaiNUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box of 24 cartons of 50 vials (diluent)(1200 vials/1200 doses) [dimension 39x32x23 cm]",
+  "totalDoses": "1200",
+  "totalContainers": "1200"
+}

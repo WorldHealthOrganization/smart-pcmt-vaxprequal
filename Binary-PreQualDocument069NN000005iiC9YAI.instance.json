@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iiC9YAI"
+  },
+  "documentName": "pq_217_DTPHib_1dose_SII_container_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005zT2DYAU",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

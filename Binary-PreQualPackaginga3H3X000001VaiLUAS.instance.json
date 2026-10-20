@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaiLUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "Diluent",
+  "coldChainVolume": "16.74",
+  "description": "Carton of 200 plastic ampoules (diluent) (40 cards of 5 ampoules) containing 0.5mL Sterile Water for Inhalation [Dimensions 23.5x15x9.5 cm]",
+  "height": "15.0",
+  "length": "23.5",
+  "width": "9.5",
+  "primaryContainers": "50"
+}

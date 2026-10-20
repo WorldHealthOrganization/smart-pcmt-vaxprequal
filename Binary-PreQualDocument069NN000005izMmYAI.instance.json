@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005izMmYAI"
+  },
+  "documentName": "pq_260_H1N1_LAIV_1dose_SII_container_image_NAVOSAC_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005zk80YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}
