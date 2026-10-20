@@ -971,6 +971,40 @@ def generate_vaccine_types_codesystem(products, output_dir):
     logger.info("Generated vaccine types CodeSystem with %d codes", len(merged))
 
 
+def organizations_by_id(products, name_field, id_field, require_id=False):
+    """Collect one product per organization, keyed the way products reference it.
+
+    generate_products_and_authorizations references an organization by its
+    Salesforce ID (or the md5 of its name when it has none), so instances must
+    be keyed the same way.  Keying on the name instead emits duplicate
+    instances when an organization is renamed and drops one when two IDs
+    share a name.  When an ID appears under several names, the most recently
+    published product supplies the details.
+
+    Args:
+        products: List of normalized product field dicts.
+        name_field: Field holding the organization name.
+        id_field: Field holding the organization Salesforce ID.
+        require_id: Skip organizations that have no Salesforce ID.
+
+    Returns:
+        List of (instance_id, product) tuples sorted by organization name.
+    """
+    seen = {}
+    for p in products:
+        name = p.get(name_field, "")
+        sf_id = p.get(id_field, "")
+        if not name or (require_id and not sf_id):
+            continue
+        instance_id = sanitize_code(sf_id) if sf_id else md5hash(name)
+        current = seen.get(instance_id)
+        if current is None or (p.get("last_publishing_date") or "") >= (
+            current.get("last_publishing_date") or ""
+        ):
+            seen[instance_id] = p
+    return sorted(seen.items(), key=lambda item: (item[1][name_field], item[0]))
+
+
 def generate_manufacturers(products, output_dir):
     """Generate manufacturer Organization instances FSH file.
 
@@ -978,21 +1012,17 @@ def generate_manufacturers(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("applicant_name", "")
-        sf_id = p.get("applicant_id", "")
-        if name and name not in seen:
-            seen[name] = sf_id
+    seen = organizations_by_id(products, "applicant_name", "applicant_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturers.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for name, sf_id in sorted(seen.items()):
-            instance_id = sf_id if sf_id else md5hash(name)
-            f.write(f"\nInstance: Manufacturer{sanitize_code(instance_id)}\n")
+        for instance_id, p in seen:
+            name = p["applicant_name"]
+            sf_id = p.get("applicant_id", "")
+            f.write(f"\nInstance: Manufacturer{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
@@ -1014,21 +1044,17 @@ def generate_holders(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("nra_name", "")
-        sf_id = p.get("nra_id", "")
-        if name and name not in seen:
-            seen[name] = sf_id
+    seen = organizations_by_id(products, "nra_name", "nra_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_holders.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for name, sf_id in sorted(seen.items()):
-            instance_id = sf_id if sf_id else md5hash(name)
-            f.write(f"\nInstance: Holder{sanitize_code(instance_id)}\n")
+        for instance_id, p in seen:
+            name = p["nra_name"]
+            sf_id = p.get("nra_id", "")
+            f.write(f"\nInstance: Holder{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
             f.write(f'Title: "PreQual NRA/Holder: {fsh_escape(name)}"\n')
@@ -1050,20 +1076,15 @@ def generate_manufacturer_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("applicant_name", "")
-        sf_id = p.get("applicant_id", "")
-        if name and sf_id and name not in seen:
-            seen[name] = p
+    seen = organizations_by_id(products, "applicant_name", "applicant_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturer_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for name, p in sorted(seen.items()):
+        for instance_id, p in seen:
+            name = p["applicant_name"]
             sf_id = p.get("applicant_id", "")
-            instance_id = sanitize_code(sf_id)
             mfr_org_ref = f"Manufacturer{instance_id}"
 
             country = p.get("applicant_country", "") or ""
@@ -1113,20 +1134,15 @@ def generate_nra_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("nra_name", "")
-        sf_id = p.get("nra_id", "")
-        if name and sf_id and name not in seen:
-            seen[name] = p
+    seen = organizations_by_id(products, "nra_name", "nra_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_nra_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for name, p in sorted(seen.items()):
+        for instance_id, p in seen:
+            name = p["nra_name"]
             sf_id = p.get("nra_id", "")
-            instance_id = sanitize_code(sf_id)
             holder_org_ref = f"Holder{instance_id}"
 
             nra_country = p.get("nra_country", "") or ""
@@ -1844,10 +1860,11 @@ def generate_products_and_authorizations(products, output_dir):
             if holder:
                 f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
 
-            # LM instance references (only when sub-object has a non-null ID)
-            if manufacturer_sf_id:
+            # LM instance references (only when sub-object has a non-null ID;
+            # the LM generators also skip unnamed organizations)
+            if manufacturer and manufacturer_sf_id:
                 f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
-            if holder_sf_id:
+            if holder and holder_sf_id:
                 f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
             if vax_type_id:
                 vax_lm_ref_id = sanitize_code(vax_type_id)

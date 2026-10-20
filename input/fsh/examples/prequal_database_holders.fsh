@@ -55,17 +55,6 @@ Description: "National Regulatory Authority: Central Drugs Standard Control Orga
 * identifier.system = "https://extranet.who.int/prequal/api"
 * identifier.value = "0013X0000498p4fQAA"
 
-Instance: Holder0013X0000498p4fQAA
-InstanceOf: IHE.mCSD.Organization
-Usage: #example
-Title: "PreQual NRA/Holder: Central Drugs Standard Control Organization (CDSCO)"
-Description: "National Regulatory Authority: Central Drugs Standard Control Organization (CDSCO)"
-* active = true
-* name = "Central Drugs Standard Control Organization (CDSCO)"
-* type = $orgType#govt
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "0013X0000498p4fQAA"
-
 Instance: Holder0013X0000498p4cQAA
 InstanceOf: IHE.mCSD.Organization
 Usage: #example

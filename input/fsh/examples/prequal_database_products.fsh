@@ -15442,7 +15442,6 @@ Description: "Influeza Vaccine (Split Virion), Inactivated (IIV3) by "
 * storageTemperature = "2 - 8°C"
 * lastPublishingDate = 2024-09-10
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* manufacturerLM = Reference(PreQualManufacturer0013X0000498p3WQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpMUAU)
 * packagingLM = Reference(PreQualPackaginga3HNN0000007wYo2AI)

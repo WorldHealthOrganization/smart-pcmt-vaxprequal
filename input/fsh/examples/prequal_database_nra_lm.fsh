@@ -59,18 +59,6 @@ Description: "WHO PreQual NRA: Central Drugs Standard Control Organization (Indi
 * website = "www.cdsco.nic.in"
 * organizationReference = Reference(Holder0013X0000498p4fQAA)
 
-Instance: PreQualNRA0013X0000498p4fQAA
-InstanceOf: PreQualNRA
-Usage: #example
-Title: "PreQual NRA: Central Drugs Standard Control Organization (CDSCO)"
-Description: "WHO PreQual NRA: Central Drugs Standard Control Organization (CDSCO) (India)"
-* nraId.system = "https://extranet.who.int/prequal/api"
-* nraId.value = "0013X0000498p4fQAA"
-* name = "Central Drugs Standard Control Organization (CDSCO)"
-* country = "India"
-* website = "www.cdsco.nic.in"
-* organizationReference = Reference(Holder0013X0000498p4fQAA)
-
 Instance: PreQualNRA0013X0000498p4cQAA
 InstanceOf: PreQualNRA
 Usage: #example
