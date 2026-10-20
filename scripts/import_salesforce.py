@@ -697,7 +697,7 @@ def extract_product_fields(product):
     sites = product.get("SiteDetails", []) or []
     ingredients = product.get("ProductIngredients", []) or []
 
-    return {
+    fields = {
         "sf_product_id": ident.get("Id", ""),
         "sf_product_name": ident.get("Name", ""),
         "product_type": details.get("Type", ""),
@@ -744,6 +744,75 @@ def extract_product_fields(product):
         "sites": sites,
         "ingredients": ingredients,
     }
+
+    # The API sends explicit nulls rather than omitting keys, so a
+    # .get(key, "") above still yields None for them.  Normalise every
+    # scalar to a string: without this, hashing a null name raises
+    # AttributeError and f-string formatting writes the literal "None"
+    # into the generated FSH.
+    for key, value in fields.items():
+        if value is None:
+            fields[key] = ""
+
+    return fields
+
+
+def backfill_names_from_ids(products):
+    """Fill in organization names that are empty but recoverable from their ID.
+
+    The API's applicant and NRA names are Salesforce denormalized copies
+    (``*_DN__c``), which are occasionally empty while the relationship ID is
+    intact.  Because the same organizations recur across products, a name
+    missing on one product can usually be recovered from another product
+    that shares the ID.  This repairs the label without inventing data: the
+    name always comes from the API's own value for that same ID.
+
+    Args:
+        products: List of normalized product field dicts, modified in place.
+
+    Returns:
+        Dict mapping entity label to the number of names filled.
+    """
+    filled = {}
+    for label, id_key, name_key in (
+        ("applicant", "applicant_id", "applicant_name"),
+        ("NRA", "nra_id", "nra_name"),
+    ):
+        directory = {}
+        for p in products:
+            if p.get(id_key) and p.get(name_key):
+                directory.setdefault(p[id_key], p[name_key])
+
+        count = 0
+        for p in products:
+            if p.get(name_key) or not p.get(id_key):
+                continue
+            recovered = directory.get(p[id_key])
+            if recovered:
+                p[name_key] = recovered
+                count += 1
+                logger.info(
+                    "Backfilled %s name for %s from id %s: %s",
+                    label,
+                    p.get("sf_product_name") or p.get("sf_product_id"),
+                    p[id_key],
+                    recovered,
+                )
+        filled[label] = count
+
+        unrecoverable = [
+            p for p in products if not p.get(name_key) and not p.get(id_key)
+        ]
+        if unrecoverable:
+            logger.info(
+                "%d product(s) have no %s name and no %s id, so the name "
+                "cannot be recovered from this extract",
+                len(unrecoverable),
+                label,
+                label,
+            )
+
+    return filled
 
 
 def generate_presentations_codesystem(products, output_dir):
@@ -1568,6 +1637,7 @@ def generate_products_and_authorizations(products, output_dir):
 
     cs_entries = []
     generated_count = 0
+    depublished_count = 0
 
     with open(examples_path, "w", encoding="utf-8") as f:
         for i, p in enumerate(products, 1):
@@ -1585,10 +1655,20 @@ def generate_products_and_authorizations(products, output_dir):
             holder = p["nra_name"]
             holder_sf_id = p.get("nra_id", "")
 
-            # Skip products with missing essential data (e.g. withdrawn products)
+            # Every product is emitted, including de-published records that
+            # carry only an id, a name, a status and a publishing date.  Those
+            # are the authoritative record of a past prequalification, so the
+            # logical model makes all the detail optional rather than dropping
+            # them.  Fields are written only when present, below.
             if not commercial_name and not manufacturer and not holder:
-                logger.info("Skipping product %s (%s): missing essential data", sf_id, sf_name)
-                continue
+                logger.info(
+                    "Product %s (%s) is de-published (status %s): emitting "
+                    "identity and status only",
+                    sf_id,
+                    sf_name,
+                    p.get("status") or "unknown",
+                )
+                depublished_count += 1
 
             safe_sf_id = sanitize_code(sf_id) if sf_id else md5hash(str(i))
             mfr_ref_id = sanitize_code(manufacturer_sf_id) if manufacturer_sf_id else md5hash(manufacturer)
@@ -1607,7 +1687,9 @@ def generate_products_and_authorizations(products, output_dir):
             f.write(f"//\n\n")
 
             # LM Instance
-            status = p.get("status", "") or "Prequalified"
+            # No default: inventing "Prequalified" for a record whose status
+            # the API did not supply would assert something WHO has not.
+            status = p.get("status", "")
             product_type = p.get("product_type", "")
             assessment = p.get("assessment_procedure", "")
             pharm_form = p.get("pharmaceutical_form", "")
@@ -1637,7 +1719,8 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f"* dateOfPrequal = {date}\n")
             if assessment:
                 f.write(f"* assessmentProcedure = #{sanitize_code(assessment)}\n")
-            f.write(f"* status = #{sanitize_code(status)}\n")
+            if status:
+                f.write(f"* status = #{sanitize_code(status)}\n")
             if pharm_form:
                 f.write(f"* pharmaceuticalForm = #{sanitize_code(pharm_form)}\n")
             if pres_code:
@@ -1655,7 +1738,8 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* vaccineFullName = "{fsh_escape(p["vaccine_full_name"])}"\n')
             if p.get("vaccine_abbreviated_name"):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
-            f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            if commercial_name:
+                f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
             vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1669,11 +1753,13 @@ def generate_products_and_authorizations(products, output_dir):
             if manufacturer_sf_id:
                 f.write(f'* applicantId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* applicantId.value = "{fsh_escape(manufacturer_sf_id)}"\n')
-            f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
+            if manufacturer:
+                f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
             if holder_sf_id:
                 f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* nraId.value = "{fsh_escape(holder_sf_id)}"\n')
-            f.write(f'* nraName = "{fsh_escape(holder)}"\n')
+            if holder:
+                f.write(f'* nraName = "{fsh_escape(holder)}"\n')
             if nra_country:
                 f.write(f'* nraCountry = "{fsh_escape(nra_country)}"\n')
             if shelf_life:
@@ -1692,8 +1778,13 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* preservative = "{fsh_escape(preservative)}"\n')
             if preservative_conc:
                 f.write(f'* preservativeConcentration = "{fsh_escape(preservative_conc)}"\n')
-            f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
-            f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
+            # generate_manufacturers/generate_holders key their instances on the
+            # organization name, so a product with no name has no instance to
+            # point at.  Referencing one anyway would fail the IG build.
+            if manufacturer:
+                f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
+            if holder:
+                f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
 
             # LM instance references (only when sub-object has a non-null ID)
             if manufacturer_sf_id:
@@ -1780,6 +1871,12 @@ def generate_products_and_authorizations(products, output_dir):
         f.write("* include codes from system $PreQualProductIds\n")
 
     logger.info("Generated %d product instances", generated_count)
+    if depublished_count:
+        logger.info(
+            "%d of %d are de-published records carrying identity and status only",
+            depublished_count,
+            len(products),
+        )
 
 
 def main():
@@ -1833,6 +1930,14 @@ def main():
         "--allow-partial",
         action="store_true",
         help="Warn instead of failing when fewer records arrive than TotalRecords",
+    )
+    parser.add_argument(
+        "--no-backfill",
+        action="store_true",
+        help=(
+            "Do not recover empty applicant/NRA names from other products "
+            "sharing the same organization ID"
+        ),
     )
     parser.add_argument(
         "--status",
@@ -1914,6 +2019,16 @@ def main():
 
     # Extract normalized fields
     products = [extract_product_fields(p) for p in raw_products]
+
+    # Repair organization names that are empty but recoverable from their ID
+    # before anything is generated from them.
+    if not args.no_backfill:
+        filled = backfill_names_from_ids(products)
+        if any(filled.values()):
+            logger.info(
+                "Backfilled %s",
+                ", ".join(f"{n} {label} name(s)" for label, n in filled.items() if n),
+            )
 
     # Generate all FSH outputs
     os.makedirs(args.output_dir, exist_ok=True)
