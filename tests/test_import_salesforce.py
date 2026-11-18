@@ -44,6 +44,7 @@ from import_salesforce import (
     read_existing_codes,
     sanitize_alpha,
     sanitize_code,
+    vaccine_type_coding,
 )
 
 
@@ -295,7 +296,10 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertTrue(os.path.exists(cs_path))
         content = open(cs_path).read()
         self.assertIn("CodeSystem: PreQualVaccineType", content)
-        self.assertIn('#Malaria "Malaria"', content)
+        # The code is the abbreviated name; the display is the full name, so
+        # the CodeSystem says which vaccine each code is rather than
+        # repeating the abbreviation back.
+        self.assertIn('#Malaria "Recombinant malaria vaccine"', content)
 
     def test_generate_manufacturers(self):
         generate_manufacturers(self.products, self.tmpdir)
@@ -364,8 +368,19 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertIn('applicantId.value = "0013X00003cPkzfQAC"', content)
         self.assertIn('nraId.value = "0013X0000498p4fQAA"', content)
 
+        # The vaccine type is coded, so an instance states which vaccine it
+        # is without a reader resolving the Salesforce record id.
+        self.assertIn(
+            '* vaccineType.coding.system = '
+            '"http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"',
+            content,
+        )
+        self.assertIn("* vaccineType.coding.code = #Malaria", content)
+        self.assertIn(
+            '* vaccineType.coding.display = "Recombinant malaria vaccine"', content
+        )
+
         # Verify old CSV-model fields are NOT present
-        self.assertNotIn("vaccineType.coding", content)
         self.assertNotIn("commercialName", content)
         self.assertNotIn("manufacturer.text", content)
         self.assertNotIn("responsibleNRA.text", content)
@@ -609,6 +624,72 @@ class TestDepublishedProducts(unittest.TestCase):
         content = open(path).read()
         self.assertNotIn("#Prequalified", content)
         self.assertNotIn("* status =", content)
+
+
+class TestVaccineTypeCoding(unittest.TestCase):
+    """The code is the abbreviation, the display is the full name."""
+
+    def test_abbreviation_is_the_code_and_full_name_the_display(self):
+        code, display = vaccine_type_coding(
+            {
+                "vaccine_abbreviated_name": "TDV",
+                "vaccine_full_name": "Dengue tetravalent vaccine (live, attenuated)",
+            }
+        )
+        self.assertEqual(code, "TDV")
+        self.assertEqual(display, "Dengue tetravalent vaccine (live, attenuated)")
+
+    def test_full_name_is_used_for_both_when_abbreviation_is_missing(self):
+        code, display = vaccine_type_coding(
+            {"vaccine_abbreviated_name": "", "vaccine_full_name": "Recombinant malaria vaccine"}
+        )
+        self.assertEqual(code, sanitize_code("Recombinant malaria vaccine"))
+        self.assertEqual(display, "Recombinant malaria vaccine")
+
+    def test_abbreviation_is_used_for_both_when_full_name_is_missing(self):
+        code, display = vaccine_type_coding(
+            {"vaccine_abbreviated_name": "BCG", "vaccine_full_name": ""}
+        )
+        self.assertEqual((code, display), ("BCG", "BCG"))
+
+    def test_no_names_yields_no_coding(self):
+        self.assertEqual(
+            vaccine_type_coding({"vaccine_abbreviated_name": "", "vaccine_full_name": ""}),
+            ("", ""),
+        )
+
+    def test_nulls_do_not_raise(self):
+        # extract_product_fields normalises these, but the helper is also
+        # reachable with raw dicts.
+        self.assertEqual(
+            vaccine_type_coding({"vaccine_abbreviated_name": None, "vaccine_full_name": None}),
+            ("", ""),
+        )
+
+    def test_code_is_safe_for_fsh(self):
+        code, _ = vaccine_type_coding(
+            {"vaccine_abbreviated_name": "cholera: inactivated oral", "vaccine_full_name": "Cholera"}
+        )
+        self.assertNotIn(":", code)
+        self.assertNotIn(" ", code)
+
+    def test_depublished_product_gets_no_vaccine_type(self):
+        tmpdir = tempfile.mkdtemp()
+        for sub in ("codesystems", "valuesets", "examples"):
+            os.makedirs(os.path.join(tmpdir, sub), exist_ok=True)
+        product = extract_product_fields(
+            {
+                "ProductDetails": {
+                    "Identification": {"Id": "dep1", "Name": "FVP-P-1"},
+                    "Status": "Withdrawn: Was Prequalified",
+                }
+            }
+        )
+        generate_products_and_authorizations([product], tmpdir)
+        content = open(
+            os.path.join(tmpdir, "examples", "prequal_database_products.fsh")
+        ).read()
+        self.assertNotIn("vaccineType.coding", content)
 
 
 class TestOrganizationsById(unittest.TestCase):
@@ -1018,8 +1099,12 @@ class TestAdditiveCodeSystems(unittest.TestCase):
         products = [extract_product_fields(SAMPLE_PRODUCT)]
         generate_vaccine_types_codesystem(products, tmpdir)
         content = open(cs_path).read()
+        # A code absent from this extract is kept...
         self.assertIn('#COVID19 "COVID-19"', content)
-        self.assertIn('#Malaria "Malaria"', content)
+        # ...but one the extract still carries takes its display from the
+        # current data, so an improved display is not frozen out.
+        self.assertIn('#Malaria "Recombinant malaria vaccine"', content)
+        self.assertNotIn('#Malaria "Malaria"', content)
 
     def test_metadata_preserves_existing_codes(self):
         tmpdir = tempfile.mkdtemp()

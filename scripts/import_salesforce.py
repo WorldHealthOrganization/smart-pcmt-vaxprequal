@@ -922,6 +922,30 @@ def generate_presentations_codesystem(products, output_dir):
     logger.info("Generated presentations CodeSystem with %d codes", len(merged))
 
 
+def vaccine_type_coding(product):
+    """Return the (code, display) a product's vaccine type is coded as.
+
+    The abbreviated name is the code because it is short and stable
+    ("TDV", "bOPV"), and the full name is the display because that is what
+    identifies the vaccine to a reader: "Dengue tetravalent vaccine (live,
+    attenuated)" rather than "TDV".  Either may be missing, so each falls
+    back to the other.
+
+    Args:
+        product: A normalized product field dict.
+
+    Returns:
+        Tuple of (code, display), both empty when the product names no
+        vaccine type.
+    """
+    abbreviated = product.get("vaccine_abbreviated_name", "") or ""
+    full = product.get("vaccine_full_name", "") or ""
+    label = abbreviated or full
+    if not label:
+        return "", ""
+    return sanitize_code(label), (full or abbreviated)
+
+
 def generate_vaccine_types_codesystem(products, output_dir):
     """Generate vaccine types CodeSystem and ValueSet FSH files.
 
@@ -939,16 +963,17 @@ def generate_vaccine_types_codesystem(products, output_dir):
     # Build new codes from data
     new_codes = {}
     for p in products:
-        vax = p.get("vaccine_abbreviated_name", "")
-        if vax:
-            code = sanitize_code(vax)
-            new_codes[code] = f'* #{code} "{fsh_escape(vax)}"'
+        code, display = vaccine_type_coding(p)
+        if code:
+            new_codes[code] = f'* #{code} "{fsh_escape(display)}"'
 
-    # Merge: existing first, then new
+    # Codes no longer present in the data are kept, but a code the data
+    # still carries takes its display from this extract.  Preserving is
+    # meant to stop codes disappearing, not to freeze a display: these
+    # previously repeated the code ("TDV" displayed as "TDV"), which told
+    # a reader nothing about which vaccine it is.
     merged = dict(existing)
-    for code, line in new_codes.items():
-        if code not in merged:
-            merged[code] = line
+    merged.update(new_codes)
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $vaccinetype = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType\n')
@@ -1814,6 +1839,13 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
             if commercial_name:
                 f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            # The coded vaccine type, so an instance states which vaccine it
+            # is without a reader having to resolve a Salesforce record id.
+            vax_type_code, vax_type_display = vaccine_type_coding(p)
+            if vax_type_code:
+                f.write('* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"\n')
+                f.write(f"* vaccineType.coding.code = #{vax_type_code}\n")
+                f.write(f'* vaccineType.coding.display = "{fsh_escape(vax_type_display)}"\n')
             vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')

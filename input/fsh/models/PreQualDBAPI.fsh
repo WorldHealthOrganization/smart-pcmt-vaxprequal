@@ -49,6 +49,7 @@ which a full extract disproved.
 * vaccineFullName 0..1 string "Vaccine full name"
 * vaccineAbbreviatedName 0..1 string "Vaccine abbreviated name"
 * vaccineCommercialName 0..1 string "Vaccine commercial name. Absent on de-published records."
+* vaccineType 0..1 CodeableConcept "Vaccine type, coded from PreQualVaccineType. The code is the abbreviated name (e.g. TDV) and the display is the full name (e.g. Dengue tetravalent vaccine (live, attenuated))."
 * vaccineTypeId 0..1 Identifier "Vaccine type ID"
 * routeOfAdministration 0..1 code "Route of administration code from PreQualDatabaseMetadata"
 * vialMonitor 0..1 string "Vial monitor type (e.g. Type 14, Type 30)"
