@@ -1,0 +1,436 @@
+{
+  "@context": {
+    "@vocab": "http://smart.who.int/pcmt-vaxprequal/vocab#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "fhir": "http://hl7.org/fhir/",
+    "id": "@id",
+    "type": "@type",
+    "name": "rdfs:label",
+    "comment": "rdfs:comment",
+    "version": "schema:version",
+    "date": "schema:dateCreated",
+    "publisher": "schema:publisher"
+  },
+  "@graph": [
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "type": "schema:Enumeration",
+      "name": "WHO PreQualificaiton VaccineType  Enumeration",
+      "comment": "Allowed values for the WHO PreQualificaiton VaccineType  enumeration.",
+      "version": "0.2.0",
+      "date": "2025-09-15T10:59:20+00:00",
+      "publisher": "World Health Organization",
+      "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#BCG",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "BCG",
+      "fhir:code": "BCG",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Covid19",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Covid-19",
+      "fhir:code": "Covid19",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DengueTetravalentliveattenuated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Dengue Tetravalent (live, attenuated)",
+      "fhir:code": "DengueTetravalentliveattenuated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanus",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus",
+      "fhir:code": "DiphtheriaTetanus",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusreducedantigencontent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus (reduced antigen content)",
+      "fhir:code": "DiphtheriaTetanusreducedantigencontent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussisacellular",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (acellular)",
+      "fhir:code": "DiphtheriaTetanusPertussisacellular",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)",
+      "fhir:code": "DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussiswholecell",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)",
+      "fhir:code": "DiphtheriaTetanusPertussiswholecell",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b",
+      "fhir:code": "DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b",
+      "fhir:code": "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)",
+      "fhir:code": "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#EbolaZairerVSVGZEBOVGPliveattenuated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)",
+      "fhir:code": "EbolaZairerVSVGZEBOVGPliveattenuated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#EbolavaccineAd26ZEBOVGPrecombinant",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])",
+      "fhir:code": "EbolavaccineAd26ZEBOVGPrecombinant",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#EbolavaccineMVABNFilorecombinant",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Ebola vaccine (MVA-BN-Filo [recombinant])",
+      "fhir:code": "EbolavaccineMVABNFilorecombinant",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Haemophilusinfluenzaetypeb",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Haemophilus influenzae type b",
+      "fhir:code": "Haemophilusinfluenzaetypeb",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepatitisAHumanDiploidCellInactivatedAdult",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Hepatitis A (Human Diploid Cell), Inactivated (Adult)",
+      "fhir:code": "HepatitisAHumanDiploidCellInactivatedAdult",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepatitisAHumanDiploidCellInactivatedPaediatric",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)",
+      "fhir:code": "HepatitisAHumanDiploidCellInactivatedPaediatric",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepatitisB",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Hepatitis B",
+      "fhir:code": "HepatitisB",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepatitisBPaediatric",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Hepatitis B (Paediatric)",
+      "fhir:code": "HepatitisBPaediatric",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HumanPapillomavirusBivalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Human Papillomavirus (Bivalent)",
+      "fhir:code": "HumanPapillomavirusBivalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HumanPapillomavirusNinevalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Human Papillomavirus (Ninevalent)",
+      "fhir:code": "HumanPapillomavirusNinevalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HumanPapillomavirusQuadrivalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Human Papillomavirus (Quadrivalent)",
+      "fhir:code": "HumanPapillomavirusQuadrivalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#InfluenzaPandemicH1N1",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Influenza, Pandemic (H1N1)",
+      "fhir:code": "InfluenzaPandemicH1N1",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#InfluenzaPandemicH5N1",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Influenza, Pandemic (H5N1)",
+      "fhir:code": "InfluenzaPandemicH5N1",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#InfluenzaseasonalQuadrivalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Influenza, seasonal (Quadrivalent)",
+      "fhir:code": "InfluenzaseasonalQuadrivalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#InfluenzaseasonalTrivalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Influenza, seasonal (Trivalent)",
+      "fhir:code": "InfluenzaseasonalTrivalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#JapaneseEncephalitisVaccineInactivated3µgPediatric",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)",
+      "fhir:code": "JapaneseEncephalitisVaccineInactivated3µgPediatric",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#JapaneseEncephalitisVaccineInactivated6µg",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Japanese Encephalitis Vaccine (Inactivated) 6µg",
+      "fhir:code": "JapaneseEncephalitisVaccineInactivated6µg",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#JapaneseEncephalitisVaccineliveattenuated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Japanese Encephalitis Vaccine (live, attenuated)",
+      "fhir:code": "JapaneseEncephalitisVaccineliveattenuated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Malaria",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Malaria",
+      "fhir:code": "Malaria",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Measles",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Measles",
+      "fhir:code": "Measles",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeaslesandRubella",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Measles and Rubella",
+      "fhir:code": "MeaslesandRubella",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeaslesMumpsandRubella",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Measles, Mumps and Rubella",
+      "fhir:code": "MeaslesMumpsandRubella",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MenigococcalACYWXPolysaccharideconjugate",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Menigococcal ACYWX (Polysaccharide conjugate)",
+      "fhir:code": "MenigococcalACYWXPolysaccharideconjugate",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeningococcalAConjugate10µg",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Meningococcal A Conjugate 10 µg",
+      "fhir:code": "MeningococcalAConjugate10µg",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeningococcalAConjugate5µg",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Meningococcal A Conjugate 5 µg",
+      "fhir:code": "MeningococcalAConjugate5µg",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeningococcalACYW135conjugatevaccine",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Meningococcal ACYW-135 (conjugate vaccine)",
+      "fhir:code": "MeningococcalACYW135conjugatevaccine",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MeningococcalACYW135TetanusToxoidconjugatevaccine",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)",
+      "fhir:code": "MeningococcalACYW135TetanusToxoidconjugatevaccine",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Pneumococcalconjugate",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Pneumococcal (conjugate)",
+      "fhir:code": "Pneumococcalconjugate",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineInactivatedIPV",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Inactivated (IPV)",
+      "fhir:code": "PolioVaccineInactivatedIPV",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineInactivatedSabinsIPV",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Inactivated Sabin (sIPV)",
+      "fhir:code": "PolioVaccineInactivatedSabinsIPV",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineNovelOralnOPVType2",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Novel Oral (nOPV) Type 2",
+      "fhir:code": "PolioVaccineNovelOralnOPVType2",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineOralOPVBivalentTypes1and3",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3",
+      "fhir:code": "PolioVaccineOralOPVBivalentTypes1and3",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineOralOPVMonovalentType1",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 1",
+      "fhir:code": "PolioVaccineOralOPVMonovalentType1",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineOralOPVMonovalentType2",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 2",
+      "fhir:code": "PolioVaccineOralOPVMonovalentType2",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineOralOPVMonovalentType3",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 3",
+      "fhir:code": "PolioVaccineOralOPVMonovalentType3",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PolioVaccineOralOPVTrivalent",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Polio Vaccine - Oral (OPV) Trivalent",
+      "fhir:code": "PolioVaccineOralOPVTrivalent",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Rabies",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Rabies",
+      "fhir:code": "Rabies",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Rotavirus",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Rotavirus",
+      "fhir:code": "Rotavirus",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Rotavirusliveattenuated",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Rotavirus (live, attenuated)",
+      "fhir:code": "Rotavirusliveattenuated",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Rubella",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Rubella",
+      "fhir:code": "Rubella",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)",
+      "fhir:code": "SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TetanusToxoid",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Tetanus Toxoid",
+      "fhir:code": "TetanusToxoid",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TyphoidConjugate",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Typhoid (Conjugate)",
+      "fhir:code": "TyphoidConjugate",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Varicella",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Varicella",
+      "fhir:code": "Varicella",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#YellowFever",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "Yellow Fever",
+      "fhir:code": "YellowFever",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#cholerainactivatedoral",
+      "type": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration",
+      "name": "cholera: inactivated oral",
+      "fhir:code": "cholerainactivatedoral",
+      "fhir:system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/vocab#prequalvaccinetype",
+      "type": "rdf:Property",
+      "name": "prequalvaccinetype",
+      "comment": "Property for selecting a value from the WHO PreQualificaiton VaccineType  enumeration.",
+      "schema:rangeIncludes": {
+        "id": "http://smart.who.int/pcmt-vaxprequal/vocab#PreQualVaccineTypeEnumeration"
+      }
+    }
+  ]
+}
