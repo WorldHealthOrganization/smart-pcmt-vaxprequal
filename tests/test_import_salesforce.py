@@ -3,6 +3,7 @@
 
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -22,6 +23,7 @@ from import_salesforce import (
     download_timestamp_pages,
     extract_product_fields,
     parse_response,
+    product_display,
     fsh_escape,
     generate_bulk_supplier_lm_instances,
     generate_document_lm_instances,
@@ -33,6 +35,7 @@ from import_salesforce import (
     generate_nra_lm_instances,
     generate_packaging_lm_instances,
     generate_presentations_codesystem,
+    generate_product_vaccine_type_conceptmap,
     generate_products_and_authorizations,
     generate_site_lm_instances,
     generate_vaccine_lm_instances,
@@ -624,6 +627,130 @@ class TestDepublishedProducts(unittest.TestCase):
         content = open(path).read()
         self.assertNotIn("#Prequalified", content)
         self.assertNotIn("* status =", content)
+
+
+class TestProductDisplay(unittest.TestCase):
+    """No descriptive field identifies a product uniquely; the record name does."""
+
+    def test_description_leads_and_record_name_disambiguates(self):
+        display = product_display(
+            {
+                "sf_product_name": "FVP-P-447",
+                "vaccine_commercial_name": "CYVAC",
+                "vaccine_abbreviated_name": "Malaria",
+                "applicant_name": "Serum Institute of India",
+                "presentation": "Vial",
+                "num_doses": "2",
+            }
+        )
+        self.assertEqual(
+            display,
+            "CYVAC (Malaria), Serum Institute of India, Vial, 2 doses [FVP-P-447]",
+        )
+
+    def test_single_dose_is_not_pluralised(self):
+        display = product_display(
+            {"sf_product_name": "FVP-P-1", "presentation": "Vial", "num_doses": "1"}
+        )
+        self.assertIn("Vial, 1 dose [", display)
+        self.assertNotIn("1 doses", display)
+
+    def test_depublished_product_falls_back_to_status(self):
+        display = product_display(
+            {"sf_product_name": "FVP-P-27", "status": "Withdrawn: Was Prequalified"}
+        )
+        self.assertEqual(display, "Withdrawn: Was Prequalified [FVP-P-27]")
+
+    def test_record_name_is_always_present(self):
+        # It is the only value that makes the display unique.
+        for product in (
+            {"sf_product_name": "FVP-P-9"},
+            {"sf_product_name": "FVP-P-9", "vaccine_commercial_name": "X"},
+            {"sf_product_name": "FVP-P-9", "status": "Prequalified"},
+        ):
+            self.assertIn("FVP-P-9", product_display(product))
+
+    def test_falls_back_to_the_salesforce_id_without_a_record_name(self):
+        self.assertIn("a3K", product_display({"sf_product_id": "a3K123"}))
+
+    def test_partial_data_omits_missing_parts_without_stray_separators(self):
+        display = product_display(
+            {"sf_product_name": "FVP-P-5", "vaccine_commercial_name": "Solo"}
+        )
+        self.assertEqual(display, "Solo [FVP-P-5]")
+
+    def test_two_products_differing_only_by_doses_are_distinguishable(self):
+        base = {
+            "vaccine_commercial_name": "Euvax B",
+            "vaccine_abbreviated_name": "HepB",
+            "applicant_name": "LG Chem Ltd (LGC)",
+            "presentation": "Vial",
+        }
+        one = product_display({**base, "sf_product_name": "FVP-P-68", "num_doses": "1"})
+        ten = product_display({**base, "sf_product_name": "FVP-P-71", "num_doses": "10"})
+        self.assertNotEqual(one, ten)
+        self.assertIn("1 dose", one)
+        self.assertIn("10 doses", ten)
+
+
+class TestProductVaccineTypeConceptMap(unittest.TestCase):
+    """Every product is listed; those with no vaccine type are marked noMap."""
+
+    def build(self, products):
+        tmpdir = tempfile.mkdtemp()
+        generate_product_vaccine_type_conceptmap(products, tmpdir)
+        path = os.path.join(
+            tmpdir, "conceptmaps", "prequal_product_to_vaccine_type.fsh"
+        )
+        return open(path).read()
+
+    def test_maps_a_product_to_its_vaccine_type(self):
+        content = self.build([extract_product_fields(SAMPLE_PRODUCT)])
+        self.assertIn("* group[0].element[0].target[0].code = #Malaria", content)
+        self.assertIn(
+            "* group[0].element[0].target[0].relationship = "
+            "#source-is-narrower-than-target",
+            content,
+        )
+
+    def test_product_without_a_vaccine_type_is_marked_nomap(self):
+        depublished = extract_product_fields(
+            {
+                "ProductDetails": {
+                    "Identification": {"Id": "dep1", "Name": "FVP-P-27"},
+                    "Status": "Withdrawn: Was Prequalified",
+                }
+            }
+        )
+        content = self.build([depublished])
+        self.assertIn("* group[0].element[0].noMap = true", content)
+        self.assertNotIn("target[0].code", content)
+
+    def test_every_product_appears_exactly_once(self):
+        a = extract_product_fields(SAMPLE_PRODUCT)
+        b = dict(a)
+        b["sf_product_id"] = "second"
+        content = self.build([a, b, dict(a)])
+        codes = re.findall(r"^\* group\[0\]\.element\[\d+\]\.code = #(\S+)$", content, re.M)
+        self.assertEqual(len(codes), 2, "a repeated product must not be listed twice")
+        self.assertEqual(len(codes), len(set(codes)))
+
+    def test_scopes_and_groups_name_the_right_systems(self):
+        content = self.build([extract_product_fields(SAMPLE_PRODUCT)])
+        self.assertIn("/CodeSystem/PreQualProductIds", content)
+        self.assertIn("/CodeSystem/PreQualVaccineType", content)
+        self.assertIn("/ValueSet/PreQualProductIds", content)
+        self.assertIn("/ValueSet/PreQualVaccineType", content)
+
+    def test_elements_are_sorted_so_syncs_diff_cleanly(self):
+        rows = []
+        for pid in ("zzz", "aaa", "mmm"):
+            p = dict(extract_product_fields(SAMPLE_PRODUCT))
+            p["sf_product_id"] = pid
+            rows.append(p)
+        content = self.build(rows)
+        codes = re.findall(r"^\* group\[0\]\.element\[\d+\]\.code = #(\S+)$", content, re.M)
+        self.assertEqual(codes, sorted(codes))
 
 
 class TestVaccineTypeCoding(unittest.TestCase):
