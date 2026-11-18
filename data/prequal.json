@@ -13257,162 +13257,9 @@
           "Id": "a3K3X000006MijDUAS",
           "Name": "FVP-P-284"
         },
-        "Type": "Finished Vaccine Product",
-        "PublishingRemarks": "Diluent: Sterile Water for InhalationShelf life: 9 monthsDiluent is cartoned separately and does not require 2-8°C storageThere are two sources of diluent with different packaging configurations:1) 17 cartons of 72 ampoules (1224 ampoules) [25.5 x 24.5  x 26.0 cm]2) 24 cartons of 50 ampoules (1200 ampoules) [29.4  x 29.0  x 28.8 cm]Additionally a shipper of 1200 nasal applicator kits are provided. (53.7 x 47.0 x 50.0 cm)",
-        "DateOfPreQualifiedAcceptance": "2015-09-30",
-        "AssessmentProcedure": "Prequalification - Standard",
-        "ApplicantOrganization": {
-          "Identification": {
-            "Id": "0013X00003cPkzfQAC",
-            "Name": "Serum Institute of India"
-          },
-          "Address": {
-            "AddressLine1": "SERUM BIO-PHARMA PARK SEZ UNIT-1, 212/2 Off Soli Poonawala Road, Hadaspar",
-            "City": "Pune",
-            "State": "Maharashtra",
-            "Country": "India",
-            "PostalCode": "411 028",
-            "ISOCountryCode": "IND",
-            "Region": "SEARO"
-          },
-          "Contact": [
-            {
-              "Website": "http://www.seruminstitute.com/"
-            }
-          ]
-        },
-        "BulkSupplier": {
-          "Id": null,
-          "Name": null
-        },
-        "ConsumptionDetails": {
-          "Diluent": null
-        },
-        "DosageDetails": {
-          "NoOfDosagesPerPrimaryContainer": "1"
-        },
-        "StorageDetails": {
-          "ShelfLife": null,
-          "Temperature": "2 - 8°C"
-        },
-        "PharmaceuticalForm": "Lyophilised active component to be reconstituted with excipient diluent before use",
-        "Presentation": "Vial + Ampoule",
-        "PresentationOther": null,
-        "NRADetails": {
-          "Identification": {
-            "Id": "0013X0000498p4fQAA",
-            "Name": "Central Drugs Standard Control Organization (CDSCO)"
-          },
-          "Address": {
-            "AddressLine1": null,
-            "Country": "India"
-          },
-          "Contact": [
-            {
-              "Website": "www.cdsco.nic.in"
-            }
-          ]
-        },
-        "VaccineDetails": {
-          "Identification": {
-            "Id": "a3S3X000003cSpPUAU"
-          },
-          "VaccineName": {
-            "FullName": "Influenza vaccine trivalent (live, attenuated)",
-            "AbbreviatedName": "IIV3",
-            "CommercialName": "Nasovac-S Influenza Vaccine Live Attenuated (Human)"
-          },
-          "RouteOfAdministrationVx": "Intranasal",
-          "VialMonitor": "Type 2",
-          "MultidoseVialPolicy": "Not applicable"
-        },
-        "Status": "Prequalified",
-        "PreservativeDetails": {
-          "Id": "None"
-        },
-        "PreservativeConcentartionDetails": {
-          "Id": null
-        },
-        "LastPublishingDate": "2024-09-10T14:21:42.000Z"
-      },
-      "ProductIngredients": [
-        {
-          "Identification": {
-            "Id": null
-          },
-          "Type": "Vx FVP",
-          "Unit": null,
-          "Product": "a3K3X000006MijDUAS",
-          "ProductComponentType": "Active",
-          "Function": null
-        },
-        {
-          "Identification": {
-            "Id": null
-          },
-          "Type": "Vx FVP",
-          "Unit": null,
-          "Product": "a3K3X000006MijDUAS",
-          "ProductComponentType": "Active",
-          "Function": null
-        },
-        {
-          "Identification": {
-            "Id": null
-          },
-          "Type": "Vx FVP",
-          "Unit": null,
-          "Product": "a3K3X000006MijDUAS",
-          "ProductComponentType": "Active",
-          "Function": null
-        }
-      ],
-      "ProductPackaging": [
-        {
-          "Id": "a3H3X000001VadPUAS",
-          "ColdChainVolume": "17.58",
-          "ComponentPacked": "Active (Vaccine)",
-          "SecondaryPackaging": {
-            "Height": "9.5",
-            "Length": "18.5",
-            "Width": "5.0",
-            "Dosage": "50",
-            "Description": "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x5.0 cm]",
-            "PrimaryContainers": "50"
-          },
-          "FVPPackagingType": "Secondary"
-        },
-        {
-          "Id": "a3H3X000001VadQUAS",
-          "ComponentPacked": "Active (Vaccine)",
-          "TertiaryPackaging": {
-            "Volume": "60 x 48 x 41 cm",
-            "Description": "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]",
-            "TotalDoses": "1200",
-            "TotalContainers": "1200"
-          },
-          "FVPPackagingType": "Tertiary"
-        }
-      ],
-      "SiteDetails": [
-        {
-          "Organization": {
-            "Identification": {
-              "Id": "0013X00003cPkzfQAC",
-              "Name": "Serum Institute of India"
-            },
-            "Address": {
-              "AddressLine1": "SERUM BIO-PHARMA PARK SEZ UNIT-1, 212/2 Off Soli Poonawala Road, Hadaspar",
-              "City": "Pune",
-              "State": "Maharashtra",
-              "Country": "India",
-              "PostalCode": "411 028"
-            }
-          },
-          "Status": "Accepted",
-          "SiteActivity": "FVP Manufacture"
-        }
-      ]
+        "Status": "Withdrawn: Was Prequalified",
+        "LastPublishingDate": "2026-10-28T16:48:16.000Z"
+      }
     },
     {
       "ProductDetails": {
@@ -16124,10 +15971,10 @@
         {
           "Identification": {
             "Id": "069NN000005kGbfYAE",
-            "Name": "Package Insert-pq_285_menAconj_5_mcg_SII_PI_796-2"
+            "Name": "FVP-296_MenAconj_5mcg_SIIPL_PI-2026.pdf"
           },
           "Type": "Product Insert",
-          "VersionId": "068NN00000611I3YAI",
+          "VersionId": "068Vj00000azPftIAE",
           "FileExtension": "pdf",
           "FileType": "PDF"
         },
@@ -19787,38 +19634,6 @@
           "Status": "Accepted",
           "SiteActivity": "FVP Manufacture"
         }
-      ],
-      "DocumentDetails": [
-        {
-          "Identification": {
-            "Id": "069NN000005kxjmYAA",
-            "Name": "Container Photo-pq_306_IPV_2dose_SIIPL_vial_image-2021"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN0000061jakYAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005ky1XYAQ",
-            "Name": "pq_306_IPV_2dose_SIIPL_vial_image-2021"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN0000061ju7YAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005kyvxYAA",
-            "Name": "Package Insert-pq_342_306_307_342_IPV_PI-2021"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN0000061klJYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        }
       ]
     },
     {
@@ -19978,38 +19793,6 @@
           },
           "Status": "Accepted",
           "SiteActivity": "FVP Manufacture"
-        }
-      ],
-      "DocumentDetails": [
-        {
-          "Identification": {
-            "Id": "069NN000005kpG3YAI",
-            "Name": "Package Insert-pq_342_306_307_342_IPV_PI-2021"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN0000061b3nYAA",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005ksPBYAY",
-            "Name": "Container Photo-pq_307_IPV_1dose_SIIPL_vial_image-2021"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN0000061eEYYAY",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005kuFgYAI",
-            "Name": "pq_307_IPV_1dose_SIIPL_vial_image-2021"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN0000061g8GYAQ",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
         }
       ]
     },
@@ -22906,38 +22689,6 @@
           },
           "Status": "Accepted",
           "SiteActivity": "FVP Manufacture"
-        }
-      ],
-      "DocumentDetails": [
-        {
-          "Identification": {
-            "Id": "069NN000005l5mCYAQ",
-            "Name": "Container Photo-pq_342_IPV_10dose_SII_vial_image"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN0000061rZwYAI",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005l7BMYAY",
-            "Name": "Package Insert-pq_342_306_307_342_IPV_PI-2021"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN0000061svsYAA",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005lBrZYAU",
-            "Name": "pq_342_IPV_10dose_SII_vial_image"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN0000061xfJYAQ",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
         }
       ]
     },
@@ -29197,42 +28948,12 @@
         {
           "Identification": {
             "Id": "069NN000005iORyYAM",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_204_DTPwHBHib_2dose_SII_container_image"
+            "Name": "FVP-P-203_DTPwHBHib_2dose_SII_container_image"
           },
           "Type": "Photo",
           "VersionId": "068NN000005z7ksYAA",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iQ5iYAE",
-            "Name": "Container Photo-pq_204_DTPwHBHib_2dose_SII_container_image_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005z9OcYAI",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iSIgYAM",
-            "Name": "pq_204_DTPwHBHib_2dose_SII_container_image_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zBLSYA2",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iT0DYAU",
-            "Name": "Package Insert-pq_195_204_205_DTPHbHib_lyo_Liq_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zBy9YAE",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         }
       ]
     },
@@ -29466,38 +29187,8 @@
       "DocumentDetails": [
         {
           "Identification": {
-            "Id": "069NN000005iMA9YAM",
-            "Name": "Container Photo-pq_205_DTPwHBBib_10dose_SII_container_image_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005z5KzYAI",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iQVRYA2",
-            "Name": "Package Insert-pq_195_204_205_DTPHbHib_lyo_Liq_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005z9rZYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iT3RYAU",
-            "Name": "pq_205_DTPwHBBib_10dose_SII_container_image_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zC1NYAU",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005iT53YAE",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_205_DTPwHBHib_%2010dose_SII_container_image"
+            "Name": "FVP-P-204_DTPwHB+Hib_10dose_SII_container_image"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zC2zYAE",
@@ -29692,26 +29383,6 @@
           "VersionId": "068NN000005z40eYAA",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iLqhYAE",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_PAHO-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z56NYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iMDFYA2",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_UNICEF-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z5O5YAI",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         }
       ]
     },
@@ -30557,26 +30228,6 @@
           "VersionId": "068NN000005z0ZqYAI",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iIBHYA2",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_PAHO-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z1PMYAY",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iL2gYAE",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_UNICEF-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z4LaYAI",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         }
       ]
     },
@@ -30749,16 +30400,6 @@
       "DocumentDetails": [
         {
           "Identification": {
-            "Id": "069NN000005iFOlYAM",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_PAHO-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005yyjIYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005iJlkYAE",
             "Name": "Container Photo-pq_151_Rubella_2dose_SIIPL_vial%26ampoule_image-2022"
           },
@@ -30766,16 +30407,6 @@
           "VersionId": "068NN000005z34dYAA",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iLtwYAE",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_UNICEF-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z5BDYAY",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         },
         {
           "Identification": {
@@ -30968,16 +30599,6 @@
         },
         {
           "Identification": {
-            "Id": "069NN000005iI9qYAE",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_PAHO-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z1NwYAI",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005iKBTYA2",
             "Name": "pq_152_Rubella_5dose_SIIPL_vial%26ampoule_image-2022"
           },
@@ -30985,16 +30606,6 @@
           "VersionId": "068NN000005z3UNYAY",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iLSVYA2",
-            "Name": "Package Insert-pq_150_151_152_153_Rubella_SIIPL_PI_UNICEF-2022"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005z4lPYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         }
       ]
     },
@@ -33452,38 +33063,8 @@
       "DocumentDetails": [
         {
           "Identification": {
-            "Id": "069NN000005iGr3YAE",
-            "Name": "pq_195_DTPwHBHib_1dose_SII_container_image_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005z057YAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iOn7YAE",
-            "Name": "Container Photo-pq_195_DTPwHBHib_1dose_SII_container_image_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005z861YAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iPuLYAU",
-            "Name": "Package Insert-pq_195_204_205_DTPHbHib_lyo_Liq_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005z9DEYAY",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005iQP7YAM",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_195_DTPwHBHib_1dose_SII_container_image"
+            "Name": "FVP-P-194_DTPwHB+Hib_1dose_SIIPL_container_image"
           },
           "Type": "Photo",
           "VersionId": "068NN000005z9lEYAQ",
@@ -33910,10 +33491,10 @@
         {
           "Identification": {
             "Id": "069NN000005iQVQYA2",
-            "Name": "Package Insert-pq_197_MenAconj_SII_PI"
+            "Name": "FVP-P-196_MenAconj_SIIPL_PI-2026"
           },
           "Type": "Product Insert",
-          "VersionId": "068NN000005z9rYYAQ",
+          "VersionId": "068Vj00000az4IBIAY",
           "FileExtension": "pdf",
           "FileType": "PDF"
         },
@@ -33955,254 +33536,9 @@
           "Id": "a3K3X000006Mil7UAC",
           "Name": "FVP-P-257"
         },
-        "Type": "Finished Vaccine Product",
-        "PublishingRemarks": "Shelf life: 9 months Diluent: Sterile Water for InhalationDiluent is cartoned separately and does not require 2-8°C storage. There is no routine production for this vaccine.",
-        "DateOfPreQualifiedAcceptance": "2012-11-26",
-        "AssessmentProcedure": "Prequalification - Standard",
-        "ApplicantOrganization": {
-          "Identification": {
-            "Id": "0013X00003cPkzfQAC",
-            "Name": "Serum Institute of India"
-          },
-          "Address": {
-            "AddressLine1": "SERUM BIO-PHARMA PARK SEZ UNIT-1, 212/2 Off Soli Poonawala Road, Hadaspar",
-            "City": "Pune",
-            "State": "Maharashtra",
-            "Country": "India",
-            "PostalCode": "411 028",
-            "ISOCountryCode": "IND",
-            "Region": "SEARO"
-          },
-          "Contact": [
-            {
-              "Website": "http://www.seruminstitute.com/"
-            }
-          ]
-        },
-        "BulkSupplier": {
-          "Id": null,
-          "Name": null
-        },
-        "ConsumptionDetails": {
-          "Diluent": null
-        },
-        "DosageDetails": {
-          "NoOfDosagesPerPrimaryContainer": "1"
-        },
-        "StorageDetails": {
-          "ShelfLife": null,
-          "Temperature": "2 - 8°C"
-        },
-        "PharmaceuticalForm": "Lyophilised active component to be reconstituted with excipient diluent before use",
-        "Presentation": "Vial + Ampoule",
-        "PresentationOther": null,
-        "NRADetails": {
-          "Identification": {
-            "Id": "0013X0000498p4fQAA",
-            "Name": "Central Drugs Standard Control Organization (CDSCO)"
-          },
-          "Address": {
-            "AddressLine1": null,
-            "Country": "India"
-          },
-          "Contact": [
-            {
-              "Website": "www.cdsco.nic.in"
-            }
-          ]
-        },
-        "VaccineDetails": {
-          "Identification": {
-            "Id": "a3S3X000003cSpKUAU"
-          },
-          "VaccineName": {
-            "FullName": "Human pandemic influenza vaccine",
-            "AbbreviatedName": "IIVPandemic",
-            "CommercialName": "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried"
-          },
-          "RouteOfAdministrationVx": "Intranasal",
-          "VialMonitor": "Type 2",
-          "MultidoseVialPolicy": "Not applicable"
-        },
-        "Status": "Prequalified",
-        "PreservativeDetails": {
-          "Id": "None"
-        },
-        "PreservativeConcentartionDetails": {
-          "Id": null
-        },
-        "LastPublishingDate": "2024-09-10T14:21:15.000Z"
-      },
-      "ProductIngredients": [
-        {
-          "Identification": {
-            "Id": null
-          },
-          "Type": "Vx FVP",
-          "Unit": null,
-          "Product": "a3K3X000006Mil7UAC",
-          "ProductComponentType": "Active",
-          "Function": null
-        }
-      ],
-      "ProductPackaging": [
-        {
-          "Id": "a3H3X000001VaiJUAS",
-          "ColdChainVolume": "17.58",
-          "ComponentPacked": "Active (Vaccine)",
-          "SecondaryPackaging": {
-            "Height": "9.5",
-            "Length": "18.5",
-            "Width": "5.0",
-            "Dosage": "50",
-            "Description": "Carton of 50 vials (active)(50 doses)[Dimensions 18.5x9.5x5.0 cm]",
-            "PrimaryContainers": "50"
-          },
-          "FVPPackagingType": "Secondary"
-        },
-        {
-          "Id": "a3H3X000001VaiKUAS",
-          "ColdChainVolume": "17.58",
-          "ComponentPacked": "Diluent",
-          "SecondaryPackaging": {
-            "Height": "9.5",
-            "Length": "18.5",
-            "Width": "5.0",
-            "Dosage": "50",
-            "Description": "Carton of 50 vials (50 doses)(diluent) [Dimensions 18.5x9.5x5.0 cm] containing 0.5 mL Sterile Water for inahalation",
-            "PrimaryContainers": "50"
-          },
-          "FVPPackagingType": "Secondary"
-        },
-        {
-          "Id": "a3H3X000001VaiLUAS",
-          "ColdChainVolume": "16.74",
-          "ComponentPacked": "Diluent",
-          "SecondaryPackaging": {
-            "Height": "15.0",
-            "Length": "23.5",
-            "Width": "9.5",
-            "Dosage": "200",
-            "Description": "Carton of 200 plastic ampoules (diluent) (40 cards of 5 ampoules) containing 0.5mL Sterile Water for Inhalation [Dimensions 23.5x15x9.5 cm]",
-            "PrimaryContainers": "50"
-          },
-          "FVPPackagingType": "Secondary"
-        },
-        {
-          "Id": "a3H3X000001VaiMUAS",
-          "ComponentPacked": "Active (Vaccine)",
-          "TertiaryPackaging": {
-            "Volume": "60 x 48 x 41 cm",
-            "Description": "Box of 24 cartons of 50 vials (active)(1200 vials/1200 doses) [Dimensions 60x48x41 cm]",
-            "TotalDoses": "1200",
-            "TotalContainers": "1200"
-          },
-          "FVPPackagingType": "Tertiary"
-        },
-        {
-          "Id": "a3H3X000001VaiNUAS",
-          "ComponentPacked": "Diluent",
-          "TertiaryPackaging": {
-            "Volume": null,
-            "Description": "Box of 24 cartons of 50 vials (diluent)(1200 vials/1200 doses) [dimension 39x32x23 cm]",
-            "TotalDoses": "1200",
-            "TotalContainers": "1200"
-          },
-          "FVPPackagingType": "Tertiary"
-        },
-        {
-          "Id": "a3H3X000001VaiOUAS",
-          "ComponentPacked": "Diluent",
-          "TertiaryPackaging": {
-            "Volume": "24.5 x 29.5 x 31.0 cm",
-            "Description": "Box of 6 cartons of 200 ampoules (1200 ampoules/1200 doses] [dimension 24.5x29.5x31.0 cm]",
-            "TotalDoses": "1200",
-            "TotalContainers": "1200"
-          },
-          "FVPPackagingType": "Tertiary"
-        }
-      ],
-      "SiteDetails": [
-        {
-          "Organization": {
-            "Identification": {
-              "Id": "0013X00003cPkzfQAC",
-              "Name": "Serum Institute of India"
-            },
-            "Address": {
-              "AddressLine1": "SERUM BIO-PHARMA PARK SEZ UNIT-1, 212/2 Off Soli Poonawala Road, Hadaspar",
-              "City": "Pune",
-              "State": "Maharashtra",
-              "Country": "India",
-              "PostalCode": "411 028"
-            }
-          },
-          "Status": "Accepted",
-          "SiteActivity": "FVP Manufacture"
-        }
-      ],
-      "DocumentDetails": [
-        {
-          "Identification": {
-            "Id": "069NN000005iyx4YAA",
-            "Name": "General-pq_260_H1N1_LAIV_diluent_1dose_SII_label"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005zjiJYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005izMmYAI",
-            "Name": "pq_260_H1N1_LAIV_1dose_SII_container_image_NAVOSAC_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zk80YAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005izbLYAQ",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_260_H1N1_LAIV_1dose_SII_container_image_NASOVAC"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005zkMdYAI",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005j2PTYAY",
-            "Name": "General-pq_260_H1N1_LAIV_1dose_SII_label"
-          },
-          "Type": "Vaccine General Document",
-          "VersionId": "068NN000005zn7UYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005j2aqYAA",
-            "Name": "Container Photo-pq_260_H1N1_LAIV_1dose_SII_container_image_NAVOSAC_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005zntuYAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005j8MjYAI",
-            "Name": "Package Insert-pq_260_261_H1N1_LAIV_SII_PI_NASOVAC"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zt1VYAQ",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        }
-      ]
+        "Status": "Withdrawn: Was Prequalified",
+        "LastPublishingDate": "2026-10-28T16:47:49.000Z"
+      }
     },
     {
       "ProductDetails": {
@@ -41383,7 +40719,7 @@
         {
           "Identification": {
             "Id": "069NN000005ife6YAA",
-            "Name": "Container Photo-pq_224_DTPHbHib_1dose_SII_container_image_2%264ml_580"
+            "Name": "FVP-_P_223_DTPHbHib_1dose_SII_container_image__580"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zQZ0YAM",
@@ -41393,32 +40729,12 @@
         {
           "Identification": {
             "Id": "069NN000005iignYAA",
-            "Name": "pq_224_DTPHbHib_1dose_SII_container_image_2%264ml_580"
+            "Name": "FVP-P-223_DTPHbHib_1dose_SII_container_image_580"
           },
           "Type": "Photo-Main Image",
           "VersionId": "068NN000005zTQPYA2",
           "FileExtension": "jpg",
           "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iildYAA",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_224_DTPHbHib_1dose_SII_container%20image_2%264ml"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005zTTdYAM",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iiorYAA",
-            "Name": "Package Insert-pq_224_225_226_DTPHBHib_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zTWrYAM",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
         }
       ]
     },
@@ -41617,28 +40933,8 @@
       "DocumentDetails": [
         {
           "Identification": {
-            "Id": "069NN000005ifMNYAY",
-            "Name": "pq_225_DTPHbHib_2dose_SII_container_image_VVM_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zQHGYA2",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005ig3vYAA",
-            "Name": "Package Insert-pq_224_225_226_DTPHBHib_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zQvbYAE",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005ihKwYAI",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_225_DTPHbHib_%202dose_SII_container_image_VVM"
+            "Name": "FVP-P-224_DTPHbHib_2dose_SII_container_image_VVM"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zSEEYA2",
@@ -41648,7 +40944,7 @@
         {
           "Identification": {
             "Id": "069NN000005iithYAA",
-            "Name": "Container Photo-pq_225_DTPHbHib_2dose_SII_container_image_VVM_580"
+            "Name": "FVP-P-224_DTPHbHib_2dose_SII_container_image_VVM_580"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zTbhYAE",
@@ -41853,40 +41149,10 @@
         {
           "Identification": {
             "Id": "069NN000005isGSYAY",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_226_DTPHbHib_10dose_SII_container%20image_VVM"
+            "Name": "FVP_225_DTPHbHib_10dose_SII_container_VVM"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zd04YAA",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iuoSYAQ",
-            "Name": "pq_226_DTPHbHib_10dose_SII_container_image_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zfY5YAI",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005ivSrYAI",
-            "Name": "Package Insert-pq_224_225_226_DTPHBHib_SII_PI"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zgE5YAI",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005izL5YAI",
-            "Name": "Container Photo-pq_226_DTPHbHib_10dose_SII_container_image_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005zk6JYAQ",
           "FileExtension": "jpg",
           "FileType": "JPG"
         }
@@ -44029,41 +43295,11 @@
       "DocumentDetails": [
         {
           "Identification": {
-            "Id": "069NN000005iiC9YAI",
-            "Name": "pq_217_DTPHib_1dose_SII_container_image_580"
-          },
-          "Type": "Photo-Main Image",
-          "VersionId": "068NN000005zT2DYAU",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
             "Id": "069NN000005iiIbYAI",
-            "Name": "Container Photo (Bigger Higher Resolution)-pq_217_DTPHib_1dose_SII_container_image"
+            "Name": "FVP-P_216_DTPHib_1dose_SII_container_image"
           },
           "Type": "Photo",
           "VersionId": "068NN000005zT73YAE",
-          "FileExtension": "jpg",
-          "FileType": "JPG"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iiIcYAI",
-            "Name": "Package Insert-pq_217_DTPHib_1dose_SII_PI_"
-          },
-          "Type": "Product Insert",
-          "VersionId": "068NN000005zT74YAE",
-          "FileExtension": "pdf",
-          "FileType": "PDF"
-        },
-        {
-          "Identification": {
-            "Id": "069NN000005iiKDYAY",
-            "Name": "Container Photo-pq_217_DTPHib_1dose_SII_container_image_580"
-          },
-          "Type": "Photo",
-          "VersionId": "068NN000005zT8fYAE",
           "FileExtension": "jpg",
           "FileType": "JPG"
         }

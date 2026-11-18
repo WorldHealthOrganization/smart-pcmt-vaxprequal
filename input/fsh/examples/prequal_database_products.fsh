@@ -31,6 +31,9 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Malaria
+* vaccineType.coding.display = "Recombinant malaria vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpnUAE"
 * routeOfAdministration = #Intramuscular
@@ -89,6 +92,9 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Malaria
+* vaccineType.coding.display = "Recombinant malaria vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpnUAE"
 * routeOfAdministration = #Intramuscular
@@ -146,6 +152,9 @@ Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotarix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -211,6 +220,9 @@ Description: "Polioviral vaccine (tOPV) by Haffkine Bio Pharmaceutical Corporati
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "Polioviral vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #tOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpjUAE"
 * routeOfAdministration = #Oral
@@ -273,6 +285,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -331,6 +346,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -392,6 +410,9 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -453,6 +474,9 @@ Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Freeze Dried Glutamate vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -519,6 +543,9 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -607,6 +634,9 @@ Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Priorix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -671,6 +701,9 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -735,6 +768,9 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -799,6 +835,9 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -885,6 +924,9 @@ Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "HEALIVE"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepA
+* vaccineType.coding.display = "Hepatitis A vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpIUAU"
 * routeOfAdministration = #Intramuscular
@@ -947,6 +989,9 @@ Description: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) ty
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -1010,6 +1055,9 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -1076,6 +1124,9 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -1139,6 +1190,9 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -1201,6 +1255,9 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -1287,6 +1344,9 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -1350,6 +1410,9 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -1416,6 +1479,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1478,6 +1544,9 @@ Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -1539,6 +1608,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1602,6 +1674,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1665,6 +1740,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1729,6 +1807,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1793,6 +1874,9 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Subcutaneous
@@ -1857,6 +1941,9 @@ Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Ins
 * vaccineFullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpXUAU"
 * routeOfAdministration = #Subcutaneous
@@ -1920,6 +2007,9 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -1981,6 +2071,9 @@ Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Inst
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -2042,6 +2135,9 @@ Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Inst
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -2105,6 +2201,9 @@ Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Inst
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -2288,6 +2387,9 @@ Description: "Hepatitis B Vaccine (rDNA) (Adult) (HepB) by Serum Institute of In
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Hepatitis B Vaccine (rDNA) (Adult)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -2350,6 +2452,9 @@ Description: "Hepatitis B Vaccine (rDNA) (Adult) (HepB) by Serum Institute of In
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Hepatitis B Vaccine (rDNA) (Adult)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -2415,6 +2520,9 @@ Description: "Hepatitis B Vaccine (rDNA) (Paediatric) (HepB) by Serum Institute 
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Hepatitis B Vaccine (rDNA) (Paediatric)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -2477,6 +2585,9 @@ Description: "Hepatitis B Vaccine (rDNA) (Paedriatic) (HepB) by Serum Institute 
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Hepatitis B Vaccine (rDNA) (Paedriatic)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -2542,6 +2653,9 @@ Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -2601,6 +2715,9 @@ Description: "Panvax (IIVPandemic) by Seqirus Australia Pty Ltd"
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Panvax"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscularordeepsubcutaneous
@@ -2666,6 +2783,9 @@ Description: "IPV Vaccine SSI (IPV) by AJ Vaccines A/S"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "IPV Vaccine SSI"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -2731,6 +2851,9 @@ Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Ins
 * vaccineFullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpXUAU"
 * routeOfAdministration = #Subcutaneous
@@ -2794,6 +2917,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -2881,6 +3007,9 @@ Description: "VERORAB (Rabies) by Sanofi Pasteur SA"
 * vaccineFullName = "Rabies vaccine for human use"
 * vaccineAbbreviatedName = "Rabies"
 * vaccineCommercialName = "VERORAB"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Rabies
+* vaccineType.coding.display = "Rabies vaccine for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSppUAE"
 * routeOfAdministration = #Intramuscular
@@ -2939,6 +3068,9 @@ Description: "STAMARIL (YF) by Sanofi Pasteur SA"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "STAMARIL"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -3003,6 +3135,9 @@ Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -3064,6 +3199,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -3126,6 +3264,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -3188,6 +3329,9 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -3251,6 +3395,9 @@ Description: "IMOVAX POLIO (IPV) by Sanofi Pasteur SA"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "IMOVAX POLIO"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -3305,6 +3452,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric) (DT) by Serum
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -3366,6 +3516,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT) by Serum 
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -3429,6 +3582,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT) by Serum 
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -3492,6 +3648,9 @@ Description: "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -3552,6 +3711,9 @@ Description: "BCG Vaccine (BCG) by Serum Institute of India"
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -3614,6 +3776,9 @@ Description: "BIOPOLIO B1/3 (bOPV) by Bharat Biotech International Limited"
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "BIOPOLIO B1/3"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -3673,6 +3838,9 @@ Description: "Euvichol-Plus (OCV) by EuBiologics Co.  Ltd."
 * vaccineFullName = "Inactivated oral cholera vaccine"
 * vaccineAbbreviatedName = "OCV"
 * vaccineCommercialName = "Euvichol-Plus"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #OCV
+* vaccineType.coding.display = "Inactivated oral cholera vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpVUAU"
 * routeOfAdministration = #Oral
@@ -3734,6 +3902,9 @@ Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Freeze Dried Glutamate vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -3800,6 +3971,9 @@ Description: "Eupolio Inj. (sIPV) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineAbbreviatedName = "sIPV"
 * vaccineCommercialName = "Eupolio Inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #sIPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URStUAO"
 * routeOfAdministration = #Intramuscular
@@ -3892,6 +4066,9 @@ Description: "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR) 
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -3960,6 +4137,9 @@ Description: "Rotavac (LARV) by Bharat Biotech International Limited"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotavac"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -4019,6 +4199,9 @@ Description: "SKYVaricella Inj. (VAR) by SK Bioscience Co.  Ltd. (SK)"
 * vaccineFullName = "Varicella"
 * vaccineAbbreviatedName = "VAR"
 * vaccineCommercialName = "SKYVaricella Inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #VAR
+* vaccineType.coding.display = "Varicella"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpsUAE"
 * routeOfAdministration = #Subcutaneous
@@ -4083,6 +4266,9 @@ Description: "Monovalent Oral Poliomyelitis Vaccine Type 2 (mOPV2) by PT Bio Far
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineAbbreviatedName = "mOPV2"
 * vaccineCommercialName = "Monovalent Oral Poliomyelitis Vaccine Type 2"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV2
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpgUAE"
 * routeOfAdministration = #Oral
@@ -4150,6 +4336,9 @@ Description: "JEEV® (6µg) (JE) by Biological E. Limited"
 * vaccineFullName = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "JEEV® (6µg)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpWUAU"
 * routeOfAdministration = #Intramuscular
@@ -4215,6 +4404,9 @@ Description: "Typbar-TCV (Typhoid) by Bharat Biotech International Limited"
 * vaccineFullName = "Typhoid conjugate vaccine"
 * vaccineAbbreviatedName = "Typhoid"
 * vaccineCommercialName = "Typbar-TCV"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Typhoid
+* vaccineType.coding.display = "Typhoid conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSprUAE"
 * routeOfAdministration = #Intramuscular
@@ -4277,6 +4469,9 @@ Description: "Afluria® Quadrivalent (IIV4) by Seqirus Australia Pty Ltd"
 * vaccineFullName = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "Afluria® Quadrivalent"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpRUAU"
 * routeOfAdministration = #Intramuscular
@@ -4345,6 +4540,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -4408,6 +4606,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -4473,6 +4674,9 @@ Description: "Dukoral (OCV) by Valneva Sweden AB"
 * vaccineFullName = "Inactivated oral cholera vaccine"
 * vaccineAbbreviatedName = "OCV"
 * vaccineCommercialName = "Dukoral"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #OCV
+* vaccineType.coding.display = "Inactivated oral cholera vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpVUAU"
 * routeOfAdministration = #Oral
@@ -4534,6 +4738,9 @@ Description: "Pandemic Live Attenuated Vaccine (IIVPandemic) by AstraZeneca Phar
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Pandemic Live Attenuated Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intranasal
@@ -4592,6 +4799,9 @@ Description: "ROTASIIL-Liquid (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL-Liquid"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -4649,6 +4859,9 @@ Description: "TYPHIBEV® (Typhoid) by Biological E. Limited"
 * vaccineFullName = "Typhoid conjugate vaccine"
 * vaccineAbbreviatedName = "Typhoid"
 * vaccineCommercialName = "TYPHIBEV®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Typhoid
+* vaccineType.coding.display = "Typhoid conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSprUAE"
 * routeOfAdministration = #Intramuscular
@@ -4711,6 +4924,9 @@ Description: "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV) by Seru
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -4777,6 +4993,9 @@ Description: "Poliomyelitis vaccine multidose suspension for injection 2.5 mL (I
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis vaccine multidose suspension for injection 2.5 mL"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -4810,60 +5029,25 @@ Description: "Poliomyelitis vaccine multidose suspension for injection 2.5 mL (I
 // Source Record Row //: 84
 //  Vaccine Product ID: (a3K3X000006MijDUAS)
 //  Product Name: (FVP-P-284)
-//  Date of Prequalification: (2015-09-30)
-//  Vaccine Type: (IIV3)
-//  Commercial Name: (Nasovac-S Influenza Vaccine Live Attenuated (Human))
-//  Presentation: (Vial + Ampoule)
-//  No. of doses: (1)
-//  Manufacturer: (Serum Institute of India)
-//  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
+//  Date of Prequalification: ()
+//  Vaccine Type: ()
+//  Commercial Name: ()
+//  Presentation: ()
+//  No. of doses: ()
+//  Manufacturer: ()
+//  Responsible NRA: ()
 //
 
 Instance: FinishedProducta3K3X000006MijDUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "PreQual Product: Nasovac-S Influenza Vaccine Live Attenuated (Human) - IIV3"
-Description: "Nasovac-S Influenza Vaccine Live Attenuated (Human) (IIV3) by Serum Institute of India"
-* productType = #FinishedVaccineProduct
-* dateOfPrequal = 2015-09-30
-* assessmentProcedure = #PrequalificationStandard
-* status = #Prequalified
-* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
-* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
-* presentation.coding.code = #VialAmpoule
-* presentation.coding.display = "Vial + Ampoule"
-* numDoses = 1
+Title: "PreQual Product: FVP-P-284"
+Description: "FVP-P-284"
+* status = #WithdrawnWasPrequalified
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MijDUAS"
 * productName = "FVP-P-284"
-* vaccineFullName = "Influenza vaccine trivalent (live, attenuated)"
-* vaccineAbbreviatedName = "IIV3"
-* vaccineCommercialName = "Nasovac-S Influenza Vaccine Live Attenuated (Human)"
-* vaccineTypeId.system = "https://extranet.who.int/prequal/api"
-* vaccineTypeId.value = "a3S3X000003cSpPUAU"
-* routeOfAdministration = #Intranasal
-* vialMonitor = "Type 2"
-* applicantId.system = "https://extranet.who.int/prequal/api"
-* applicantId.value = "0013X00003cPkzfQAC"
-* applicantName = "Serum Institute of India"
-* nraId.system = "https://extranet.who.int/prequal/api"
-* nraId.value = "0013X0000498p4fQAA"
-* nraName = "Central Drugs Standard Control Organization (CDSCO)"
-* nraCountry = "India"
-* storageTemperature = "2 - 8°C"
-* lastPublishingDate = 2024-09-10
-* publishingRemarks = "Diluent: Sterile Water for InhalationShelf life: 9 monthsDiluent is cartoned separately and does not require 2-8°C storageThere are two sources of diluent with different packaging configurations:1) 17 cartons of 72 ampoules (1224 ampoules) [25.5 x 24.5  x 26.0 cm]2) 24 cartons of 50 ampoules (1200 ampoules) [29.4  x 29.0  x 28.8 cm]Additionally a shipper of 1200 nasal applicator kits are provided. (53.7 x 47.0 x 50.0 cm)"
-* manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
-* responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
-* nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
-* vaccineLM = Reference(PreQualVaccinea3S3X000003cSpPUAU)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VadPUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VadQUAS)
-* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
-* ingredientLM = Reference(PreQualIngredienta3K3X000006MijDUASIng1)
-* ingredientLM = Reference(PreQualIngredienta3K3X000006MijDUASIng2)
-* ingredientLM = Reference(PreQualIngredienta3K3X000006MijDUASIng3)
+* lastPublishingDate = 2026-10-28
 
 
 // Source Record Row //: 85
@@ -4898,6 +5082,9 @@ Description: "Hexaxim (DTaP-HepB-IPV-Hib) by Sanofi Pasteur SA"
 * vaccineFullName = "Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTaP-HepB-IPV-Hib"
 * vaccineCommercialName = "Hexaxim"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTaPHepBIPVHib
+* vaccineType.coding.display = "Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSp9UAE"
 * routeOfAdministration = #Intramuscular
@@ -4963,6 +5150,9 @@ Description: "Eupenta (DTwP-HepB-Hib) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Eupenta"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -5032,6 +5222,9 @@ Description: "Eupenta (DTwP-HepB-Hib) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Eupenta"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -5102,6 +5295,9 @@ Description: "ERVEBO (EBOV) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Ebola vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "EBOV"
 * vaccineCommercialName = "ERVEBO"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #EBOV
+* vaccineType.coding.display = "Ebola vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpCUAU"
 * routeOfAdministration = #Intramuscular
@@ -5163,6 +5359,9 @@ Description: "PNEUMOSIL® (PCV) by Serum Institute of India"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "PNEUMOSIL®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -5228,6 +5427,9 @@ Description: "PNEUMOSIL® (PCV) by Serum Institute of India"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "PNEUMOSIL®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -5294,6 +5496,9 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -5351,6 +5556,9 @@ Description: "ROTASIIL®Thermo (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL®Thermo"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -5417,6 +5625,9 @@ Description: "ROTASIIL®Thermo (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL®Thermo"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -5484,6 +5695,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -5549,6 +5763,9 @@ Description: "Oral Poliomyelitis Vaccines (Oral Drops) (tOPV) by PT Bio Farma (P
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "Oral Poliomyelitis Vaccines (Oral Drops)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #tOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpjUAE"
 * routeOfAdministration = #Oral
@@ -5614,6 +5831,9 @@ Description: "VaxigripTetra (IIV4) by Sanofi Pasteur SA"
 * vaccineFullName = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "VaxigripTetra"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpRUAU"
 * routeOfAdministration = #Intramuscular
@@ -5678,6 +5898,9 @@ Description: "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg (MenA) by S
 * vaccineFullName = "Group A meningococcal conjugate vaccine"
 * vaccineAbbreviatedName = "MenA"
 * vaccineCommercialName = "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenA
+* vaccineType.coding.display = "Group A meningococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URSrUAO"
 * routeOfAdministration = #Intramuscular
@@ -5747,6 +5970,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -5810,6 +6036,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -5873,6 +6102,9 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Inactivated)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -5941,6 +6173,9 @@ Description: "BIOPOLIO (tOPV) by Bharat Biotech International Limited"
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "BIOPOLIO"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #tOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpjUAE"
 * routeOfAdministration = #Oral
@@ -6004,6 +6239,9 @@ Description: "BIOPOLIO (tOPV) by Bharat Biotech International Limited"
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "BIOPOLIO"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #tOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpjUAE"
 * routeOfAdministration = #Oral
@@ -6067,6 +6305,9 @@ Description: "IL-YANG FLU Vaccine INJ. (IIV3) by IL-YANG PHARMACEUTICAL CO.  LTD
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "IL-YANG FLU Vaccine INJ."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscular
@@ -6129,6 +6370,9 @@ Description: "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3) (bOPV) by 
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -6194,6 +6438,9 @@ Description: "ROTASIIL (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -6261,6 +6508,9 @@ Description: "Euvichol (OCV) by EuBiologics Co.  Ltd."
 * vaccineFullName = "Inactivated oral cholera vaccine"
 * vaccineAbbreviatedName = "OCV"
 * vaccineCommercialName = "Euvichol"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #OCV
+* vaccineType.coding.display = "Inactivated oral cholera vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpVUAU"
 * routeOfAdministration = #Oral
@@ -6346,6 +6596,9 @@ Description: "Gardasil 9 (HPV) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18,31,33,45,52,58)"
 * vaccineAbbreviatedName = "HPV"
 * vaccineCommercialName = "Gardasil 9"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HPV
+* vaccineType.coding.display = "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18,31,33,45,52,58)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpmUAE"
 * routeOfAdministration = #Intramuscular
@@ -6413,6 +6666,9 @@ Description: "Pentabio (DTwP-HepB-Hib) by PT Bio Farma (Persero)"
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Pentabio"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -6477,6 +6733,9 @@ Description: "Pentabio (DTwP-HepB-Hib) by PT Bio Farma (Persero)"
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Pentabio"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -6539,6 +6798,9 @@ Description: "influenza trivalent vaccine (split virion inactivated) (IIV3) by I
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "influenza trivalent vaccine (split virion inactivated)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscularordeepsubcutaneous
@@ -6599,6 +6861,9 @@ Description: "Varivax (VAR) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Varicella"
 * vaccineAbbreviatedName = "VAR"
 * vaccineCommercialName = "Varivax"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #VAR
+* vaccineType.coding.display = "Varicella"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpsUAE"
 * routeOfAdministration = #Subcutaneous
@@ -6665,6 +6930,9 @@ Description: "Rotavac (LARV) by Bharat Biotech International Limited"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotavac"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -6724,6 +6992,9 @@ Description: "JEEV® (3µg) (JE) by Biological E. Limited"
 * vaccineFullName = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "JEEV® (3µg)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpWUAU"
 * routeOfAdministration = #Intramuscular
@@ -6783,6 +7054,9 @@ Description: "Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S) (Rabies) by S
 * vaccineFullName = "Rabies vaccine for human use"
 * vaccineAbbreviatedName = "Rabies"
 * vaccineCommercialName = "Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Rabies
+* vaccineType.coding.display = "Rabies vaccine for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSppUAE"
 * routeOfAdministration = #Intramuscular
@@ -6847,6 +7121,9 @@ Description: "ROTASIIL (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -6913,6 +7190,9 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Inactivated)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -6938,9 +7218,6 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * bulkSupplierLM = Reference(PreQualBulkSupplier0013X0000498p3yQAA)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VaetUAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VaeuUAC)
-* documentLM = Reference(PreQualDocument069NN000005kxjmYAA)
-* documentLM = Reference(PreQualDocument069NN000005ky1XYAQ)
-* documentLM = Reference(PreQualDocument069NN000005kyvxYAA)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * siteLM = Reference(PreQualSite0013X0000498p3yQAA)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MijmUACIng1)
@@ -6978,6 +7255,9 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Inactivated)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -7002,9 +7282,6 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * bulkSupplierLM = Reference(PreQualBulkSupplier0013X0000498p3yQAA)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VaevUAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VaewUAC)
-* documentLM = Reference(PreQualDocument069NN000005kpG3YAI)
-* documentLM = Reference(PreQualDocument069NN000005ksPBYAY)
-* documentLM = Reference(PreQualDocument069NN000005kuFgYAI)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * siteLM = Reference(PreQualSite0013X0000498p3yQAA)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MijnUACIng1)
@@ -7041,6 +7318,9 @@ Description: "VaxiRab N (Rabies) by Zydus Lifescience Limited"
 * vaccineFullName = "Rabies vaccine for human use"
 * vaccineAbbreviatedName = "Rabies"
 * vaccineCommercialName = "VaxiRab N"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Rabies
+* vaccineType.coding.display = "Rabies vaccine for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSppUAE"
 * routeOfAdministration = #Intramuscular
@@ -7103,6 +7383,9 @@ Description: "Serinflu (IIV3) by Abbott Biologicals BV"
 * vaccineFullName = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "Serinflu"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpNUAU"
 * routeOfAdministration = #Intramuscularordeepsubcutaneous
@@ -7165,6 +7448,9 @@ Description: "AGRIFLU (IIV3) by Seqirus UK Limited"
 * vaccineFullName = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "AGRIFLU"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpNUAU"
 * routeOfAdministration = #Intramuscular
@@ -7228,6 +7514,9 @@ Description: "Typbar-TCV (Typhoid) by Bharat Biotech International Limited"
 * vaccineFullName = "Typhoid conjugate vaccine"
 * vaccineAbbreviatedName = "Typhoid"
 * vaccineCommercialName = "Typbar-TCV"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Typhoid
+* vaccineType.coding.display = "Typhoid conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSprUAE"
 * routeOfAdministration = #Intramuscular
@@ -7286,6 +7575,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -7350,6 +7642,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -7413,6 +7708,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -7480,6 +7778,9 @@ Description: "SKYCellflu® inj. (IIV3) by SK Bioscience Co.  Ltd. (SK)"
 * vaccineFullName = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "SKYCellflu® inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpNUAU"
 * routeOfAdministration = #Intramuscular
@@ -7540,6 +7841,9 @@ Description: "SKYCellflu® Multi inj. (IIV3) by SK Bioscience Co.  Ltd. (SK)"
 * vaccineFullName = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "SKYCellflu® Multi inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpNUAU"
 * routeOfAdministration = #Intramuscular
@@ -7605,6 +7909,9 @@ Description: "Synflorix (PCV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "Synflorix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -7670,6 +7977,9 @@ Description: "JEEV® (3µg) (JE) by Biological E. Limited"
 * vaccineFullName = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "JEEV® (3µg)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpWUAU"
 * routeOfAdministration = #Intramuscular
@@ -7731,6 +8041,9 @@ Description: "ROTAVAC 5D® (LARV) by Bharat Biotech International Limited"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTAVAC 5D®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -7792,6 +8105,9 @@ Description: "SKYCellflu Quadrivalent inj. (IIV4) by SK Bioscience Co.  Ltd. (SK
 * vaccineFullName = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "SKYCellflu Quadrivalent inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpSUAU"
 * routeOfAdministration = #Intramuscular
@@ -7854,6 +8170,9 @@ Description: "SKYCellflu Quadrivalent Multi inj. (IIV4) by SK Bioscience Co.  Lt
 * vaccineFullName = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "SKYCellflu Quadrivalent Multi inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpSUAU"
 * routeOfAdministration = #Intramuscular
@@ -7911,6 +8230,9 @@ Description: "Afluria® (IIV3) by Seqirus Australia Pty Ltd"
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "Afluria®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscular
@@ -7978,6 +8300,9 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Inactivated)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -8003,9 +8328,6 @@ Description: "Poliomyelitis Vaccine (Inactivated) (IPV) by Serum Institute of In
 * bulkSupplierLM = Reference(PreQualBulkSupplier0013X0000498p3yQAA)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VafXUAS)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VafYUAS)
-* documentLM = Reference(PreQualDocument069NN000005l5mCYAQ)
-* documentLM = Reference(PreQualDocument069NN000005l7BMYAY)
-* documentLM = Reference(PreQualDocument069NN000005lBrZYAU)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * siteLM = Reference(PreQualSite0013X0000498p3yQAA)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mik3UACIng1)
@@ -8046,6 +8368,9 @@ Description: "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR) 
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -8114,6 +8439,9 @@ Description: "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR) 
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MR
+* vaccineType.coding.display = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpbUAE"
 * routeOfAdministration = #Subcutaneous
@@ -8182,6 +8510,9 @@ Description: "TYPHIBEV® (Typhoid) by Biological E. Limited"
 * vaccineFullName = "Typhoid conjugate vaccine"
 * vaccineAbbreviatedName = "Typhoid"
 * vaccineCommercialName = "TYPHIBEV®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Typhoid
+* vaccineType.coding.display = "Typhoid conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSprUAE"
 * routeOfAdministration = #Intramuscular
@@ -8293,6 +8624,9 @@ Description: "ROTAVAC 5D® (LARV) by Bharat Biotech International Limited"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTAVAC 5D®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -8355,6 +8689,9 @@ Description: "Eupolio Inj. (sIPV) by LG Chem Ltd (LGC)"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineAbbreviatedName = "sIPV"
 * vaccineCommercialName = "Eupolio Inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #sIPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URStUAO"
 * routeOfAdministration = #Intramuscular
@@ -8417,6 +8754,9 @@ Description: "ROTASIIL-Liquid (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL-Liquid"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * vialMonitor = "Type 7"
@@ -8474,6 +8814,9 @@ Description: "Mosquirix (Malaria) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "Mosquirix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Malaria
+* vaccineType.coding.display = "Recombinant malaria vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpnUAE"
 * routeOfAdministration = #Intramuscular
@@ -8530,6 +8873,9 @@ Description: "TT vaccine (TT) by PT Bio Farma (Persero)"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "TT vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -8597,6 +8943,9 @@ Description: "ShanIPV™ (IPV) by Sanofi Healthcare India Private Limited"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "ShanIPV™"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -8658,6 +9007,9 @@ Description: "GCFLU Quadrivalent Multi inj. (IIV4) by GC Biopharma Corporation"
 * vaccineFullName = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "GCFLU Quadrivalent Multi inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpRUAU"
 * routeOfAdministration = #Intramuscular
@@ -8722,6 +9074,9 @@ Description: "ShanIPV™ (IPV) by Sanofi Healthcare India Private Limited"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "ShanIPV™"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -8791,6 +9146,9 @@ Description: "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV)
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -8847,6 +9205,9 @@ Description: "FVP-P-app8"
 * productName = "FVP-P-app8"
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * applicantId.system = "https://extranet.who.int/prequal/api"
@@ -8897,6 +9258,9 @@ Description: "Heberbiovac HB (HepB) by Centro de Ingenieria Genetica y Biotecnol
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Heberbiovac HB"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -8956,6 +9320,9 @@ Description: "Heberbiovac HB (HepB) by Centro de Ingenieria Genetica y Biotecnol
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Heberbiovac HB"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -9018,6 +9385,9 @@ Description: "MenQuadfi (MenACYW-135) by Sanofi Pasteur Inc."
 * vaccineFullName = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineAbbreviatedName = "MenACYW-135"
 * vaccineCommercialName = "MenQuadfi"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYW135
+* vaccineType.coding.display = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpEUAU"
 * routeOfAdministration = #Intramuscular
@@ -9081,6 +9451,9 @@ Description: "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV)
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -9142,6 +9515,9 @@ Description: "TT vaccine (TT) by PT Bio Farma (Persero)"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "TT vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -9205,6 +9581,9 @@ Description: "TT vaccine (TT) by PT Bio Farma (Persero)"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "TT vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -9266,6 +9645,9 @@ Description: "Measles vaccine (M) by PT Bio Farma (Persero)"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -9330,6 +9712,9 @@ Description: "Adsorbed DT Vaccine (DT) by PT Bio Farma (Persero)"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Adsorbed DT Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSojUAE"
 * routeOfAdministration = #Intramuscular
@@ -9390,6 +9775,9 @@ Description: "DTP Vaccine (DTwP) by PT Bio Farma (Persero)"
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "DTP Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwP
+* vaccineType.coding.display = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSomUAE"
 * routeOfAdministration = #Intramuscular
@@ -9477,6 +9865,9 @@ Description: "Yellow Fever (YF) by Bio-Manguinhos/Fiocruz"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Yellow Fever"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -9542,6 +9933,9 @@ Description: "Yellow Fever (YF) by Bio-Manguinhos/Fiocruz"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Yellow Fever"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -9609,6 +10003,9 @@ Description: "Fluzone Quadrivalent (IIV4) by Sanofi Pasteur Inc."
 * vaccineFullName = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "Fluzone Quadrivalent"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpSUAU"
 * routeOfAdministration = #Intramuscular
@@ -9665,6 +10062,9 @@ Description: "Fluzone Quadrivalent (IIV4) by Sanofi Pasteur Inc."
 * vaccineFullName = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "Fluzone Quadrivalent"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (surface antigens, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpSUAU"
 * routeOfAdministration = #Intramuscular
@@ -9725,6 +10125,9 @@ Description: "Nimenrix (MenACYW-135) by Pfizer Europe MA EEIG (Pfizer)"
 * vaccineFullName = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineAbbreviatedName = "MenACYW-135"
 * vaccineCommercialName = "Nimenrix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYW135
+* vaccineType.coding.display = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpEUAU"
 * routeOfAdministration = #Intramuscular
@@ -9787,6 +10190,9 @@ Description: "GCFLU Quadrivalent inj. (IIV4) by GC Biopharma Corporation"
 * vaccineFullName = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV4"
 * vaccineCommercialName = "GCFLU Quadrivalent inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV4
+* vaccineType.coding.display = "Influenza vaccine quadrivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpRUAU"
 * routeOfAdministration = #Intramuscular
@@ -9848,6 +10254,9 @@ Description: "Adacel (DTaP) by Sanofi Pasteur Limited"
 * vaccineFullName = "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTaP"
 * vaccineCommercialName = "Adacel"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTaP
+* vaccineType.coding.display = "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSonUAE"
 * routeOfAdministration = #Intramuscular
@@ -9907,6 +10316,9 @@ Description: "Prevenar 13 Multidose Vial (PCV) by Pfizer Europe MA EEIG (Pfizer)
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "Prevenar 13 Multidose Vial"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -9970,6 +10382,9 @@ Description: "Cervarix (HPV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineAbbreviatedName = "HPV"
 * vaccineCommercialName = "Cervarix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HPV
+* vaccineType.coding.display = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSplUAE"
 * routeOfAdministration = #Intramuscular
@@ -10035,6 +10450,9 @@ Description: "Cervarix (HPV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineAbbreviatedName = "HPV"
 * vaccineCommercialName = "Cervarix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HPV
+* vaccineType.coding.display = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSplUAE"
 * routeOfAdministration = #Intramuscular
@@ -10101,6 +10519,9 @@ Description: "Bivalent type 1&3 Oral Poliomyelitis vaccine IP (bOPV1&3) (bOPV) b
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Bivalent type 1&3 Oral Poliomyelitis vaccine IP (bOPV1&3)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -10168,6 +10589,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB+Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSoxUAE"
 * routeOfAdministration = #Intramuscular
@@ -10196,9 +10620,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah1UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah2UAC)
 * documentLM = Reference(PreQualDocument069NN000005iORyYAM)
-* documentLM = Reference(PreQualDocument069NN000005iQ5iYAE)
-* documentLM = Reference(PreQualDocument069NN000005iSIgYAM)
-* documentLM = Reference(PreQualDocument069NN000005iT0DYAU)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikgUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikgUACIng2)
@@ -10241,6 +10662,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB+Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSoxUAE"
 * routeOfAdministration = #Intramuscular
@@ -10268,9 +10692,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah4UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah5UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah6UAC)
-* documentLM = Reference(PreQualDocument069NN000005iMA9YAM)
-* documentLM = Reference(PreQualDocument069NN000005iQVRYA2)
-* documentLM = Reference(PreQualDocument069NN000005iT3RYAU)
 * documentLM = Reference(PreQualDocument069NN000005iT53YAE)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikhUACIng1)
@@ -10314,6 +10735,9 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * vaccineFullName = "Rubella vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "R"
 * vaccineCommercialName = "Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #R
+* vaccineType.coding.display = "Rubella vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpoUAE"
 * routeOfAdministration = #Subcutaneous
@@ -10341,8 +10765,6 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vah9UAC)
 * documentLM = Reference(PreQualDocument069NN000005iHK6YAM)
 * documentLM = Reference(PreQualDocument069NN000005iKg9YAE)
-* documentLM = Reference(PreQualDocument069NN000005iLqhYAE)
-* documentLM = Reference(PreQualDocument069NN000005iMDFYA2)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikiUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikiUACIng2)
@@ -10380,6 +10802,9 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -10442,6 +10867,9 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -10504,6 +10932,9 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -10566,6 +10997,9 @@ Description: "Polio Sabin Mono T1 (mOPV1) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineAbbreviatedName = "mOPV1"
 * vaccineCommercialName = "Polio Sabin Mono T1"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV1
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpfUAE"
 * routeOfAdministration = #Oral
@@ -10625,6 +11059,9 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * vaccineFullName = "Rubella vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "R"
 * vaccineCommercialName = "Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #R
+* vaccineType.coding.display = "Rubella vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpoUAE"
 * routeOfAdministration = #Subcutaneous
@@ -10651,8 +11088,6 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahNUAS)
 * documentLM = Reference(PreQualDocument069NN000005iFiFYAU)
 * documentLM = Reference(PreQualDocument069NN000005iHNNYA2)
-* documentLM = Reference(PreQualDocument069NN000005iIBHYA2)
-* documentLM = Reference(PreQualDocument069NN000005iL2gYAE)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MiknUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MiknUACIng2)
@@ -10690,6 +11125,9 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * vaccineFullName = "Rubella vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "R"
 * vaccineCommercialName = "Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #R
+* vaccineType.coding.display = "Rubella vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpoUAE"
 * routeOfAdministration = #Subcutaneous
@@ -10715,9 +11153,7 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahOUAS)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahPUAS)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahQUAS)
-* documentLM = Reference(PreQualDocument069NN000005iFOlYAM)
 * documentLM = Reference(PreQualDocument069NN000005iJlkYAE)
-* documentLM = Reference(PreQualDocument069NN000005iLtwYAE)
 * documentLM = Reference(PreQualDocument069NN000005iM0MYAU)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikoUACIng1)
@@ -10756,6 +11192,9 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * vaccineFullName = "Rubella vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "R"
 * vaccineCommercialName = "Rubella Vaccine Live Attenuated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #R
+* vaccineType.coding.display = "Rubella vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpoUAE"
 * routeOfAdministration = #Subcutaneous
@@ -10782,9 +11221,7 @@ Description: "Rubella Vaccine Live Attenuated (R) by Serum Institute of India"
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahSUAS)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VahTUAS)
 * documentLM = Reference(PreQualDocument069NN000005iHGvYAM)
-* documentLM = Reference(PreQualDocument069NN000005iI9qYAE)
 * documentLM = Reference(PreQualDocument069NN000005iKBTYA2)
-* documentLM = Reference(PreQualDocument069NN000005iLSVYA2)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikpUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MikpUACIng2)
@@ -10822,6 +11259,9 @@ Description: "Polio Sabin Mono T1 (mOPV1) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineAbbreviatedName = "mOPV1"
 * vaccineCommercialName = "Polio Sabin Mono T1"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV1
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpfUAE"
 * routeOfAdministration = #Oral
@@ -10881,6 +11321,9 @@ Description: "Polio Sabin One and Three (bOPV) by GlaxoSmithKline Biologicals SA
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Polio Sabin One and Three"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -10945,6 +11388,9 @@ Description: "Polio Sabin One and Three (bOPV) by GlaxoSmithKline Biologicals SA
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Polio Sabin One and Three"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -11008,6 +11454,9 @@ Description: "Haemophilus influenzae type b Conjugate Vaccine (Hib) by Serum Ins
 * vaccineFullName = "Haemophilus influenzae type b conjugate vaccine"
 * vaccineAbbreviatedName = "Hib"
 * vaccineCommercialName = "Haemophilus influenzae type b Conjugate Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Hib
+* vaccineType.coding.display = "Haemophilus influenzae type b conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpHUAU"
 * routeOfAdministration = #Intramuscular
@@ -11072,6 +11521,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -11135,6 +11587,9 @@ Description: "Synflorix (PCV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "Synflorix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -11195,6 +11650,9 @@ Description: "Quimi-Hib (Hib) by Centro de Ingenieria Genetica y Biotecnologia (
 * vaccineFullName = "Haemophilus influenzae type b conjugate vaccine"
 * vaccineAbbreviatedName = "Hib"
 * vaccineCommercialName = "Quimi-Hib"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #Hib
+* vaccineType.coding.display = "Haemophilus influenzae type b conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpHUAU"
 * routeOfAdministration = #Intramuscular
@@ -11254,6 +11712,9 @@ Description: "Synflorix (PCV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "Synflorix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -11362,6 +11823,9 @@ Description: "Rotateq (LARV) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotateq"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -11421,6 +11885,9 @@ Description: "rHA M-M-R II (MMR) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "rHA M-M-R II"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Intramuscular
@@ -11479,6 +11946,9 @@ Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotarix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -11538,6 +12008,9 @@ Description: "Gardasil (HPV) by Merck Sharp & Dohme LLC"
 * vaccineFullName = "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18)"
 * vaccineAbbreviatedName = "HPV"
 * vaccineCommercialName = "Gardasil"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HPV
+* vaccineType.coding.display = "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpkUAE"
 * routeOfAdministration = #Intramuscular
@@ -11606,6 +12079,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB+Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSoxUAE"
 * routeOfAdministration = #Intramuscular
@@ -11632,9 +12108,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vai8UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vai9UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VaiAUAS)
-* documentLM = Reference(PreQualDocument069NN000005iGr3YAE)
-* documentLM = Reference(PreQualDocument069NN000005iOn7YAE)
-* documentLM = Reference(PreQualDocument069NN000005iPuLYAU)
 * documentLM = Reference(PreQualDocument069NN000005iQP7YAM)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mil4UACIng1)
@@ -11678,6 +12151,9 @@ Description: "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3) (bOPV) by 
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -11744,6 +12220,9 @@ Description: "Meningococcal A Conjugate MenAfriVac (MenA) by Serum Institute of 
 * vaccineFullName = "Group A meningococcal conjugate vaccine"
 * vaccineAbbreviatedName = "MenA"
 * vaccineCommercialName = "Meningococcal A Conjugate MenAfriVac"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenA
+* vaccineType.coding.display = "Group A meningococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URSrUAO"
 * routeOfAdministration = #Intramuscular
@@ -11785,68 +12264,25 @@ Description: "Meningococcal A Conjugate MenAfriVac (MenA) by Serum Institute of 
 // Source Record Row //: 198
 //  Vaccine Product ID: (a3K3X000006Mil7UAC)
 //  Product Name: (FVP-P-257)
-//  Date of Prequalification: (2012-11-26)
-//  Vaccine Type: (IIVPandemic)
-//  Commercial Name: (NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried)
-//  Presentation: (Vial + Ampoule)
-//  No. of doses: (1)
-//  Manufacturer: (Serum Institute of India)
-//  Responsible NRA: (Central Drugs Standard Control Organization (CDSCO))
+//  Date of Prequalification: ()
+//  Vaccine Type: ()
+//  Commercial Name: ()
+//  Presentation: ()
+//  No. of doses: ()
+//  Manufacturer: ()
+//  Responsible NRA: ()
 //
 
 Instance: FinishedProducta3K3X000006Mil7UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "PreQual Product: NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried - IIVPandemic"
-Description: "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried (IIVPandemic) by Serum Institute of India"
-* productType = #FinishedVaccineProduct
-* dateOfPrequal = 2012-11-26
-* assessmentProcedure = #PrequalificationStandard
-* status = #Prequalified
-* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
-* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
-* presentation.coding.code = #VialAmpoule
-* presentation.coding.display = "Vial + Ampoule"
-* numDoses = 1
+Title: "PreQual Product: FVP-P-257"
+Description: "FVP-P-257"
+* status = #WithdrawnWasPrequalified
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mil7UAC"
 * productName = "FVP-P-257"
-* vaccineFullName = "Human pandemic influenza vaccine"
-* vaccineAbbreviatedName = "IIVPandemic"
-* vaccineCommercialName = "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried"
-* vaccineTypeId.system = "https://extranet.who.int/prequal/api"
-* vaccineTypeId.value = "a3S3X000003cSpKUAU"
-* routeOfAdministration = #Intranasal
-* vialMonitor = "Type 2"
-* applicantId.system = "https://extranet.who.int/prequal/api"
-* applicantId.value = "0013X00003cPkzfQAC"
-* applicantName = "Serum Institute of India"
-* nraId.system = "https://extranet.who.int/prequal/api"
-* nraId.value = "0013X0000498p4fQAA"
-* nraName = "Central Drugs Standard Control Organization (CDSCO)"
-* nraCountry = "India"
-* storageTemperature = "2 - 8°C"
-* lastPublishingDate = 2024-09-10
-* publishingRemarks = "Shelf life: 9 months Diluent: Sterile Water for InhalationDiluent is cartoned separately and does not require 2-8°C storage. There is no routine production for this vaccine."
-* manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
-* responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
-* nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
-* vaccineLM = Reference(PreQualVaccinea3S3X000003cSpKUAU)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiJUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiKUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiLUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiMUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiNUAS)
-* packagingLM = Reference(PreQualPackaginga3H3X000001VaiOUAS)
-* documentLM = Reference(PreQualDocument069NN000005iyx4YAA)
-* documentLM = Reference(PreQualDocument069NN000005izMmYAI)
-* documentLM = Reference(PreQualDocument069NN000005izbLYAQ)
-* documentLM = Reference(PreQualDocument069NN000005j2PTYAY)
-* documentLM = Reference(PreQualDocument069NN000005j2aqYAA)
-* documentLM = Reference(PreQualDocument069NN000005j8MjYAI)
-* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
-* ingredientLM = Reference(PreQualIngredienta3K3X000006Mil7UACIng1)
+* lastPublishingDate = 2026-10-28
 
 
 // Source Record Row //: 199
@@ -11881,6 +12317,9 @@ Description: "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried (II
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intranasal
@@ -11947,6 +12386,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -12007,6 +12449,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #TT
+* vaccineType.coding.display = "Tetanus vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpqUAE"
 * routeOfAdministration = #Intramuscular
@@ -12070,6 +12515,9 @@ Description: "JEEV® (6µg) (JE) by Biological E. Limited"
 * vaccineFullName = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "JEEV® (6µg)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (inactivated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpWUAU"
 * routeOfAdministration = #Intramuscular
@@ -12131,6 +12579,9 @@ Description: "Havrix 1440 Adult (HepA) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "Havrix 1440 Adult"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepA
+* vaccineType.coding.display = "Hepatitis A vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpIUAU"
 * routeOfAdministration = #Intramuscular
@@ -12197,6 +12648,9 @@ Description: "Havrix 720 Junior (HepA) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "Havrix 720 Junior"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepA
+* vaccineType.coding.display = "Hepatitis A vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpIUAU"
 * routeOfAdministration = #Intramuscular
@@ -12263,6 +12717,9 @@ Description: "Boostrix (DTaP) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTaP"
 * vaccineCommercialName = "Boostrix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTaP
+* vaccineType.coding.display = "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSonUAE"
 * routeOfAdministration = #Intramuscular
@@ -12322,6 +12779,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -12385,6 +12845,9 @@ Description: "Poliomyelitis Vaccines (Vero Cell), Inactivated, Sabin Strains (sI
 * vaccineFullName = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineAbbreviatedName = "sIPV"
 * vaccineCommercialName = "Poliomyelitis Vaccines (Vero Cell), Inactivated, Sabin Strains"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #sIPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URStUAO"
 * routeOfAdministration = #Intramuscular
@@ -12449,6 +12912,9 @@ Description: "Picovax (IPV) by AJ Vaccines A/S"
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Picovax"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscular
@@ -12516,6 +12982,9 @@ Description: "Poliomyelitis Vaccine (Vero Cell) Inactivated Sabin Strains (sIPV)
 * vaccineFullName = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineAbbreviatedName = "sIPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Vero Cell) Inactivated Sabin Strains"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #sIPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated-Sabin)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URStUAO"
 * routeOfAdministration = #Intramuscular
@@ -12579,6 +13048,9 @@ Description: "Cecolin® (HPV) by Xiamen Innovax Biotech Co. Ltd."
 * vaccineFullName = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineAbbreviatedName = "HPV"
 * vaccineCommercialName = "Cecolin®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HPV
+* vaccineType.coding.display = "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSplUAE"
 * routeOfAdministration = #Intramuscular
@@ -12638,6 +13110,9 @@ Description: "Green Flu-S (IIVPandemic) by GC Biopharma Corporation"
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Green Flu-S"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscular
@@ -12700,6 +13175,9 @@ Description: "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic) by Sanofi
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscular
@@ -12757,6 +13235,9 @@ Description: "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic) by Sanofi
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscular
@@ -12815,6 +13296,9 @@ Description: "Poliomyelitis vaccine (IPV) by Bilthoven Biologicals B.V."
 * vaccineFullName = "Poliomyelitis vaccine (inactivated)"
 * vaccineAbbreviatedName = "IPV"
 * vaccineCommercialName = "Poliomyelitis vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IPV
+* vaccineType.coding.display = "Poliomyelitis vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpeUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -12880,6 +13364,9 @@ Description: "GC FLU  inj (IIV3) by GC Biopharma Corporation"
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "GC FLU  inj"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscular
@@ -12939,6 +13426,9 @@ Description: "GC FLU Multi inj. (IIV3) by GC Biopharma Corporation"
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "GC FLU Multi inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscular
@@ -12999,6 +13489,9 @@ Description: "Menveo (MenACYW-135) by GlaxoSmithKline Vaccines S.r.l."
 * vaccineFullName = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineAbbreviatedName = "MenACYW-135"
 * vaccineCommercialName = "Menveo"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYW135
+* vaccineType.coding.display = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpEUAU"
 * routeOfAdministration = #Intramuscular
@@ -13057,6 +13550,9 @@ Description: "Menactra (MenACYW-135) by Sanofi Pasteur Inc."
 * vaccineFullName = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineAbbreviatedName = "MenACYW-135"
 * vaccineCommercialName = "Menactra"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYW135
+* vaccineType.coding.display = "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpEUAU"
 * routeOfAdministration = #Intramuscular
@@ -13117,6 +13613,9 @@ Description: "Easyfive-TT (DTwP-HepB-Hib) by Panacea Biotec Ltd."
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Easyfive-TT"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -13179,6 +13678,9 @@ Description: "IMOJEV MD (JE) by GPO-MBP Co.  Ltd. (GPO-MBP)"
 * vaccineFullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "IMOJEV MD"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #JE
+* vaccineType.coding.display = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpXUAU"
 * routeOfAdministration = #Subcutaneous
@@ -13271,6 +13773,9 @@ Description: "Easyfive-TT (DTwP-HepB-Hib) by Panacea Biotec Ltd."
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Easyfive-TT"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -13362,6 +13867,9 @@ Description: "Engerix (HepB) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Engerix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -13416,6 +13924,9 @@ Description: "Engerix (HepB) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Engerix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -13473,6 +13984,9 @@ Description: "Engerix (HepB) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Engerix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepB
+* vaccineType.coding.display = "Hepatitis B vaccine (recombinant)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpJUAU"
 * routeOfAdministration = #Intramuscular
@@ -13530,6 +14044,9 @@ Description: "Sinsavac (YF) by Federal State Budgetary Scientific Institution «
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Sinsavac"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -13590,6 +14107,9 @@ Description: "Monovalent type 1 Oral Poliomyelitis vaccine IP (mOPV1) (mOPV1) by
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineAbbreviatedName = "mOPV1"
 * vaccineCommercialName = "Monovalent type 1 Oral Poliomyelitis vaccine IP (mOPV1)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV1
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpfUAE"
 * routeOfAdministration = #Oral
@@ -13654,6 +14174,9 @@ Description: "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1) (mOPV1) by PT
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineAbbreviatedName = "mOPV1"
 * vaccineCommercialName = "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV1
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpfUAE"
 * routeOfAdministration = #Oral
@@ -13717,6 +14240,9 @@ Description: "BCG Vaccine AJV (BCG) by AJ Vaccines A/S"
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine AJV"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #BCG
+* vaccineType.coding.display = "BCG"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSogUAE"
 * routeOfAdministration = #Intradermal
@@ -13779,6 +14305,9 @@ Description: "none (YF) by Federal State Budgetary Scientific Institution «Chum
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "none"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -13845,6 +14374,9 @@ Description: "none (YF) by Federal State Budgetary Scientific Institution «Chum
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "none"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -13911,6 +14443,9 @@ Description: "none (YF) by Federal State Budgetary Scientific Institution «Chum
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "none"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #YF
+* vaccineType.coding.display = "Yellow fever vaccine (live attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpuUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -13976,6 +14511,9 @@ Description: "Polio Sabin Mono Two (oral) (mOPV2) by GlaxoSmithKline Biologicals
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineAbbreviatedName = "mOPV2"
 * vaccineCommercialName = "Polio Sabin Mono Two (oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV2
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpgUAE"
 * routeOfAdministration = #Oral
@@ -14037,6 +14575,9 @@ Description: "Polio Sabin Mono Two (oral) (mOPV2) by GlaxoSmithKline Biologicals
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineAbbreviatedName = "mOPV2"
 * vaccineCommercialName = "Polio Sabin Mono Two (oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV2
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpgUAE"
 * routeOfAdministration = #Oral
@@ -14120,6 +14661,9 @@ Description: "Vaxigrip (IIV3) by Sanofi Pasteur SA"
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "Vaxigrip"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -14183,6 +14727,9 @@ Description: "Measles vaccine (M) by PT Bio Farma (Persero)"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #M
+* vaccineType.coding.display = "Measles vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpZUAU"
 * routeOfAdministration = #Subcutaneous
@@ -14245,6 +14792,9 @@ Description: "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV) by Seru
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -14311,6 +14861,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -14339,8 +14892,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vak5UAC)
 * documentLM = Reference(PreQualDocument069NN000005ife6YAA)
 * documentLM = Reference(PreQualDocument069NN000005iignYAA)
-* documentLM = Reference(PreQualDocument069NN000005iildYAA)
-* documentLM = Reference(PreQualDocument069NN000005iiorYAA)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MilqUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MilqUACIng2)
@@ -14382,6 +14933,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -14406,8 +14960,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSowUAE)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vak6UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vak7UAC)
-* documentLM = Reference(PreQualDocument069NN000005ifMNYAY)
-* documentLM = Reference(PreQualDocument069NN000005ig3vYAA)
 * documentLM = Reference(PreQualDocument069NN000005ihKwYAI)
 * documentLM = Reference(PreQualDocument069NN000005iithYAA)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
@@ -14451,6 +15003,9 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB-Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSowUAE"
 * routeOfAdministration = #Intramuscular
@@ -14476,9 +15031,6 @@ Description: "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenza
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vak8UAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001Vak9UAC)
 * documentLM = Reference(PreQualDocument069NN000005isGSYAY)
-* documentLM = Reference(PreQualDocument069NN000005iuoSYAQ)
-* documentLM = Reference(PreQualDocument069NN000005ivSrYAI)
-* documentLM = Reference(PreQualDocument069NN000005izL5YAI)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MilsUACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006MilsUACIng2)
@@ -14520,6 +15072,9 @@ Description: "Polio Sabin Mono Three (oral) (mOPV3) by GlaxoSmithKline Biologica
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
 * vaccineAbbreviatedName = "mOPV3"
 * vaccineCommercialName = "Polio Sabin Mono Three (oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV3
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSphUAE"
 * routeOfAdministration = #Oral
@@ -14578,6 +15133,9 @@ Description: "Polio Sabin Mono Three (oral) (mOPV3) by GlaxoSmithKline Biologica
 * vaccineFullName = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
 * vaccineAbbreviatedName = "mOPV3"
 * vaccineCommercialName = "Polio Sabin Mono Three (oral)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #mOPV3
+* vaccineType.coding.display = "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSphUAE"
 * routeOfAdministration = #Oral
@@ -14636,6 +15194,9 @@ Description: "BIOPOLIO B1/3 (bOPV) by Bharat Biotech International Limited"
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "BIOPOLIO B1/3"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #bOPV
+* vaccineType.coding.display = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpiUAE"
 * routeOfAdministration = #Oral
@@ -14700,6 +15261,9 @@ Description: "none (dT) by PT Bio Farma (Persero)"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "none"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #dT
+* vaccineType.coding.display = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSokUAE"
 * routeOfAdministration = #Intramuscular
@@ -14789,6 +15353,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB+Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSoxUAE"
 * routeOfAdministration = #Intramuscular
@@ -14858,6 +15425,9 @@ Description: "None used on labelling for supply through UN agencies.     Also ma
 * vaccineFullName = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP-HepB+Hib"
 * vaccineCommercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHepBHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSoxUAE"
 * routeOfAdministration = #Intramuscular
@@ -14927,6 +15497,9 @@ Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Priorix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MMR
+* vaccineType.coding.display = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpaUAE"
 * routeOfAdministration = #Intramuscularorsubcutaneous
@@ -14991,6 +15564,9 @@ Description: "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic) by MedImm
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intranasal
@@ -15052,6 +15628,9 @@ Description: "Celtura (IIVPandemic) by Seqirus GmbH"
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Celtura"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscular
@@ -15115,6 +15694,9 @@ Description: "Panenza (IIVPandemic) by Sanofi Pasteur SA"
 * vaccineFullName = "Human pandemic influenza vaccine"
 * vaccineAbbreviatedName = "IIVPandemic"
 * vaccineCommercialName = "Panenza"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIVPandemic
+* vaccineType.coding.display = "Human pandemic influenza vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpKUAU"
 * routeOfAdministration = #Intramuscular
@@ -15173,6 +15755,9 @@ Description: "Diphtheria Tetanus Pertussis and Haemophilus influenzae type b Con
 * vaccineFullName = "Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP+Hib"
 * vaccineCommercialName = "Diphtheria Tetanus Pertussis and Haemophilus influenzae type b Conjugate Vaccine"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #DTwPHib
+* vaccineType.coding.display = "Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSotUAE"
 * routeOfAdministration = #Intramuscular
@@ -15200,10 +15785,7 @@ Description: "Diphtheria Tetanus Pertussis and Haemophilus influenzae type b Con
 * packagingLM = Reference(PreQualPackaginga3H3X000001VakbUAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VakcUAC)
 * packagingLM = Reference(PreQualPackaginga3H3X000001VakdUAC)
-* documentLM = Reference(PreQualDocument069NN000005iiC9YAI)
 * documentLM = Reference(PreQualDocument069NN000005iiIbYAI)
-* documentLM = Reference(PreQualDocument069NN000005iiIcYAI)
-* documentLM = Reference(PreQualDocument069NN000005iiKDYAY)
 * siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mim4UACIng1)
 * ingredientLM = Reference(PreQualIngredienta3K3X000006Mim4UACIng2)
@@ -15245,6 +15827,9 @@ Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotarix"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * routeOfAdministration = #Oral
@@ -15305,6 +15890,9 @@ Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "HEALIVE"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #HepA
+* vaccineType.coding.display = "Hepatitis A vaccine (inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpIUAU"
 * routeOfAdministration = #Intramuscular
@@ -15367,6 +15955,9 @@ Description: "Euvichol-S (OCV) by EuBiologics Co.  Ltd."
 * vaccineFullName = "Inactivated oral cholera vaccine"
 * vaccineAbbreviatedName = "OCV"
 * vaccineCommercialName = "Euvichol-S"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #OCV
+* vaccineType.coding.display = "Inactivated oral cholera vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpVUAU"
 * routeOfAdministration = #Oral
@@ -15428,6 +16019,9 @@ Description: "Influeza Vaccine (Split Virion), Inactivated (IIV3) by "
 * vaccineFullName = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineAbbreviatedName = "IIV3"
 * vaccineCommercialName = "Influeza Vaccine (Split Virion), Inactivated"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #IIV3
+* vaccineType.coding.display = "Influenza vaccine trivalent (split virion, inactivated)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpMUAU"
 * routeOfAdministration = #Intramuscular
@@ -15481,6 +16075,9 @@ Description: "BIRMEVAX (C-19) by HIPRA HUMAN HEALTH, S.L.U"
 * vaccineFullName = "Covid-19, protein subunit"
 * vaccineAbbreviatedName = "C-19"
 * vaccineCommercialName = "BIRMEVAX"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #C19
+* vaccineType.coding.display = "Covid-19, protein subunit"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000005JUQgUAO"
 * applicantId.system = "https://extranet.who.int/prequal/api"
@@ -15546,6 +16143,9 @@ Description: "ROTASIIL-Liquid (LARV) by Serum Institute of India"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "ROTASIIL-Liquid"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #LARV
+* vaccineType.coding.display = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpYUAU"
 * vialMonitor = "Type 7"
@@ -15613,6 +16213,9 @@ Description: "MenFive (MenACYWX) by Serum Institute of India"
 * vaccineFullName = "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
 * vaccineAbbreviatedName = "MenACYWX"
 * vaccineCommercialName = "MenFive"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYWX
+* vaccineType.coding.display = "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URSsUAO"
 * routeOfAdministration = #Intramuscular
@@ -15689,6 +16292,9 @@ Description: "PNEUMOSIL® (PCV) by Serum Institute of India"
 * vaccineFullName = "Pneumococcal conjugate vaccine"
 * vaccineAbbreviatedName = "PCV"
 * vaccineCommercialName = "PNEUMOSIL®"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #PCV
+* vaccineType.coding.display = "Pneumococcal conjugate vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpdUAE"
 * routeOfAdministration = #Intramuscular
@@ -15827,6 +16433,9 @@ Description: "BARYCELA inj. (VAR) by GC Biopharma Corporation"
 * vaccineFullName = "Varicella"
 * vaccineAbbreviatedName = "VAR"
 * vaccineCommercialName = "BARYCELA inj."
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #VAR
+* vaccineType.coding.display = "Varicella"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpsUAE"
 * routeOfAdministration = #Subcutaneous
@@ -15925,6 +16534,9 @@ Description: "Novel Oral Poliomyelitis Vaccine Type 2 (nOPV2) (nOPV2) by PT Bio 
 * vaccineFullName = "Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)"
 * vaccineAbbreviatedName = "nOPV2"
 * vaccineCommercialName = "Novel Oral Poliomyelitis Vaccine Type 2 (nOPV2)"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #nOPV2
+* vaccineType.coding.display = "Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URSmUAO"
 * routeOfAdministration = #Oral
@@ -15986,6 +16598,9 @@ Description: "MenFive (MenACYWX) by Serum Institute of India"
 * vaccineFullName = "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
 * vaccineAbbreviatedName = "MenACYWX"
 * vaccineCommercialName = "MenFive"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #MenACYWX
+* vaccineType.coding.display = "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000004URSsUAO"
 * routeOfAdministration = #Intramuscular
@@ -16061,6 +16676,9 @@ Description: "None (VAR) by Sinovac Vaccine Technology Co.  Ltd. (Sinovac (Dalia
 * vaccineFullName = "Varicella"
 * vaccineAbbreviatedName = "VAR"
 * vaccineCommercialName = "None"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #VAR
+* vaccineType.coding.display = "Varicella"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpsUAE"
 * routeOfAdministration = #Subcutaneous
@@ -16143,6 +16761,9 @@ Description: "Shanchol (OCV) by Shantha Biologics Private Limited"
 * vaccineFullName = "Inactivated oral cholera vaccine"
 * vaccineAbbreviatedName = "OCV"
 * vaccineCommercialName = "Shanchol"
+* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+* vaccineType.coding.code = #OCV
+* vaccineType.coding.display = "Inactivated oral cholera vaccine"
 * vaccineTypeId.system = "https://extranet.who.int/prequal/api"
 * vaccineTypeId.value = "a3S3X000003cSpVUAU"
 * routeOfAdministration = #Oral

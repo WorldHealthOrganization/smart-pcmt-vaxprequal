@@ -169,16 +169,6 @@ Description: "WHO PreQual Vaccine: Influenza vaccine trivalent (surface antigens
 * fullName = "Influenza vaccine trivalent (surface antigens, inactivated)"
 * abbreviatedName = "IIV3"
 
-Instance: PreQualVaccinea3S3X000003cSpPUAU
-InstanceOf: PreQualVaccine
-Usage: #example
-Title: "PreQual Vaccine: Influenza vaccine trivalent (live, attenuated)"
-Description: "WHO PreQual Vaccine: Influenza vaccine trivalent (live, attenuated) (IIV3)"
-* vaccineId.system = "https://extranet.who.int/prequal/api"
-* vaccineId.value = "a3S3X000003cSpPUAU"
-* fullName = "Influenza vaccine trivalent (live, attenuated)"
-* abbreviatedName = "IIV3"
-
 Instance: PreQualVaccinea3S3X000003cSpRUAU
 InstanceOf: PreQualVaccine
 Usage: #example

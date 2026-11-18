@@ -1484,33 +1484,6 @@ Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
 * product = "a3K3X000006MijCUAS"
 * productComponentType = #Active
 
-Instance: PreQualIngredienta3K3X000006MijDUASIng1
-InstanceOf: PreQualProductIngredient
-Usage: #example
-Title: "PreQual Ingredient: Vx FVP"
-Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
-* ingredientType = #VxFVP
-* product = "a3K3X000006MijDUAS"
-* productComponentType = #Active
-
-Instance: PreQualIngredienta3K3X000006MijDUASIng2
-InstanceOf: PreQualProductIngredient
-Usage: #example
-Title: "PreQual Ingredient: Vx FVP"
-Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
-* ingredientType = #VxFVP
-* product = "a3K3X000006MijDUAS"
-* productComponentType = #Active
-
-Instance: PreQualIngredienta3K3X000006MijDUASIng3
-InstanceOf: PreQualProductIngredient
-Usage: #example
-Title: "PreQual Ingredient: Vx FVP"
-Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
-* ingredientType = #VxFVP
-* product = "a3K3X000006MijDUAS"
-* productComponentType = #Active
-
 Instance: PreQualIngredienta3K3X000006MijEUASIng1
 InstanceOf: PreQualProductIngredient
 Usage: #example
@@ -3657,15 +3630,6 @@ Title: "PreQual Ingredient: Vx FVP"
 Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
 * ingredientType = #VxFVP
 * product = "a3K3X000006Mil6UAC"
-* productComponentType = #Active
-
-Instance: PreQualIngredienta3K3X000006Mil7UACIng1
-InstanceOf: PreQualProductIngredient
-Usage: #example
-Title: "PreQual Ingredient: Vx FVP"
-Description: "WHO PreQual Product Ingredient: Vx FVP (Active)"
-* ingredientType = #VxFVP
-* product = "a3K3X000006Mil7UAC"
 * productComponentType = #Active
 
 Instance: PreQualIngredienta3K3X000006Mil8UACIng1

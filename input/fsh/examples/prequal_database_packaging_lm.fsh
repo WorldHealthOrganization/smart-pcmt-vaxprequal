@@ -2783,36 +2783,6 @@ Description: "WHO PreQual Product Packaging: Shipping Container"
 * packagingType = #ShippingContainer
 * componentPacked = #ActiveVaccine
 
-Instance: PreQualPackaginga3H3X000001VadPUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x5.0 cm]"
-Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x5.0 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VadPUAS"
-* packagingType = #Secondary
-* componentPacked = #ActiveVaccine
-* coldChainVolume = "17.58"
-* description = "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x5.0 cm]"
-* height = "9.5"
-* length = "18.5"
-* width = "5.0"
-* primaryContainers = "50"
-
-Instance: PreQualPackaginga3H3X000001VadQUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VadQUAS"
-* packagingType = #Tertiary
-* componentPacked = #ActiveVaccine
-* description = "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-* volume = "60 x 48 x 41 cm"
-* totalDoses = "1200"
-* totalContainers = "1200"
-
 Instance: PreQualPackaginga3H3X000001VadRUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
@@ -7036,95 +7006,6 @@ Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 ampoules (d
 * componentPacked = #Diluent
 * description = "Box of 24 cartons of 50 ampoules (diluent) (1200 ampoules/12000 doses)"
 * totalDoses = "12000"
-* totalContainers = "1200"
-
-Instance: PreQualPackaginga3H3X000001VaiJUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Carton of 50 vials (active)(50 doses)[Dimensions 18.5x9.5x5.0 cm]"
-Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(50 doses)[Dimensions 18.5x9.5x5.0 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiJUAS"
-* packagingType = #Secondary
-* componentPacked = #ActiveVaccine
-* coldChainVolume = "17.58"
-* description = "Carton of 50 vials (active)(50 doses)[Dimensions 18.5x9.5x5.0 cm]"
-* height = "9.5"
-* length = "18.5"
-* width = "5.0"
-* primaryContainers = "50"
-
-Instance: PreQualPackaginga3H3X000001VaiKUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Carton of 50 vials (50 doses)(diluent) [Dimensions 18.5x9.5x5.0 cm] containing 0.5 mL Sterile Water for inahalation"
-Description: "WHO PreQual Product Packaging: Carton of 50 vials (50 doses)(diluent) [Dimensions 18.5x9.5x5.0 cm] containing 0.5 mL Sterile Water for inahalation"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiKUAS"
-* packagingType = #Secondary
-* componentPacked = #Diluent
-* coldChainVolume = "17.58"
-* description = "Carton of 50 vials (50 doses)(diluent) [Dimensions 18.5x9.5x5.0 cm] containing 0.5 mL Sterile Water for inahalation"
-* height = "9.5"
-* length = "18.5"
-* width = "5.0"
-* primaryContainers = "50"
-
-Instance: PreQualPackaginga3H3X000001VaiLUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Carton of 200 plastic ampoules (diluent) (40 cards of 5 ampoules) containing 0.5mL Sterile Water for Inhalation [Dimensions 23.5x15x9.5 cm]"
-Description: "WHO PreQual Product Packaging: Carton of 200 plastic ampoules (diluent) (40 cards of 5 ampoules) containing 0.5mL Sterile Water for Inhalation [Dimensions 23.5x15x9.5 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiLUAS"
-* packagingType = #Secondary
-* componentPacked = #Diluent
-* coldChainVolume = "16.74"
-* description = "Carton of 200 plastic ampoules (diluent) (40 cards of 5 ampoules) containing 0.5mL Sterile Water for Inhalation [Dimensions 23.5x15x9.5 cm]"
-* height = "15.0"
-* length = "23.5"
-* width = "9.5"
-* primaryContainers = "50"
-
-Instance: PreQualPackaginga3H3X000001VaiMUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Box of 24 cartons of 50 vials (active)(1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (active)(1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiMUAS"
-* packagingType = #Tertiary
-* componentPacked = #ActiveVaccine
-* description = "Box of 24 cartons of 50 vials (active)(1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
-* volume = "60 x 48 x 41 cm"
-* totalDoses = "1200"
-* totalContainers = "1200"
-
-Instance: PreQualPackaginga3H3X000001VaiNUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Box of 24 cartons of 50 vials (diluent)(1200 vials/1200 doses) [dimension 39x32x23 cm]"
-Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (diluent)(1200 vials/1200 doses) [dimension 39x32x23 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiNUAS"
-* packagingType = #Tertiary
-* componentPacked = #Diluent
-* description = "Box of 24 cartons of 50 vials (diluent)(1200 vials/1200 doses) [dimension 39x32x23 cm]"
-* totalDoses = "1200"
-* totalContainers = "1200"
-
-Instance: PreQualPackaginga3H3X000001VaiOUAS
-InstanceOf: PreQualProductPackaging
-Usage: #example
-Title: "PreQual Packaging: Box of 6 cartons of 200 ampoules (1200 ampoules/1200 doses] [dimension 24.5x29.5x31.0 cm]"
-Description: "WHO PreQual Product Packaging: Box of 6 cartons of 200 ampoules (1200 ampoules/1200 doses] [dimension 24.5x29.5x31.0 cm]"
-* packagingId.system = "https://extranet.who.int/prequal/api"
-* packagingId.value = "a3H3X000001VaiOUAS"
-* packagingType = #Tertiary
-* componentPacked = #Diluent
-* description = "Box of 6 cartons of 200 ampoules (1200 ampoules/1200 doses] [dimension 24.5x29.5x31.0 cm]"
-* volume = "24.5 x 29.5 x 31.0 cm"
-* totalDoses = "1200"
 * totalContainers = "1200"
 
 Instance: PreQualPackaginga3H3X000001VaiPUAS

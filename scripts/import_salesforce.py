@@ -922,6 +922,74 @@ def generate_presentations_codesystem(products, output_dir):
     logger.info("Generated presentations CodeSystem with %d codes", len(merged))
 
 
+def product_display(product):
+    """Return a readable display for a product code.
+
+    No combination of descriptive fields identifies a product uniquely: in
+    a full extract, 124 products share a commercial name, and even
+    commercial name, vaccine, applicant, presentation and dose count
+    together still leave collisions -- two genuine duplicate registrations
+    of the same product, and the de-published records, which carry no
+    detail at all.  The record name (FVP-P-nnn) is the only unique value,
+    so the description leads and the record name closes it in brackets as
+    the disambiguator: readable, and distinct by construction.
+
+    Args:
+        product: A normalized product field dict.
+
+    Returns:
+        A display string, never empty.
+    """
+    record = product.get("sf_product_name", "") or product.get("sf_product_id", "")
+    commercial = product.get("vaccine_commercial_name", "") or ""
+    abbreviated = product.get("vaccine_abbreviated_name", "") or ""
+    applicant = product.get("applicant_name", "") or ""
+    presentation = product.get("presentation", "") or ""
+    doses = product.get("num_doses", "") or ""
+
+    parts = []
+    if commercial and abbreviated:
+        parts.append(f"{commercial} ({abbreviated})")
+    elif commercial or abbreviated:
+        parts.append(commercial or abbreviated)
+    if applicant:
+        parts.append(applicant)
+    if presentation and doses:
+        parts.append(f"{presentation}, {doses} dose{'' if doses == '1' else 's'}")
+    elif presentation:
+        parts.append(presentation)
+
+    if not parts:
+        # A de-published record has only its identity and status left.
+        status = product.get("status", "") or ""
+        return f"{status} [{record}]" if status else record
+    return f"{', '.join(parts)} [{record}]"
+
+
+def vaccine_type_coding(product):
+    """Return the (code, display) a product's vaccine type is coded as.
+
+    The abbreviated name is the code because it is short and stable
+    ("TDV", "bOPV"), and the full name is the display because that is what
+    identifies the vaccine to a reader: "Dengue tetravalent vaccine (live,
+    attenuated)" rather than "TDV".  Either may be missing, so each falls
+    back to the other.
+
+    Args:
+        product: A normalized product field dict.
+
+    Returns:
+        Tuple of (code, display), both empty when the product names no
+        vaccine type.
+    """
+    abbreviated = product.get("vaccine_abbreviated_name", "") or ""
+    full = product.get("vaccine_full_name", "") or ""
+    label = abbreviated or full
+    if not label:
+        return "", ""
+    return sanitize_code(label), (full or abbreviated)
+
+
 def generate_vaccine_types_codesystem(products, output_dir):
     """Generate vaccine types CodeSystem and ValueSet FSH files.
 
@@ -939,16 +1007,17 @@ def generate_vaccine_types_codesystem(products, output_dir):
     # Build new codes from data
     new_codes = {}
     for p in products:
-        vax = p.get("vaccine_abbreviated_name", "")
-        if vax:
-            code = sanitize_code(vax)
-            new_codes[code] = f'* #{code} "{fsh_escape(vax)}"'
+        code, display = vaccine_type_coding(p)
+        if code:
+            new_codes[code] = f'* #{code} "{fsh_escape(display)}"'
 
-    # Merge: existing first, then new
+    # Codes no longer present in the data are kept, but a code the data
+    # still carries takes its display from this extract.  Preserving is
+    # meant to stop codes disappearing, not to freeze a display: these
+    # previously repeated the code ("TDV" displayed as "TDV"), which told
+    # a reader nothing about which vaccine it is.
     merged = dict(existing)
-    for code, line in new_codes.items():
-        if code not in merged:
-            merged[code] = line
+    merged.update(new_codes)
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $vaccinetype = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType\n')
@@ -969,6 +1038,79 @@ def generate_vaccine_types_codesystem(products, output_dir):
         f.write("* include codes from system $preQualVaccineType\n\n")
 
     logger.info("Generated vaccine types CodeSystem with %d codes", len(merged))
+
+
+def generate_product_vaccine_type_conceptmap(products, output_dir):
+    """Generate the product id -> vaccine type ConceptMap FSH file.
+
+    A product is a narrower concept than the vaccine type it belongs to
+    (Cervarix is one HPV vaccine), so each mapping is declared
+    source-is-narrower-than-target.
+
+    Every product is listed, including the de-published records, which
+    carry no vaccine type: those are marked noMap, so the map says they
+    were considered and have no target rather than leaving a reader to
+    wonder whether they were missed.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    base = "http://smart.who.int/pcmt-vaxprequal"
+    path = os.path.join(output_dir, "conceptmaps", "prequal_product_to_vaccine_type.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    # Sorted by product id so the generated file diffs cleanly between syncs.
+    entries = []
+    seen = set()
+    for product in products:
+        sf_id = product.get("sf_product_id", "")
+        if not sf_id or sf_id in seen:
+            continue
+        seen.add(sf_id)
+        code, display = vaccine_type_coding(product)
+        entries.append((sanitize_code(sf_id), product_display(product), code, display))
+    entries.sort()
+
+    mapped = sum(1 for e in entries if e[2])
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("Instance: PreQualProductToVaccineType\n")
+        f.write("InstanceOf: ConceptMap\n")
+        f.write("Usage: #definition\n")
+        f.write(f'* url = "{base}/ConceptMap/PreQualProductToVaccineType"\n')
+        f.write('* name = "PreQualProductToVaccineType"\n')
+        f.write('* title = "WHO PreQual Vaccine Product to Vaccine Type"\n')
+        f.write("* status = #active\n")
+        f.write("* experimental = true\n")
+        f.write(
+            '* description = "Maps each WHO PreQual finished vaccine product '
+            "identifier to the vaccine type it belongs to. Products whose "
+            "detail has been de-published carry no vaccine type and are "
+            'marked as having no map."\n'
+        )
+        f.write(f'* sourceScopeCanonical = "{base}/ValueSet/PreQualProductIds"\n')
+        f.write(f'* targetScopeCanonical = "{base}/ValueSet/PreQualVaccineType"\n')
+        f.write(f'* group[0].source = "{base}/CodeSystem/PreQualProductIds"\n')
+        f.write(f'* group[0].target = "{base}/CodeSystem/PreQualVaccineType"\n')
+
+        for index, (entry_id, product_label, code, display) in enumerate(entries):
+            element = f"* group[0].element[{index}]"
+            f.write(f"\n{element}.code = #{entry_id}\n")
+            f.write(f'{element}.display = "{fsh_escape(product_label)}"\n')
+            if code:
+                f.write(f"{element}.target[0].code = #{code}\n")
+                f.write(f'{element}.target[0].display = "{fsh_escape(display)}"\n')
+                f.write(f"{element}.target[0].relationship = #source-is-narrower-than-target\n")
+            else:
+                f.write(f"{element}.noMap = true\n")
+
+    logger.info(
+        "Generated ConceptMap with %d product mappings (%d mapped, %d with no vaccine type)",
+        len(entries),
+        mapped,
+        len(entries) - mapped,
+    )
 
 
 def organizations_by_id(products, name_field, id_field, require_id=False):
@@ -1814,6 +1956,13 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
             if commercial_name:
                 f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            # The coded vaccine type, so an instance states which vaccine it
+            # is without a reader having to resolve a Salesforce record id.
+            vax_type_code, vax_type_display = vaccine_type_coding(p)
+            if vax_type_code:
+                f.write('* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"\n')
+                f.write(f"* vaccineType.coding.code = #{vax_type_code}\n")
+                f.write(f'* vaccineType.coding.display = "{fsh_escape(vax_type_display)}"\n')
             vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1910,18 +2059,19 @@ def generate_products_and_authorizations(products, output_dir):
             f.write("\n")
 
             generated_count += 1
-            cs_entries.append((safe_sf_id, sf_id, sf_name))
+            cs_entries.append((safe_sf_id, sf_id, product_display(p)))
 
     # CodeSystem for product identifiers (additive — preserve existing codes)
     existing_ids = read_existing_codes(cs_path)
     new_id_codes = {}
-    for entry_id, sf_id, sf_name in cs_entries:
-        new_id_codes[entry_id] = f'* #{entry_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"'
+    for entry_id, sf_id, display in cs_entries:
+        new_id_codes[entry_id] = f'* #{entry_id} "{fsh_escape(display)}"'
 
+    # A code no longer in the extract is kept, but one still present takes
+    # its display from the current data, so an improved display is applied
+    # rather than frozen out by the previously stored line.
     merged_ids = dict(existing_ids)
-    for code, line in new_id_codes.items():
-        if code not in merged_ids:
-            merged_ids[code] = line
+    merged_ids.update(new_id_codes)
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write("\n")
@@ -2156,6 +2306,7 @@ def main():
     generate_site_lm_instances(products, args.output_dir)
     generate_ingredient_lm_instances(products, args.output_dir)
     generate_products_and_authorizations(products, args.output_dir)
+    generate_product_vaccine_type_conceptmap(products, args.output_dir)
 
     logger.info("All FSH files generated successfully in %s", args.output_dir)
 
